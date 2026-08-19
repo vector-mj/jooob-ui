@@ -64,5 +64,49 @@
   .bar { transition: none; }
 }
 
+/* --- the queue ----------------------------------------------------------- */
+/* The list is read before it is acted on, so a row is laid out as something to
+   read: the text takes the width and the two buttons sit at the end of it. On a
+   narrow screen they drop underneath rather than squeezing the text into a
+   column, because deciding on a review you cannot read is the failure worth
+   avoiding. */
+.queue-tools { display: flex; align-items: center; gap: var(--space-2); }
+
+.queue-row { align-items: flex-start; }
+.queue-row .ui-row-actions { align-items: flex-start; flex-shrink: 0; }
+
+/* the submitted text itself: shown in full, because approving something you
+   have only seen the first line of is not moderation */
+.queue-body { margin: var(--space-2) 0 0; font-size: .85rem; line-height: 1.55;
+              color: var(--text-muted); white-space: pre-wrap;
+              overflow-wrap: anywhere; }
+
+/* decided rows stay put and step back instead of disappearing, so the list
+   does not reshuffle under the pointer part-way through clearing it */
+.queue-row.decided { opacity: .55; }
+.queue-row.decided:hover, .queue-row.decided:focus-within { opacity: 1; }
+
+/* The signed-in address is the longest unbreakable string in the bar, and a
+   flex item will not shrink below its content without being told to: at 320px
+   it pushed the sign-out button 42px off the right-hand edge and took the page
+   with it. Clipped with an ellipsis rather than hidden, because knowing which
+   of two Google accounts you are on is the point of showing it at all. */
+#me { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+@media (max-width: 640px) {
+  .queue-row .ui-row-actions { margin-inline-start: 0; width: 100%; }
+  .queue-row .ui-row-actions .btn { flex: 1 1 auto; }
+  /* the tab strip and the refresh button take a line of their own once the
+     heading no longer leaves room for them beside it */
+  #queue-card .ui-card-head { flex-wrap: wrap; gap: var(--space-2); }
+  .queue-tools { width: 100%; }
+  /* three tab labels with counts do not fit 320px, so the strip scrolls inside
+     itself instead of widening the document -- a page that scrolls sideways
+     loses the right-hand edge of every card on it, not just the tabs */
+  #queue-switch { flex: 1 1 auto; min-width: 0; justify-content: space-between;
+                  overflow-x: auto; scrollbar-width: none; }
+  #queue-switch::-webkit-scrollbar { display: none; }
+}
+
 /* held back until the API says who this is; see the note in the page head */
 [data-gate="checking"] body { visibility: hidden; }

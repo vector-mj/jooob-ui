@@ -1,9 +1,17 @@
-/* The numbers, opened in your own browser.
+/* The two things only one account may do: clear the queue, and read the numbers.
  *
- * There is no analytics server and no admin API to query. A scheduled job seals
- * the figures with AES-256-GCM and drops the file in R2; this page downloads
- * that file and decrypts it here. The passphrase never leaves the tab, so
- * whoever serves this page cannot read the report they are serving.
+ * The queue comes first because it is the one with consequences. Reviews,
+ * employer claims and the jobs employers write all arrive at approved=0 and
+ * stop there; nothing on this site publishes itself. Approving is what lets a
+ * row cross into the store at the next refresh, and turning it down is what
+ * keeps it out for good. That half needs only the admin session -- see the note
+ * above the queue for why it is deliberately not behind the passphrase.
+ *
+ * The numbers are the other half. There is no analytics server and no query to
+ * run: a scheduled job seals the figures with AES-256-GCM and drops the file in
+ * R2; this page downloads that file and decrypts it here. The passphrase never
+ * leaves the tab, so whoever serves this page cannot read the report they are
+ * serving.
  *
  * Two halves, and neither is published:
  *   stats.bin   totals and cohorts, carrying no identity at all.
@@ -39,7 +47,8 @@ function el(tag, opts = {}, children = []) {
 const clear = (node) => { while (node.firstChild) node.removeChild(node.firstChild); };
 const num = (n) => Number(n || 0).toLocaleString('en-US');
 
-const state = { api: '', pass: '', report: null, kind: 'search' };
+const state = { api: '', pass: '', report: null, kind: 'search',
+                queue: null, counts: {}, tab: 'reviews', touched: false };
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
@@ -50,6 +59,214 @@ function say(sel, message, bad = false) {
   const node = $(sel);
   node.textContent = message;
   node.classList.toggle('bad', Boolean(bad));
+}
+
+/* ── the queue ────────────────────────────────────────────────────────── */
+
+/* Everything a person has to decide before it reaches the site.
+ *
+ * This half deliberately needs no passphrase. The passphrase protects the
+ * sealed report, which is a different secret for a different job; making
+ * moderation wait behind it would mean typing a 43-character key to turn down
+ * one piece of spam, and a queue that is tiresome to open is a queue that does
+ * not get cleared. The admin session is the whole check here, and the Worker
+ * is what enforces it -- this page cannot grant itself anything.
+ */
+
+const QUEUES = [
+  { key: 'reviews', kind: 'review', label: 'Reviews', id: (row) => row.id },
+  { key: 'claims', kind: 'claim', label: 'Employers', id: (row) => row.handle },
+  { key: 'postings', kind: 'posting', label: 'Postings', id: (row) => row.id },
+];
+
+const bits = (...parts) => parts.filter(Boolean).join(' · ');
+const day = (iso) => String(iso || '').slice(0, 10);
+
+/** A 1-5 rating as something readable at a glance, or nothing if unrated. */
+const stars = (rating) => {
+  const n = Number(rating);
+  return Number.isInteger(n) && n >= 1 && n <= 5 ? '★'.repeat(n) + '☆'.repeat(5 - n) : '';
+};
+
+const salary = (row) => {
+  const low = Number(row.min_salary) || 0;
+  const high = Number(row.max_salary) || 0;
+  if (!low && !high) return '';
+  return `${num(low || high)}${low && high && low !== high ? `–${num(high)}` : ''}`;
+};
+
+/** What one waiting thing looks like: enough to decide on without leaving. */
+function describe(kind, row) {
+  if (kind === 'review') {
+    return {
+      title: bits(stars(row.rating), row.slug),
+      meta: bits(row.source, row.role, row.tenure, day(row.created_at)),
+      body: row.body,
+    };
+  }
+  if (kind === 'claim') {
+    return {
+      title: row.email || row.sub,
+      meta: bits(`${row.source}/${row.slug}`,
+                 row.domain ? `address at ${row.domain}` : 'no domain on the account',
+                 day(row.created_at)),
+      body: '',
+    };
+  }
+  return {
+    title: row.title,
+    meta: bits(row.slug, row.city, row.work_type, row.is_remote ? 'remote' : '',
+               row.seniority, salary(row), row.email, day(row.created_at)),
+    body: row.description,
+  };
+}
+
+/** How many are still undecided, across all three lists. */
+const waiting = () => QUEUES.reduce((sum, q) => sum + (state.counts[q.kind] || 0), 0);
+
+function tally() {
+  const left = waiting();
+  say('#queue-said', left
+    ? `${num(left)} waiting on a decision.`
+    : 'Nothing is waiting. Everything submitted has been decided.');
+}
+
+/** Say what a decision was, and offer the other one.
+ *
+ *  Nothing is removed from the list when it is decided. A row that vanishes on
+ *  click leaves nowhere to go when you meant to press the other button, and
+ *  since a decision is only a column it can simply be made again.
+ */
+function settle(node, kind, id, approved) {
+  const actions = node.querySelector('.ui-row-actions');
+  clear(actions);
+  node.classList.add('decided');
+  actions.append(el('span', {
+    class: approved ? 'pill ok' : 'pill off',
+    text: approved ? 'Approved' : 'Turned down',
+  }));
+  const flip = el('button', {
+    class: 'btn ghost sm',
+    text: approved ? 'Turn down instead' : 'Approve instead',
+    attrs: { type: 'button' },
+  });
+  flip.addEventListener('click', () => send(node, kind, id, !approved));
+  actions.append(flip);
+}
+
+/** Post one decision, and reflect it without reloading the list. */
+async function send(node, kind, id, approved) {
+  const actions = node.querySelector('.ui-row-actions');
+  for (const button of actions.querySelectorAll('button')) button.disabled = true;
+  try {
+    const response = await fetch(`${state.api.replace(/\/$/, '')}/admin/decide`, {
+      method: 'POST',
+      credentials: 'include',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ kind, ids: [id], approved }),
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    // the count is how many are still undecided, so it drops on the first
+    // decision about a row and not on changing one's mind about it afterwards
+    if (!node.dataset.decided) {
+      node.dataset.decided = '1';
+      state.counts[kind] = Math.max(0, (state.counts[kind] || 1) - 1);
+      renderTabs();
+      tally();
+    }
+    settle(node, kind, id, approved);
+  } catch (err) {
+    say('#queue-said', `That did not go through: ${err.message}`, true);
+    for (const button of actions.querySelectorAll('button')) button.disabled = false;
+  }
+}
+
+function renderTabs() {
+  const host = $('#queue-switch');
+  clear(host);
+  for (const queue of QUEUES) {
+    const n = state.counts[queue.kind] || 0;
+    const on = queue.key === state.tab;
+    const button = el('button', {
+      class: on ? 'seg-btn on' : 'seg-btn',
+      text: n ? `${queue.label} ${n}` : queue.label,
+      attrs: { type: 'button', 'aria-pressed': String(on) },
+    });
+    button.addEventListener('click', () => {
+      state.tab = queue.key;
+      state.touched = true;      // stop choosing a tab for someone who chose one
+      renderTabs();
+      renderQueue();
+    });
+    host.append(button);
+  }
+}
+
+function renderQueue() {
+  const list = $('#queue-list');
+  clear(list);
+  const queue = QUEUES.find((q) => q.key === state.tab) || QUEUES[0];
+  const rows = (state.queue || {})[queue.key] || [];
+
+  if (!rows.length) {
+    list.append(el('li', { class: 'ui-empty', text: 'Nothing waiting here.' }));
+    return;
+  }
+
+  for (const row of rows) {
+    const id = queue.id(row);
+    const { title, meta, body } = describe(queue.kind, row);
+    const node = el('li', { class: 'ui-row queue-row' }, [
+      el('div', { class: 'ui-row-main' }, [
+        el('span', { class: 'ui-row-title bidi', text: title, attrs: { dir: 'auto' } }),
+        el('span', { class: 'ui-row-meta', text: meta }),
+        body ? el('p', { class: 'queue-body bidi', text: body, attrs: { dir: 'auto' } }) : null,
+      ]),
+      el('div', { class: 'ui-row-actions' }),
+    ]);
+
+    const actions = node.querySelector('.ui-row-actions');
+    const yes = el('button', { class: 'btn primary sm', text: 'Approve',
+                               attrs: { type: 'button' } });
+    const no = el('button', { class: 'btn ghost sm', text: 'Turn down',
+                              attrs: { type: 'button' } });
+    yes.addEventListener('click', () => send(node, queue.kind, id, true));
+    no.addEventListener('click', () => send(node, queue.kind, id, false));
+    actions.append(yes, no);
+    list.append(node);
+  }
+}
+
+async function loadQueue() {
+  const button = $('#queue-refresh');
+  button.disabled = true;
+  say('#queue-said', 'Checking…');
+  try {
+    const response = await fetch(`${state.api.replace(/\/$/, '')}/admin/queue`,
+                                 { credentials: 'include' });
+    // 401 is "this browser has no session" and signing in fixes it. 404 is what
+    // the route says to everyone who is not an admin, because an endpoint that
+    // answers "forbidden" has already admitted that it exists.
+    if (response.status === 401) {
+      location.replace(`/login?next=${encodeURIComponent(location.href)}`);
+      return;
+    }
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    state.queue = await response.json();
+    state.counts = state.queue.counts || {};
+    // open on the list that actually has something in it, so clearing the queue
+    // does not begin with two clicks through empty tabs
+    const busiest = QUEUES.find((q) => (state.counts[q.kind] || 0) > 0);
+    if (busiest && !state.touched) state.tab = busiest.key;
+    renderTabs();
+    renderQueue();
+    tally();
+  } catch (err) {
+    say('#queue-said', `Could not read the queue: ${err.message}`, true);
+  }
+  button.disabled = false;
 }
 
 /* ── opening a sealed file ────────────────────────────────────────────── */
@@ -232,6 +449,17 @@ async function loadPeople() {
 
 /* ── boot ─────────────────────────────────────────────────────────────── */
 
+/** Leave. The cookie is cleared by the Worker that signed it; going home rather
+ *  than staying put matters because this page sends a stranger to the door and
+ *  would otherwise bounce straight back to it. */
+async function signOut() {
+  try {
+    await fetch(`${state.api.replace(/\/$/, '')}/auth/logout`,
+                { method: 'POST', credentials: 'include' });
+  } catch { /* already gone */ }
+  location.replace('/');
+}
+
 async function unlock(event) {
   event.preventDefault();
   const button = $('#unlock');
@@ -270,6 +498,8 @@ async function boot() {
     document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
   $('#unlock-form').addEventListener('submit', unlock);
   $('#load-people').addEventListener('click', loadPeople);
+  $('#queue-refresh').addEventListener('click', loadQueue);
+  $('#signout').addEventListener('click', signOut);
 
   try {
     const data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
@@ -296,12 +526,19 @@ async function boot() {
       location.replace(`/login?next=${encodeURIComponent(location.href)}`);
       return;
     }
+    // which account the page thinks you are, said out loud. Two Google accounts
+    // in one browser is the ordinary case, and "why is the queue empty" and
+    // "you are signed in as the other one" look identical without this.
+    $('#me').textContent = who.email || '';
   } catch {
     // the API is unreachable, which is not an answer about who this is. There
     // is nothing to show without it either, so say so rather than guess.
     say('#unlock-said', 'Cannot reach the API to check who you are.', true);
   }
   delete document.documentElement.dataset.gate;
+  // the queue needs the session that was just checked and nothing else, so
+  // it loads straight away rather than waiting for a passphrase
+  await loadQueue();
 }
 
 boot();
