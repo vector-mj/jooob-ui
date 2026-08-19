@@ -1,0 +1,500 @@
+/* ── app shell ────────────────────────────────────────────────────────── */
+
+.app { min-height: 100%; animation: fade-in var(--dur-3) var(--ease) both; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; gap: var(--space-4);
+  height: var(--topbar-h); padding-inline: var(--space-5);
+  background: color-mix(in srgb, var(--bg-elev) 82%, transparent);
+  backdrop-filter: blur(14px);
+  border-block-end: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: var(--space-2); font-weight: 700; letter-spacing: -.02em; }
+/* the gradient square this used to be is now the orbit mark, inlined in the
+   markup so it can inherit currentColor; sizing lives in base.css */
+.brand .brand-orbits { color: var(--accent); }
+.topbar-actions { display: flex; align-items: center; gap: var(--space-2); }
+
+.chips { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0 var(--space-5) var(--space-3); }
+.chip {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: .3rem .6rem;
+  background: var(--accent-soft); border: 1px solid var(--line); border-radius: var(--radius-full);
+  color: var(--text); font-size: .8rem; cursor: pointer;
+  transition: border-color var(--dur-1) var(--ease);
+}
+.chip:hover { border-color: var(--accent); }
+.chip-label { color: var(--text-faint); }
+.chip-x { color: var(--text-muted); font-size: 1rem; line-height: 1; }
+
+.load-error {
+  margin: 0 var(--space-5); padding: var(--space-3) var(--space-4);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--danger) 38%, transparent);
+  border-radius: var(--radius-sm);
+  color: var(--danger); font-size: .86rem;
+}
+
+.coverage {
+  margin: var(--space-4) var(--space-5) 0;
+  padding: .6rem .9rem;
+  background: color-mix(in srgb, var(--warn) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--warn) 32%, transparent);
+  border-radius: var(--radius-sm);
+  color: var(--text); font-size: .84rem;
+}
+
+.main { padding: var(--space-5); max-width: 1600px; margin-inline: auto; }
+
+/* ── kpis ─────────────────────────────────────────────────────────────── */
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: var(--space-4); margin-block-end: var(--space-5); }
+.kpi {
+  padding: var(--space-4);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  animation: rise var(--dur-3) var(--ease) both;
+}
+.kpi-value { font-size: 1.85rem; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.kpi-label { color: var(--text-muted); font-size: .8rem; }
+.kpi-note  { color: var(--text-faint); font-size: .74rem; margin-top: var(--space-1); }
+
+/* ── cards ────────────────────────────────────────────────────────────── */
+
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-4); }
+.span-5 { grid-column: span 5; } .span-6 { grid-column: span 6; }
+.span-7 { grid-column: span 7; } .span-12 { grid-column: span 12; }
+
+.card {
+  display: flex; flex-direction: column;
+  padding: var(--space-4) var(--space-5) var(--space-5);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  animation: rise var(--dur-3) var(--ease) both;
+  transition: border-color var(--dur-2) var(--ease);
+}
+.card:hover { border-color: var(--line-strong); }
+.card-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); flex-wrap: wrap; margin-block-end: var(--space-3); }
+.card-head h2 { font-size: 1rem; }
+.card-sub { margin: 0; color: var(--text-faint); font-size: .78rem; }
+
+.chart { width: 100%; height: 320px; }
+.chart.tall { height: 420px; }
+.chart.short { height: 210px; }
+
+.table-fallback { margin-block-start: var(--space-3); }
+.table-fallback summary { color: var(--text-faint); font-size: .78rem; cursor: pointer; }
+.table-fallback summary:hover { color: var(--text-muted); }
+
+/* ── tables ───────────────────────────────────────────────────────────── */
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+th, td { padding: .55rem .7rem; text-align: start; border-block-end: 1px solid var(--line); vertical-align: top; }
+th { color: var(--text-muted); font-weight: 500; font-size: .78rem; position: sticky; top: 0; background: var(--surface); }
+tbody tr { transition: background var(--dur-1) var(--ease); }
+tbody tr:hover { background: var(--surface-2); }
+td.num, th.num { text-align: end; font-variant-numeric: tabular-nums; }
+td a { color: var(--accent); text-decoration: none; }
+td a:hover { text-decoration: underline; }
+.tag { display: inline-block; padding: .1rem .5rem; border-radius: var(--radius-full);
+  background: var(--surface-2); color: var(--text-muted); font-size: .74rem; }
+
+.table-tools { display: flex; align-items: center; gap: var(--space-3); }
+.search { min-width: 260px; }
+/* the skills box is the one field on the page people are meant to type into
+   first, so it gets room and its own emphasis */
+.skill-entry .search { font-size: .95rem; padding-block: .6rem; }
+.skill-entry .search:focus { box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow-1); }
+
+.pager { display: flex; align-items: center; justify-content: center; gap: var(--space-2); margin-block-start: var(--space-4); }
+.pager button {
+  padding: .35rem .7rem; background: var(--surface-2); border: 1px solid var(--line);
+  border-radius: var(--radius-sm); color: var(--text-muted); cursor: pointer;
+  transition: background var(--dur-1) var(--ease), color var(--dur-1) var(--ease);
+}
+.pager button:hover:not([disabled]) { background: var(--accent-soft); color: var(--accent); }
+.pager button[disabled] { opacity: .4; cursor: not-allowed; }
+.pager .page-info { color: var(--text-faint); font-size: .8rem; font-variant-numeric: tabular-nums; }
+
+/* ── states ───────────────────────────────────────────────────────────── */
+
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--line) 37%, var(--surface-2) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+.chart.skeleton { min-height: 320px; }
+
+.empty, .error-box {
+  display: grid; place-items: center; gap: var(--space-2);
+  height: 100%; min-height: 180px; padding: var(--space-5);
+  color: var(--text-faint); font-size: .86rem; text-align: center;
+}
+.error-box { color: var(--danger); }
+.error-box button { margin-top: var(--space-2); }
+
+.foot { margin-block-start: var(--space-6); padding-block: var(--space-4);
+  color: var(--text-faint); font-size: .78rem; text-align: center; border-block-start: 1px solid var(--line); }
+
+
+/* ── motion ───────────────────────────────────────────────────────────── */
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes shimmer { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important; scroll-behavior: auto !important;
+  }
+}
+
+/* ── responsive ───────────────────────────────────────────────────────── */
+
+@media (max-width: 1100px) {
+  .span-5, .span-6, .span-7 { grid-column: span 12; }
+}
+@media (max-width: 780px) {
+  .main { padding: var(--space-4); }
+  /* an ISO date wraps at the default size in a two-column kpi grid */
+  .kpi-value { font-size: 1.45rem; }
+  .topbar { flex-wrap: wrap; height: auto; padding-block: var(--space-3); gap: var(--space-3); }
+  /* The filters wrap onto as many rows as they need. They used to sit in one
+     row with `overflow-x: auto`, which on a 360px phone meant eight controls
+     -- search, match, company, field, posted-within, show, remote, reset --
+     in a sideways-scrolling strip, with the search box squeezed to nothing and
+     most of the filters off-screen entirely. */
+    /* search gets a row to itself: it is the control people actually reach for */
+  .topbar-filters .search { flex: 1 0 100%; min-width: 0; width: 100%; }
+    .topbar-filters .check { flex: 0 0 auto; }
+  #filter-reset { margin-inline-start: auto; }
+  .table-tools { flex-basis: 100%; }
+  .chart { height: 280px; }
+  .chart.tall { height: 340px; }
+}
+
+/* ── query and category chips ───────────────────────────────────────────── */
+
+/* a resolved search term reads as an applied filter; an unresolved one has to
+   look different, because it is a gap in the vocabulary rather than a match */
+.chip-term { border-color: var(--accent); }
+.chip-unknown {
+  border-style: dashed;
+  color: var(--text-muted);
+}
+.chip-note { color: var(--text-faint); font-size: .82em; }
+.chip-mode {
+  background: transparent;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.cat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-block-start: .5rem;
+}
+.cat-chip {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: .16rem .6rem;
+  font: inherit;
+  font-size: .78rem;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+.cat-chip:hover { border-color: var(--accent); color: var(--text); }
+.cat-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--surface);
+}
+
+/* the exact spellings a posting used, inside its table row */
+.term-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  max-inline-size: 22rem;
+}
+.term-chip {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 6px;
+  padding: .05rem .38rem;
+  font: inherit;
+  font-size: .76rem;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.term-chip:hover:not(:disabled) { border-color: var(--accent); color: var(--text); }
+.term-chip:disabled { cursor: default; opacity: .65; }
+.term-more { color: var(--text-faint); font-size: .76rem; align-self: center; }
+
+/* an empty result that names its way out is a result, not a wall */
+.link-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-chip { transition: none; }
+}
+
+/* ── sortable table headers ─────────────────────────────────────────────── */
+
+.sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+  /* the header is right-aligned in RTL and left in LTR; logical properties keep
+     the arrow beside the label either way */
+  text-align: start;
+}
+.sort-btn:hover { color: var(--accent); }
+.sort-on { color: var(--accent); }
+.sort-mark { font-size: .62em; line-height: 1; }
+th.num .sort-btn { justify-content: flex-end; }
+
+/* ── the seeker's view ────────────────────────────────────────────────────── */
+
+/* two audiences, one page. The switch decides which panels exist; in the
+   seeker's view the postings table leads, because "which of these should I
+   read" is the only question they came with. */
+.viewswitch { display: inline-flex; gap: 2px; padding: 2px; border-radius: var(--radius-full);
+              background: var(--surface-2); border: 1px solid var(--line); }
+.view-btn { border: none; background: none; color: var(--text-muted); cursor: pointer;
+            font: inherit; font-weight: 600; font-size: .82rem;
+            padding: .32rem .8rem; border-radius: var(--radius-full); }
+.view-btn:hover { color: var(--text); }
+.view-btn.on { background: var(--accent-soft); color: var(--accent); }
+
+.grid-me .jobs-card { order: -1; }
+
+.me-card { margin-block-end: var(--space-4); }
+.skill-entry { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3);
+               margin-block-end: var(--space-3); }
+.skill-entry .search { min-width: min(22rem, 100%); }
+.skill-chip { display: inline-flex; align-items: center; gap: .3rem; }
+.chip-x { opacity: .55; font-weight: 700; }
+.skill-chip:hover .chip-x { opacity: 1; color: var(--danger); }
+.check { display: inline-flex; align-items: center; gap: .35rem; font-size: .82rem;
+         color: var(--text-muted); white-space: nowrap; }
+
+/* a share, drawn as a share. The number stays beside it: a bar with no figure
+   invites the reader to estimate, and they estimate wrong. */
+.match { display: inline-block; width: 3.2rem; height: .42rem; vertical-align: middle;
+         border-radius: var(--radius-full); background: var(--surface-2); overflow: hidden; }
+.match-fill { display: block; height: 100%; border-radius: var(--radius-full);
+              background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
+.match-num { margin-inline-start: .4rem; font-size: .78rem; color: var(--text-muted);
+             font-variant-numeric: tabular-nums; }
+
+/* an advert older than six months is still listed but rarely still open, so it
+   is marked rather than quietly mixed in with this week's */
+.stale { color: var(--warn); }
+
+.row-btn, .mark-btn {
+  border: 1px solid var(--line); background: none; color: var(--text-faint);
+  cursor: pointer; font: inherit; font-size: .72rem; line-height: 1;
+  padding: .18rem .4rem; border-radius: var(--radius-sm);
+}
+.row-btn { margin-inline-start: .45rem; }
+.row-btn:hover, .mark-btn:hover { color: var(--accent); border-color: var(--accent); }
+.marks { display: inline-flex; gap: .2rem; }
+.mark-on { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+
+/* ── drawer ───────────────────────────────────────────────────────────────── */
+
+.drawer {
+  width: min(38rem, 94vw); max-height: 88vh; padding: 0; border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg); background: var(--bg-elev); color: var(--text);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
+}
+.drawer::backdrop { background: rgba(4, 6, 10, .6); }
+.drawer-head { display: flex; align-items: flex-start; justify-content: space-between;
+               gap: var(--space-3); padding: var(--space-5) var(--space-5) var(--space-3);
+               border-block-end: 1px solid var(--line); position: sticky; top: 0;
+               background: var(--bg-elev); }
+.drawer-head h2 { margin: 0; font-size: 1.05rem; line-height: 1.35; }
+.drawer-body { padding: var(--space-4) var(--space-5) var(--space-5); overflow-y: auto;
+               max-height: calc(88vh - 5rem); }
+.drawer-h { margin: var(--space-4) 0 var(--space-2); font-size: .78rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: .06em; color: var(--text-faint); }
+.drawer-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column;
+               gap: .3rem; }
+.drawer-list li { display: flex; align-items: baseline; justify-content: space-between;
+                  gap: var(--space-3); font-size: .88rem; }
+.drawer-note { color: var(--text-faint); font-size: .78rem; font-variant-numeric: tabular-nums;
+               white-space: nowrap; }
+.drawer-score { margin: var(--space-3) 0 0; font-weight: 600; }
+
+/* company reviews: the one thing on this page a person wrote rather than a
+   scraper counted, so it is set apart from the surrounding tables */
+.review { border: 1px solid var(--line); border-radius: var(--radius-sm);
+          padding: var(--space-3); margin-block-start: var(--space-2); }
+.review-head { display: flex; align-items: baseline; justify-content: space-between;
+               gap: var(--space-3); flex-wrap: wrap; }
+.review-stars { color: var(--accent); letter-spacing: .08em; white-space: nowrap; }
+.review-body { display: block; margin-block-start: var(--space-2); font-size: .9rem;
+               line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.review-ask { margin-block-start: var(--space-4); }
+.review-ask summary { cursor: pointer; font-size: .85rem; font-weight: 600;
+                      color: var(--accent); }
+.review-form { display: flex; flex-direction: column; gap: var(--space-2);
+               margin-block-start: var(--space-3); }
+.review-write { min-height: 7rem; resize: vertical; font: inherit; line-height: 1.5; }
+.review-form .cta { align-self: flex-start; }
+.cta { display: inline-block; margin-block-start: var(--space-3); padding: .4rem .8rem;
+       border-radius: var(--radius-sm); background: var(--accent-soft); color: var(--accent);
+       font-size: .85rem; font-weight: 600; text-decoration: none; border: 1px solid transparent;
+       cursor: pointer; }
+.cta:hover { border-color: var(--accent); }
+.warn { color: var(--warn); font-size: .85rem; margin: var(--space-3) 0 0; }
+
+/* ── phones ───────────────────────────────────────────────────────────────
+ *
+ * Below 480px every control gets a row of its own and a thumb-sized target.
+ * The 16px font size is not a style choice: a mobile browser zooms the whole
+ * page when a field smaller than that takes focus, so tapping the search box
+ * threw the dashboard off-screen sideways and left it there.
+ */
+@media (max-width: 480px) {
+  input[type="search"], input[type="text"], .select,   /* not sticky here: with search, four filters, a toggle and a checkbox each
+     on its own row, a pinned bar would occupy most of a phone screen for the
+     whole session. It scrolls away and comes back at the top of the page. */
+  .topbar { position: static; padding-inline: var(--space-4); gap: var(--space-2); }
+    /* two selects side by side leave ~150px each, which truncates a Persian
+     company name to nothing worth reading */
+    .viewswitch { flex: 1 1 100%; order: 2; justify-content: center; }
+  .view-btn { flex: 1; padding-block: .45rem; }
+  .check { font-size: .9rem; padding-block: .3rem; }
+  .skill-entry { flex-direction: column; align-items: stretch; }
+  .skill-entry .search { min-width: 0; width: 100%; }
+  .main { padding: var(--space-3); }
+  .card { padding: var(--space-4) var(--space-3); }
+  .chart { height: 240px; }
+  .chart.tall { height: 300px; }
+  /* the postings table scrolls inside its own box; the page itself must not
+     scroll sideways with it */
+  .app { overflow-x: hidden; }
+  .drawer { width: 100vw; max-height: 92vh;
+            border-radius: var(--radius) var(--radius) 0 0; }
+}
+
+
+
+/* ===========================================================================
+   Dashboard-only sizing, from what Chrome measured at 1440px and on a phone.
+   The primitives these build on live in base.css; only the dashboard's own
+   dense controls are tuned here.
+   =========================================================================== */
+
+/* The topbar carries a brand, a view switch, six filters and three actions.
+   Past a certain width that is more than the window, and the page scrolled
+   sideways -- 1493px of content in a 1440px viewport. The filters give way
+   rather than push. */
+
+.view-btn { min-height: 40px; }
+.cat-chip { min-height: 40px; }
+.check { min-height: 40px; }
+.sort-btn { min-height: 40px; }
+.row-btn { min-height: 40px; }
+.table-fallback summary { padding-block: .7rem; }
+.review-ask summary { padding-block: .5rem; }
+.drawer-list li a { display: inline-block; padding-block: .5rem; }
+.cta { min-height: 40px; display: inline-flex; align-items: center; }
+
+/* Save / applied / hide: three targets side by side in a row, measured at
+   24x19. Square and comfortable rather than merely legal. */
+.mark-btn { min-width: 32px; min-height: 32px; display: inline-flex;
+            align-items: center; justify-content: center; }
+
+/* Two floors, because these are two kinds of target. A standalone control gets
+   the 44px platform guidelines ask for; something sitting inline in a dense
+   table gets WCAG 2.5.8's 24px, because 44px each would turn one screen of
+   postings into four. A company whose name is two characters collapsed to a
+   15px-wide link, so width has a floor as well as height. */
+td a, .term-chip, .req-chip { display: inline-block; padding-block: .25rem;
+                              min-height: 26px; }
+.jobs-table td button { min-height: 26px; }
+.link-btn { min-width: 24px; padding-inline: .15rem; }
+
+/* a posting the employer wrote, marked apart from the ones we scraped */
+.tag.direct { margin-inline-start: var(--space-2); background: var(--accent-soft);
+              color: var(--accent); border: 1px solid transparent; }
+
+@media (pointer: coarse) {
+  .view-btn, .cat-chip, .check, .sort-btn, .row-btn,
+  .table-fallback summary { min-height: 44px; }
+  .cta { min-height: 44px; }
+  .mark-btn { min-width: 40px; min-height: 40px; }
+  .link-btn { min-width: 28px; }
+  td a, .term-chip, .req-chip, .jobs-table td button { min-height: 28px; }
+}
+
+/* the account control, which is empty until a Worker is actually deployed */
+.account { display: inline-flex; align-items: center; gap: var(--space-2);
+           min-width: 0; }
+.account-email { font-size: .78rem; color: var(--text-faint); max-width: 12rem;
+                 overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+@media (max-width: 780px) {
+  .account-email { display: none; }   /* the sign-out button is the useful half */
+}
+
+/* ===========================================================================
+   The bar, and the row under it.
+   The topbar was carrying a brand, a view switch, a search box, five selects, a
+   checkbox, a reset and four actions on one line -- eleven controls competing
+   for the same strip. The filters are the part that wants width, so they got a
+   row of their own; the bar keeps identity, what the page is for, and where
+   else to go.
+   =========================================================================== */
+.topbar { gap: var(--space-4); }
+.topbar-actions { margin-inline-start: auto; flex: none; }
+.viewswitch { flex: none; }
+
+/* Sticky beneath the bar, so a filter stays reachable while the table scrolls
+   past it -- which is the whole reason it was in the bar to begin with. */
+.filterbar {
+  position: sticky; top: var(--topbar-h); z-index: 19;
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background: color-mix(in srgb, var(--bg-elev) 82%, transparent);
+  backdrop-filter: blur(14px);
+  border-block-end: 1px solid var(--line);
+}
+/* the search box takes the slack; the selects size to their content */
+.filterbar .search { flex: 1 1 20rem; min-width: 11rem; }
+.filterbar .select { flex: 0 1 auto; width: auto; min-width: 8.5rem; max-width: 13rem; }
+.filterbar .check { flex: none; }
+.filterbar #clear-searches { flex: none; }
+
+@media (max-width: 780px) {
+  /* the bar is short enough to scroll away with the page on a phone; keeping
+     two sticky strips there costs a third of the screen */
+  .filterbar { position: static; padding: var(--space-3); }
+  .filterbar .search { flex: 1 1 100%; }
+  .filterbar .select { flex: 1 1 calc(50% - var(--space-2)); max-width: none; }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>jooob — numbers</title>
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="base.css?v=d8dc3828">
+<link rel="stylesheet" href="admin.css?v=9724bf08">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+</head>
+<body class="ui-body">
+
+<header class="ui-top">
+  <a class="ui-brand" href="./"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+      <style>.orb{transform-origin:32px 32px;transform-box:view-box;animation:rev linear infinite}
+      .o1{animation-duration:28s}.o2{animation-duration:46s;animation-direction:reverse}
+      .o3{animation-duration:72s}@keyframes rev{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){.orb{animation:none}}</style>
+      <g fill="none" stroke="currentColor" stroke-width="3.5">
+        <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+        <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+      <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+      <g class="orb o1"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+      <g class="orb o2"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+      <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
+    </svg><span>jooob</span></a>
+  <span class="ui-kicker">numbers</span>
+  <div class="ui-who">
+    <button type="button" class="btn ghost icon" id="theme-btn" aria-label="Switch theme">◐</button>
+  </div>
+</header>
+
+<main class="ui-main">
+
+  <section class="ui-card" id="unlock-card">
+    <h2 class="ui-h2">Unlock</h2>
+    <p class="ui-sub">
+      The figures are downloaded encrypted and opened here, in this tab. The
+      passphrase is never sent anywhere — not to the site, not to Cloudflare, not
+      to whoever is serving this page.
+    </p>
+    <form class="ui-form inline" id="unlock-form">
+      <label class="sr-only" for="pass">Passphrase</label>
+      <input class="field" id="pass" type="password" required minlength="16"
+             autocomplete="current-password" placeholder="Your analytics passphrase">
+      <button type="submit" class="btn primary" id="unlock">Unlock</button>
+    </form>
+    <p class="ui-said" id="unlock-said" role="status"></p>
+  </section>
+
+  <div id="report" hidden>
+    <section class="ui-card">
+      <h2 class="ui-h2">Where things stand</h2>
+      <div class="stat-grid" id="totals"></div>
+      <p class="ui-sub" id="built"></p>
+    </section>
+
+    <section class="ui-card">
+      <h2 class="ui-h2">Visits</h2>
+      <div class="bars" id="visits"></div>
+    </section>
+
+    <section class="ui-card">
+      <div class="ui-card-head">
+        <h2 class="ui-h2">What people looked for</h2>
+        <div class="seg" id="top-switch" role="group" aria-label="Which list"></div>
+      </div>
+      <ol class="rank" id="top-list"></ol>
+    </section>
+
+    <section class="ui-card">
+      <div class="ui-card-head">
+        <h2 class="ui-h2">Signed-in seekers</h2>
+        <button type="button" class="btn ghost" id="load-people">Load the private archive</button>
+      </div>
+      <p class="ui-sub">
+        Addresses against skills and searches, for the people who signed in and
+        asked us to remember them. This half is never published: it comes from a
+        private bucket, needs an admin session, and is encrypted on top of both.
+      </p>
+      <p class="ui-said" id="people-said" role="status"></p>
+      <ul class="ui-list" id="people-list"></ul>
+    </section>
+  </div>
+</main>
+
+<footer class="ui-foot">
+  <a href="./">The dashboard</a> · <a href="employer.html">For employers</a>
+</footer>
+
+<script src="admin.js?v=0b36a417"></script>
+</body>
+</html>

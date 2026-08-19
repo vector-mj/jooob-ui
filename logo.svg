@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 84" role="img" aria-labelledby="jl-t jl-d">
+  <title id="jl-t">jooob</title>
+  <desc id="jl-d">jooob lockup: three concentric orbits with small bodies beside the lowercase wordmark jooob, drawn as geometric monoline letterforms.</desc>
+  <g transform="translate(8 8)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5">
+      <circle cx="32" cy="32" r="11"/>
+      <circle cx="32" cy="32" r="18.5" opacity=".72"/>
+      <circle cx="32" cy="32" r="26" opacity=".5"/>
+    </g>
+    <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+    <circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/>
+    <circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/>
+    <circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round">
+    <path d="M102 25.5 V65 A11 11 0 0 1 91 76"/>
+    <circle cx="136" cy="40" r="14.5"/>
+    <circle cx="182" cy="40" r="14.5"/>
+    <circle cx="228" cy="40" r="14.5"/>
+    <path d="M261.5 8 V54.5"/>
+    <circle cx="276" cy="40" r="14.5"/>
+  </g>
+  <circle cx="102" cy="8" r="5.5" fill="currentColor"/>
+  <circle cx="192.3" cy="29.8" r="7.5" fill="#6ea8ff"/>
+</svg>

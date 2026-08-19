@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>jooob — what employers are actually hiring for</title>
+<meta name="description" content="A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="base.css?v=d8dc3828">
+<link rel="stylesheet" href="landing.css?v=2e391ead">
+<link rel="alternate" type="application/rss+xml" title="jooob — newest postings" href="feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+</head>
+<body class="ui-body">
+
+<header class="ui-top">
+  <a class="ui-brand" href="./"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+      <style>.orb{transform-origin:32px 32px;transform-box:view-box;animation:rev linear infinite}
+      .o1{animation-duration:28s}.o2{animation-duration:46s;animation-direction:reverse}
+      .o3{animation-duration:72s}@keyframes rev{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){.orb{animation:none}}</style>
+      <g fill="none" stroke="currentColor" stroke-width="3.5">
+        <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+        <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+      <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+      <g class="orb o1"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+      <g class="orb o2"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+      <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
+    </svg><span>jooob</span></a>
+  <div class="ui-who">
+    <span id="signin-slot"></span>
+    <a class="btn ghost" href="dashboard.html">Open the dashboard</a>
+    <button type="button" class="btn ghost icon" id="theme-btn" aria-label="Switch theme">◐</button>
+  </div>
+</header>
+
+<!-- Every drifting word here is a real term out of the corpus. Purely
+     decorative, and skipped entirely without WebGL or with reduced motion, so
+     it carries no information the page needs. -->
+<canvas id="galaxy" class="lp-galaxy" aria-hidden="true"></canvas>
+
+<main class="ui-main lp-main">
+
+  <section class="lp-hero">
+    <p class="lp-eyebrow">Free, and staying free</p>
+    <h1 class="ui-h1">What employers are actually hiring for.</h1>
+    <p class="lp-lede">
+      Not what a job board says is popular — what is written in the adverts
+      themselves. Every posting is read, the tools and concepts in it are named,
+      and the whole lot is counted, so you can see the market instead of
+      scrolling through it.
+    </p>
+    <div class="lp-cta">
+      <a class="btn primary lg" href="dashboard.html">Find a job</a>
+      <a class="btn ghost lg" href="employer.html">Post a job — free</a>
+    </div>
+    <dl class="lp-figures" id="figures">
+      <div class="lp-figure"><dt>—</dt><dd>postings</dd></div>
+      <div class="lp-figure"><dt>—</dt><dd>companies</dd></div>
+      <div class="lp-figure"><dt>—</dt><dd>updated</dd></div>
+    </dl>
+  </section>
+
+  <section class="lp-cards">
+    <article class="ui-card lp-card">
+      <svg class="lp-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <h2 class="ui-h2">If you are looking</h2>
+      <p class="ui-sub">
+        Tell it what you can do and every panel re-scopes to you: which postings
+        match, what you are missing, and which requirement would open the most
+        doors next. No account needed — it stays in your browser.
+      </p>
+      <a class="btn ghost" href="dashboard.html">Open the dashboard</a>
+    </article>
+
+    <article class="ui-card lp-card">
+      <svg class="lp-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      <h2 class="ui-h2">If you are hiring</h2>
+      <p class="ui-sub">
+        Post your roles beside everything we scrape, at no cost and with no
+        listing fee. One click to sign in, and if your address is at your
+        company's own domain you are approved straight away.
+      </p>
+      <a class="btn ghost" href="employer.html">Post a job</a>
+    </article>
+
+    <article class="ui-card lp-card">
+      <svg class="lp-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+           stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg>
+      <h2 class="ui-h2">If you worked somewhere</h2>
+      <p class="ui-sub">
+        Say what it was actually like. Anonymously: there is no field in the
+        database for your name, your address or your account, so none is asked
+        for and none is kept.
+      </p>
+      <a class="btn ghost" href="dashboard.html">Find the company</a>
+    </article>
+  </section>
+
+  <section class="ui-card lp-promise">
+    <h2 class="ui-h2">We are free, for ever</h2>
+    <p class="ui-sub">
+      Not a trial, not a freemium tier, and not a runway waiting to run out.
+      jooob costs almost nothing to run, and that is the only version of "free
+      for ever" anybody should believe.
+    </p>
+    <ul class="lp-list">
+      <li><strong>Free for people looking.</strong> No account, no CV upload, and
+        nothing behind a paywall — your skills and shortlists stay in your own
+        browser.</li>
+      <li><strong>Free for people hiring.</strong> No listing fee, no seat count,
+        and no charge to see who applied.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="ui-foot">
+  <a href="dashboard.html">Dashboard</a> ·
+  <a href="employer.html">For employers</a> ·
+  <a href="feeds.html">Feeds</a>
+</footer>
+
+<script src="landing.js?v=a63b03a1"></script>
+
+<!-- Pinned to one immutable version and checked against its hash, the same way
+     the dashboard loads its chart library. The import map's `integrity` block
+     is what applies that check to a module; a browser that does not understand
+     the block still gets the pinned version, and galaxy.js gives up quietly if
+     the import fails at all. -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js"
+  },
+  "integrity": {
+    "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js":
+      "sha384-eCdgjbMm+jekI8fyaeCZ4Pnyg5k4Jn45w2qs3lfnAd5ES5IO4hKOXNisVBTyUzDO"
+  }
+}
+</script>
+<script type="module" src="galaxy.js?v=3bcf1048"></script>
+</body>
+</html>

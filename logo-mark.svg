@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="jm-t jm-d">
+  <title id="jm-t">jooob</title>
+  <desc id="jm-d">Three concentric orbits, one for each o in jooob, each carrying a small body around a shared centre.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="3.5">
+    <circle cx="32" cy="32" r="11"/>
+    <circle cx="32" cy="32" r="18.5" opacity=".72"/>
+    <circle cx="32" cy="32" r="26" opacity=".5"/>
+  </g>
+  <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+  <circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/>
+  <circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/>
+  <circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/>
+</svg>

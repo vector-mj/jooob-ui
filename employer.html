@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>jooob — post a job, free</title>
+<meta name="description" content="Post your open roles on jooob for free. Sign in with Google, claim your company, and your listing appears beside everything we scrape.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="base.css?v=d8dc3828">
+<link rel="stylesheet" href="employer.css?v=6fc5dcff">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+</head>
+<body class="ui-body">
+
+<header class="ui-top">
+  <a class="ui-brand" href="./"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+      <style>.orb{transform-origin:32px 32px;transform-box:view-box;animation:rev linear infinite}
+      .o1{animation-duration:28s}.o2{animation-duration:46s;animation-direction:reverse}
+      .o3{animation-duration:72s}@keyframes rev{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){.orb{animation:none}}</style>
+      <g fill="none" stroke="currentColor" stroke-width="3.5">
+        <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+        <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+      <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+      <g class="orb o1"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+      <g class="orb o2"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+      <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
+    </svg><span>jooob</span></a>
+  <span class="ui-kicker">for employers</span>
+  <div class="ui-who" id="who">
+    <button type="button" class="btn ghost icon" id="theme-btn" aria-label="Switch theme">◐</button>
+  </div>
+</header>
+
+<main class="ui-main" id="main">
+
+  <!-- signed out ------------------------------------------------------- -->
+  <section class="emp-hero" id="signed-out" hidden>
+    <h1 class="ui-h1">Post your jobs where people are actually looking.</h1>
+    <p class="emp-lede">
+      jooob already tracks what employers are hiring for across two job boards.
+      Add your own roles and they appear beside everything we scrape — matched
+      against what each person says they can do.
+    </p>
+    <p class="emp-free"><strong>Free.</strong> No listing fee, no seat count, no trial.</p>
+    <button type="button" class="btn primary lg" id="sign-in">
+      <svg class="g-mark" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+        <path fill="#4285F4" d="M17.6 9.2c0-.6-.1-1.3-.2-1.9H9v3.5h4.8a4.1 4.1 0 0 1-1.8 2.7v2.2h2.9c1.7-1.6 2.7-3.9 2.7-6.5z"/>
+        <path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.3c-.8.6-1.9.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H.9v2.3A9 9 0 0 0 9 18z"/>
+        <path fill="#FBBC05" d="M3.9 10.7a5.4 5.4 0 0 1 0-3.4V5H.9a9 9 0 0 0 0 8l3-2.3z"/>
+        <path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.4 1.3l2.6-2.6A9 9 0 0 0 .9 5l3 2.3C4.6 5.2 6.6 3.6 9 3.6z"/>
+      </svg>
+      Continue with Google
+    </button>
+    <p class="ui-note">
+      We ask Google for your email address and nothing else. There is no password
+      to choose, no confirmation mail to wait for, and nothing to reset.
+    </p>
+  </section>
+
+  <!-- signed in -------------------------------------------------------- -->
+  <div id="signed-in" hidden>
+
+    <section class="ui-card">
+      <h2 class="ui-h2">Your companies</h2>
+      <p class="ui-sub">
+        Claim the company you hire for. If your email is at the company's own
+        domain, it is approved straight away — otherwise a person checks it.
+      </p>
+      <ul class="ui-list" id="company-list"></ul>
+      <form class="ui-form inline" id="claim-form">
+        <label class="sr-only" for="claim-company">Company</label>
+        <input class="field" id="claim-company" list="company-options" required
+               placeholder="Start typing your company's name…" autocomplete="off">
+        <datalist id="company-options"></datalist>
+        <button type="submit" class="btn primary">Claim</button>
+      </form>
+      <p class="ui-said" id="claim-said" role="status"></p>
+    </section>
+
+    <section class="ui-card">
+      <div class="ui-card-head">
+        <h2 class="ui-h2">Post a job</h2>
+        <button type="button" class="btn ghost" id="post-toggle" aria-expanded="false"
+                aria-controls="post-form">New posting</button>
+      </div>
+      <form class="ui-form" id="post-form" hidden>
+        <input type="hidden" id="post-id">
+        <div class="emp-grid">
+          <p class="emp-field span-2">
+            <label class="emp-label" for="f-company">Company</label>
+            <select class="field" id="f-company" required></select>
+          </p>
+          <p class="emp-field span-2">
+            <label class="emp-label" for="f-title">Job title</label>
+            <input class="field" id="f-title" required minlength="3" maxlength="120"
+                   placeholder="Senior Backend Engineer">
+          </p>
+          <p class="emp-field">
+            <label class="emp-label" for="f-family">Field</label>
+            <select class="field" id="f-family"></select>
+          </p>
+          <p class="emp-field">
+            <label class="emp-label" for="f-city">City</label>
+            <input class="field" id="f-city" maxlength="80" placeholder="Tehran">
+          </p>
+          <p class="emp-field">
+            <label class="emp-label" for="f-seniority">Seniority</label>
+            <input class="field" id="f-seniority" maxlength="80" placeholder="Senior">
+          </p>
+          <p class="emp-field">
+            <label class="emp-label" for="f-work">Work type</label>
+            <input class="field" id="f-work" maxlength="80" placeholder="Full time">
+          </p>
+          <p class="emp-field">
+            <label class="emp-label" for="f-min">Salary from <span class="emp-opt">optional</span></label>
+            <input class="field" id="f-min" type="number" min="0" inputmode="numeric">
+          </p>
+          <p class="emp-field">
+            <label class="emp-label" for="f-max">Salary to <span class="emp-opt">optional</span></label>
+            <input class="field" id="f-max" type="number" min="0" inputmode="numeric">
+          </p>
+          <p class="emp-field span-2">
+            <label class="emp-label" for="f-url">Where to apply <span class="emp-opt">optional</span></label>
+            <input class="field" id="f-url" type="url" inputmode="url"
+                   placeholder="https://acme.ir/careers/backend">
+          </p>
+          <p class="emp-field span-2">
+            <label class="emp-check" for="f-remote">
+              <input type="checkbox" id="f-remote">
+              <span>This role can be done remotely</span>
+            </label>
+          </p>
+          <p class="emp-field span-2">
+            <label class="emp-label" for="f-desc">The job</label>
+            <textarea class="field tall" id="f-desc" required minlength="80" maxlength="8000"
+                      placeholder="What the role involves, what you need from someone, and what you offer. The tools and concepts you name here are what people search by."></textarea>
+            <span class="emp-count" id="desc-count">0 / 8000</span>
+          </p>
+        </div>
+        <div class="emp-actions">
+          <button type="submit" class="btn primary" id="post-send">Send for review</button>
+          <button type="button" class="btn ghost" id="post-cancel">Cancel</button>
+          <span class="ui-said" id="post-said" role="status"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="ui-card">
+      <h2 class="ui-h2">Your postings</h2>
+      <ul class="ui-list" id="posting-list"></ul>
+      <p class="ui-sub" id="posting-empty" hidden>
+        Nothing yet. Claim a company above, then post your first role.
+      </p>
+    </section>
+  </div>
+
+  <p class="emp-offline" id="offline" hidden>
+    Posting is not switched on for this deployment yet. The dashboard still works —
+    there is simply nowhere to send a new job.
+  </p>
+</main>
+
+<footer class="ui-foot">
+  <a href="./">About</a> · <a href="dashboard.html">Dashboard</a> · <a href="feeds.html">Feeds</a>
+</footer>
+
+<script src="employer.js?v=09a61a9f"></script>
+</body>
+</html>

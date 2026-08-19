@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>jooob — sign in</title>
+<meta name="description" content="Sign in to jooob with Google. No password to choose, no confirmation email to wait for, and nothing to reset.">
+<meta name="robots" content="noindex,follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="base.css?v=d8dc3828">
+<link rel="stylesheet" href="login.css?v=0f97af16">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+</head>
+<body class="ui-body">
+
+<header class="ui-top">
+  <a class="ui-brand" href="./"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+      <style>.orb{transform-origin:32px 32px;transform-box:view-box;animation:rev linear infinite}
+      .o1{animation-duration:28s}.o2{animation-duration:46s;animation-direction:reverse}
+      .o3{animation-duration:72s}@keyframes rev{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){.orb{animation:none}}</style>
+      <g fill="none" stroke="currentColor" stroke-width="3.5">
+        <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+        <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+      <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+      <g class="orb o1"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+      <g class="orb o2"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+      <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
+    </svg><span>jooob</span></a>
+  <div class="ui-who">
+    <button type="button" class="btn ghost icon" id="theme-btn" aria-label="Switch theme">◐</button>
+  </div>
+</header>
+
+<main class="ui-main li-main">
+
+  <section class="ui-card li-card">
+
+    <!-- signing in ---------------------------------------------------- -->
+    <div id="signed-out" hidden>
+      <svg class="li-lockup" viewBox="0 0 304 84" role="img" aria-label="jooob">
+  <title id="jl-t">jooob</title>
+  <desc id="jl-d">jooob lockup: three concentric orbits with small bodies beside the lowercase wordmark jooob, drawn as geometric monoline letterforms.</desc>
+  <g transform="translate(8 8)">
+    <g fill="none" stroke="currentColor" stroke-width="3.5">
+      <circle cx="32" cy="32" r="11"/>
+      <circle cx="32" cy="32" r="18.5" opacity=".72"/>
+      <circle cx="32" cy="32" r="26" opacity=".5"/>
+    </g>
+    <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+    <circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/>
+    <circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/>
+    <circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round">
+    <path d="M102 25.5 V65 A11 11 0 0 1 91 76"/>
+    <circle cx="136" cy="40" r="14.5"/>
+    <circle cx="182" cy="40" r="14.5"/>
+    <circle cx="228" cy="40" r="14.5"/>
+    <path d="M261.5 8 V54.5"/>
+    <circle cx="276" cy="40" r="14.5"/>
+  </g>
+  <circle cx="102" cy="8" r="5.5" fill="currentColor"/>
+  <circle cx="192.3" cy="29.8" r="7.5" fill="#6ea8ff"/>
+</svg>
+      <h1 class="li-h1">Sign in</h1>
+      <p class="ui-sub li-lede">
+        There is one way in, and it is one click. Google confirms who you are, so
+        there is no password to choose, no confirmation mail to wait for, and
+        nothing that can be reset by somebody who is not you.
+      </p>
+
+      <button type="button" class="btn primary lg li-google" id="sign-in">
+        <svg class="g-mark" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+          <path fill="#4285F4" d="M17.6 9.2c0-.6-.1-1.3-.2-1.9H9v3.5h4.8a4.1 4.1 0 0 1-1.8 2.7v2.2h2.9c1.7-1.6 2.7-3.9 2.7-6.5z"/>
+          <path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.3c-.8.6-1.9.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H.9v2.3A9 9 0 0 0 9 18z"/>
+          <path fill="#FBBC05" d="M3.9 10.7a5.4 5.4 0 0 1 0-3.4V5H.9a9 9 0 0 0 0 8l3-2.3z"/>
+          <path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.4 1.3l2.6-2.6A9 9 0 0 0 .9 5l3 2.3C4.6 5.2 6.6 3.6 9 3.6z"/>
+        </svg>
+        Continue with Google
+      </button>
+
+      <p class="li-scope">
+        We ask Google for your email address and nothing else — no profile, no
+        picture, no contacts.
+      </p>
+
+      <div class="li-why">
+        <div class="li-why-row">
+          <svg class="li-why-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <div>
+            <strong>Looking for work?</strong>
+            <span>You do not need this. The dashboard works signed out and your
+              skills stay in your browser. Sign in only if you want the same list
+              on your phone and your laptop — and then it does record what you
+              claim and what you search for.</span>
+          </div>
+        </div>
+        <div class="li-why-row">
+          <svg class="li-why-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div>
+            <strong>Hiring?</strong>
+            <span>You do need this, so we know the postings are really yours. If
+              your address is at your company's own domain, you are approved
+              straight away.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- already signed in --------------------------------------------- -->
+    <div id="signed-in" hidden>
+      <h1 class="li-h1">You are signed in</h1>
+      <p class="ui-sub li-lede">as <strong id="who-email"></strong></p>
+      <div class="li-actions">
+        <a class="btn primary" id="continue" href="dashboard.html">Continue</a>
+        <button type="button" class="btn ghost" id="sign-out">Sign out</button>
+      </div>
+    </div>
+
+    <p class="ui-said" id="said" role="status"></p>
+  </section>
+
+  <p class="li-offline" id="offline" hidden>
+    Accounts are not switched on for this deployment yet. Everything else on the
+    site works without one.
+  </p>
+</main>
+
+<footer class="ui-foot">
+  <a href="./">About</a> ·
+  <a href="dashboard.html">Dashboard</a> ·
+  <a href="employer.html">For employers</a>
+</footer>
+
+<script src="login.js?v=96a3c8bb"></script>
+</body>
+</html>

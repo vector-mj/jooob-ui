@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+  <style>
+    .orb { transform-origin: 32px 32px; transform-box: view-box; animation: rev linear infinite; }
+    .o1 { animation-duration: 28s; }
+    .o2 { animation-duration: 46s; animation-direction: reverse; }
+    .o3 { animation-duration: 72s; }
+    @keyframes rev { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .orb { animation: none; } }
+  </style>
+  <g fill="none" stroke="currentColor" stroke-width="3.5">
+    <circle cx="32" cy="32" r="11"/>
+    <circle cx="32" cy="32" r="18.5" opacity=".72"/>
+    <circle cx="32" cy="32" r="26" opacity=".5"/>
+  </g>
+  <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+  <g class="orb o1"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+  <g class="orb o2"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+  <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
+</svg>

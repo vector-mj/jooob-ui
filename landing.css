@@ -1,0 +1,85 @@
+/* The front door.
+   The one page that has to work before anybody trusts the rest, so it is mostly
+   type and space. Shell and buttons come from base.css. */
+
+.lp-main { max-width: 960px; gap: var(--space-6); }
+
+/* --- the pitch ----------------------------------------------------------- */
+.lp-hero { text-align: center; padding: var(--space-6) 0 var(--space-2); }
+.lp-eyebrow { margin: 0 0 var(--space-3); font-size: .74rem; font-weight: 600;
+              text-transform: uppercase; letter-spacing: .1em; color: var(--ok); }
+.lp-lede { margin: 0 auto var(--space-5); max-width: 56ch; color: var(--text-muted);
+           font-size: clamp(.98rem, 2.4vw, 1.1rem); line-height: 1.65; }
+.lp-cta { display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; }
+
+/* --- live figures, so the pitch is checkable ----------------------------- */
+.lp-figures { display: flex; justify-content: center; gap: var(--space-6);
+              flex-wrap: wrap; margin: var(--space-6) 0 0; }
+.lp-figure { display: flex; flex-direction: column; align-items: center; gap: .1rem; }
+.lp-figure dt { font-size: 1.6rem; font-weight: 700; letter-spacing: -.02em;
+                font-variant-numeric: tabular-nums; }
+.lp-figure dd { margin: 0; font-size: .76rem; color: var(--text-faint);
+                text-transform: uppercase; letter-spacing: .06em; }
+
+/* --- three audiences, three cards ---------------------------------------- */
+.lp-cards { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
+.lp-card { display: flex; flex-direction: column; align-items: flex-start; }
+.lp-card .btn { margin-block-start: auto; }
+/* an inline SVG rather than an emoji: an emoji is a font the visitor may not
+   have, and a missing one renders as a tofu box on the first screen they see */
+.lp-icon { width: 26px; height: 26px; color: var(--accent);
+           margin-block-end: var(--space-3); }
+
+/* --- the promises -------------------------------------------------------- */
+.lp-list { margin: 0; padding: 0; list-style: none;
+           display: flex; flex-direction: column; gap: var(--space-3); }
+.lp-list li { padding-inline-start: 1.4rem; position: relative;
+              color: var(--text-muted); font-size: .88rem; line-height: 1.6; }
+.lp-list li::before { content: "✓"; position: absolute; inset-inline-start: 0;
+                      color: var(--ok); font-size: .85rem; top: .05rem; }
+.lp-list strong { color: var(--text); }
+
+@media (min-width: 760px) {
+  .lp-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .lp-hero { padding-block-start: var(--space-4); }
+  .lp-figures { gap: var(--space-4); }
+  .lp-figure dt { font-size: 1.3rem; }
+  /* full-width buttons stack better than two half-width ones that wrap */
+  .lp-cta { flex-direction: column; }
+  .lp-cta .btn { width: 100%; }
+}
+
+/* --- the galaxy ---------------------------------------------------------- */
+/* Behind everything and ignoring the pointer, so it can never be the reason a
+   button does not click. Fixed rather than scrolling with the page: it is a
+   backdrop, and a backdrop that scrolls reads as a very slow bug. */
+/* A <canvas> is a replaced element, so `inset: 0` with `width: auto` falls back
+   to its intrinsic size rather than stretching -- measured at 525x262 on a
+   412px phone, which scrolled the page sideways. Hence the explicit size. The
+   `overflow-x: clip` below is the belt to that braces: a purely decorative
+   backdrop must never be able to produce a scrollbar, whatever it does next. */
+.lp-galaxy { position: fixed; inset: 0; width: 100%; height: 100%;
+             z-index: 0; pointer-events: none;
+             /* it fades out down the page so the text below never fights it */
+             mask-image: linear-gradient(180deg, #000 0%, #000 42%, transparent 78%);
+             -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 42%, transparent 78%); }
+
+/* the page itself sits above the backdrop */
+.lp-main, .ui-top, .ui-foot { position: relative; z-index: 1; }
+
+/* the hero reads against the galaxy rather than on top of a busy patch of it */
+.lp-hero { position: relative; }
+/* Vertical bleed only. Letting the glow spread -18% sideways pushed the
+   document to 471px inside a 412px viewport, and the fixed canvas then sized
+   itself to the document rather than the window -- one overflow producing two
+   symptoms. */
+.lp-hero::before { content: ""; position: absolute; inset: -14% 0; z-index: -1;
+                   background: radial-gradient(ellipse at center,
+                     color-mix(in srgb, var(--bg) 78%, transparent) 0%,
+                     transparent 72%); }
+
+/* the galaxy is decoration; it does not get a vote on the page's width */
+.ui-body { overflow-x: clip; }

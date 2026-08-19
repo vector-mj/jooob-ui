@@ -1,0 +1,72 @@
+/* The front door, and the smallest script on the site.
+ *
+ * Its only job is to put real numbers under the pitch. A landing page that
+ * claims coverage without showing any is asking to be taken on faith, and the
+ * figures are already sitting in the file the dashboard reads -- so they cost
+ * one fetch and no backend at all.
+ *
+ * If that fetch fails the em-dashes simply stay: the page is written to be
+ * complete without them.
+ */
+'use strict';
+
+const THEME_KEY = 'jooob.theme';
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  try { localStorage.setItem(THEME_KEY, theme); } catch { /* private mode */ }
+}
+
+setTheme(localStorage.getItem(THEME_KEY)
+  || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+
+document.querySelector('#theme-btn').addEventListener('click', () => setTheme(
+  document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
+
+/** How long ago, in the words a person would use. */
+function when(stamp) {
+  const at = Date.parse(stamp);
+  if (!at) return '—';
+  const hours = Math.round((Date.now() - at) / 3_600_000);
+  if (hours < 1) return 'just now';
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.round(hours / 24);
+  return days === 1 ? 'yesterday' : `${days}d ago`;
+}
+
+(async () => {
+  let data;
+  try {
+    data = await (await fetch('data/jooob.json', { cache: 'no-cache' })).json();
+  } catch {
+    return;                       // the placeholders stay; nothing else to do
+  }
+
+  const live = (data.jobs || []).filter((job) => job.active).length;
+  const figures = [
+    [live.toLocaleString('en-US'), 'postings'],
+    [(data.companies_known || (data.companies || []).length).toLocaleString('en-US'),
+     'companies'],
+    [when(data.generated_at), 'updated'],
+  ];
+
+  // A sign-in link only once there is something to sign in to. The front door
+  // is where somebody returning to the site looks for it, and until this the
+  // only way in was to guess at the employer page.
+  const api = (data.api && data.api.url) || '';
+  const slot = document.querySelector('#signin-slot');
+  if (api && slot) {
+    const link = document.createElement('a');
+    link.className = 'btn ghost';
+    link.textContent = 'Sign in';
+    link.href = `login.html?next=${encodeURIComponent(location.href)}`;
+    slot.append(link);
+  }
+
+  const slots = document.querySelectorAll('#figures .lp-figure');
+  figures.forEach(([value, label], i) => {
+    if (!slots[i]) return;
+    slots[i].querySelector('dt').textContent = value;
+    slots[i].querySelector('dd').textContent = label;
+  });
+})();

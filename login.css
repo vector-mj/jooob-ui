@@ -1,0 +1,41 @@
+/* Sign-in.
+   One card, centred, nothing else on the page. A sign-in screen with a second
+   thing to look at is a sign-in screen people mis-click. */
+
+.li-main { max-width: 480px; justify-content: center; }
+
+.li-card { text-align: center; padding: var(--space-6) var(--space-5); }
+.li-h1 { margin: 0 0 var(--space-3); font-size: 1.5rem; letter-spacing: -.02em; }
+.li-lede { text-align: center; margin-inline: auto; max-width: 40ch; }
+
+/* the one action on the page, so it gets the whole width */
+.li-google { width: 100%; }
+
+.li-scope { margin: var(--space-3) 0 0; font-size: .78rem; color: var(--text-faint);
+            line-height: 1.5; }
+
+/* --- who this is for ----------------------------------------------------- */
+.li-why { margin-block-start: var(--space-6); display: flex; flex-direction: column;
+          gap: var(--space-4); text-align: start;
+          border-block-start: 1px solid var(--line); padding-block-start: var(--space-5); }
+.li-why-row { display: flex; gap: var(--space-3); align-items: flex-start; }
+.li-why-icon { width: 20px; height: 20px; flex: none; color: var(--accent);
+               margin-block-start: .1rem; }
+.li-why-row strong { display: block; font-size: .86rem; margin-block-end: .15rem; }
+.li-why-row span { display: block; font-size: .82rem; color: var(--text-muted);
+                   line-height: 1.55; }
+
+.li-actions { display: flex; gap: var(--space-3); justify-content: center;
+              flex-wrap: wrap; margin-block-start: var(--space-4); }
+
+.li-offline { margin: var(--space-5) auto 0; max-width: 40ch; text-align: center;
+              color: var(--text-muted); font-size: .88rem; line-height: 1.6; }
+
+@media (max-width: 600px) {
+  .li-card { padding: var(--space-5) var(--space-4); }
+  .li-actions .btn { width: 100%; }
+}
+
+/* the full lockup, inlined so its currentColor ink follows the theme */
+.li-lockup { display: block; width: 148px; height: auto; margin: 0 auto var(--space-4);
+             color: var(--text); }

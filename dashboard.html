@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jooob — job market analytics</title>
+<meta name="description" content="Analytics over scraped job boards: demand by company, department and city, tool and concept frequency, what sets each department apart, and how requirements cluster together.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="base.css?v=d8dc3828">
+<link rel="stylesheet" href="app.css?v=aac3e53f">
+<link rel="alternate" type="application/rss+xml" title="jooob — newest postings"
+      href="feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ── dashboard ──────────────────────────────────────────────────────── -->
+<div id="app" class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+        <style>.orb{transform-origin:32px 32px;transform-box:view-box;animation:rev linear infinite}
+        .o1{animation-duration:28s}.o2{animation-duration:46s;animation-direction:reverse}
+        .o3{animation-duration:72s}@keyframes rev{to{transform:rotate(360deg)}}
+        @media (prefers-reduced-motion:reduce){.orb{animation:none}}</style>
+        <g fill="none" stroke="currentColor" stroke-width="3.5">
+          <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+          <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+        <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+        <g class="orb o1"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+        <g class="orb o2"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+        <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
+      </svg>
+      <span class="brand-name">jooob</span>
+    </div>
+
+    <div class="viewswitch" role="group" aria-label="What this page is for">
+      <button type="button" class="view-btn" data-view-btn="me" aria-pressed="true">For me</button>
+      <button type="button" class="view-btn" data-view-btn="market" aria-pressed="false">The market</button>
+    </div>
+
+    <div class="topbar-actions">
+      <span id="account" class="account"></span>
+      <a class="ghost-btn text" href="./" title="What jooob is">About</a>
+      <a class="ghost-btn text" href="employer.html" title="Post your own jobs, free">Post a job</a>
+      <a class="ghost-btn text" href="feeds.html" title="Subscribe by RSS">Feeds</a>
+      <button type="button" id="theme-toggle" class="ghost-btn" aria-label="Switch to light theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10Z" fill="currentColor"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0 5v-2m0-16V2m10 10h-2M4 12H2m15.1 7.1-1.4-1.4M8.3 8.3 6.9 6.9m10.2 0-1.4 1.4M8.3 15.7l-1.4 1.4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Filters live under the bar rather than in it. Eleven controls on one
+       line is not a layout, and this is the row that wants the width. -->
+    <div class="filterbar">
+      <label class="sr-only" for="jobs-search">Search</label>
+      <input id="jobs-search" class="search" type="search" list="recent-searches"
+             placeholder="K8s Python RCA — terms, title, company or city…" autocomplete="off">
+      <datalist id="recent-searches"></datalist>
+      <button type="button" id="clear-searches" class="link-btn" hidden>Clear history</button>
+      <label class="sr-only" for="search-mode">Match</label>
+      <select id="search-mode" class="select">
+        <option value="all">Match all</option>
+        <option value="any">Match any</option>
+      </select>
+      <label class="sr-only" for="filter-company">Company</label>
+      <select id="filter-company" class="select"><option value="">All companies</option></select>
+      <label class="sr-only" for="filter-family">Field</label>
+      <select id="filter-family" class="select"><option value="">All fields</option></select>
+      <label class="sr-only" for="filter-fresh">Posted within</label>
+      <select id="filter-fresh" class="select">
+        <option value="7">Last 7 days</option>
+        <option value="30" selected>Last 30 days</option>
+        <option value="90">Last 90 days</option>
+        <option value="0">Any time</option>
+      </select>
+      <label class="sr-only" for="filter-only">Show</label>
+      <select id="filter-only" class="select">
+        <option value="">All postings</option>
+        <option value="saved">Saved only</option>
+        <option value="applied">Applied only</option>
+        <option value="hidden">Hidden only</option>
+      </select>
+      <label class="check"><input type="checkbox" id="filter-remote"> Remote</label>
+      <button type="button" id="filter-reset" class="ghost-btn text">Reset</button>
+    </div>
+
+  <div id="coverage" class="coverage" role="status" hidden></div>
+  <div id="load-error" class="load-error" role="alert" hidden></div>
+  <div id="filter-chips" class="chips" aria-label="Active filters"></div>
+
+  <main class="main">
+
+    <!-- the seeker's own things: their skills, their figures, their next step -->
+    <section class="card span-12 me-card" data-view="me" aria-labelledby="h-me">
+      <header class="card-head">
+        <h2 id="h-me">Your skills</h2>
+        <p class="card-sub">Kept in this browser only. Every panel and the match
+          column below are counted against them.</p>
+      </header>
+      <div class="skill-entry">
+        <label class="sr-only" for="skill-input">Add a skill</label>
+        <input id="skill-input" class="search" type="text" list="skill-options"
+               placeholder="Type a tool or concept — Python, K8s, Agile…" autocomplete="off">
+        <datalist id="skill-options"></datalist>
+        <span id="skill-note" class="card-sub" role="status"></span>
+      </div>
+      <div id="my-skills" class="chips"></div>
+      <div class="kpis" id="my-kpis"></div>
+    </section>
+
+    <section class="kpis" id="kpis" data-view="market" aria-label="Key figures"></section>
+
+    <div class="grid" id="grid">
+
+      <section class="card span-12" data-view="me" aria-labelledby="h-gap">
+        <header class="card-head">
+          <h2 id="h-gap">What to learn next</h2>
+          <p class="card-sub" id="sub-gap"></p>
+        </header>
+        <div class="chart" id="chart-gap" role="img"
+             aria-label="Bar chart of requirements you are missing, ranked by how many postings ask for them"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-gap"></div></details>
+      </section>
+
+      <section class="card span-6" data-view="market" aria-labelledby="h-tech">
+        <header class="card-head">
+          <h2 id="h-tech">Most demanded tools</h2>
+          <p class="card-sub" id="sub-tech"></p>
+        </header>
+        <div class="chart" id="chart-tech" role="img" aria-label="Bar chart of most demanded tools"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-tech"></div></details>
+      </section>
+
+      <section class="card span-6" data-view="market" aria-labelledby="h-concepts">
+        <header class="card-head">
+          <h2 id="h-concepts">Concepts &amp; standards</h2>
+          <p class="card-sub" id="sub-concepts"></p>
+          <div class="cat-chips" id="concept-categories" role="group"
+               aria-label="Filter concepts by category"></div>
+        </header>
+        <div class="chart" id="chart-concepts" role="img" aria-label="Bar chart of most demanded concepts and standards"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-concepts"></div></details>
+      </section>
+
+      <section class="card span-6" data-view="market" aria-labelledby="h-company">
+        <header class="card-head">
+          <h2 id="h-company">Hiring by company</h2>
+          <p class="card-sub" id="sub-company"></p>
+        </header>
+        <div class="chart" id="chart-company" role="img" aria-label="Bar chart of postings per company"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-company"></div></details>
+      </section>
+
+      <section class="card span-6" data-view="market" aria-labelledby="h-city">
+        <header class="card-head">
+          <h2 id="h-city">Where the jobs are</h2>
+          <p class="card-sub" id="sub-city"></p>
+        </header>
+        <div class="chart" id="chart-city" role="img" aria-label="Bar chart of postings per city"></div>
+      </section>
+
+      <section class="card span-12" data-view="market" aria-labelledby="h-trend">
+        <header class="card-head">
+          <h2 id="h-trend">Tool demand by quarter</h2>
+          <p class="card-sub" id="sub-trend"></p>
+        </header>
+        <div class="chart" id="chart-trend" role="img" aria-label="Line chart of tool demand per quarter"></div>
+      </section>
+
+      <section class="card span-5" data-view="market" aria-labelledby="h-seniority">
+        <header class="card-head">
+          <h2 id="h-seniority">What each level is asked for</h2>
+          <p class="card-sub" id="sub-seniority"></p>
+        </header>
+        <div class="chart tall" id="chart-seniority" role="img" aria-label="Heatmap of tool demand per seniority level"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-seniority"></div></details>
+      </section>
+
+      <section class="card span-7" data-view="market" aria-labelledby="h-heatmap">
+        <header class="card-head">
+          <h2 id="h-heatmap">Tools by field</h2>
+          <p class="card-sub" id="sub-heatmap"></p>
+        </header>
+        <div class="chart tall" id="chart-heatmap" role="img" aria-label="Heatmap of tool mentions per department"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-heatmap"></div></details>
+      </section>
+
+      <section class="card span-12" data-view="market" aria-labelledby="h-distinctive">
+        <header class="card-head">
+          <h2 id="h-distinctive">What makes each field different</h2>
+          <p class="card-sub" id="sub-distinctive"></p>
+        </header>
+        <div class="chart tall" id="chart-distinctive" role="img"
+             aria-label="Bar chart of requirements each department asks for more often than average"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-distinctive"></div></details>
+      </section>
+
+      <section class="card span-12" data-view="market" aria-labelledby="h-network">
+        <header class="card-head">
+          <h2 id="h-network">How requirements cluster</h2>
+          <p class="card-sub" id="sub-network">Requirements joined when the same posting asks for both.</p>
+        </header>
+        <div class="chart tall" id="chart-network" role="img" aria-label="Network graph of tools requested together"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-network"></div></details>
+      </section>
+
+      <section class="card span-12" data-view="market" aria-labelledby="h-timeline">
+        <header class="card-head"><h2 id="h-timeline">Monthly trend</h2></header>
+        <div class="chart short" id="chart-timeline" role="img" aria-label="Line chart of postings per month"></div>
+      </section>
+
+      <section class="card span-12 jobs-card" data-view="both" aria-labelledby="h-jobs">
+        <header class="card-head">
+          <h2 id="h-jobs">Postings</h2>
+          <!-- the search box used to live here, which misrepresented its reach:
+               it re-scopes every panel on the page, so it belongs in the bar
+               with the other filters, not inside one card -->
+          <div class="table-tools">
+            <span id="jobs-count" class="card-sub"></span>
+          </div>
+        </header>
+        <div class="table-wrap" id="jobs-table"></div>
+        <nav class="pager" id="jobs-pager" aria-label="Pagination"></nav>
+      </section>
+
+      <section class="card span-12" data-view="both" aria-labelledby="h-ladder">
+        <header class="card-head">
+          <h2 id="h-ladder">What each step up asks for</h2>
+          <p class="card-sub" id="sub-ladder"></p>
+        </header>
+        <div class="chart tall" id="chart-ladder" role="img"
+             aria-label="Bar chart of requirements each seniority level asks for more often than average"></div>
+        <details class="table-fallback"><summary>View as table</summary><div id="table-ladder"></div></details>
+      </section>
+
+    </div>
+
+    <footer class="foot">
+      <span id="foot-note"></span>
+    </footer>
+  </main>
+</div>
+
+<!-- one drawer, three subjects: a posting, an employer, a requirement. Native
+     <dialog>, so Escape, focus trapping and the backdrop are the browser's job
+     rather than three hundred lines of ours. -->
+<dialog id="drawer" class="drawer" aria-labelledby="drawer-title">
+  <header class="drawer-head">
+    <h2 id="drawer-title" class="bidi"></h2>
+    <button type="button" id="drawer-close" class="ghost-btn" aria-label="Close">✕</button>
+  </header>
+  <div id="drawer-body" class="drawer-body"></div>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"
+        integrity="sha384-Mx5lkUEQPM1pOJCwFtUICyX45KNojXbkWdYhkKUKsbv391mavbfoAmONbzkgYPzR" crossorigin="anonymous"></script>
+<script src="app.js?v=6dd47088"></script>
+</body>
+</html>
