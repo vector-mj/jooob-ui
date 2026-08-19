@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/base.css?v=d76cfa81">
-<link rel="stylesheet" href="/admin.css?v=826b14c1">
+<link rel="stylesheet" href="/admin.css?v=94d0874b">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
 
 <script>
@@ -67,6 +67,37 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
     <ul class="ui-list queue" id="queue-list"></ul>
   </section>
 
+  <section class="ui-card" id="manage-card">
+    <div class="ui-card-head">
+      <h2 class="ui-h2">Everything else</h2>
+      <div class="queue-tools">
+        <div class="seg" id="manage-switch" role="group" aria-label="Which records"></div>
+      </div>
+    </div>
+    <p class="ui-sub">
+      Every row this site keeps, whatever state it is in. Publishing and turning
+      down are the same decisions the queue makes; editing corrects a row, and
+      deleting takes it out of the database for good, which turning down does
+      not.
+    </p>
+
+    <div class="manage-controls">
+      <label class="sr-only" for="manage-q">Search</label>
+      <input class="field" id="manage-q" type="search" placeholder="Search" autocomplete="off">
+      <label class="sr-only" for="manage-state">State</label>
+      <select class="field" id="manage-state"></select>
+      <button type="button" class="btn ghost" id="manage-add">Write a posting</button>
+    </div>
+
+    <div id="manage-add-host"></div>
+    <p class="ui-said" id="manage-said" role="status"></p>
+    <ul class="ui-list" id="manage-list"></ul>
+    <div class="manage-pager">
+      <button type="button" class="btn ghost sm" id="manage-prev">Newer</button>
+      <button type="button" class="btn ghost sm" id="manage-next">Older</button>
+    </div>
+  </section>
+
   <section class="ui-card" id="unlock-card">
     <h2 class="ui-h2">The numbers</h2>
     <p class="ui-sub">
@@ -97,7 +128,7 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
 
     <section class="ui-card">
       <div class="ui-card-head">
-        <h2 class="ui-h2">What people looked for</h2>
+        <h2 class="ui-h2" id="top-head">What people looked for</h2>
         <div class="seg" id="top-switch" role="group" aria-label="Which list"></div>
       </div>
       <ol class="rank" id="top-list"></ol>
@@ -123,6 +154,6 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
   <a href="/">The dashboard</a> · <a href="/employer">For employers</a>
 </footer>
 
-<script src="/admin.js?v=27c18a0a"></script>
+<script src="/admin.js?v=7fedb6c1"></script>
 </body>
 </html>

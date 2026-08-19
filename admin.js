@@ -48,7 +48,9 @@ const clear = (node) => { while (node.firstChild) node.removeChild(node.firstChi
 const num = (n) => Number(n || 0).toLocaleString('en-US');
 
 const state = { api: '', pass: '', report: null, kind: 'search',
-                queue: null, counts: {}, tab: 'reviews', touched: false };
+                queue: null, counts: {}, tab: 'reviews', touched: false,
+                titles: new Map(),
+                manage: { kind: 'review', offset: 0 } };
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
@@ -269,6 +271,356 @@ async function loadQueue() {
   button.disabled = false;
 }
 
+/* ── everything, not just what is waiting ─────────────────────────────── */
+
+/* The queue above is the short list of things nobody has looked at yet. This is
+ * the rest of the database: any row, in any state, searchable, with the three
+ * operations the queue cannot express -- correct one, write one by hand, or
+ * take one out for good.
+ *
+ * Deleting is kept visibly apart from turning something down. Turning down is a
+ * verdict and keeps the row, so it can be reconsidered; deleting is for what
+ * should not be kept at all, and it asks first because there is nothing to undo
+ * it with.
+ */
+
+/** Matches PAGE in worker/src/moderation.js. The API caps it regardless, so the
+ *  worst a disagreement causes is a pager that steps by the wrong amount. */
+const PAGE_SIZE = 50;
+
+const MANAGE = [
+  { key: 'review', label: 'Reviews', states: true, add: false, edit: true },
+  { key: 'posting', label: 'Postings', states: true, add: true, edit: true },
+  { key: 'claim', label: 'Employers', states: true, add: true, edit: false },
+  // Google decides these exist, so there is nothing to approve and nothing to
+  // create; they are here to be found and, when somebody asks, removed.
+  { key: 'user', label: 'Accounts', states: false, add: false, edit: false },
+];
+
+const STATES = [
+  ['all', 'Any state'],
+  ['waiting', 'Waiting'],
+  ['live', 'Published'],
+  ['refused', 'Turned down'],
+];
+
+/* One definition per kind, used for both the edit form and the add form, so the
+ * two cannot drift into disagreeing about what a posting is. */
+const FIELDS = {
+  posting: [
+    { name: 'slug', label: 'Company slug', required: true },
+    { name: 'title', label: 'Title', required: true },
+    { name: 'family', label: 'Job family' },
+    { name: 'city', label: 'City' },
+    { name: 'work_type', label: 'Work type' },
+    { name: 'seniority', label: 'Seniority' },
+    { name: 'min_salary', label: 'Salary from', type: 'number' },
+    { name: 'max_salary', label: 'Salary to', type: 'number' },
+    { name: 'url', label: 'Link', type: 'url' },
+    { name: 'is_remote', label: 'Remote', type: 'checkbox' },
+    { name: 'active', label: 'Still open', type: 'checkbox', editOnly: true },
+    { name: 'description', label: 'Description', type: 'textarea', required: true },
+  ],
+  // Only where it was filed, never what it says. A review filed against the
+  // wrong employer is a factual error about which company it concerns; its text
+  // is what a person actually wrote, and a site that can rewrite that and
+  // publish the result as their words is not moderating.
+  review: [
+    { name: 'source', label: 'Board', required: true },
+    { name: 'slug', label: 'Company slug', required: true },
+  ],
+  claim: [
+    { name: 'sub', label: 'Account id', required: true },
+    { name: 'source', label: 'Board', required: true },
+    { name: 'slug', label: 'Company slug', required: true },
+  ],
+};
+
+const APPROVAL = {
+  1: { text: 'Published', class: 'pill ok' },
+  0: { text: 'Waiting', class: 'pill wait' },
+  '-1': { text: 'Turned down', class: 'pill off' },
+};
+
+/** The id the API knows a row by: a claim by its three-part handle, everything
+ *  else by its own primary key. */
+const rowId = (kind, row) => (kind === 'claim' ? row.handle : row[kind === 'user' ? 'sub' : 'id']);
+
+const api = (path) => `${state.api.replace(/\/$/, '')}${path}`;
+
+/** One call to the management API, with the failure reported rather than
+ *  swallowed -- a management screen that silently does nothing is worse than
+ *  one that refuses out loud. */
+async function ask(path, options = {}) {
+  const response = await fetch(api(path), {
+    credentials: 'include',
+    ...options,
+    headers: options.body ? { 'content-type': 'application/json' } : undefined,
+  });
+  if (response.status === 401) {
+    location.replace(`/login?next=${encodeURIComponent(location.href)}`);
+    throw new Error('signed out');
+  }
+  const body = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(body.error || `HTTP ${response.status}`);
+  return body;
+}
+
+/** What an account looks like in a list. The other three already have a shape
+ *  the queue uses; this one is only ever seen here. */
+function describeUser(row) {
+  return {
+    title: row.email || row.sub,
+    meta: bits(row.domain, row.is_admin ? 'admin' : '',
+               row.seen_at ? `last seen ${day(row.seen_at)}` : `joined ${day(row.created_at)}`),
+    body: '',
+  };
+}
+
+/* ── the form, for both adding and correcting ─────────────────────────── */
+
+function fieldControl(field, value) {
+  if (field.type === 'textarea') {
+    const box = el('textarea', { class: 'field', attrs: { name: field.name, rows: '5' } });
+    box.value = value == null ? '' : String(value);
+    return box;
+  }
+  const input = el('input', { class: 'field',
+                              attrs: { name: field.name, type: field.type || 'text' } });
+  if (field.type === 'checkbox') input.checked = Boolean(Number(value));
+  else input.value = value == null ? '' : String(value);
+  return input;
+}
+
+/** Read a form back into the shape the API takes. */
+function collect(form, fields) {
+  const row = {};
+  for (const field of fields) {
+    const control = form.elements[field.name];
+    if (!control) continue;
+    if (field.type === 'checkbox') row[field.name] = control.checked;
+    else if (field.type === 'number') {
+      row[field.name] = control.value === '' ? null : Number(control.value);
+    } else row[field.name] = control.value;
+  }
+  return row;
+}
+
+/** An edit or add form, built from the one field list. */
+function formFor(kind, values, { adding = false } = {}) {
+  const fields = (FIELDS[kind] || []).filter((f) => !(adding && f.editOnly));
+  const form = el('form', { class: 'manage-form' });
+
+  for (const field of fields) {
+    const control = fieldControl(field, (values || {})[field.name]);
+    if (field.required) control.required = true;
+    form.append(el('label', { class: `manage-field${field.type === 'textarea' ? ' wide' : ''}` }, [
+      el('span', { class: 'ui-row-meta', text: field.label }),
+      control,
+    ]));
+  }
+
+  form.append(el('div', { class: 'manage-form-actions' }, [
+    el('button', { class: 'btn primary sm', text: adding ? 'Create' : 'Save',
+                   attrs: { type: 'submit' } }),
+    el('button', { class: 'btn ghost sm', text: 'Cancel',
+                   attrs: { type: 'button', 'data-cancel': '1' } }),
+  ]));
+  return { form, fields };
+}
+
+/* ── the list ─────────────────────────────────────────────────────────── */
+
+function manageTabs() {
+  const host = $('#manage-switch');
+  clear(host);
+  for (const entry of MANAGE) {
+    const on = entry.key === state.manage.kind;
+    const button = el('button', {
+      class: on ? 'seg-btn on' : 'seg-btn', text: entry.label,
+      attrs: { type: 'button', 'aria-pressed': String(on) },
+    });
+    button.addEventListener('click', () => {
+      state.manage = { ...state.manage, kind: entry.key, offset: 0 };
+      manageTabs();
+      loadManage();
+    });
+    host.append(button);
+  }
+
+  const entry = MANAGE.find((m) => m.key === state.manage.kind) || MANAGE[0];
+  $('#manage-state').hidden = !entry.states;
+  $('#manage-add').hidden = !entry.add;
+  $('#manage-add').textContent = entry.key === 'posting' ? 'Write a posting' : 'Grant a company';
+}
+
+/** A row, its state, and everything that may be done to it. */
+function manageRow(kind, row, entry) {
+  const id = rowId(kind, row);
+  const shape = kind === 'user' ? describeUser(row) : describe(kind, row);
+  const node = el('li', { class: 'ui-row queue-row' }, [
+    el('div', { class: 'ui-row-main' }, [
+      el('span', { class: 'ui-row-title bidi', text: shape.title, attrs: { dir: 'auto' } }),
+      el('span', { class: 'ui-row-meta', text: shape.meta }),
+      shape.body
+        ? el('p', { class: 'queue-body bidi', text: shape.body, attrs: { dir: 'auto' } })
+        : null,
+    ]),
+    el('div', { class: 'ui-row-actions' }),
+  ]);
+
+  const actions = node.querySelector('.ui-row-actions');
+
+  if (entry.states) {
+    const mark = APPROVAL[String(row.approved)] || APPROVAL['0'];
+    actions.append(el('span', { class: mark.class, text: mark.text }));
+
+    // whichever verdicts this row is not already at, including the way back to
+    // waiting -- the only undo that does not mean claiming the other verdict
+    for (const [label, value] of [['Publish', true], ['Turn down', false],
+                                  ['Back to waiting', null]]) {
+      const already = (value === true && Number(row.approved) === 1)
+        || (value === false && Number(row.approved) === -1)
+        || (value === null && Number(row.approved) === 0);
+      if (already) continue;
+      const button = el('button', { class: 'btn ghost sm', text: label,
+                                    attrs: { type: 'button' } });
+      button.addEventListener('click', async () => {
+        try {
+          await ask('/admin/decide', {
+            method: 'POST',
+            body: JSON.stringify({ kind, ids: [id], approved: value }),
+          });
+          loadManage();
+        } catch (err) { say('#manage-said', err.message, true); }
+      });
+      actions.append(button);
+    }
+  }
+
+  if (entry.edit) {
+    const edit = el('button', { class: 'btn ghost sm', text: 'Edit',
+                                attrs: { type: 'button' } });
+    edit.addEventListener('click', () => {
+      if (node.querySelector('.manage-form')) return;
+      const { form, fields } = formFor(kind, row);
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        try {
+          await ask('/admin/rows', {
+            method: 'PATCH',
+            body: JSON.stringify({ kind, id, row: collect(form, fields) }),
+          });
+          loadManage();
+        } catch (err) { say('#manage-said', err.message, true); }
+      });
+      form.querySelector('[data-cancel]').addEventListener('click', () => form.remove());
+      node.append(form);
+    });
+    actions.append(edit);
+  }
+
+  // Deleting is the only thing here that cannot be walked back, so it asks --
+  // and it says what it is about to remove rather than "are you sure?"
+  const remove = el('button', { class: 'btn ghost sm danger', text: 'Delete',
+                                attrs: { type: 'button' } });
+  remove.addEventListener('click', async () => {
+    const what = kind === 'user'
+      ? `Delete ${shape.title}? Their visits stay, anonymised; what they asked us to `
+        + 'remember is deleted, and anything they posted is closed.'
+      : `Delete this ${kind} for good? Turning it down keeps it instead.`;
+    if (!window.confirm(what)) return;
+    try {
+      await ask('/admin/rows', { method: 'DELETE', body: JSON.stringify({ kind, ids: [id] }) });
+      loadManage();
+    } catch (err) { say('#manage-said', err.message, true); }
+  });
+  actions.append(remove);
+
+  return node;
+}
+
+async function loadManage() {
+  const entry = MANAGE.find((m) => m.key === state.manage.kind) || MANAGE[0];
+  const { kind, offset } = state.manage;
+  const query = $('#manage-q').value.trim();
+  const wanted = entry.states ? $('#manage-state').value : 'all';
+
+  say('#manage-said', 'Looking…');
+  try {
+    const params = new URLSearchParams({ kind, state: wanted, offset: String(offset) });
+    if (query) params.set('q', query);
+    const body = await ask(`/admin/rows?${params}`);
+
+    const list = $('#manage-list');
+    clear(list);
+    if (!body.rows.length) {
+      list.append(el('li', { class: 'ui-empty',
+                             text: query ? `Nothing matches “${query}”.` : 'Nothing here yet.' }));
+    }
+    for (const row of body.rows) list.append(manageRow(kind, row, entry));
+
+    const from = body.total ? offset + 1 : 0;
+    const to = Math.min(offset + body.rows.length, body.total);
+    say('#manage-said', body.total
+      ? `${num(from)}–${num(to)} of ${num(body.total)}` : 'Nothing to show.');
+    $('#manage-prev').disabled = offset <= 0;
+    $('#manage-next').disabled = to >= body.total;
+  } catch (err) {
+    if (err.message !== 'signed out') say('#manage-said', err.message, true);
+  }
+}
+
+/** The add form, above the list rather than inside it -- what is being created
+ *  is not yet one of the things in it. */
+function openAdd() {
+  const host = $('#manage-add-host');
+  if (host.firstChild) { clear(host); return; }
+  const kind = state.manage.kind;
+  const { form, fields } = formFor(kind, {}, { adding: true });
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    try {
+      await ask('/admin/rows', {
+        method: 'POST', body: JSON.stringify({ kind, row: collect(form, fields) }),
+      });
+      clear(host);
+      state.manage.offset = 0;
+      loadManage();
+    } catch (err) { say('#manage-said', err.message, true); }
+  });
+  form.querySelector('[data-cancel]').addEventListener('click', () => clear(host));
+  host.append(form);
+}
+
+function wireManage() {
+  $('#manage-state').append(...STATES.map(([value, label]) =>
+    el('option', { text: label, attrs: { value } })));
+
+  $('#manage-state').addEventListener('change', () => {
+    state.manage.offset = 0;
+    loadManage();
+  });
+  $('#manage-add').addEventListener('click', openAdd);
+
+  let typing;
+  $('#manage-q').addEventListener('input', () => {
+    clearTimeout(typing);
+    // one request per pause rather than per keystroke: the budget this whole
+    // site is built around is requests, not rows
+    typing = setTimeout(() => { state.manage.offset = 0; loadManage(); }, 300);
+  });
+
+  $('#manage-prev').addEventListener('click', () => {
+    state.manage.offset = Math.max(0, state.manage.offset - PAGE_SIZE);
+    loadManage();
+  });
+  $('#manage-next').addEventListener('click', () => {
+    state.manage.offset += PAGE_SIZE;
+    loadManage();
+  });
+}
+
 /* ── opening a sealed file ────────────────────────────────────────────── */
 
 /** Decrypt one blob, or throw. GCM authenticates, so a wrong passphrase fails
@@ -339,6 +691,34 @@ function renderVisits(report) {
   }
 }
 
+/* The four things a visit can be counted as, in the words the report should
+ * use for them. "search" is a column name; "What people searched for" is what
+ * the column means, and the heading has to change with the list or it is
+ * describing whichever one happens to be selected. */
+const TOP_KINDS = {
+  search: { tab: 'Searches', head: 'What people searched for' },
+  skill: { tab: 'Skills', head: 'Skills people say they have' },
+  job: { tab: 'Jobs', head: 'Postings people opened' },
+  filter: { tab: 'Filters', head: 'Filters people narrowed with' },
+};
+
+/** One counted thing, as a person should read it.
+ *
+ *  A job arrives as `source\0slug\0id`, which is the key the page counts with
+ *  and never something to show: a browser paints NUL as nothing, so the id
+ *  disappears and `candoo\0SnappPay\0912` reads as "candoo SnappPay". The
+ *  export gives the title back; without it -- a posting since taken down -- the
+ *  parts are at least joined with something visible.
+ */
+function topLabel(kind, key) {
+  const text = String(key);
+  if (kind !== 'job') return text.split('\u0000').join(' · ');
+  const [source, slug, id] = text.split('\u0000');
+  const title = state.titles.get(text);
+  if (title) return `${title} — ${slug || source}`;
+  return [slug || source, id ? `#${id}` : ''].filter(Boolean).join(' ');
+}
+
 function renderTop(report) {
   const kinds = Object.keys(report.top || {}).filter((k) => k !== 'visit');
   const host = $('#top-switch');
@@ -350,11 +730,15 @@ function renderTop(report) {
   for (const kind of kinds) {
     const on = kind === state.kind;
     const button = el('button', {
-      class: on ? 'seg-btn on' : 'seg-btn', text: kind,
+      class: on ? 'seg-btn on' : 'seg-btn',
+      text: (TOP_KINDS[kind] || {}).tab || kind,
       attrs: { type: 'button', 'aria-pressed': String(on) } });
     button.addEventListener('click', () => { state.kind = kind; renderTop(report); });
     host.append(button);
   }
+
+  $('#top-head').textContent = (TOP_KINDS[state.kind] || {}).head
+    || 'What people looked for';
 
   const list = $('#top-list');
   clear(list);
@@ -368,7 +752,8 @@ function renderTop(report) {
     const fill = el('span', { class: 'rank-fill' });
     fill.style.width = `${Math.round((n / peak) * 100)}%`;
     list.append(el('li', { class: 'rank-row' }, [
-      el('span', { class: 'rank-key bidi', text: key, attrs: { dir: 'auto' } }),
+      el('span', { class: 'rank-key bidi', text: topLabel(state.kind, key),
+                   attrs: { dir: 'auto', title: topLabel(state.kind, key) } }),
       el('span', { class: 'rank-bar' }, [fill]),
       el('span', { class: 'rank-n', text: num(n) }),
     ]));
@@ -499,11 +884,17 @@ async function boot() {
   $('#unlock-form').addEventListener('submit', unlock);
   $('#load-people').addEventListener('click', loadPeople);
   $('#queue-refresh').addEventListener('click', loadQueue);
+  wireManage();
   $('#signout').addEventListener('click', signOut);
 
   try {
     const data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
     state.api = (data.api && data.api.url) || '';
+    // the file is already downloaded for the line above, so titling the job
+    // list from it costs one pass over an array and no extra request
+    for (const job of data.jobs || []) {
+      state.titles.set(`${job.source}\u0000${job.slug}\u0000${job.id}`, job.title || '');
+    }
   } catch { /* nothing configured; unlock() says so */ }
 
   if (!state.api) {
@@ -539,6 +930,8 @@ async function boot() {
   // the queue needs the session that was just checked and nothing else, so
   // it loads straight away rather than waiting for a passphrase
   await loadQueue();
+  manageTabs();
+  await loadManage();
 }
 
 boot();

@@ -73,7 +73,14 @@
 .queue-tools { display: flex; align-items: center; gap: var(--space-2); }
 
 .queue-row { align-items: flex-start; }
-.queue-row .ui-row-actions { align-items: flex-start; flex-shrink: 0; }
+/* A queue row carries two buttons; a managed row carries a state, up to two
+   verdicts, an edit and a delete. `.ui-row-actions` does not wrap on its own,
+   so the fifth control simply left the page -- 79px of sideways scroll at
+   320px, which loses the right-hand edge of every card on the page and not
+   just the button that caused it. */
+.queue-row .ui-row-actions { align-items: flex-start; flex-shrink: 0;
+                             flex-wrap: wrap; justify-content: flex-end;
+                             max-inline-size: 100%; }
 
 /* the submitted text itself: shown in full, because approving something you
    have only seen the first line of is not moderation */
@@ -106,6 +113,49 @@
   #queue-switch { flex: 1 1 auto; min-width: 0; justify-content: space-between;
                   overflow-x: auto; scrollbar-width: none; }
   #queue-switch::-webkit-scrollbar { display: none; }
+}
+
+/* --- managing a row ------------------------------------------------------ */
+.manage-controls { display: flex; flex-wrap: wrap; gap: var(--space-2);
+                   margin-block: var(--space-3); }
+.manage-controls #manage-q { flex: 1 1 12rem; min-width: 0; }
+/* `.field` is width:100%, which in a flex row makes the select claim a line
+   of its own beside a search box that was meant to share it */
+.manage-controls #manage-state { flex: 0 0 auto; inline-size: auto; }
+
+/* The form sits under the row it edits rather than in a dialog: the row is the
+   context for the edit, and a dialog would cover the thing being corrected. */
+.manage-form { flex: 1 1 100%; display: grid; gap: var(--space-2);
+               grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+               margin-block-start: var(--space-3); padding-block-start: var(--space-3);
+               border-block-start: 1px solid var(--line); }
+.manage-field { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.manage-field.wide { grid-column: 1 / -1; }
+/* .field carries min-height: 44px for thumbs, which on a checkbox draws a
+   44px-tall box around a 16px tick */
+.manage-field input[type="checkbox"] { inline-size: 1.15rem; block-size: 1.15rem;
+                                       min-block-size: 0; padding: 0;
+                                       align-self: start; margin-block-start: .35rem; }
+.manage-form-actions { grid-column: 1 / -1; display: flex; gap: var(--space-2); }
+
+#manage-add-host:empty { display: none; }
+#manage-add-host .manage-form { border-block-start: none; margin-block-start: 0; }
+
+/* Deleting is the one action with nothing to undo it, so it does not look like
+   the ones beside it that can be reversed. */
+.btn.danger { color: var(--danger); }
+.btn.danger:hover { background: color-mix(in srgb, var(--danger) 14%, transparent); }
+
+.manage-pager { display: flex; gap: var(--space-2); justify-content: flex-end;
+                margin-block-start: var(--space-3); }
+.manage-pager .btn[disabled] { opacity: .45; cursor: default; }
+
+@media (max-width: 640px) {
+  #manage-card .ui-card-head { flex-wrap: wrap; gap: var(--space-2); }
+  #manage-switch { flex: 1 1 auto; min-width: 0; justify-content: space-between;
+                   overflow-x: auto; scrollbar-width: none; }
+  #manage-switch::-webkit-scrollbar { display: none; }
+  .manage-controls .btn { flex: 1 1 auto; }
 }
 
 /* held back until the API says who this is; see the note in the page head */
