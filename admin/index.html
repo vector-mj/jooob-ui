@@ -141,8 +141,11 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
       </div>
       <p class="ui-sub">
         Addresses against skills and searches, for the people who signed in and
-        asked us to remember them. This half is never published: it comes from a
+        asked us to remember them — which happens when they save a skill or a
+        job, not when they sign in. This half is never published: it comes from a
         private bucket, needs an admin session, and is encrypted on top of both.
+        It is sealed by the scheduled run, so it is up to a few hours behind the
+        lists above.
       </p>
       <p class="ui-said" id="people-said" role="status"></p>
       <ul class="ui-list" id="people-list"></ul>
@@ -154,6 +157,6 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
   <a href="/">The dashboard</a> · <a href="/employer">For employers</a>
 </footer>
 
-<script src="/admin.js?v=7fedb6c1"></script>
+<script src="/admin.js?v=bc1dfac4"></script>
 </body>
 </html>

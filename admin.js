@@ -824,7 +824,18 @@ async function loadPeople() {
                      text: String(person.updated_at || '').slice(0, 10) }),
       ]));
     }
-    say('#people-said', `${(report.people || []).length} account(s).`);
+    // "0 account(s)" reads as "nobody has ever signed in", which is a different
+    // and much more alarming claim than the true one. This archive is built from
+    // `profiles`, and a profile row is only written when a signed-in seeker
+    // saves a skill or a job -- signing in alone makes a `users` row and nothing
+    // here. So the empty case says which of the two it is, and where the other
+    // one is listed.
+    const held = (report.people || []).length;
+    say('#people-said', held
+      ? `${num(held)} account(s), sealed ${String(report.generated_at || '').slice(0, 10)}.`
+      : 'Nobody has asked us to remember anything yet. A row appears here once a '
+        + 'signed-in seeker saves a skill or a job; accounts that have only signed '
+        + 'in are under Everything else → Accounts.');
   } catch (err) {
     say('#people-said', err.message, true);
     if (err.offerSignIn) signInPrompt();
