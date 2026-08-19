@@ -5,11 +5,15 @@
  * that file and decrypts it here. The passphrase never leaves the tab, so
  * whoever serves this page cannot read the report they are serving.
  *
- * Two halves, and the difference matters:
- *   stats.bin   totals and cohorts, no identity. Public URL, useless without
- *               the passphrase.
- *   people.bin  addresses against skills. Never published: private bucket,
- *               fetched through the Worker, which checks the admin flag.
+ * Two halves, and neither is published:
+ *   stats.bin   totals and cohorts, carrying no identity at all.
+ *   people.bin  addresses against skills.
+ *
+ * Both sit in the private bucket and are fetched through the Worker, which
+ * checks the admin flag in the signed session cookie. The aggregate half used
+ * to sit at a public address on the argument that ciphertext without identity
+ * is safe to publish -- but a published file can be fetched once and attacked
+ * offline indefinitely, and its only reader has a session anyway.
  *
  * The format is written by jooob/analytics.py and read here, so it is stated in
  * both files in the same words:
@@ -35,7 +39,7 @@ function el(tag, opts = {}, children = []) {
 const clear = (node) => { while (node.firstChild) node.removeChild(node.firstChild); };
 const num = (n) => Number(n || 0).toLocaleString('en-US');
 
-const state = { api: '', stats: '', pass: '', report: null, kind: 'search' };
+const state = { api: '', pass: '', report: null, kind: 'search' };
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
@@ -165,6 +169,20 @@ function renderReport(report) {
 
 /* ── the private half ─────────────────────────────────────────────────── */
 
+/** A way out of the refusal, rather than a number to look up.
+ *
+ *  The passphrase alone is not enough for this half and is not meant to be: the
+ *  private archive needs a session as well, so that reaching it takes both an
+ *  admin account and a key only one person holds.
+ */
+function signInPrompt() {
+  const host = $('#people-said');
+  if (!host || host.querySelector('a')) return;
+  const link = el('a', { class: 'btn ghost', text: 'Sign in',
+    attrs: { href: `/login?next=${encodeURIComponent(location.href)}` } });
+  host.append(document.createTextNode(' '), link);
+}
+
 async function loadPeople() {
   const button = $('#load-people');
   button.disabled = true;
@@ -172,11 +190,20 @@ async function loadPeople() {
   try {
     const response = await fetch(`${state.api.replace(/\/$/, '')}/admin/archive`,
                                 { credentials: 'include' });
-    // the Worker answers 404 to anyone who is not an admin, so there is no
-    // separate "forbidden" to tell apart here
+    // Two different refusals, and the difference matters to whoever is reading
+    // it. 401 is "this browser has no session at all", which a sign-in fixes.
+    // 404 is what an admin endpoint says to everyone else -- an endpoint that
+    // answers "forbidden" has just admitted it exists -- so it also covers an
+    // archive that has not been written yet.
+    if (response.status === 401) {
+      const refused = new Error('not signed in on this browser');
+      refused.offerSignIn = true;      // `say` rewrites the line, so the way
+      throw refused;                   // out is offered after it, not before
+    }
     if (!response.ok) {
       throw new Error(response.status === 404
-        ? 'not available — sign in on this browser with an admin account first'
+        ? 'nothing to load: either this account is not an admin, or no archive '
+          + 'has been sealed yet'
         : `HTTP ${response.status}`);
     }
     const report = await unseal(await response.arrayBuffer(), state.pass);
@@ -198,6 +225,7 @@ async function loadPeople() {
     say('#people-said', `${(report.people || []).length} account(s).`);
   } catch (err) {
     say('#people-said', err.message, true);
+    if (err.offerSignIn) signInPrompt();
     button.disabled = false;
   }
 }
@@ -208,14 +236,19 @@ async function unlock(event) {
   event.preventDefault();
   const button = $('#unlock');
   state.pass = $('#pass').value;
-  if (!state.stats) {
-    say('#unlock-said', 'No sealed report is configured for this deployment yet.', true);
+  if (!state.api) {
+    say('#unlock-said', 'No API is configured for this deployment yet.', true);
     return;
   }
   button.disabled = true;
   say('#unlock-said', 'Downloading and opening…');
   try {
-    const response = await fetch(state.stats, { cache: 'no-cache' });
+    // Behind the admin session, like the person-level half. It used to be a
+    // public URL on the argument that ciphertext without identity is safe to
+    // publish; but anyone could fetch it once and attack the passphrase offline
+    // for as long as they liked, and its only reader has a session anyway.
+    const response = await fetch(`${state.api.replace(/\/$/, '')}/admin/stats`,
+                                 { credentials: 'include' });
     if (!response.ok) throw new Error(`could not fetch the report (HTTP ${response.status})`);
     renderReport(await unseal(await response.arrayBuffer(), state.pass));
   } catch (err) {
@@ -241,12 +274,34 @@ async function boot() {
   try {
     const data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
     state.api = (data.api && data.api.url) || '';
-    state.stats = (data.api && data.api.stats) || '';
   } catch { /* nothing configured; unlock() says so */ }
 
-  if (!state.stats) {
-    say('#unlock-said', 'No sealed report is configured for this deployment yet.');
+  if (!state.api) {
+    say('#unlock-said', 'No API is configured for this deployment yet.');
+    delete document.documentElement.dataset.gate;
+    return;
   }
+
+  // This page is for one account. It carries no secret itself -- the passphrase
+  // is typed, never stored -- but leaving it open to everyone invites the one
+  // attack the design cannot answer: unlimited guesses at the passphrase. So it
+  // asks who this is before painting anything, and a stranger is sent to the
+  // door rather than shown a box to guess into.
+  let who = null;
+  try {
+    const response = await fetch(`${state.api.replace(/\/$/, '')}/me`,
+                                 { credentials: 'include' });
+    who = response.ok ? await response.json() : null;
+    if (!who || !who.admin) {
+      location.replace(`/login?next=${encodeURIComponent(location.href)}`);
+      return;
+    }
+  } catch {
+    // the API is unreachable, which is not an answer about who this is. There
+    // is nothing to show without it either, so say so rather than guess.
+    say('#unlock-said', 'Cannot reach the API to check who you are.', true);
+  }
+  delete document.documentElement.dataset.gate;
 }
 
 boot();
