@@ -239,8 +239,8 @@ async function build() {
   const outer = light ? '#1d3055' : '#7c5cff';
 
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(56, 1, 0.1, 300);
-  camera.position.set(0, 30, 52);
+  const camera = new THREE.PerspectiveCamera(64, 1, 0.1, 300);
+  camera.position.set(0, 21, 36);
   camera.lookAt(0, 0, 0);
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true,
@@ -333,8 +333,8 @@ async function build() {
 
     // the disc breathes: a camera that never moves makes the depth read flat,
     // and three units over half a minute is felt rather than seen
-    camera.position.z = 52 + Math.sin(time * 0.11) * 3;
-    camera.position.y = 30 + Math.sin(time * 0.07) * 2.2;
+    camera.position.z = 36 + Math.sin(time * 0.11) * 2.2;
+    camera.position.y = 21 + Math.sin(time * 0.07) * 1.6;
     camera.lookAt(0, 0, 0);
 
     // Each word orbits at its own radius, so the field is never the same twice
