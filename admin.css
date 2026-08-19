@@ -158,5 +158,61 @@
   .manage-controls .btn { flex: 1 1 auto; }
 }
 
+/* --- the live figures ---------------------------------------------------- */
+.sparks { display: grid; gap: var(--space-3);
+          grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.spark { margin: 0; padding: var(--space-3); background: var(--bg-elev);
+         border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.spark-head { display: flex; align-items: baseline; justify-content: space-between;
+              gap: var(--space-2); margin-block-end: var(--space-2); }
+.spark-title { font-size: .8rem; font-weight: 600; }
+.spark-total { font-size: 1.1rem; font-weight: 700; font-variant-numeric: tabular-nums;
+               letter-spacing: -.02em; }
+/* the line is drawn in a 100x30 box and stretched, so the stroke has to be told
+   not to stretch with it or a wide card draws a wedge instead of a line */
+.spark-svg { display: block; inline-size: 100%; block-size: 3.5rem; overflow: visible; }
+.spark-line { fill: none; stroke: var(--accent); stroke-width: 1.5;
+              vector-effect: non-scaling-stroke; stroke-linejoin: round; }
+.spark-fill { fill: color-mix(in srgb, var(--accent) 18%, transparent); stroke: none; }
+
+/* --- the table ----------------------------------------------------------- */
+/* Wide content scrolls inside its own box. A table that widens the document
+   takes the right-hand edge of every card on the page with it. */
+.grid-wrap { overflow-x: auto; margin-block: var(--space-3); }
+.grid { inline-size: 100%; border-collapse: collapse; font-size: .85rem; }
+.grid th, .grid td { padding: .5rem .6rem; text-align: start; vertical-align: top;
+                     border-block-end: 1px solid var(--line); }
+.grid th { position: sticky; inset-block-start: 0; z-index: 1;
+           background: var(--bg-elev); font-size: .74rem; font-weight: 600;
+           color: var(--text-faint); white-space: nowrap; }
+.grid td { max-inline-size: 22rem; overflow-wrap: anywhere; }
+.grid-row:hover { background: var(--surface-2); }
+.grid .pick { inline-size: 2.2rem; }
+.grid .pick input { inline-size: 1.1rem; block-size: 1.1rem; min-block-size: 0; }
+.grid .did { text-align: end; white-space: nowrap; }
+
+.sorter { border: none; background: none; padding: 0; font: inherit; color: inherit;
+          cursor: pointer; display: inline-flex; align-items: center; gap: .25rem; }
+.sorter:hover { color: var(--text); }
+.sorter.on { color: var(--accent); }
+/* the arrow is the sort direction, and it only exists on the sorted column */
+.sorter.on::after { content: "\25BE"; font-size: .7em; }
+.sorter.on.asc::after { content: "\25B4"; }
+
+/* an account that may no longer write should be recognisable in the table, not
+   only once it is opened */
+.grid-row.is-suspended td { color: var(--text-faint); }
+.grid-row.is-suspended td:nth-child(2)::after { content: " \00B7 suspended";
+                                                color: var(--danger); }
+
+.detail-row td { background: var(--surface-2); }
+.detail-actions { display: flex; flex-wrap: wrap; gap: var(--space-2);
+                  margin-block-start: var(--space-3); }
+
+.manage-bulk { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2);
+               padding: var(--space-2) var(--space-3); margin-block: var(--space-2);
+               background: var(--accent-soft); border-radius: var(--radius-sm); }
+.manage-bulk[hidden] { display: none; }
+
 /* held back until the API says who this is; see the note in the page head */
 [data-gate="checking"] body { visibility: hidden; }

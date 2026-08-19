@@ -50,7 +50,8 @@ const num = (n) => Number(n || 0).toLocaleString('en-US');
 const state = { api: '', pass: '', report: null, kind: 'search',
                 queue: null, counts: {}, tab: 'reviews', touched: false,
                 titles: new Map(),
-                manage: { kind: 'review', offset: 0 } };
+                manage: { kind: 'review', offset: 0, rows: [], sort: null, dir: 'desc',
+                          picked: new Set() } };
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
@@ -274,9 +275,15 @@ async function loadQueue() {
 /* ── everything, not just what is waiting ─────────────────────────────── */
 
 /* The queue above is the short list of things nobody has looked at yet. This is
- * the rest of the database: any row, in any state, searchable, with the three
- * operations the queue cannot express -- correct one, write one by hand, or
- * take one out for good.
+ * the rest of the database as a table: sortable, selectable, paged, with the
+ * operations the queue cannot express -- correct a row, write one by hand,
+ * suspend an account, or remove something for good.
+ *
+ * A table rather than a list of cards, because the job here is comparison --
+ * which of these forty reviews is spam, which of these accounts signed up on
+ * the same afternoon -- and comparison needs columns that line up. The cards
+ * are kept for the queue, where there are three things to read and the point is
+ * to read them properly.
  *
  * Deleting is kept visibly apart from turning something down. Turning down is a
  * verdict and keeps the row, so it can be reconsidered; deleting is for what
@@ -293,8 +300,8 @@ const MANAGE = [
   { key: 'posting', label: 'Postings', states: true, add: true, edit: true },
   { key: 'claim', label: 'Employers', states: true, add: true, edit: false },
   // Google decides these exist, so there is nothing to approve and nothing to
-  // create; they are here to be found and, when somebody asks, removed.
-  { key: 'user', label: 'Accounts', states: false, add: false, edit: false },
+  // create. What is ours is whether the account may still write.
+  { key: 'user', label: 'Accounts', states: false, add: false, edit: false, suspend: true },
 ];
 
 const STATES = [
@@ -303,6 +310,47 @@ const STATES = [
   ['live', 'Published'],
   ['refused', 'Turned down'],
 ];
+
+const listing = (values, cap = 6) => {
+  const all = values || [];
+  if (!all.length) return '—';
+  return all.length > cap ? `${all.slice(0, cap).join(', ')} +${all.length - cap}` : all.join(', ');
+};
+
+/* The columns each table shows. `sort` names the column the API will accept for
+ * that heading; a heading without one is simply not sortable, which is honest
+ * about the ones the database has no single column for. */
+const COLUMNS = {
+  review: [
+    { head: 'Rating', sort: 'rating', cell: (r) => stars(r.rating) || '—' },
+    { head: 'Company', sort: 'slug', cell: (r) => bits(r.slug, r.source) },
+    { head: 'Role', cell: (r) => r.role || '—' },
+    { head: 'Written', sort: 'created_at', cell: (r) => day(r.created_at) },
+  ],
+  posting: [
+    { head: 'Title', sort: 'title', cell: (r) => r.title },
+    { head: 'Company', sort: 'slug', cell: (r) => r.slug },
+    { head: 'Where', sort: 'city', cell: (r) => bits(r.city, r.is_remote ? 'remote' : '') || '—' },
+    { head: 'Pay', cell: (r) => salary(r) || '—' },
+    { head: 'Posted', sort: 'created_at', cell: (r) => day(r.created_at) },
+  ],
+  claim: [
+    { head: 'Account', sort: 'email', cell: (r) => r.email || r.sub },
+    { head: 'Company', sort: 'slug', cell: (r) => `${r.source}/${r.slug}` },
+    { head: 'Domain', cell: (r) => r.domain || '—' },
+    { head: 'Claimed', sort: 'created_at', cell: (r) => day(r.created_at) },
+  ],
+  // Skills and searches ride with the account, because "who is this and what
+  // are they after" is one question and answering it across two screens is
+  // answering it badly.
+  user: [
+    { head: 'Account', sort: 'email', cell: (r) => r.email || r.sub },
+    { head: 'Skills', cell: (r) => listing(r.skills) },
+    { head: 'Looking for', cell: (r) => listing(r.searches) },
+    { head: 'Joined', sort: 'created_at', cell: (r) => day(r.created_at) },
+    { head: 'Last seen', sort: 'seen_at', cell: (r) => day(r.seen_at) || '—' },
+  ],
+};
 
 /* One definition per kind, used for both the edit form and the add form, so the
  * two cannot drift into disagreeing about what a posting is. */
@@ -348,6 +396,8 @@ const rowId = (kind, row) => (kind === 'claim' ? row.handle : row[kind === 'user
 
 const api = (path) => `${state.api.replace(/\/$/, '')}${path}`;
 
+const entryFor = (kind) => MANAGE.find((m) => m.key === kind) || MANAGE[0];
+
 /** One call to the management API, with the failure reported rather than
  *  swallowed -- a management screen that silently does nothing is worse than
  *  one that refuses out loud. */
@@ -366,14 +416,20 @@ async function ask(path, options = {}) {
   return body;
 }
 
-/** What an account looks like in a list. The other three already have a shape
- *  the queue uses; this one is only ever seen here. */
+/** What an account looks like when it is opened up. The other three already
+ *  have a shape the queue uses. */
 function describeUser(row) {
   return {
     title: row.email || row.sub,
     meta: bits(row.domain, row.is_admin ? 'admin' : '',
-               row.seen_at ? `last seen ${day(row.seen_at)}` : `joined ${day(row.created_at)}`),
-    body: '',
+               row.seen_at ? `last seen ${day(row.seen_at)}` : `joined ${day(row.created_at)}`,
+               Number(row.suspended) ? `suspended ${day(row.suspended_at)}` : '',
+               row.profile_at ? `remembered ${day(row.profile_at)}` : 'nothing synced'),
+    body: [
+      (row.skills || []).length ? `Skills: ${(row.skills || []).join(', ')}` : '',
+      (row.searches || []).length ? `Looking for: ${(row.searches || []).join(', ')}` : '',
+      Number(row.suspended) && row.suspended_reason ? `Suspended: ${row.suspended_reason}` : '',
+    ].filter(Boolean).join('\n'),
   };
 }
 
@@ -429,7 +485,73 @@ function formFor(kind, values, { adding = false } = {}) {
   return { form, fields };
 }
 
-/* ── the list ─────────────────────────────────────────────────────────── */
+/* ── acting on rows ───────────────────────────────────────────────────── */
+
+/** Every write goes through here, so the reload, the error and the emptied
+ *  selection live in one place rather than at each button. */
+async function act(what, options) {
+  try {
+    await ask('/admin/rows', options);
+  } catch (err) {
+    if (err.message !== 'signed out') say('#manage-said', `${what}: ${err.message}`, true);
+    return false;
+  }
+  state.manage.picked.clear();
+  await loadManage();
+  return true;
+}
+
+/** A verdict on one row or forty. It posts to the queue's own route on purpose:
+ *  a decision made here and a decision made there must be the same decision. */
+async function verdict(kind, ids, approved) {
+  try {
+    await ask('/admin/decide', {
+      method: 'POST', body: JSON.stringify({ kind, ids, approved }),
+    });
+  } catch (err) {
+    if (err.message !== 'signed out') say('#manage-said', err.message, true);
+    return;
+  }
+  state.manage.picked.clear();
+  await loadManage();
+  loadSummary();
+}
+
+/** Suspending asks for a reason, because the reason is shown to the account.
+ *  "Suspended, no reason given" is what produces messages nobody can answer,
+ *  since by the time one arrives nobody remembers either. */
+async function suspend(ids, on) {
+  let reason = null;
+  if (on) {
+    reason = window.prompt('Why is this account suspended? The account is shown this.');
+    if (!reason || !reason.trim()) return;
+  }
+  for (const id of ids) {
+    // One at a time, because a suspension carries a reason and one reason
+    // shared across a batch is a worse record than none.
+    // eslint-disable-next-line no-await-in-loop
+    const done = await act('that suspension', {
+      method: 'PATCH',
+      body: JSON.stringify({ kind: 'user', id,
+                             row: { suspended: on, suspended_reason: reason } }),
+    });
+    if (!done) return;
+  }
+  loadSummary();
+}
+
+async function remove(kind, ids) {
+  const what = kind === 'user'
+    ? `Delete ${ids.length} account(s)? Their visits stay, anonymised; what they asked us `
+      + 'to remember is deleted, and anything they posted is closed.'
+    : `Delete ${ids.length} ${kind}(s) for good? Turning them down keeps them instead.`;
+  if (!window.confirm(what)) return;
+  if (await act('that delete', { method: 'DELETE', body: JSON.stringify({ kind, ids }) })) {
+    loadSummary();
+  }
+}
+
+/* ── the table ────────────────────────────────────────────────────────── */
 
 function manageTabs() {
   const host = $('#manage-switch');
@@ -441,42 +563,83 @@ function manageTabs() {
       attrs: { type: 'button', 'aria-pressed': String(on) },
     });
     button.addEventListener('click', () => {
-      state.manage = { ...state.manage, kind: entry.key, offset: 0 };
+      state.manage.picked.clear();
+      Object.assign(state.manage, { kind: entry.key, offset: 0, sort: null, dir: 'desc' });
       manageTabs();
       loadManage();
     });
     host.append(button);
   }
 
-  const entry = MANAGE.find((m) => m.key === state.manage.kind) || MANAGE[0];
+  const entry = entryFor(state.manage.kind);
   $('#manage-state').hidden = !entry.states;
   $('#manage-add').hidden = !entry.add;
   $('#manage-add').textContent = entry.key === 'posting' ? 'Write a posting' : 'Grant a company';
+  $('#manage-q').placeholder = entry.key === 'user'
+    ? 'Search an address, a skill, or something they looked for' : 'Search';
 }
 
-/** A row, its state, and everything that may be done to it. */
-function manageRow(kind, row, entry) {
-  const id = rowId(kind, row);
-  const shape = kind === 'user' ? describeUser(row) : describe(kind, row);
-  const node = el('li', { class: 'ui-row queue-row' }, [
-    el('div', { class: 'ui-row-main' }, [
-      el('span', { class: 'ui-row-title bidi', text: shape.title, attrs: { dir: 'auto' } }),
-      el('span', { class: 'ui-row-meta', text: shape.meta }),
-      shape.body
-        ? el('p', { class: 'queue-body bidi', text: shape.body, attrs: { dir: 'auto' } })
-        : null,
-    ]),
-    el('div', { class: 'ui-row-actions' }),
-  ]);
+/** The bar that appears once something is ticked. It is why the table has
+ *  checkboxes at all: clearing forty pieces of spam one row at a time is eighty
+ *  clicks, and the API has always taken a list. */
+function renderPicked() {
+  const host = $('#manage-bulk');
+  clear(host);
+  const { kind, picked } = state.manage;
+  const entry = entryFor(kind);
+  const ids = [...picked];
+  host.hidden = !ids.length;
+  if (!ids.length) return;
 
-  const actions = node.querySelector('.ui-row-actions');
+  host.append(el('span', { class: 'ui-row-meta', text: `${num(ids.length)} selected` }));
 
   if (entry.states) {
-    const mark = APPROVAL[String(row.approved)] || APPROVAL['0'];
-    actions.append(el('span', { class: mark.class, text: mark.text }));
+    for (const [label, value] of [['Publish', true], ['Turn down', false],
+                                  ['Back to waiting', null]]) {
+      const button = el('button', { class: 'btn ghost sm', text: label,
+                                    attrs: { type: 'button' } });
+      button.addEventListener('click', () => verdict(kind, ids, value));
+      host.append(button);
+    }
+  }
 
-    // whichever verdicts this row is not already at, including the way back to
-    // waiting -- the only undo that does not mean claiming the other verdict
+  if (entry.suspend) {
+    for (const [label, on] of [['Suspend', true], ['Lift suspension', false]]) {
+      const button = el('button', { class: 'btn ghost sm', text: label,
+                                    attrs: { type: 'button' } });
+      button.addEventListener('click', () => suspend(ids, on));
+      host.append(button);
+    }
+  }
+
+  const drop = el('button', { class: 'btn ghost sm danger', text: 'Delete',
+                              attrs: { type: 'button' } });
+  drop.addEventListener('click', () => remove(kind, ids));
+  host.append(drop);
+
+  const none = el('button', { class: 'btn ghost sm', text: 'Clear',
+                              attrs: { type: 'button' } });
+  none.addEventListener('click', () => { picked.clear(); renderTable(); });
+  host.append(none);
+}
+
+/** Everything about one row, opened underneath it: the text a table cell cannot
+ *  hold, the edit form, and the actions too rare to earn a column. */
+function detailRow(kind, row, span) {
+  const entry = entryFor(kind);
+  const id = rowId(kind, row);
+  const shape = kind === 'user' ? describeUser(row) : describe(kind, row);
+
+  const body = el('div', { class: 'detail' }, [
+    shape.body
+      ? el('p', { class: 'queue-body bidi', text: shape.body, attrs: { dir: 'auto' } })
+      : null,
+    el('p', { class: 'ui-row-meta', text: shape.meta }),
+  ]);
+
+  const actions = el('div', { class: 'detail-actions' });
+
+  if (entry.states) {
     for (const [label, value] of [['Publish', true], ['Turn down', false],
                                   ['Back to waiting', null]]) {
       const already = (value === true && Number(row.approved) === 1)
@@ -485,63 +648,185 @@ function manageRow(kind, row, entry) {
       if (already) continue;
       const button = el('button', { class: 'btn ghost sm', text: label,
                                     attrs: { type: 'button' } });
-      button.addEventListener('click', async () => {
-        try {
-          await ask('/admin/decide', {
-            method: 'POST',
-            body: JSON.stringify({ kind, ids: [id], approved: value }),
-          });
-          loadManage();
-        } catch (err) { say('#manage-said', err.message, true); }
-      });
+      button.addEventListener('click', () => verdict(kind, [id], value));
       actions.append(button);
     }
+  }
+
+  if (entry.suspend) {
+    const on = !Number(row.suspended);
+    const button = el('button', { class: 'btn ghost sm',
+                                  text: on ? 'Suspend' : 'Lift suspension',
+                                  attrs: { type: 'button' } });
+    button.addEventListener('click', () => suspend([id], on));
+    actions.append(button);
   }
 
   if (entry.edit) {
     const edit = el('button', { class: 'btn ghost sm', text: 'Edit',
                                 attrs: { type: 'button' } });
     edit.addEventListener('click', () => {
-      if (node.querySelector('.manage-form')) return;
+      if (body.querySelector('.manage-form')) return;
       const { form, fields } = formFor(kind, row);
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
-        try {
-          await ask('/admin/rows', {
-            method: 'PATCH',
-            body: JSON.stringify({ kind, id, row: collect(form, fields) }),
-          });
-          loadManage();
-        } catch (err) { say('#manage-said', err.message, true); }
+        await act('that edit', {
+          method: 'PATCH',
+          body: JSON.stringify({ kind, id, row: collect(form, fields) }),
+        });
       });
       form.querySelector('[data-cancel]').addEventListener('click', () => form.remove());
-      node.append(form);
+      body.append(form);
     });
     actions.append(edit);
   }
 
-  // Deleting is the only thing here that cannot be walked back, so it asks --
-  // and it says what it is about to remove rather than "are you sure?"
-  const remove = el('button', { class: 'btn ghost sm danger', text: 'Delete',
-                                attrs: { type: 'button' } });
-  remove.addEventListener('click', async () => {
-    const what = kind === 'user'
-      ? `Delete ${shape.title}? Their visits stay, anonymised; what they asked us to `
-        + 'remember is deleted, and anything they posted is closed.'
-      : `Delete this ${kind} for good? Turning it down keeps it instead.`;
-    if (!window.confirm(what)) return;
-    try {
-      await ask('/admin/rows', { method: 'DELETE', body: JSON.stringify({ kind, ids: [id] }) });
-      loadManage();
-    } catch (err) { say('#manage-said', err.message, true); }
-  });
-  actions.append(remove);
+  const drop = el('button', { class: 'btn ghost sm danger', text: 'Delete',
+                              attrs: { type: 'button' } });
+  drop.addEventListener('click', () => remove(kind, [id]));
+  actions.append(drop);
 
-  return node;
+  body.append(actions);
+  return el('tr', { class: 'detail-row' },
+            [el('td', { attrs: { colspan: String(span) } }, [body])]);
+}
+
+function renderTable() {
+  const { kind, rows, picked } = state.manage;
+  const entry = entryFor(kind);
+  const columns = COLUMNS[kind] || [];
+  const span = columns.length + (entry.states ? 3 : 2);
+
+  const head = $('#manage-head');
+  clear(head);
+  const headRow = el('tr');
+
+  const all = el('input', { attrs: { type: 'checkbox', 'aria-label': 'Select every row' } });
+  all.checked = rows.length > 0 && rows.every((r) => picked.has(rowId(kind, r)));
+  all.addEventListener('change', () => {
+    for (const row of rows) {
+      if (all.checked) picked.add(rowId(kind, row));
+      else picked.delete(rowId(kind, row));
+    }
+    renderTable();
+  });
+  headRow.append(el('th', { class: 'pick' }, [all]));
+
+  for (const column of columns) {
+    const cell = el('th');
+    if (!column.sort) {
+      cell.textContent = column.head;
+    } else {
+      const on = state.manage.sort === column.sort;
+      const button = el('button', {
+        class: on ? `sorter on ${state.manage.dir}` : 'sorter',
+        text: column.head,
+        attrs: { type: 'button' },
+      });
+      cell.setAttribute('aria-sort', on
+        ? (state.manage.dir === 'asc' ? 'ascending' : 'descending') : 'none');
+      button.addEventListener('click', () => {
+        // clicking the column already sorted turns it around; clicking another
+        // starts it descending, which is newest-first for every date here
+        state.manage.dir = on && state.manage.dir === 'desc' ? 'asc' : 'desc';
+        state.manage.sort = column.sort;
+        state.manage.offset = 0;
+        loadManage();
+      });
+      cell.append(button);
+    }
+    headRow.append(cell);
+  }
+  if (entry.states) headRow.append(el('th', { text: 'State' }));
+  headRow.append(el('th', {}, [el('span', { class: 'sr-only', text: 'Details' })]));
+  head.append(headRow);
+
+  const body = $('#manage-rows');
+  clear(body);
+
+  if (!rows.length) {
+    const query = $('#manage-q').value.trim();
+    body.append(el('tr', {}, [el('td', {
+      class: 'ui-empty', attrs: { colspan: String(span) },
+      text: query ? `Nothing matches “${query}”.` : 'Nothing here yet.',
+    })]));
+    renderPicked();
+    return;
+  }
+
+  for (const row of rows) {
+    const id = rowId(kind, row);
+    const tr = el('tr', { class: 'grid-row' });
+    if (Number(row.suspended)) tr.classList.add('is-suspended');
+
+    const tick = el('input', { attrs: { type: 'checkbox', 'aria-label': 'Select this row' } });
+    tick.checked = picked.has(id);
+    tick.addEventListener('change', () => {
+      if (tick.checked) picked.add(id); else picked.delete(id);
+      renderPicked();
+      const every = $('#manage-head input[type="checkbox"]');
+      if (every) every.checked = rows.every((r) => picked.has(rowId(kind, r)));
+    });
+    tr.append(el('td', { class: 'pick' }, [tick]));
+
+    for (const column of columns) {
+      tr.append(el('td', { class: 'bidi', text: String(column.cell(row) ?? '—'),
+                           attrs: { dir: 'auto' } }));
+    }
+
+    if (entry.states) {
+      const mark = APPROVAL[String(row.approved)] || APPROVAL['0'];
+      tr.append(el('td', {}, [el('span', { class: mark.class, text: mark.text })]));
+    }
+
+    const open = el('button', { class: 'btn ghost sm', text: 'Open',
+                                attrs: { type: 'button', 'aria-expanded': 'false' } });
+    tr.append(el('td', { class: 'did' }, [open]));
+    body.append(tr);
+
+    let detail = null;
+    open.addEventListener('click', () => {
+      if (detail) {
+        detail.remove();
+        detail = null;
+        open.setAttribute('aria-expanded', 'false');
+        open.textContent = 'Open';
+        return;
+      }
+      detail = detailRow(kind, row, span);
+      tr.after(detail);
+      open.setAttribute('aria-expanded', 'true');
+      open.textContent = 'Close';
+    });
+  }
+
+  renderPicked();
+}
+
+/** The rows on screen, as a file. Built from what is already loaded, so it
+ *  costs no request and cannot disagree with what is being looked at. */
+function exportCsv() {
+  const { kind, rows } = state.manage;
+  const columns = COLUMNS[kind] || [];
+  const quote = (value) => `"${String(value ?? '').replace(/"/g, '""')}"`;
+  const lines = [columns.map((c) => quote(c.head)).join(',')];
+  for (const row of rows) lines.push(columns.map((c) => quote(c.cell(row))).join(','));
+
+  // A blob rather than a data: URL, because a table of Persian job titles is
+  // not going to survive being squeezed through one. The BOM is what makes
+  // Excel read the file as UTF-8 instead of as mojibake.
+  const blob = new Blob([`﻿${lines.join('\r\n')}\r\n`],
+                        { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = el('a', { attrs: { href: url, download: `jooob-${kind}s.csv` } });
+  document.body.append(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
 }
 
 async function loadManage() {
-  const entry = MANAGE.find((m) => m.key === state.manage.kind) || MANAGE[0];
+  const entry = entryFor(state.manage.kind);
   const { kind, offset } = state.manage;
   const query = $('#manage-q').value.trim();
   const wanted = entry.states ? $('#manage-state').value : 'all';
@@ -550,15 +835,19 @@ async function loadManage() {
   try {
     const params = new URLSearchParams({ kind, state: wanted, offset: String(offset) });
     if (query) params.set('q', query);
+    if (state.manage.sort) {
+      params.set('sort', state.manage.sort);
+      params.set('dir', state.manage.dir);
+    }
     const body = await ask(`/admin/rows?${params}`);
 
-    const list = $('#manage-list');
-    clear(list);
-    if (!body.rows.length) {
-      list.append(el('li', { class: 'ui-empty',
-                             text: query ? `Nothing matches “${query}”.` : 'Nothing here yet.' }));
-    }
-    for (const row of body.rows) list.append(manageRow(kind, row, entry));
+    state.manage.rows = body.rows;
+    // the API says how it sorted, and that is what the header shows. Keeping
+    // what was asked for when a reply leaves it out means a header that stays
+    // truthful rather than one that silently forgets which column it is on.
+    state.manage.sort = body.sort || state.manage.sort;
+    state.manage.dir = body.dir || state.manage.dir;
+    renderTable();
 
     const from = body.total ? offset + 1 : 0;
     const to = Math.min(offset + body.rows.length, body.total);
@@ -566,12 +855,13 @@ async function loadManage() {
       ? `${num(from)}–${num(to)} of ${num(body.total)}` : 'Nothing to show.');
     $('#manage-prev').disabled = offset <= 0;
     $('#manage-next').disabled = to >= body.total;
+    $('#manage-csv').disabled = !body.rows.length;
   } catch (err) {
     if (err.message !== 'signed out') say('#manage-said', err.message, true);
   }
 }
 
-/** The add form, above the list rather than inside it -- what is being created
+/** The add form, above the table rather than inside it -- what is being created
  *  is not yet one of the things in it. */
 function openAdd() {
   const host = $('#manage-add-host');
@@ -580,14 +870,10 @@ function openAdd() {
   const { form, fields } = formFor(kind, {}, { adding: true });
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    try {
-      await ask('/admin/rows', {
-        method: 'POST', body: JSON.stringify({ kind, row: collect(form, fields) }),
-      });
-      clear(host);
-      state.manage.offset = 0;
-      loadManage();
-    } catch (err) { say('#manage-said', err.message, true); }
+    const made = await act('that', {
+      method: 'POST', body: JSON.stringify({ kind, row: collect(form, fields) }),
+    });
+    if (made) clear(host);
   });
   form.querySelector('[data-cancel]').addEventListener('click', () => clear(host));
   host.append(form);
@@ -599,26 +885,143 @@ function wireManage() {
 
   $('#manage-state').addEventListener('change', () => {
     state.manage.offset = 0;
+    state.manage.picked.clear();
     loadManage();
   });
   $('#manage-add').addEventListener('click', openAdd);
+  $('#manage-csv').addEventListener('click', exportCsv);
 
   let typing;
   $('#manage-q').addEventListener('input', () => {
     clearTimeout(typing);
     // one request per pause rather than per keystroke: the budget this whole
     // site is built around is requests, not rows
-    typing = setTimeout(() => { state.manage.offset = 0; loadManage(); }, 300);
+    typing = setTimeout(() => {
+      state.manage.offset = 0;
+      state.manage.picked.clear();
+      loadManage();
+    }, 300);
   });
 
   $('#manage-prev').addEventListener('click', () => {
     state.manage.offset = Math.max(0, state.manage.offset - PAGE_SIZE);
+    state.manage.picked.clear();
     loadManage();
   });
   $('#manage-next').addEventListener('click', () => {
     state.manage.offset += PAGE_SIZE;
+    state.manage.picked.clear();
     loadManage();
   });
+}
+
+/* ── what is true right now ───────────────────────────────────────────── */
+
+/* The sealed report further down is written by the scheduled run and is up to
+ * three hours old, which is right for a report and wrong for a dashboard. This
+ * is the live half: a handful of aggregates read straight from D1.
+ *
+ * Drawn as inline SVG. The stylesheet already makes the argument -- everything
+ * here is a count, and a count draws fine without a charting library -- and it
+ * is more true of a line than of a bar, because a line is a `polyline` and the
+ * dependency is three hundred kilobytes.
+ */
+
+const TILES = [
+  { key: 'users', label: 'accounts' },
+  { key: 'suspended', label: 'suspended', warn: true },
+  { key: 'employers', label: 'employers' },
+  { key: 'waitingEmployers', label: 'employers waiting', warn: true },
+  { key: 'postings', label: 'live postings' },
+  { key: 'waitingPostings', label: 'postings waiting', warn: true },
+  { key: 'reviews', label: 'reviews live' },
+  { key: 'waitingReviews', label: 'reviews waiting', warn: true },
+];
+
+const SVG_NS = 'http://www.w3.org/2000/svg';
+const svg = (tag, attrs = {}) => {
+  const node = document.createElementNS(SVG_NS, tag);
+  for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, String(value));
+  return node;
+};
+
+/** One series as a filled line. The x axis is deliberately unlabelled: the
+ *  shape is the message, and the exact day is printed underneath for the times
+ *  it matters. */
+function sparkline(series, title) {
+  const total = series.reduce((sum, [, n]) => sum + n, 0);
+  const box = el('figure', { class: 'spark' }, [
+    el('figcaption', { class: 'spark-head' }, [
+      el('span', { class: 'spark-title', text: title }),
+      el('span', { class: 'spark-total', text: num(total) }),
+    ]),
+  ]);
+
+  if (!series.length) {
+    box.append(el('p', { class: 'ui-empty', text: 'Nothing recorded yet.' }));
+    return box;
+  }
+
+  const w = 100;
+  const h = 30;
+  const peak = Math.max(...series.map(([, n]) => n)) || 1;
+  // A single day is a real state -- the first day of anything -- and one point
+  // makes a polyline with no length, which draws nothing at all and reads as
+  // "broken" rather than as "one day so far". It is drawn as a flat line across
+  // instead, which is what one day of data honestly looks like.
+  const step = series.length > 1 ? w / (series.length - 1) : w;
+  const at = (n, i) => `${i * step},${h - (n / peak) * (h - 2)}`;
+  const points = series.length > 1
+    ? series.map(([, n], i) => at(n, i)).join(' ')
+    : `${at(series[0][1], 0)} ${w},${h - (series[0][1] / peak) * (h - 2)}`;
+
+  const chart = svg('svg', {
+    viewBox: `0 0 ${w} ${h}`, class: 'spark-svg', preserveAspectRatio: 'none',
+    role: 'img', 'aria-label': `${title}: ${total} over ${series.length} days`,
+  });
+  chart.append(svg('polygon', {
+    class: 'spark-fill',
+    points: `0,${h} ${points} ${w},${h}`,
+  }));
+  chart.append(svg('polyline', { class: 'spark-line', points }));
+  box.append(chart);
+
+  const [first] = series;
+  const last = series[series.length - 1];
+  box.append(el('p', { class: 'ui-row-meta',
+                       text: `${first[0]} → ${last[0]}, peak ${num(peak)} in a day` }));
+  return box;
+}
+
+async function loadSummary() {
+  try {
+    const body = await ask('/admin/summary');
+
+    const tiles = $('#live-totals');
+    clear(tiles);
+    for (const tile of TILES) {
+      const value = body.totals[tile.key];
+      if (value === undefined) continue;
+      tiles.append(el('div', { class: 'stat' }, [
+        el('span', { class: `stat-n${tile.warn && value > 0 ? ' warn' : ''}`, text: num(value) }),
+        el('span', { class: 'stat-label', text: tile.label }),
+      ]));
+    }
+
+    const charts = $('#live-charts');
+    clear(charts);
+    charts.append(
+      sparkline(body.series.signups, 'People signing in'),
+      sparkline(body.series.posted, 'Jobs employers wrote'),
+      sparkline(body.series.reviewed, 'Reviews submitted'),
+    );
+
+    say('#live-said', `As of ${String(body.now).replace('T', ' ').slice(0, 16)} UTC.`);
+  } catch (err) {
+    if (err.message !== 'signed out') {
+      say('#live-said', `Could not read the live figures: ${err.message}`, true);
+    }
+  }
 }
 
 /* ── opening a sealed file ────────────────────────────────────────────── */
@@ -943,6 +1346,7 @@ async function boot() {
   await loadQueue();
   manageTabs();
   await loadManage();
+  await loadSummary();
 }
 
 boot();
