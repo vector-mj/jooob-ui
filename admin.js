@@ -127,11 +127,17 @@ function describe(kind, row) {
 /** How many are still undecided, across all three lists. */
 const waiting = () => QUEUES.reduce((sum, q) => sum + (state.counts[q.kind] || 0), 0);
 
+/* The tab title carries the count, because the whole point of a queue is
+ * noticing it without going to look. A page you have to open to find out
+ * whether it needs you is a page you stop opening. */
+const TITLE = 'jooob — admin';
+
 function tally() {
   const left = waiting();
   say('#queue-said', left
     ? `${num(left)} waiting on a decision.`
     : 'Nothing is waiting. Everything submitted has been decided.');
+  document.title = left ? `(${num(left)}) ${TITLE}` : TITLE;
 }
 
 /** Say what a decision was, and offer the other one.
