@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>jooob — no such page</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/base.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+<script>
+/* The theme the visitor chose, read straight from the store the rest of the
+   site writes. This page loads no script of its own -- the failure it reports
+   might be the very thing that stops one arriving. */
+try {
+  var t = localStorage.getItem('jooob.theme');
+  document.documentElement.dataset.theme = t
+    || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+} catch (e) { /* a blocked store just means the default stands */ }
+</script>
+<style>
+  .err { text-align: center; padding-block: clamp(2rem, 12vh, 6rem); }
+  .err-code { font-size: clamp(3.5rem, 18vw, 7rem); font-weight: 700;
+              line-height: 1; letter-spacing: -.04em; margin: 0 0 var(--space-3);
+              color: var(--accent); }
+  .err-actions { display: flex; flex-wrap: wrap; gap: var(--space-3);
+                 justify-content: center; margin-block-start: var(--space-5); }
+</style>
+</head>
+<body class="ui-body">
+
+<header class="ui-top">
+  <a class="ui-brand" href="/"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="3.5">
+        <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+        <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+      <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+      <circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/>
+      <circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/>
+      <circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/>
+    </svg><span>jooob</span></a>
+</header>
+
+<main class="ui-main err">
+  <p class="err-code">404</p>
+  <h1 class="ui-h1">There is nothing at this address.</h1>
+  <p class="ui-sub">The link may be old, or the page may have moved when the site stopped putting .html in its addresses. Everything is still here, one step back.</p>
+  <div class="err-actions">
+    <a class="btn primary lg" href="/">Back to the front page</a>
+    <a class="btn ghost lg" href="/feeds">Browse the feeds</a>
+  </div>
+</main>
+
+<footer class="ui-foot">
+  <a href="/">Home</a> ·
+  <a href="/employer">For employers</a> ·
+  <a href="/feeds">Feeds</a>
+</footer>
+
+</body>
+</html>

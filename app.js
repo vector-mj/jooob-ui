@@ -949,25 +949,6 @@ function renderKpis(stats) {
   });
 }
 
-/** The gap is not a queue.
- *
- *  These companies were scraped and returned nothing, so calling them "pending"
- *  blames a backlog for what is a collection failure. Say which, and point at
- *  the table that breaks it down.
- */
-function renderCoverage(cov) {
-  const box = $('#coverage');
-  if (cov.stored >= cov.claimed) { box.hidden = true; return; }
-  box.hidden = false;
-  clear(box);
-  box.append(el('strong', { text: 'Partial dataset. ' }));
-  box.append(document.createTextNode(
-    `${num(cov.stored)} of the ${num(cov.claimed)} postings the board reports across `
-    + `${num(cov.live)} live companies are stored`
-    + (cov.empty ? `; ${num(cov.empty)} companies returned nothing when scraped` : '')
-    + '. Every figure below describes what was collected, not the whole market.'));
-}
-
 function barChart(id, rows, { labelKey, valueKey, colorPair, filter }) {
   if (!rows.length) { chartMessage(id, 'Nothing to show yet.'); return; }
   const p = palette();
@@ -2271,12 +2252,10 @@ function renderAll() {
   const stats = overview(jobs);
   const p = palette();
   renderChips();
-  const cov = coverage();
   renderSkills();
   renderMine(jobs);
   renderGap(jobs);
   renderKpis(stats);
-  renderCoverage(cov);
   renderExtracted('tools', termCounts(jobs, 'terms'), {
     chart: '#chart-tech', table: '#table-tech', sub: '#sub-tech', label: 'Tool',
     colorPair: [p.accent2, p.accent], filter: 'tool' });
@@ -2481,6 +2460,11 @@ async function boot() {
 
   try {
     const response = await fetch(DATA_URL, { cache: 'no-cache' });
+    // A 5xx is the server saying the fault is its own, and there is a page that
+    // says so properly. Anything else -- a 404, malformed JSON, a connection
+    // that died -- keeps the visitor here, where the message can name what went
+    // wrong and offer a retry that costs them nothing.
+    if (response.status >= 500) { location.replace('/500'); return; }
     if (!response.ok) throw new Error(`${DATA_URL} returned HTTP ${response.status}.`);
     state.data = await response.json();
   } catch (err) {

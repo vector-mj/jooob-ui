@@ -36,14 +36,6 @@
   color: var(--danger); font-size: .86rem;
 }
 
-.coverage {
-  margin: var(--space-4) var(--space-5) 0;
-  padding: .6rem .9rem;
-  background: color-mix(in srgb, var(--warn) 10%, transparent);
-  border: 1px solid color-mix(in srgb, var(--warn) 32%, transparent);
-  border-radius: var(--radius-sm);
-  color: var(--text); font-size: .84rem;
-}
 
 .main { padding: var(--space-5); max-width: 1600px; margin-inline: auto; }
 
