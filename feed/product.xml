@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Product</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Product postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/product.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/product.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>مالک محصول (Product Owner) — فلای تودی</title>
     <link>https://jobinja.ir/companies/abnoos-gasht-tehran/jobs/t7kj</link>
@@ -23,7 +23,7 @@ Asks for: Functional, Analysis, Artificial intelligence, Communication, Manageme
     <pubDate>Mon, 17 Aug 2026 13:36:20 +0000</pubDate>
     <description>تپسل — تهران · Product
 
-Asks for: Backlog, Build, Content, Data, Discovery, Distribution, Functional, Make, Marketplace, Sprint, Strategy, Task, Technical, Agile / Scrum, Analysis, Communication, Digital marketing, Management, Market research, Marketing, Observability, Product Discovery, Product Manager, SEO, Stakeholder management, UI/UX design</description>
+Asks for: Backlog, Build, Content, Customer, Data, Design, Discovery, Distribution, Functional, Make, Marketplace, Sprint, Strategy, Task, Technical, Agile / Scrum, Analysis, Communication, Digital marketing, Management, Market research, Marketing, Observability, Product Discovery, Product Manager, SEO, Stakeholder management, UI/UX design</description>
   </item>
   <item>
     <title>کارشناس فنی کنترل و آماده‌سازی تولید — گلبان دانش سامانه کیش</title>
@@ -86,7 +86,7 @@ Asks for: Analysis, Communication, E-commerce, Insurance, Management, Market res
     <pubDate>Sat, 15 Aug 2026 09:35:52 +0000</pubDate>
     <description>توسعه فناوری سوشیانت — تهران · Product
 
-Asks for: Build, Clarity, Data, Financial, Make, Strategy, B2C, Fintech, Insurance, Investment, Management</description>
+Asks for: Build, Clarity, Customer, Data, Design, Financial, Make, Strategy, B2C, Fintech, Insurance, Investment, Management</description>
   </item>
   <item>
     <title>مدیر محصول (مشهد) — میثم ترانسپورت</title>
@@ -113,7 +113,7 @@ Asks for: Analysis, B2B, Budgeting, Communication, Documentation, English profic
     <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
     <description>الوپیک — تهران · Product
 
-Asks for: Data, Make, Roadmap, Support, Technical, Writing, Agile / Scrum, Communication, Consulting, Data-driven, Management, Product Manager, Product Roadmap, Strategic planning, Supply chain, User experience</description>
+Asks for: Customer, Data, Design, Make, Roadmap, Support, Technical, Writing, Agile / Scrum, Communication, Consulting, Data-driven, Management, Product Manager, Product Roadmap, Strategic planning, Supply chain, User experience</description>
   </item>
   <item>
     <title>Product Owner — گروه مالی کاریزما</title>
@@ -122,7 +122,7 @@ Asks for: Data, Make, Roadmap, Support, Technical, Writing, Agile / Scrum, Commu
     <pubDate>Tue, 11 Aug 2026 17:29:36 +0000</pubDate>
     <description>گروه مالی کاریزما — تهران · Product
 
-Asks for: Backlog, Financial, Functional, Software, Trading, Writing, Agile / Scrum, Analysis, Communication, Management, Product Owner, Quality control, Software development, UI/UX design</description>
+Asks for: Backlog, Design, Financial, Functional, Software, Trading, Writing, Agile / Scrum, Analysis, Communication, Management, Product Owner, Quality control, Software development, UI/UX design</description>
   </item>
   <item>
     <title>Product Lead — تپسی</title>
@@ -131,7 +131,7 @@ Asks for: Backlog, Financial, Functional, Software, Trading, Writing, Agile / Sc
     <pubDate>Tue, 11 Aug 2026 17:09:49 +0000</pubDate>
     <description>تپسی — تهران · Product
 
-Asks for: Build, Data, Discovery, Feedback, Functional, Strategy, Support, Transportation, Analysis, Communication, Customer service, Data-driven, End-to-End, Engagement, Management, Market research, Marketing, Problem solving, Sales, Stakeholder management, Strategic thinking</description>
+Asks for: Build, Customer, Data, Design, Discovery, Feedback, Functional, Strategy, Support, Transportation, Analysis, Communication, Customer service, Data-driven, End-to-End, Engagement, Management, Market research, Marketing, Problem solving, Sales, Stakeholder management, Strategic thinking</description>
   </item>
   <item>
     <title>دستیار مدیر محصول (Associate Product Manager) — کاوه نگار</title>
@@ -149,7 +149,7 @@ Asks for: Confluence, Discovery, Figma, Follow-up, Jira, SQL, Agile / Scrum, Ana
     <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
     <description>کربن — تهران · Product
 
-Asks for: Backlog, Banking, Metabase, Reconciliation, SQL, Tableau, Unit, Analysis, Hard Skills, Ledger, Management, Microservices, Networking, ROI, Sales, Scalability, Stakeholder management</description>
+Asks for: Backlog, Banking, Design, Metabase, Reconciliation, SQL, Tableau, Unit, Analysis, Hard Skills, Ledger, Management, Microservices, Networking, ROI, Sales, Scalability, Stakeholder management</description>
   </item>
   <item>
     <title>مالک محصول — گروه مالی کاریزما</title>
@@ -158,7 +158,16 @@ Asks for: Backlog, Banking, Metabase, Reconciliation, SQL, Tableau, Unit, Analys
     <pubDate>Mon, 10 Aug 2026 19:24:05 +0000</pubDate>
     <description>گروه مالی کاریزما — تهران · Product
 
-Asks for: Backlog, Confluence, Data, Discovery, Feedback, Figma, Jira, Release, Roadmap, Story, Acceptance Criteria, Agile / Scrum, Analysis, B2B, B2C, Communication, Data-driven, Documentation, Fintech, Management, Observability, Ownership, Process improvement, Product Discovery, Product Owner, Product Roadmap, Quality control, Regulatory compliance, Risk management, Stakeholder management, User story</description>
+Asks for: Backlog, Confluence, Data, Design, Discovery, Feedback, Figma, Jira, Release, Roadmap, Story, Acceptance Criteria, Agile / Scrum, Analysis, B2B, B2C, Communication, Data-driven, Documentation, Fintech, Management, Observability, Ownership, Process improvement, Product Discovery, Product Owner, Product Roadmap, Quality control, Regulatory compliance, Risk management, Stakeholder management, User story</description>
+  </item>
+  <item>
+    <title>Senior Product Manager — نوبیتکس</title>
+    <link>https://jobinja.ir/companies/nobitex-1/jobs/t7tv</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nobitex-1/jobs/t7tv</guid>
+    <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نوبیتکس — تهران · Product
+
+Asks for: Blockchain, Customer, Data, Design, Discovery, Financial, Functional, Go, Infrastructure, Legal, Make, Technical, Communication, Customer retention, Data-driven, End-to-End, Fintech, Investment, KPIs, Management, Marketing, Ownership, Problem solving, Product Discovery, Product Manager, Regulatory compliance, Scalability</description>
   </item>
   <item>
     <title>کارشناس کنترل قیمت — کارما آی تی</title>
@@ -185,7 +194,7 @@ Asks for: Retrospective, Review, Roadmap, Sprint, Agile / Scrum, Change manageme
     <pubDate>Sun, 09 Aug 2026 10:45:57 +0000</pubDate>
     <description>تومن — تهران · Product
 
-Asks for: Acquisition, Backlog, Banking, Build, Data, Discovery, Feedback, Financial, Functional, Funnel, Make, Reconciliation, Roadmap, SQL, SaaS, Strategy, Support, Technical, A/B testing, Acceptance Criteria, Analysis, Analytics, B2B, Communication, Customer Success, Documentation, End-to-End, English proficiency, Fintech, Management, Onboarding, Ownership, Product Manager, REST APIs, Regulatory compliance, Sales, Stakeholder management, Testing, User story</description>
+Asks for: Acquisition, Backlog, Banking, Build, Customer, Data, Design, Discovery, Feedback, Financial, Functional, Funnel, Make, Reconciliation, Roadmap, SQL, SaaS, Strategy, Support, Technical, Transaction, A/B testing, Acceptance Criteria, Analysis, Analytics, B2B, Communication, Customer Success, Customer journey, Documentation, End-to-End, English proficiency, Fintech, Management, Onboarding, Ownership, Product Manager, REST APIs, Regulatory compliance, Sales, Stakeholder management, Testing, User story</description>
   </item>
   <item>
     <title>کارشناس برنامه‌ریزی و ارزیابی راهبردی — مهیمن</title>
@@ -347,7 +356,7 @@ Asks for: Confluence, Data, Jira, Agile / Scrum, Analysis, Attention to detail, 
     <pubDate>Sat, 01 Aug 2026 12:46:57 +0000</pubDate>
     <description>گروه مالی کارآمد — تهران · Product
 
-Asks for: Backlog, Confluence, Data, Feedback, Functional, Jira, Review, Software, Sprint, Story, Support, Technical, Trello, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, Communication, Management, Ownership, Process improvement, Product Owner, Project management, Software development, UI/UX design, User story</description>
+Asks for: Backlog, Confluence, Customer, Data, Design, Feedback, Functional, Jira, Review, Software, Sprint, Story, Support, Technical, Trello, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, Communication, Management, Ownership, Process improvement, Product Owner, Project management, Software development, UI/UX design, User story</description>
   </item>
   <item>
     <title>Product Lead — بیمه بازار</title>
@@ -356,7 +365,7 @@ Asks for: Backlog, Confluence, Data, Feedback, Functional, Jira, Review, Softwar
     <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
     <description>بیمه بازار — تهران · Product
 
-Asks for: Data, Discovery, Functional, Release, Roadmap, Strategy, Support, Technical, Writing, Analysis, Communication, Decision making, Documentation, End-to-End, Management, Marketing, Ownership, Product Design, Product Roadmap, Sales, Stakeholder management, Strategic thinking, Teamwork</description>
+Asks for: Customer, Data, Design, Discovery, Functional, Release, Roadmap, Strategy, Support, Technical, Writing, Analysis, Communication, Decision making, Documentation, End-to-End, Management, Marketing, Ownership, Product Design, Product Roadmap, Sales, Stakeholder management, Strategic thinking, Teamwork</description>
   </item>
   <item>
     <title>Product Manager — دیدار</title>
@@ -365,7 +374,7 @@ Asks for: Data, Discovery, Functional, Release, Roadmap, Strategy, Support, Tech
     <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
     <description>دیدار — تهران · Product
 
-Asks for: Cloud, Data, Discovery, Figma, Google Analytics, Hotjar, Marketplace, Notion, SaaS, Strategy, Technical, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, Artificial intelligence, Automation, B2B, CRM, Communication, Customer Success, Customer retention, Documentation, End-to-End, KPIs, Management, Marketing, Ownership, Problem solving, Product Discovery, Product Manager, Sales, Stakeholder management, UI/UX design, User research, User story</description>
+Asks for: Cloud, Customer, Data, Design, Discovery, Figma, Google Analytics, Hotjar, Marketplace, Notion, SaaS, Strategy, Technical, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, Artificial intelligence, Automation, B2B, CRM, Communication, Customer Success, Customer journey, Customer retention, Documentation, End-to-End, KPIs, Management, Marketing, Ownership, Problem solving, Product Discovery, Product Manager, Sales, Stakeholder management, UI/UX design, User research, User story</description>
   </item>
   <item>
     <title>مدیر محصول (Product Manager) — ارزینجا</title>
@@ -392,7 +401,7 @@ Asks for: ChatGPT, Claude, Discovery, Google Gemini, JavaScript, Prompt, Python,
     <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
     <description>امضانو — تهران · Product
 
-Asks for: Backlog, Discovery, Jira, Roadmap, Strategy, Agile / Scrum, Analysis, Authentication, B2B, Communication, Contract management, Customer Success, Customer service, Management, Negotiation, OKR, Observability, Process improvement, Product Discovery, Reporting, Risk management, Sales, Stakeholder management, UI/UX design</description>
+Asks for: Backlog, Customer, Discovery, Jira, Roadmap, Strategy, Agile / Scrum, Analysis, Authentication, B2B, Communication, Contract management, Customer Success, Customer service, Management, Negotiation, OKR, Observability, Process improvement, Product Discovery, Reporting, Risk management, Sales, Stakeholder management, UI/UX design</description>
   </item>
   <item>
     <title>کارشناس ارشد محصول (دورکاری) — گیم رنتر</title>
@@ -401,7 +410,7 @@ Asks for: Backlog, Discovery, Jira, Roadmap, Strategy, Agile / Scrum, Analysis, 
     <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
     <description>گیم رنتر — تهران · Product
 
-Asks for: Backlog, Content, Discovery, Google Workspace, Jira, Microsoft Excel, Roadmap, Story, Trello, Zoho, Analysis, Artificial intelligence, Attention to detail, CRM, Communication, Conversion rate optimisation, Customer service, Documentation, Management, Marketing, Process improvement, Product Discovery, Product Roadmap, Project management, Quality control, Reporting, SEO, Sales, Teamwork, UI/UX design, User story</description>
+Asks for: Backlog, Content, Customer, Discovery, Google Workspace, Jira, Microsoft Excel, Roadmap, Story, Trello, Zoho, Analysis, Artificial intelligence, Attention to detail, CRM, Communication, Conversion rate optimisation, Customer journey, Customer service, Documentation, Management, Marketing, Process improvement, Product Discovery, Product Roadmap, Project management, Quality control, Reporting, SEO, Sales, Teamwork, UI/UX design, User story</description>
   </item>
   <item>
     <title>کارشناس ارشد توسعه راهکارهای عملیاتی (Operational Excellence Solutions Specialist) — بیمه بازار</title>
@@ -447,15 +456,6 @@ Asks for: Google Analytics, Jira, Postman, Story, Swagger, Task, Analysis, Analy
     <description>پیشگامان لوتوس — تهران · Product
 
 Asks for: Story, Agile / Scrum, Analysis, Communication, Continuous learning, Documentation, Management, Ownership, Problem solving, Process improvement, Project management, Record keeping, Reporting, Teamwork, UI/UX design, User story</description>
-  </item>
-  <item>
-    <title>Senior Product Manager | Q-Commerce — دیجی کالا</title>
-    <link>https://career.hrcando.ir/co/Digikala/job-detail/59540571-c916-40ca-b4ed-58a04c84276d</link>
-    <guid isPermaLink="true">https://career.hrcando.ir/co/Digikala/job-detail/59540571-c916-40ca-b4ed-58a04c84276d</guid>
-    <pubDate>Sat, 25 Jul 2026 16:19:24 +0000</pubDate>
-    <description>دیجی کالا — تهران · Product
-
-Asks for: Clarity, Data, Discovery, Effects, Functional, Make, Marketplace, Analysis, E-commerce, Fintech, Inventory management, Investment, Ownership, Product Discovery, Product Manager, Retail, Supply chain</description>
   </item>
 </channel>
 </rss>

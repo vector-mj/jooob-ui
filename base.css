@@ -247,6 +247,12 @@ input::placeholder { color: var(--text-faint); }
 .ui-foot a { color: var(--text-muted); display: inline-block; padding: .6rem .4rem; }
 
 /* --- buttons ------------------------------------------------------------ */
+/* `hidden` is a user-agent rule of the lowest possible weight, so any class
+   that sets `display` silently defeats it -- which is exactly how the header
+   ended up showing the dashboard link and the sign-in link at the same time.
+   Nothing should ever have to remember to opt out of that. */
+[hidden] { display: none !important; }
+
 .btn { display: inline-flex; align-items: center; justify-content: center;
        gap: var(--space-2); min-height: 44px; padding: .55rem 1rem;
        font: inherit; font-size: .88rem; font-weight: 600;

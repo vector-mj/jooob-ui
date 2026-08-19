@@ -30,15 +30,6 @@
 .lp-icon { width: 26px; height: 26px; color: var(--accent);
            margin-block-end: var(--space-3); }
 
-/* --- the promises -------------------------------------------------------- */
-.lp-list { margin: 0; padding: 0; list-style: none;
-           display: flex; flex-direction: column; gap: var(--space-3); }
-.lp-list li { padding-inline-start: 1.4rem; position: relative;
-              color: var(--text-muted); font-size: .88rem; line-height: 1.6; }
-.lp-list li::before { content: "✓"; position: absolute; inset-inline-start: 0;
-                      color: var(--ok); font-size: .85rem; top: .05rem; }
-.lp-list strong { color: var(--text); }
-
 @media (min-width: 760px) {
   .lp-cards { grid-template-columns: repeat(3, 1fr); }
 }

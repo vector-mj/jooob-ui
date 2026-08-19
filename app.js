@@ -10,7 +10,7 @@
  */
 'use strict';
 
-const DATA_URL = 'data/jooob.json';
+const DATA_URL = '/data/jooob.json';
 
 const CDN = {
   g6:        { src: 'https://cdn.jsdelivr.net/npm/@antv/g6@4.8.24/dist/g6.min.js',
@@ -1750,11 +1750,25 @@ const pushProfile = debounce(async () => {
 }, 4000);
 
 async function startSync() {
-  if (!apiBase()) return;
+  if (!apiBase()) return;           // no API in the export: the page stands alone
+  let who;
   try {
-    const who = await apiCall('/me');
-    signedIn = true;
-    renderAccount(who);
+    who = await apiCall('/me');
+  } catch (err) {
+    signedIn = false;
+    renderAccount(null);
+    // The dashboard is not a public page: it is what signing in is for. A 401
+    // is a definite answer, so it sends the visitor to the door -- but a
+    // network failure is not, and locking everybody out because the API blinked
+    // for a moment would be much the worse of the two mistakes.
+    if (String(err.message) === 'HTTP 401') {
+      location.replace(`/login?next=${encodeURIComponent(location.href)}`);
+    }
+    return;
+  }
+  signedIn = true;
+  renderAccount(who);
+  try {
     const body = await apiCall('/profile');
     if (body.profile) {
       mergeProfile(body.profile);
@@ -1762,8 +1776,8 @@ async function startSync() {
     }
     pushProfile();                  // whatever this browser had that the account did not
   } catch {
-    signedIn = false;
-    renderAccount(null);
+    // the account is there, its profile simply did not load: the browser copy
+    // is still the source of truth, so there is nothing to interrupt anyone for
   }
 }
 
@@ -1785,7 +1799,7 @@ function renderAccount(who) {
     host.append(out);
   } else {
     host.append(el('a', { class: 'ghost-btn text', text: 'Sync my list',
-      attrs: { href: `login.html?next=${encodeURIComponent(location.href)}`,
+      attrs: { href: `/login?next=${encodeURIComponent(location.href)}`,
                title: 'Optional: keeps your skills on your other devices' } }));
   }
 }

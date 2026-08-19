@@ -239,7 +239,7 @@ async function boot() {
   $('#load-people').addEventListener('click', loadPeople);
 
   try {
-    const data = await (await fetch('data/jooob.json', { cache: 'no-cache' })).json();
+    const data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
     state.api = (data.api && data.api.url) || '';
     state.stats = (data.api && data.api.stats) || '';
   } catch { /* nothing configured; unlock() says so */ }

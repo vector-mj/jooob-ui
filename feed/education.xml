@@ -2,11 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Education</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Education postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/education.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <atom:link href="https://jooob.ir/feed/education.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>English Language Teacher (خانم) — موسسه زبان تاک نوین</title>
+    <link>https://jobinja.ir/companies/new-talk-language-school/jobs/t7Ez</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/new-talk-language-school/jobs/t7Ez</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>موسسه زبان تاک نوین — تهران · Education
+
+Asks for: Teaching, Communication, English proficiency, Management, Training</description>
+  </item>
+  <item>
+    <title>مدیر آکادمی — نگارخودرو</title>
+    <link>https://jobinja.ir/companies/negarkhodro/jobs/t7nJ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/negarkhodro/jobs/t7nJ</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نگارخودرو — تهران · Education
+
+Asks for: Management, Negotiation, Networking, Project management, Training</description>
+  </item>
+  <item>
+    <title>مدیر آکادمی (بابل) — نگارخودرو</title>
+    <link>https://jobinja.ir/companies/negarkhodro/jobs/t7n6</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/negarkhodro/jobs/t7n6</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نگارخودرو — بابل · Education
+
+Asks for: Management, Negotiation, Networking, Project management, Training</description>
+  </item>
   <item>
     <title>مسئول آموزش — گروه متازی</title>
     <link>https://jobinja.ir/companies/metazi-group/jobs/t74g</link>
@@ -67,6 +94,13 @@ Asks for: English proficiency, Insurance, Ownership, Teamwork, Training</descrip
     <description>آترین راهبرد — تهران · Education
 
 Asks for: Contract management, Record keeping</description>
+  </item>
+  <item>
+    <title>مربی ورزش (خانم) — نیک‌استودیو</title>
+    <link>https://jobinja.ir/companies/nikkstudio/jobs/t4uc</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nikkstudio/jobs/t4uc</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نیک‌استودیو — تهران · Education</description>
   </item>
   <item>
     <title>کارشناس فروش  (خانم-شیراز) — آکادمی پزشکی سینوهه</title>
@@ -414,42 +448,6 @@ Asks for: Adobe Illustrator, Adobe Premiere, After Effects, Effects, Photoshop, 
     <description>نوآوران آفاق هوشمند آتیه — تهران · Education
 
 Asks for: Attention to detail, Communication, English proficiency, Management, Ownership, Record keeping, Training</description>
-  </item>
-  <item>
-    <title>مدرس آیلتس یا تافل — موسسه مهاجرتی آوا</title>
-    <link>https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4Ly</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4Ly</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <description>موسسه مهاجرتی آوا — تهران · Education
-
-Asks for: Communication, English proficiency, Training</description>
-  </item>
-  <item>
-    <title>مدرس زبان آلمانی — موسسه مهاجرتی آوا</title>
-    <link>https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4LD</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4LD</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <description>موسسه مهاجرتی آوا — تهران · Education
-
-Asks for: Communication, Training</description>
-  </item>
-  <item>
-    <title>مدرس زبان ایتالیایی — موسسه مهاجرتی آوا</title>
-    <link>https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4LK</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4LK</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <description>موسسه مهاجرتی آوا — تهران · Education
-
-Asks for: Communication, Training</description>
-  </item>
-  <item>
-    <title>مدرس زبان ترکی — موسسه مهاجرتی آوا</title>
-    <link>https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4Li</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iranmehr-tehranpars/jobs/t4Li</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <description>موسسه مهاجرتی آوا — تهران · Education
-
-Asks for: Communication, Training</description>
   </item>
 </channel>
 </rss>

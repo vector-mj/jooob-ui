@@ -1,0 +1,10 @@
+# Three pages are worth indexing: the front page, the employer page and the
+# feed index. The rest is either behind sign-in or about signing in, and a
+# crawler asking for them spends its budget on a page it will be refused.
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /login
+Disallow: /admin
+
+Sitemap: https://jooob.ir/sitemap.xml

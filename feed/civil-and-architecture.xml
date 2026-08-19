@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Civil &amp; Architecture</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Civil &amp; Architecture postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/civil-and-architecture.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/civil-and-architecture.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>طراح داخلی (کرمانشاه-دورکاری) — گروه طراحی داخلی رخ</title>
     <link>https://jobinja.ir/companies/mehrazak/jobs/t7Tz</link>
@@ -132,6 +132,15 @@ Asks for: AutoCAD, ChatGPT, Instagram, Revit, Artificial intelligence, Content c
     <description>الوان پرو — تهران · Civil &amp; Architecture
 
 Asks for: AutoCAD, ETABS, Revit, SAP</description>
+  </item>
+  <item>
+    <title>مهندس عمران (کرج) — مهندسین مشاور نامداران سرزمین</title>
+    <link>https://jobinja.ir/companies/namdaran-sarzamin/jobs/t7Gx</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/namdaran-sarzamin/jobs/t7Gx</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مهندسین مشاور نامداران سرزمین — کرج · Civil &amp; Architecture
+
+Asks for: AutoCAD, ETABS, Revit, Creativity, Management, Problem solving, Recruitment, Teamwork</description>
   </item>
   <item>
     <title>مهندس عمران و معماری — آرتیمان پارسه آریا</title>
@@ -284,7 +293,7 @@ Asks for: Attention to detail, Insurance, Ownership, Teamwork</description>
     <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
     <description>گروه مهندسی کارینا — تهران · Civil &amp; Architecture
 
-Asks for: AutoCAD, Photoshop, Revit, Sketchup, V-Ray, Management, Negotiation, Problem solving, Process improvement, Quality control, Supervision, Teamwork, Training</description>
+Asks for: AutoCAD, Design, Photoshop, Revit, Sketchup, V-Ray, Management, Negotiation, Problem solving, Process improvement, Quality control, Supervision, Teamwork, Training</description>
   </item>
   <item>
     <title>کارآموز معماری — گسترش و مدیریت خاور پایا وزین</title>
@@ -321,6 +330,15 @@ Asks for: Insurance, Supervision</description>
     <description>مهندسین مشاور معین شار پارس — تهران · Civil &amp; Architecture
 
 Asks for: AutoCAD, Lumion, Revit, Sketchup, Creativity, Ownership, Reporting, Teamwork</description>
+  </item>
+  <item>
+    <title>طراح معماری(بابلسر) — نان سحر پارک پالاس (شعبه دریاکنار)</title>
+    <link>https://jobinja.ir/companies/nanesahar/jobs/tmFG</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nanesahar/jobs/tmFG</guid>
+    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نان سحر پارک پالاس (شعبه دریاکنار) — بابلسر · Civil &amp; Architecture
+
+Asks for: AutoCAD, Revit, Recruitment, Teamwork</description>
   </item>
   <item>
     <title>سرپرست کارگاه — گروه ساختمانی غفاری</title>
@@ -438,24 +456,6 @@ Asks for: AutoCAD, Microsoft Excel, Microsoft Word, Revit</description>
     <description>چینه سازه بیهق — تهران · Civil &amp; Architecture
 
 Asks for: Insurance</description>
-  </item>
-  <item>
-    <title>مهندس معمار (رشت) — افراز</title>
-    <link>https://jobinja.ir/companies/afraz-1/jobs/t49Q</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/afraz-1/jobs/t49Q</guid>
-    <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-    <description>افراز — رشت · Civil &amp; Architecture
-
-Asks for: AutoCAD, Lumion, Revit</description>
-  </item>
-  <item>
-    <title>کارآموز عمران — عمارت ایستا اقلیم</title>
-    <link>https://jobinja.ir/companies/emarat-86/jobs/tZGb</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/emarat-86/jobs/tZGb</guid>
-    <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-    <description>عمارت ایستا اقلیم — تهران · Civil &amp; Architecture
-
-Asks for: Recruitment</description>
   </item>
 </channel>
 </rss>

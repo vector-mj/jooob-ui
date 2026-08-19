@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Executive</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Executive postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/executive.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/executive.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>مسئول سئو — نشر چیمن</title>
     <link>https://jobinja.ir/companies/chiman/jobs/t7kM</link>
@@ -95,7 +95,7 @@ Asks for: Ahrefs, CSS, Console, Content, Google Analytics, Google Search Console
     <pubDate>Mon, 22 Jun 2026 13:05:15 +0000</pubDate>
     <description>میرانا — تهران · Executive
 
-Asks for: Build, Data, Financial, Strategy, Support, Tech, Writing, Analysis, Communication, Data-driven, End-to-End, Financial reporting, Investment, Reporting</description>
+Asks for: Build, Data, Design, Financial, Relationship, Strategy, Support, Tech, Writing, Analysis, Communication, Data-driven, End-to-End, Financial reporting, Investment, Reporting</description>
   </item>
   <item>
     <title>Business Manager — میرانا</title>
@@ -113,7 +113,7 @@ Asks for: Build, Data, Distribution, Financial, Make, Transportation, Analysis, 
     <pubDate>Tue, 30 Sep 2025 11:21:56 +0000</pubDate>
     <description>میرانا — تهران · Executive
 
-Asks for: Financial, Make, Business development, Communication, Investment, Management, Negotiation, Regulatory compliance</description>
+Asks for: Energy, Financial, Make, Business development, Communication, Investment, Management, Negotiation, Regulatory compliance</description>
   </item>
 </channel>
 </rss>

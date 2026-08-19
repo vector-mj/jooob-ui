@@ -2,11 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Software Engineering</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Software Engineering postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 18 Aug 2026 17:44:21 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Wed, 19 Aug 2026 13:16:11 +0000</lastBuildDate>
+  <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Junior Site Reliability Engineer — مدل</title>
+    <link>https://career.hrcando.ir/co/SnappPay/job-detail/9bd436b1-f69a-4ed0-98c7-90a2314cb3e4</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/SnappPay/job-detail/9bd436b1-f69a-4ed0-98c7-90a2314cb3e4</guid>
+    <pubDate>Wed, 19 Aug 2026 13:16:11 +0000</pubDate>
+    <description>مدل — تهران · Software Engineering
+
+Asks for: Availability, Deploy, Docker, ELK, Embedded, Financial, Functional, Grafana, Linux, Relationship, Technical, Communication, DevOps, Incident management, Management, Observability, Problem solving, Process improvement, Security, Site reliability, Troubleshooting</description>
+  </item>
+  <item>
+    <title>برنامه‌نویس جنگو (Backend-Django-بابل) — نگارخودرو</title>
+    <link>https://jobinja.ir/companies/negarkhodro/jobs/t7yD</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/negarkhodro/jobs/t7yD</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نگارخودرو — بابل · Software Engineering
+
+Asks for: CSS, Django, Git, HTML, Python, SQL, Agile / Scrum, Communication</description>
+  </item>
+  <item>
+    <title>توسعه دهنده اندروید (کاتلین-بابل) — نگارخودرو</title>
+    <link>https://jobinja.ir/companies/negarkhodro/jobs/t7yx</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/negarkhodro/jobs/t7yx</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نگارخودرو — بابل · Software Engineering
+
+Asks for: Android, Git, Jira, Kotlin, Agile / Scrum, Teamwork</description>
+  </item>
   <item>
     <title>Software Engineer (DevOps) — تپسی</title>
     <link>https://career.hrcando.ir/co/tapsi-1-1/job-detail/dc8082bc-c28e-4e82-aba9-97b9a949c988</link>
@@ -14,7 +41,34 @@
     <pubDate>Tue, 18 Aug 2026 17:44:21 +0000</pubDate>
     <description>تپسی — تهران · Software Engineering
 
-Asks for: Alerting, Availability, Build, Ceph, Cloud, Container, Data, Deploy, Docker, Elasticsearch, Envoy, Functional, Git, Go, Grafana, Infrastructure, Kubernetes, Linux, Logging, Maintainability, MongoDB, Nginx, OpenSearch, PostgreSQL, Python, Recovery, Redis, Rook, Software, Technical, Terraform, Transportation, VMware, VictoriaMetrics, Automation, CI/CD, Cloud architecture, Communication, Container orchestration, DevOps, Distributed systems, Documentation, Incident management, Infrastructure as code, Networking, Observability, Problem solving, REST APIs, Scalability, Security, Software development, Storage, Virtualization</description>
+Asks for: Alerting, Availability, Build, Ceph, Cloud, Container, Data, Deploy, Design, Docker, Elasticsearch, Envoy, Functional, Git, Go, Grafana, Infrastructure, Kubernetes, Linux, Logging, Maintainability, MongoDB, Nginx, OpenSearch, PostgreSQL, Python, Recovery, Redis, Rook, Software, Technical, Terraform, Transportation, VMware, VictoriaMetrics, Automation, CI/CD, Cloud architecture, Communication, Container orchestration, DevOps, Distributed systems, Documentation, Incident management, Infrastructure as code, Networking, Observability, Problem solving, REST APIs, Scalability, Security, Software development, Storage, Virtualization</description>
+  </item>
+  <item>
+    <title>کارشناس تست نفوذ و امنیت — انتشارات نوآور</title>
+    <link>https://jobinja.ir/companies/noavar-3/jobs/t7Mv</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/noavar-3/jobs/t7Mv</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>انتشارات نوآور — تهران · Software Engineering
+
+Asks for: Authorization, Design, Software, Analysis, Authentication, Communication, Management, Penetration testing, Process improvement, Risk management, Security</description>
+  </item>
+  <item>
+    <title>کارآموز برنامه نویسی وب (تبریز) — نیکان مهر پردازش افزا</title>
+    <link>https://jobinja.ir/companies/nikan-mehr-pardazesh-afza/jobs/t7Nw</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nikan-mehr-pardazesh-afza/jobs/t7Nw</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نیکان مهر پردازش افزا — تبریز · Software Engineering
+
+Asks for: Authorization, Bootstrap, CSS, Django, Docker, Git, HTML, JavaScript, Laravel, Linux, MySQL, PHP, Vue, Authentication, Contract management, Databases, Insurance, Object-oriented programming, REST APIs, Recruitment, Security</description>
+  </item>
+  <item>
+    <title>برنامه‌نویس Java — راهبرد کلان داده هوشمند ایرانیان</title>
+    <link>https://jobinja.ir/companies/neor-co/jobs/t7Gl</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/neor-co/jobs/t7Gl</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>راهبرد کلان داده هوشمند ایرانیان — تهران · Software Engineering
+
+Asks for: Apache, ClickHouse, Data, Docker, Elasticsearch, Git, Gradle, Java, Kafka, Kubernetes, Maven, MySQL, Oracle, PostgreSQL, Redis, Review, Spark, Spring, Analysis, Artificial intelligence, Attention to detail, CI/CD, Code review, Communication, Continuous learning, DevOps, Distributed systems, Documentation, Microservices, Object-oriented programming, Performance tuning, Process improvement, REST APIs, Retrieval augmented generation, Security, Teamwork</description>
   </item>
   <item>
     <title>برنامه‌نویس PHP (شیراز) — ارزش آفرینان گسترش تجارت الکترونیک(موجوجم)</title>
@@ -41,7 +95,7 @@ Asks for: Deploy, Latency, Linux, PyTorch, Python, Whisper, Artificial intellige
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>کیلو — تهران · Software Engineering
 
-Asks for: C#, Docker, Git, SQL, Analysis, Design patterns, Full-stack, Management, Problem solving, Teamwork</description>
+Asks for: C#, Design, Docker, Git, SQL, Analysis, Design patterns, Full-stack, Management, Problem solving, Teamwork</description>
   </item>
   <item>
     <title>توسعه دهنده وب Net. (مشهد) — گروه فناوری آمیتیس</title>
@@ -50,7 +104,7 @@ Asks for: C#, Docker, Git, SQL, Analysis, Design patterns, Full-stack, Managemen
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>گروه فناوری آمیتیس — مشهد · Software Engineering
 
-Asks for: .NET, Blazor, C#, CSS, Framework, Git, JavaScript, Next.js, Review, SQL, SQL Server, Server, SignalR, Task, Analysis, Artificial intelligence, Attention to detail, Code review, Communication, Dependency Injection, Design patterns, Documentation, Entity Framework, Entity Framework Core, Management, Object-oriented programming, Process improvement, REST APIs, Real-Time, SOLID principles, Security, Teamwork, Troubleshooting, UI/UX design</description>
+Asks for: .NET, Blazor, C#, CSS, Design, Framework, Git, JavaScript, Next.js, Review, SQL, SQL Server, Server, SignalR, Task, Analysis, Artificial intelligence, Attention to detail, Code review, Communication, Dependency Injection, Design patterns, Documentation, Entity Framework, Entity Framework Core, Management, Object-oriented programming, Process improvement, REST APIs, Real-Time, SOLID principles, Security, Teamwork, Troubleshooting, UI/UX design</description>
   </item>
   <item>
     <title>برنامه نویس PHP/Laravel (دورکاری) — گروه تاثیر</title>
@@ -86,7 +140,7 @@ Asks for: Git, SQL, SQL Server, Server, Windows, Communication, Databases, DevOp
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>هلی تکنولوژی — تهران · Software Engineering
 
-Asks for: Advertising, Content, Editing, Storytelling, Strategy, Writing, Artificial intelligence, Branding, Communication, Copywriting, English proficiency, UI/UX design</description>
+Asks for: Advertising, Content, Design, Editing, Storytelling, Strategy, Writing, Artificial intelligence, Branding, Communication, Copywriting, English proficiency, UI/UX design</description>
   </item>
   <item>
     <title>برنامه‌نویس Angular — فن آوران نوین سپیدز ایرانیان</title>
@@ -104,7 +158,7 @@ Asks for: .NET, Angular, CSS, Git, HTML, JavaScript, TypeScript, Unit, Analysis,
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>دلینو — تهران · Software Engineering
 
-Asks for: Deploy, Functional, Go, Hosting, Prompt, Remote, SQL, SQL Server, Server, Software, Support, Technical, Windows, Backup and recovery, Communication, Databases, Documentation, Networking, Ownership, Problem solving, REST APIs, Reporting, Teamwork, Troubleshooting</description>
+Asks for: Customer, Deploy, Functional, Go, Hosting, Prompt, Remote, SQL, SQL Server, Server, Software, Support, Technical, Windows, Backup and recovery, Communication, Customer journey, Databases, Documentation, Networking, Ownership, Problem solving, REST APIs, Reporting, Teamwork, Troubleshooting</description>
   </item>
   <item>
     <title>کارآموز برنامه‌نویسی Front-End — طراحی سایت دارکوب</title>
@@ -131,7 +185,7 @@ Asks for: CSS, HTML, Java, JavaScript, Microsoft Word, PHP, Recruitment, Reporti
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>بیت‌ پین — تهران · Software Engineering
 
-Asks for: Airflow, Cryptocurrency, Data, Financial, Git, Infrastructure, Make, Python, SQL, Strategy, Technical, Trading, Analysis, Analytics, Data modelling, Data-driven, Documentation, ETL / ELT, Marketing, Observability, Ownership, Problem solving, REST APIs, Reporting, Stakeholder management</description>
+Asks for: Airflow, Cryptocurrency, Customer, Data, Design, Financial, Git, Infrastructure, Make, Python, SQL, Strategy, Technical, Trading, Analysis, Analytics, Data modelling, Data-driven, Documentation, ETL / ELT, Marketing, Observability, Ownership, Problem solving, REST APIs, Reporting, Stakeholder management</description>
   </item>
   <item>
     <title>Software Engineer (.NET) — ازکی</title>
@@ -140,7 +194,7 @@ Asks for: Airflow, Cryptocurrency, Data, Financial, Git, Infrastructure, Make, P
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>ازکی — تهران · Software Engineering
 
-Asks for: .NET, C#, Data, Docker, ELK, Elasticsearch, Functional, Git, Kibana, Linux, Logstash, Redis, SQL Server, Software, Backend Development, Clean architecture, Clean code, Databases, Insurance, Maintenance, Management, Microservices, Project management, REST APIs, SOLID principles, Security, Testing, User experience</description>
+Asks for: .NET, C#, Data, Design, Docker, ELK, Elasticsearch, Functional, Git, Kibana, Linux, Logstash, Redis, SQL Server, Software, Backend Development, Clean architecture, Clean code, Databases, Insurance, Maintenance, Management, Microservices, Project management, REST APIs, SOLID principles, Security, Testing, User experience</description>
   </item>
   <item>
     <title>مهندس داده — ایده پردازان آویهنگ</title>
@@ -158,7 +212,7 @@ Asks for: Airflow, Build, Data, Docker, Linux, NoSQL, Python, Spark, Data wareho
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>افرتتر — تهران · Software Engineering
 
-Asks for: Bootstrap, CSS, Caching, Docker, Docker Compose, Elementor, Git, HTML, Infrastructure, JavaScript, Legacy, Linux, MySQL, Nginx, PHP, Redis, Refactor, SQL, Tailwind CSS, WordPress, jQuery, Analysis, CI/CD, Debugging, Object-oriented programming, Problem solving, REST APIs, Responsive design, Security, Teamwork</description>
+Asks for: Bootstrap, CSS, Caching, Design, Docker, Docker Compose, Elementor, Git, HTML, Infrastructure, JavaScript, Legacy, Linux, MySQL, Nginx, PHP, Redis, Refactor, SQL, Tailwind CSS, WordPress, jQuery, Analysis, CI/CD, Debugging, Object-oriented programming, Problem solving, REST APIs, Responsive design, Security, Teamwork</description>
   </item>
   <item>
     <title>کارشناس استقرار ERP (آقا) — افرانت</title>
@@ -176,7 +230,7 @@ Asks for: Git, Linux, Odoo, PostgreSQL, Python, Agile / Scrum, Analysis, Cloud a
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>ابرآمد — تهران · Software Engineering
 
-Asks for: Build, Cloud, Data, Linux, Regression, Release, SQL, Software, Acceptance Criteria, Agile / Scrum, Attention to detail, Automation, CI/CD, Communication, Distributed systems, Documentation, Microservices, Networking, Problem solving, Process improvement, Quality control, REST APIs, Reporting, Scalability, Testing</description>
+Asks for: Build, Cloud, Data, Design, Linux, Regression, Release, SQL, Software, Acceptance Criteria, Agile / Scrum, Attention to detail, Automation, CI/CD, Communication, Distributed systems, Documentation, Microservices, Networking, Problem solving, Process improvement, Quality control, REST APIs, Reporting, Scalability, Testing</description>
   </item>
   <item>
     <title>Software Engineer (Backend) — تپسی</title>
@@ -185,7 +239,7 @@ Asks for: Build, Cloud, Data, Linux, Regression, Release, SQL, Software, Accepta
     <pubDate>Mon, 17 Aug 2026 12:57:17 +0000</pubDate>
     <description>تپسی — تهران · Software Engineering
 
-Asks for: Data, Linux, Node.js, Orchestration, PostgreSQL, Python, Redis, Retrospective, Software, Sprint, Technical, Transportation, Debugging, Documentation, Ownership, Software architecture, Software development, System Design, Teamwork</description>
+Asks for: Data, Design, Linux, Node.js, Orchestration, PostgreSQL, Python, Redis, Retrospective, Software, Sprint, Technical, Transportation, Debugging, Documentation, Ownership, Software architecture, Software development, System Design, Teamwork</description>
   </item>
   <item>
     <title>Software Engineer (Frontend) — تپسی</title>
@@ -194,7 +248,7 @@ Asks for: Data, Linux, Node.js, Orchestration, PostgreSQL, Python, Redis, Retros
     <pubDate>Mon, 17 Aug 2026 12:35:20 +0000</pubDate>
     <description>تپسی — تهران · Software Engineering
 
-Asks for: Build, Docker, Functional, Git, HTML, JavaScript, Mobile-First, React, Server, Task, Technical, Transportation, Vue, Webpack, Agile / Scrum, CI/CD, Responsive design, SEO, Testing, User experience, Version Control</description>
+Asks for: Build, Design, Docker, Functional, Git, HTML, JavaScript, Mobile-First, React, Server, Task, Technical, Transportation, Vue, Webpack, Agile / Scrum, CI/CD, Responsive design, SEO, Testing, User experience, Version Control</description>
   </item>
   <item>
     <title>کارشناس ذخیره سازی — مدیریت فناوری بورس تهران</title>
@@ -215,13 +269,40 @@ Asks for: Availability, EMC, HPE, Latency, NFS, Recovery, Replication, Unity, VM
 Asks for: Restore, VMware, Backup and recovery, Management, Networking, Observability, Storage, Troubleshooting, Virtualization</description>
   </item>
   <item>
+    <title>Senior Full-Stack Developer (Nest.js - Backend Focus-دورکاری) — هوش مصنوعی نیک سام</title>
+    <link>https://jobinja.ir/companies/niksam/jobs/t7qc</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/niksam/jobs/t7qc</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>هوش مصنوعی نیک سام — تهران · Software Engineering
+
+Asks for: Caching, Claude, Cloud, Codex, Concurrency, Cursor, Data, Design, Event, Infrastructure, Kubernetes, Maintainability, Make, NestJS, Next.js, Node.js, PostgreSQL, Queues, React, Redis, Remote, Software, Technical, TypeScript, WebSocket, Artificial intelligence, Cloud architecture, Data modelling, Databases, Debugging, Distributed systems, Event-driven architecture, Full-stack, Large language models, Microservices, Observability, Ownership, REST APIs, Real-Time, Scalability, Security, System Design</description>
+  </item>
+  <item>
+    <title>برنامه‌نویس ارشد پایتون — نت‌بان شریف</title>
+    <link>https://jobinja.ir/companies/netbaan-sharif/jobs/t7sT</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/netbaan-sharif/jobs/t7sT</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نت‌بان شریف — تهران · Software Engineering
+
+Asks for: Celery, Docker, Kafka, Python, Redis, Artificial intelligence, Automation, DevOps, English proficiency, Management, Microservices, Problem solving, Process improvement, REST APIs, Security, Teamwork, Technical debt</description>
+  </item>
+  <item>
+    <title>AI Engineer — راهبرد کلان داده هوشمند ایرانیان</title>
+    <link>https://jobinja.ir/companies/neor-co/jobs/t7wl</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/neor-co/jobs/t7wl</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>راهبرد کلان داده هوشمند ایرانیان — تهران · Software Engineering
+
+Asks for: Agent, FastAPI, LangChain, LangGraph, NoSQL, Prompt, SQL, Analysis, Artificial intelligence, Machine learning, Management, Process improvement, Prompt Engineering, REST APIs, Real-Time, Retrieval augmented generation, Teamwork</description>
+  </item>
+  <item>
     <title>Software Engineer — مهیمن</title>
     <link>https://jobinja.ir/companies/mohaymen/jobs/t7mn</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/mohaymen/jobs/t7mn</guid>
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>مهیمن — تهران · Software Engineering
 
-Asks for: .NET, C#, Data, Docker, ELK, Git, Grafana, Java, Kafka, Kubernetes, NoSQL, Prometheus, Python, RabbitMQ, Redis, SQL, Software, Spring, Technical, Agile / Scrum, Analysis, CI/CD, Communication, Design patterns, Documentation, Management, Microservices, Object-oriented programming, Observability, Problem solving, Process improvement, Release management, SOLID principles, Scalability</description>
+Asks for: .NET, C#, Data, Design, Docker, ELK, Git, Grafana, Java, Kafka, Kubernetes, NoSQL, Prometheus, Python, RabbitMQ, Redis, SQL, Software, Spring, Technical, Agile / Scrum, Analysis, CI/CD, Communication, Design patterns, Documentation, Management, Microservices, Object-oriented programming, Observability, Problem solving, Process improvement, Release management, SOLID principles, Scalability</description>
   </item>
   <item>
     <title>Senior Back-End Developer — مهیمن</title>
@@ -230,7 +311,7 @@ Asks for: .NET, C#, Data, Docker, ELK, Git, Grafana, Java, Kafka, Kubernetes, No
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>مهیمن — تهران · Software Engineering
 
-Asks for: .NET, C#, Data, Docker, ELK, Git, Grafana, Hibernate, JUnit, Java, Kafka, Kubernetes, Node.js, Prometheus, RabbitMQ, Redis, SQL, Spring, Unit, Analysis, CI/CD, Communication, Design patterns, Documentation, Management, Microservices, Object-oriented programming, Observability, Performance tuning, Problem solving, Process improvement, REST APIs, SOLID principles, Scalability, Testing, Unit testing</description>
+Asks for: .NET, C#, Data, Design, Docker, ELK, Git, Grafana, Hibernate, JUnit, Java, Kafka, Kubernetes, Node.js, Prometheus, RabbitMQ, Redis, SQL, Spring, Unit, Analysis, CI/CD, Communication, Design patterns, Documentation, Management, Microservices, Object-oriented programming, Observability, Performance tuning, Problem solving, Process improvement, REST APIs, SOLID principles, Scalability, Testing, Unit testing</description>
   </item>
   <item>
     <title>طراح وب سایت — آکادمی مهدی نداف</title>
@@ -293,7 +374,7 @@ Asks for: CSS, HTML, Microsoft Word, MySQL, PHP, Remote, WooCommerce, jQuery, Cu
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>کیپا — تهران · Software Engineering
 
-Asks for: .NET, AWS, Authorization, Availability, Azure, Build, C#, Caching, Cloud, Concurrency, Data, Docker, Event, Framework, Functional, GCP, Git, Idempotency, Kafka, Kubernetes, Logging, Microsoft, RabbitMQ, Redis, Review, SQL, SQL Server, Server, Software, Technical, Unit, gRPC, Analysis, Authentication, CI/CD, Clean code, Code review, Communication, Continuous learning, Design patterns, Design system, DevOps, Distributed systems, Domain-driven design, Entity Framework, Entity Framework Core, Event-driven architecture, Eventual consistency, Feature flags, High availability, Management, Microservices, Observability, Ownership, Performance tuning, Problem solving, REST APIs, SOLID principles, Scalability, Security, Software development, System Design, Teamwork, Test-driven development, Testing, Troubleshooting, Unit testing</description>
+Asks for: .NET, AWS, Authorization, Availability, Azure, Build, C#, Caching, Cloud, Concurrency, Data, Design, Docker, Event, Framework, Functional, GCP, Git, Idempotency, Kafka, Kubernetes, Logging, Microsoft, RabbitMQ, Redis, Review, SQL, SQL Server, Server, Software, Technical, Unit, gRPC, Analysis, Authentication, CI/CD, Clean code, Code review, Communication, Continuous learning, Design patterns, Design system, DevOps, Distributed systems, Domain-driven design, Entity Framework, Entity Framework Core, Event-driven architecture, Eventual consistency, Feature flags, High availability, Management, Microservices, Observability, Ownership, Performance tuning, Problem solving, REST APIs, SOLID principles, Scalability, Security, Software development, System Design, Teamwork, Test-driven development, Testing, Troubleshooting, Unit testing</description>
   </item>
   <item>
     <title>برنامه‌نویس Mid-Level .Net — کارنو</title>
@@ -320,7 +401,7 @@ Asks for: Framework, Git, JavaScript, MongoDB, MySQL, NestJS, Node.js, PostgreSQ
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>ایده آل گستر — تهران · Software Engineering
 
-Asks for: .NET, Bootstrap, C#, CSS, Docker, Elasticsearch, Framework, Git, GitHub, HTML, JavaScript, Legacy, Next.js, Postman, React, SQL, SQL Server, Server, Swagger, Technical, Windows, jQuery, Analysis, CI/CD, CRM, Change management, Communication, Customer service, Documentation, ERP, Entity Framework, Management, Process improvement, REST APIs, Record keeping, Reporting, Responsive design, SEO, Sales, Teamwork, Troubleshooting</description>
+Asks for: .NET, Bootstrap, C#, CSS, Customer, Design, Docker, Elasticsearch, Framework, Git, GitHub, HTML, JavaScript, Legacy, Next.js, Postman, React, SQL, SQL Server, Server, Swagger, Technical, Windows, jQuery, Analysis, CI/CD, CRM, Change management, Communication, Customer service, Documentation, ERP, Entity Framework, Management, Process improvement, REST APIs, Record keeping, Reporting, Responsive design, SEO, Sales, Teamwork, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی نرم‌افزار — فناوری و راه حل‏‏ های هوشمند سپهر</title>
@@ -347,7 +428,7 @@ Asks for: .NET, Framework, Git, SQL, SQL Server, Server, Analysis, Domain-driven
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>جی اس ام پی — تهران · Software Engineering
 
-Asks for: Container, Docker, Git, Idempotency, Laravel, MySQL, PHP, Redis, Release, Review, Unit, Accounting, Analysis, Artificial intelligence, Authentication, Budgeting, CI/CD, Code review, Databases, Domain-driven design, Fintech, Incident management, Insurance, Integration Test, Management, Object-oriented programming, Ownership, Process improvement, REST APIs, SOLID principles, Security</description>
+Asks for: Container, Design, Docker, Git, Idempotency, Laravel, MySQL, PHP, Queues, Redis, Release, Review, Transaction, Unit, Accounting, Analysis, Artificial intelligence, Authentication, Budgeting, CI/CD, Code review, Databases, Domain-driven design, Fintech, Incident management, Insurance, Integration Test, Management, Object-oriented programming, Ownership, Process improvement, REST APIs, SOLID principles, Security</description>
   </item>
   <item>
     <title>Junior Back-end Developer(شیراز) — کارآفرینان تجارت الکترونیک راد فرتاک</title>
@@ -356,7 +437,7 @@ Asks for: Container, Docker, Git, Idempotency, Laravel, MySQL, PHP, Redis, Relea
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>کارآفرینان تجارت الکترونیک راد فرتاک — شیراز · Software Engineering
 
-Asks for: .NET, Angular, Authorization, Azure, Bootstrap, C#, CSS, Cloud, Docker, ELK, Framework, Git, HTML, JavaScript, Kafka, Logging, Microsoft, Middleware, MongoDB, NUnit, NoSQL, OAuth2, PHP, RabbitMQ, React, Redis, Review, SQL, SQL Server, Server, Tailwind CSS, TypeScript, Unit, Vue, gRPC, Analysis, Authentication, CI/CD, Clean architecture, Code review, Databases, Dependency Injection, Design patterns, DevOps, Domain-driven design, E-commerce, Entity Framework, Entity Framework Core, Integration Test, Microservices, Observability, Performance tuning, Process improvement, REST APIs, Release management, Responsive design, SOLID principles, Security, Teamwork, UI/UX design, Unit testing</description>
+Asks for: .NET, Angular, Authorization, Azure, Bootstrap, C#, CSS, Cloud, Design, Docker, ELK, Framework, Git, HTML, JavaScript, Kafka, Logging, Microsoft, Middleware, MongoDB, NUnit, NoSQL, OAuth2, PHP, RabbitMQ, React, Redis, Review, SQL, SQL Server, Server, Tailwind CSS, TypeScript, Unit, Vue, gRPC, xUnit, Analysis, Authentication, CI/CD, Clean architecture, Code review, Databases, Dependency Injection, Design patterns, DevOps, Domain-driven design, E-commerce, Entity Framework, Entity Framework Core, Integration Test, Microservices, Observability, Performance tuning, Process improvement, REST APIs, Release management, Responsive design, SOLID principles, Security, Teamwork, UI/UX design, Unit testing</description>
   </item>
   <item>
     <title>AI-Native Software Engineer — مهندسی پژوهشی فراگستر پویا</title>
@@ -365,7 +446,7 @@ Asks for: .NET, Angular, Authorization, Azure, Bootstrap, C#, CSS, Cloud, Docker
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>مهندسی پژوهشی فراگستر پویا — تهران · Software Engineering
 
-Asks for: .NET, C#, Docker, Git, Prompt, Review, SQL, SQL Server, Server, Software, Artificial intelligence, CI/CD, Debugging, Software architecture, System Design</description>
+Asks for: .NET, C#, Design, Docker, Git, Prompt, Review, SQL, SQL Server, Server, Software, Artificial intelligence, CI/CD, Debugging, Software architecture, System Design</description>
   </item>
   <item>
     <title>برنامه‌نویس React — فناوران اطلاعات خبره</title>
@@ -374,88 +455,7 @@ Asks for: .NET, C#, Docker, Git, Prompt, Review, SQL, SQL Server, Server, Softwa
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>فناوران اطلاعات خبره — تهران · Software Engineering
 
-Asks for: Git, JavaScript, React, SQL, Schema, TypeScript, Artificial intelligence, CI/CD, Clean architecture, Databases, DevOps, Management, Performance tuning, Process improvement, REST APIs, Responsive design, Scalability, Security, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس DBA (آقا) — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7aJ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7aJ</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: Availability, Data, Docker, Linux, Log, Python, Recovery, Replication, SQL Server, Sass, Schema, Backup and recovery, Business intelligence, Databases, Disaster recovery, Firewalls, High availability, Management, Networking, Observability, Performance tuning, Supervision, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارآموز برنامه نویسی #C — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7at</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7at</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: C#, SQL, SQL Server, Server, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>تحلیلگر سیستم های نرم افزاری — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7a0</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7a0</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: Agile / Scrum, Analysis, Attention to detail, BPMN, Communication, HSE, Management, Reporting, Root cause analysis, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>CTO — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7aF</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7aF</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: Availability, Build, Cloud, Refactor, Release, Review, Runbook, SQL, SQL Server, Server, CI/CD, Code review, DevOps, Distributed systems, Documentation, Management, Microservices, Ownership, Problem solving, Process improvement, REST APIs, Release management, Reporting, Risk management, Scalability, Security, System Design, Teamwork, Testing</description>
-  </item>
-  <item>
-    <title>AI Engineer — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7aR</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7aR</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: Agent, Docker, Git, LangChain, Latency, NoSQL, Ollama, OpenCV, Prompt, PyTorch, Python, TensorFlow, Transformers, vLLM, Artificial intelligence, Attention to detail, Clean code, Cost optimization, Databases, Design patterns, Large language models, Machine learning, Management, Microservices, Object-oriented programming, Observability, REST APIs, Retrieval augmented generation, Teamwork, UI/UX design</description>
-  </item>
-  <item>
-    <title>مدیر تولید نرم‌افزار — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7aS</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7aS</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: C#, Management, Process improvement, Risk management, Security, Teamwork</description>
-  </item>
-  <item>
-    <title>برنامه‌نویس Full Stack — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7aq</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7aq</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: .NET, Blazor, C#, CSS, HTML, JavaScript, Server, SignalR, Design patterns, Domain-driven design, Full-stack, Recruitment, Teamwork, UI/UX design</description>
-  </item>
-  <item>
-    <title>تیم لید NET. — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7aL</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7aL</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: .NET, Azure, Blazor, C#, Git, Jira, SQL, SQL Server, Server, Analysis, Communication, Databases, Design patterns, DevOps, Insurance, Management, Project management, SOLID principles, Supervision, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>اسکرام مستر — فناوران اطلاعات خبره</title>
-    <link>https://jobinja.ir/companies/fanavaran-5/jobs/t7a6</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanavaran-5/jobs/t7a6</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران اطلاعات خبره — تهران · Software Engineering
-
-Asks for: Agile / Scrum, Management, Teamwork</description>
+Asks for: Design, Git, JavaScript, React, SQL, Schema, TypeScript, Artificial intelligence, CI/CD, Clean architecture, Databases, DevOps, Management, Performance tuning, Process improvement, REST APIs, Responsive design, Scalability, Security, Teamwork, Troubleshooting</description>
   </item>
 </channel>
 </rss>

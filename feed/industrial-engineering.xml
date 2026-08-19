@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Industrial Engineering</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Industrial Engineering postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/industrial-engineering.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/industrial-engineering.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>کارشناس تست و مستندسازی (QA-خانم) — آیرست</title>
     <link>https://jobinja.ir/companies/irest-1/jobs/tOaH</link>
@@ -87,6 +87,15 @@ Asks for: Microsoft Excel, Review, Agile / Scrum, Analysis, Business intelligenc
     <description>اسنپ فود — تهران · Industrial Engineering
 
 Asks for: Microsoft Excel, Analysis, Inventory management, Management, Observability, Process improvement, Reporting, Supervision, Training</description>
+  </item>
+  <item>
+    <title>Junior Project Manager — نگاتیو فایو ونچرز</title>
+    <link>https://jobinja.ir/companies/negative-five-ventures-1/jobs/t7kr</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/negative-five-ventures-1/jobs/t7kr</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نگاتیو فایو ونچرز — تهران · Industrial Engineering
+
+Asks for: Build, Coordination, Follow-up, Functional, Legal, Relationship, Support, Tracking, Business development, Communication, Documentation, Investment, Management, Marketing, Project management, Recruitment, Reporting</description>
   </item>
   <item>
     <title>كارشناس بهبود كيفيت — کاخ لبخند</title>
@@ -260,6 +269,15 @@ Asks for: Attention to detail, Ownership, Reporting</description>
 Asks for: Coaching, Data, Review, Support, Analysis, Analytics, Business intelligence, Data-driven, Insurance, KPI management, Management, Process improvement, Reporting</description>
   </item>
   <item>
+    <title>کارشناس QA (مشهد) — مولتی کافه</title>
+    <link>https://jobinja.ir/companies/multicafe/jobs/t4qY</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/multicafe/jobs/t4qY</guid>
+    <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مولتی کافه — مشهد · Industrial Engineering
+
+Asks for: Auditing, HSE, KPI management, Management, Problem solving, Quality control, Recruitment, Regulatory compliance, Risk management</description>
+  </item>
+  <item>
     <title>کارشناس مهندسی صنایع — هولز</title>
     <link>https://jobinja.ir/companies/holz-2/jobs/t40F</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/holz-2/jobs/t40F</guid>
@@ -401,7 +419,7 @@ Asks for: SPSS, Analysis, Automation, Management, Market research, Reporting, Sa
     <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
     <description>لرن فایلز — تهران · Industrial Engineering
 
-Asks for: Export, Microsoft, Microsoft Excel, Oracle, Primavera, Analysis, Management, Microsoft Project, Networking, Project management, Record keeping, Reporting, Sales, Teamwork, Training</description>
+Asks for: Export, Import, Microsoft, Microsoft Excel, Oracle, Primavera, Analysis, Management, Microsoft Project, Networking, Project management, Record keeping, Reporting, Sales, Teamwork, Training</description>
   </item>
   <item>
     <title>مهندس طراحی (یخچال صنعتی) — بیک صنعت</title>
@@ -438,24 +456,6 @@ Asks for: Analysis, HSE, Inventory management, Maintenance, Management, Problem 
     <description>استودیو کوروش — مشهد · Industrial Engineering
 
 Asks for: SolidWorks, Teamwork</description>
-  </item>
-  <item>
-    <title>front office — مدل</title>
-    <link>https://career.hrcando.ir/co/mohaymen/job-detail/83244778-e04a-4509-81c4-6d46097ccafb</link>
-    <guid isPermaLink="true">https://career.hrcando.ir/co/mohaymen/job-detail/83244778-e04a-4509-81c4-6d46097ccafb</guid>
-    <pubDate>Wed, 29 Jul 2026 15:48:39 +0000</pubDate>
-    <description>مدل — تهران · Industrial Engineering
-
-Asks for: Jira, SQL, Analysis, Communication, Databases, ETL / ELT, Incident management, Management, Observability, Stakeholder management, Supervision</description>
-  </item>
-  <item>
-    <title>رییس سالن تولید (آقا) — صنایع لفاف زرین</title>
-    <link>https://jobinja.ir/companies/laffaf-zarrin/jobs/tmrk</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/laffaf-zarrin/jobs/tmrk</guid>
-    <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-    <description>صنایع لفاف زرین — تهران · Industrial Engineering
-
-Asks for: Microsoft, Microsoft Dynamics, Microsoft Excel, Analysis, Customer service, Incident management, Inventory management, Management, Problem solving, Process improvement, Quality control, Regulatory compliance, Reporting, Supervision</description>
   </item>
 </channel>
 </rss>

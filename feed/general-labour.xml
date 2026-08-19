@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — General Labour</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New General Labour postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/general-labour.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/general-labour.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>کارمند خدمات نظافتی — کارگزاری مفید</title>
     <link>https://jobinja.ir/companies/mofid-securities/jobs/CkRc</link>
@@ -296,6 +296,15 @@ Asks for: HSE</description>
 Asks for: Coordination, Follow-up, Functional, Google Workspace, Microsoft, Microsoft Excel, Review, Strategy, Support, Tracking, Attention to detail, Communication, Documentation, KPIs, Maintenance, Management, Microsoft Office, OKR, Onboarding, Problem solving, Process improvement, Reporting</description>
   </item>
   <item>
+    <title>کارمند بسته بندی و ارسال — مسترصدا</title>
+    <link>https://jobinja.ir/companies/mrseda/jobs/t4ix</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/mrseda/jobs/t4ix</guid>
+    <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مسترصدا — تهران · General Labour
+
+Asks for: Attention to detail, Customer service, Ownership, Record keeping, Sales, Teamwork</description>
+  </item>
+  <item>
     <title>سرپرست خدمات و تشریفات — تایتان</title>
     <link>https://jobinja.ir/companies/jahan-foolad-pishro/jobs/t4iv</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/jahan-foolad-pishro/jobs/t4iv</guid>
@@ -391,6 +400,13 @@ Asks for: Insurance</description>
 Asks for: HSE</description>
   </item>
   <item>
+    <title>ظرف‌ شور (خانم) — کافه نولان</title>
+    <link>https://jobinja.ir/companies/nolan-cafe/jobs/t47K</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nolan-cafe/jobs/t47K</guid>
+    <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+    <description>کافه نولان — تهران · General Labour</description>
+  </item>
+  <item>
     <title>آبدارچی — اپل آباد</title>
     <link>https://jobinja.ir/companies/apple-abad-1/jobs/t4vZ</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/apple-abad-1/jobs/t4vZ</guid>
@@ -416,22 +432,6 @@ Asks for: Attention to detail, Communication, Customer service, Management, Owne
     <description>مرکز فروش و توزیع تبریز — کرج · General Labour
 
 Asks for: HSE</description>
-  </item>
-  <item>
-    <title>کارمند خدمات (آقا) — مهیمن</title>
-    <link>https://jobinja.ir/companies/mohaymen/jobs/t4NL</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mohaymen/jobs/t4NL</guid>
-    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مهیمن — تهران · General Labour
-
-Asks for: Attention to detail, HSE, Teamwork</description>
-  </item>
-  <item>
-    <title>ویترس (خانم) — کافه رستوران کوکی</title>
-    <link>https://jobinja.ir/companies/kooke/jobs/t47m</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/kooke/jobs/t47m</guid>
-    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-    <description>کافه رستوران کوکی — تهران · General Labour</description>
   </item>
 </channel>
 </rss>

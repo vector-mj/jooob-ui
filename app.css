@@ -380,13 +380,18 @@ th.num .sort-btn { justify-content: flex-end; }
  * threw the dashboard off-screen sideways and left it there.
  */
 @media (max-width: 480px) {
-  input[type="search"], input[type="text"], .select,   /* not sticky here: with search, four filters, a toggle and a checkbox each
+  input[type="search"], input[type="text"], .select, .filterbar .select {
+    font-size: 16px;
+    padding-block: .5rem;          /* ~40px tall, reachable with a thumb */
+  }
+  /* not sticky here: with search, four filters, a toggle and a checkbox each
      on its own row, a pinned bar would occupy most of a phone screen for the
      whole session. It scrolls away and comes back at the top of the page. */
   .topbar { position: static; padding-inline: var(--space-4); gap: var(--space-2); }
-    /* two selects side by side leave ~150px each, which truncates a Persian
+  .filterbar { gap: var(--space-2); }
+  /* two selects side by side leave ~150px each, which truncates a Persian
      company name to nothing worth reading */
-    .viewswitch { flex: 1 1 100%; order: 2; justify-content: center; }
+  .filterbar .select { flex-basis: 100%; }
   .view-btn { flex: 1; padding-block: .45rem; }
   .check { font-size: .9rem; padding-block: .3rem; }
   .skill-entry { flex-direction: column; align-items: stretch; }
@@ -497,4 +502,32 @@ td a, .term-chip, .req-chip { display: inline-block; padding-block: .25rem;
   .filterbar { position: static; padding: var(--space-3); }
   .filterbar .search { flex: 1 1 100%; }
   .filterbar .select { flex: 1 1 calc(50% - var(--space-2)); max-width: none; }
+}
+
+/* ===========================================================================
+   The bar on a phone.
+   These come last on purpose: the desktop rules above pin the view switch and
+   the actions to their own edges, and a rule inside an earlier media query
+   loses to a later one of the same weight -- which is why the switch was
+   sitting at 46% width on a 393px screen instead of filling its row.
+
+   The button carries both a moon and a sun and nothing ever hid either, so the
+   two glyphs rendered side by side and read as two controls jammed together.
+   One of them is the current theme, the other is the offer; only the offer
+   belongs on screen.
+   =========================================================================== */
+[data-theme="dark"] .icon-moon,
+[data-theme="light"] .icon-sun { display: none; }
+
+@media (max-width: 560px) {
+  /* three full-width rows -- identity, what the page is for, where else to go
+     -- rather than nine controls competing for one 393px line */
+  .topbar { flex-wrap: wrap; row-gap: var(--space-3); align-items: center; }
+  .brand { flex: 1 1 100%; }
+  .viewswitch { flex: 1 1 100%; order: 2; justify-content: center; }
+  .view-btn { flex: 1; }
+  /* space-between rather than a gap: it spreads the links across the row and
+     puts the theme button on the edge a thumb actually reaches */
+  .topbar-actions { order: 3; flex: 1 1 100%; margin-inline-start: 0;
+                    justify-content: space-between; gap: var(--space-2); }
 }

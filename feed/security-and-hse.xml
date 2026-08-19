@@ -2,11 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Security &amp; HSE</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Security &amp; HSE postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/security-and-hse.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <atom:link href="https://jooob.ir/feed/security-and-hse.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>نگهبان ساختمان اداری (آقا) — نپتا صنعت خلیج فارس</title>
+    <link>https://jobinja.ir/companies/nepta-sanat/jobs/t7LX</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nepta-sanat/jobs/t7LX</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نپتا صنعت خلیج فارس — تهران · Security &amp; HSE
+
+Asks for: Management, Reporting, Security, Supervision</description>
+  </item>
   <item>
     <title>حراست(آقا) — مهروماه</title>
     <link>https://jobinja.ir/companies/mehromah/jobs/t7EN</link>

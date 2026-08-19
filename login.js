@@ -8,7 +8,7 @@
 'use strict';
 
 const THEME_KEY = 'jooob.theme';
-const DATA_URL = 'data/jooob.json';
+const DATA_URL = '/data/jooob.json';
 
 const $ = (sel) => document.querySelector(sel);
 
@@ -33,12 +33,12 @@ function say(message, bad = false) {
  */
 function nextTarget() {
   const asked = new URLSearchParams(location.search).get('next');
-  if (!asked) return 'dashboard.html';
+  if (!asked) return '/dashboard';
   try {
     const url = new URL(asked, location.href);
-    return url.origin === location.origin ? url.href : 'dashboard.html';
+    return url.origin === location.origin ? url.href : '/dashboard';
   } catch {
-    return 'dashboard.html';
+    return '/dashboard';
   }
 }
 
@@ -62,7 +62,7 @@ function show() {
     $('#continue').href = target;
     // somebody with a company claimed came here to post, not to job-hunt
     const employer = (state.me.employers || []).length > 0;
-    if (employer && target.endsWith('dashboard.html')) $('#continue').href = 'employer.html';
+    if (employer && target.endsWith('/dashboard')) $('#continue').href = '/employer';
   }
 }
 

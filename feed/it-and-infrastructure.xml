@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — IT &amp; Infrastructure</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Wed, 19 Aug 2026 11:13:52 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>IT Assistant   — Mafpars-ماف پارس</title>
     <link>https://career.hrcando.ir/co/Hyperstar/job-detail/76af3388-502f-4048-bea3-ef52fdb18028</link>
@@ -50,7 +50,7 @@ Asks for: VoIP, Networking, Technical support, Troubleshooting</description>
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>بیمه بازار — تهران · IT &amp; Infrastructure
 
-Asks for: Airflow, Data, Deploy, Docker, Orchestration, PostgreSQL, Python, SQL, Analysis, Attention to detail, Communication, Fintech, Insurance, Machine learning, Management, Observability, Problem solving, Process improvement, Testing</description>
+Asks for: Airflow, Data, Deploy, Design, Docker, Orchestration, PostgreSQL, Python, SQL, Analysis, Attention to detail, Communication, Fintech, Insurance, Machine learning, Management, Observability, Problem solving, Process improvement, Testing</description>
   </item>
   <item>
     <title>کارشناس تست نفوذ (آقا) — بهسازان ملت (بانک ملت)</title>
@@ -257,7 +257,7 @@ Asks for: Active Directory, Asterisk, Cisco, Restore, Server, VMware, Veeam, VoI
     <pubDate>Sun, 16 Aug 2026 11:26:33 +0000</pubDate>
     <description>دیجی پی — تهران · IT &amp; Infrastructure
 
-Asks for: Acquisition, Availability, Build, Data, Functional, Go, Make, Review, Support, Technical, Analysis, Attention to detail, Communication, Documentation, End-to-End, Fintech, Management, Negotiation, Onboarding, Ownership, Problem solving, Process improvement, Reporting, SLA management, Stakeholder management, Technical support, Testing, Troubleshooting</description>
+Asks for: Acquisition, Availability, Build, Customer, Data, Functional, Go, Make, Review, Support, Technical, Analysis, Attention to detail, Communication, Documentation, End-to-End, Fintech, Management, Negotiation, Onboarding, Ownership, Problem solving, Process improvement, Reporting, SLA management, Stakeholder management, Technical support, Testing, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس فنی — مرسا</title>
@@ -374,7 +374,7 @@ Asks for: Alert, Analysis, Auditing, Continuous learning, Management, Networking
     <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
     <description>ابرناک — تهران · IT &amp; Infrastructure
 
-Asks for: Build, ChatGPT, Claude, Cloud, Container, Copilot, Cursor, Data, Hosting, Infrastructure, Linux, Teaching, Analytics, Artificial intelligence, Automation, Cloud architecture, Design system, End-to-End, Firewalls, Incident management, Large language models, Networking, Penetration testing, Regulatory compliance, Reporting, Security, Testing, Virtualization</description>
+Asks for: Build, ChatGPT, Claude, Cloud, Container, Copilot, Cursor, Data, Design, Hosting, Infrastructure, Linux, Teaching, Analytics, Artificial intelligence, Automation, Cloud architecture, Design system, End-to-End, Firewalls, Incident management, Large language models, Networking, Penetration testing, Regulatory compliance, Reporting, Security, Testing, Virtualization</description>
   </item>
   <item>
     <title>Help Desk Specialist — فلای تودی</title>
@@ -392,7 +392,7 @@ Asks for: VoIP, Maintenance, Management, Networking, Ownership, Security, Superv
     <pubDate>Sat, 15 Aug 2026 09:40:54 +0000</pubDate>
     <description>علی بابا — تهران · IT &amp; Infrastructure
 
-Asks for: .NET, Alerting, Ansible, ArgoCD, Bash, Ceph, Cloud, Container, Docker, ELK, Elasticsearch, Fluentd, Git, GitLab, Go, Grafana, HAProxy, Hadoop, HashiCorp Vault, Istio, JFrog Artifactory, Kafka, Keycloak, Kubernetes, Linkerd, Linux, Log, Longhorn, MongoDB, Nginx, NoSQL, Node.js, OpenTelemetry, Perl, PostgreSQL, Prometheus, Python, RabbitMQ, Rancher, Redis, Ruby, Staging, Terraform, Trivy, Vault, VictoriaMetrics, n8n, Agile / Scrum, Automation, Backup and recovery, CI/CD, Capacity planning, Cloud architecture, Configuration management, Container orchestration, Databases, DevOps, End-to-End, GitOps, High availability, Identity &amp; access management, Incident management, Infrastructure as code, Linux administration, Management, Networking, Observability, Ownership, Recruitment, Scalability, Secrets management, Security, Service mesh, Site reliability, Storage, Troubleshooting, Vulnerability scanning</description>
+Asks for: .NET, Alerting, Ansible, ArgoCD, Bash, Ceph, Cloud, Container, Customer, Docker, ELK, Elasticsearch, Fluentd, Git, GitLab, Go, Grafana, HAProxy, Hadoop, HashiCorp Vault, Istio, JFrog Artifactory, Kafka, Keycloak, Kubernetes, Linkerd, Linux, Log, Longhorn, MongoDB, Nginx, NoSQL, Node.js, OpenTelemetry, Perl, PostgreSQL, Prometheus, Python, RabbitMQ, Rancher, Redis, Ruby, Staging, Terraform, Trivy, Vault, VictoriaMetrics, n8n, Agile / Scrum, Automation, Backup and recovery, CI/CD, Capacity planning, Cloud architecture, Configuration management, Container orchestration, Databases, DevOps, End-to-End, GitOps, High availability, Identity &amp; access management, Incident management, Infrastructure as code, Linux administration, Management, Networking, Observability, Ownership, Recruitment, Scalability, Secrets management, Security, Service mesh, Site reliability, Storage, Troubleshooting, Vulnerability scanning</description>
   </item>
   <item>
     <title>کارشناس امنیت اطلاعات — مشاور مدیریت و خدمات ماشینی تامین</title>
@@ -428,7 +428,7 @@ Asks for: Windows, Agile / Scrum, CompTIA Network+, Networking, Security, Superv
     <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
     <description>دکترتو — تهران · IT &amp; Infrastructure
 
-Asks for: Active Directory, Asterisk, Cisco, Coordination, Follow-up, FortiGate, Hardware, Hyper-V, Infrastructure, Jira, Microsoft, MikroTik, Remote, Server, Software, Support, Technical, Ticketing, VMware, VoIP, Wi-Fi, Windows, Zabbix, Analysis, Certifications, Communication, CompTIA Network+, EDR / EPP, Firewalls, ITSM / ITIL, Identity &amp; access management, Inventory management, Maintenance, Microsoft Office, Networking, Observability, Problem solving, Procurement, Reporting, SLA management, Security, Teamwork, Technical support, Troubleshooting</description>
+Asks for: Active Directory, Asterisk, Cisco, Coordination, Customer, Follow-up, FortiGate, Hardware, Hyper-V, Infrastructure, Jira, Microsoft, MikroTik, Remote, Server, Software, Support, Technical, Ticketing, VMware, VoIP, Wi-Fi, Windows, Zabbix, Analysis, Certifications, Communication, CompTIA Network+, EDR / EPP, Firewalls, ITSM / ITIL, Identity &amp; access management, Inventory management, Maintenance, Microsoft Office, Networking, Observability, Problem solving, Procurement, Reporting, SLA management, Security, Teamwork, Technical support, Troubleshooting</description>
   </item>
   <item>
     <title>پشتیبان فنی هاستینگ (آقا) — برتینا</title>
@@ -455,7 +455,7 @@ Asks for: Linux, MikroTik, Python, VMware, Windows, Artificial intelligence, Att
     <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
     <description>ویستا سامانه آسا — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Software, Terraform, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
+Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Software, Terraform, Transaction, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
   </item>
 </channel>
 </rss>

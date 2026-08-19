@@ -37,7 +37,7 @@ function when(stamp) {
 (async () => {
   let data;
   try {
-    data = await (await fetch('data/jooob.json', { cache: 'no-cache' })).json();
+    data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
   } catch {
     return;                       // the placeholders stay; nothing else to do
   }
@@ -50,17 +50,34 @@ function when(stamp) {
     [when(data.generated_at), 'updated'],
   ];
 
-  // A sign-in link only once there is something to sign in to. The front door
-  // is where somebody returning to the site looks for it, and until this the
-  // only way in was to guess at the employer page.
-  const api = (data.api && data.api.url) || '';
-  const slot = document.querySelector('#signin-slot');
-  if (api && slot) {
-    const link = document.createElement('a');
-    link.className = 'btn ghost';
-    link.textContent = 'Sign in';
-    link.href = `login.html?next=${encodeURIComponent(location.href)}`;
-    slot.append(link);
+  // One control, not two. Somebody already signed in has no use for a sign-in
+  // link, and somebody signed out has nothing to open -- so the header asks who
+  // this is and shows the half that applies. The cookie is HttpOnly, which is
+  // what makes this a request rather than a read: one call, only on the front
+  // page, and only once the export says there is an API to call at all.
+  const api = ((data.api && data.api.url) || '').replace(/\/$/, '');
+  const dash = document.querySelector('#dash-btn');
+  const signin = document.querySelector('#signin-btn');
+  if (api && dash && signin) {
+    let known = null;           // null is "could not ask", not "signed out"
+    try {
+      known = (await fetch(`${api}/me`, { credentials: 'include' })).ok;
+    } catch { /* offline, or the API is having a day */ }
+    signin.href = `/login?next=${encodeURIComponent(location.href)}`;
+    if (known !== null) {
+      dash.hidden = !known;
+      signin.hidden = known;
+      // The dashboard is not a public page any more, so a signed-out visitor is
+      // sent to sign in rather than to a page that would only send them back.
+      // Every link on the front page, not just the one in the bar: the hero
+      // button and the cards all pointed at it too.
+      if (!known) {
+        const back = encodeURIComponent(new URL('/dashboard', location.href).href);
+        for (const link of document.querySelectorAll('a[href="/dashboard"]')) {
+          link.href = `/login?next=${back}`;
+        }
+      }
+    }
   }
 
   const slots = document.querySelectorAll('#figures .lp-figure');

@@ -6,19 +6,58 @@
 <meta name="color-scheme" content="dark light">
 <title>jooob — what employers are actually hiring for</title>
 <meta name="description" content="A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.">
-
+<link rel="canonical" href="https://jooob.ir/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="jooob">
+<meta property="og:title" content="jooob — what employers are actually hiring for">
+<meta property="og:description" content="A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.">
+<meta property="og:url" content="https://jooob.ir/">
+<meta property="og:image" content="https://jooob.ir/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="jooob — what employers are actually hiring for">
+<meta name="twitter:description" content="A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.">
+<meta name="twitter:image" content="https://jooob.ir/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="base.css?v=d8dc3828">
-<link rel="stylesheet" href="landing.css?v=2e391ead">
-<link rel="alternate" type="application/rss+xml" title="jooob — newest postings" href="feed.xml">
+<link rel="stylesheet" href="/base.css?v=d76cfa81">
+<link rel="stylesheet" href="/landing.css?v=b85b4679">
+<link rel="alternate" type="application/rss+xml" title="jooob — newest postings" href="/feed.xml">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9.5' fill='none' stroke='%236ea8ff' stroke-width='3.25'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%236ea8ff'/%3E%3Ccircle cx='7.8' cy='20.8' r='3' fill='%237c5cff'/%3E%3Ccircle cx='24.2' cy='11.2' r='3' fill='%237c5cff'/%3E%3C/svg%3E">
+
+<!-- What the site is, in the form a search engine parses rather than guesses.
+     Only claims that are true and checkable: the name, the address, and that
+     the thing behind /dashboard is a search over job postings. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jooob.ir/#website",
+      "url": "https://jooob.ir/",
+      "name": "jooob",
+      "description": "A free job site built from what employers actually publish.",
+      "inLanguage": ["en", "fa"],
+      "publisher": { "@id": "https://jooob.ir/#org" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://jooob.ir/#org",
+      "name": "jooob",
+      "url": "https://jooob.ir/",
+      "logo": "https://jooob.ir/logo.svg"
+    }
+  ]
+}
+</script>
 </head>
 <body class="ui-body">
 
 <header class="ui-top">
-  <a class="ui-brand" href="./"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
+  <a class="ui-brand" href="/"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true">
       <style>.orb{transform-origin:32px 32px;transform-box:view-box;animation:rev linear infinite}
       .o1{animation-duration:28s}.o2{animation-duration:46s;animation-direction:reverse}
       .o3{animation-duration:72s}@keyframes rev{to{transform:rotate(360deg)}}
@@ -32,8 +71,11 @@
       <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
     </svg><span>jooob</span></a>
   <div class="ui-who">
-    <span id="signin-slot"></span>
-    <a class="btn ghost" href="dashboard.html">Open the dashboard</a>
+    <!-- one or the other, never both: landing.js asks the API who this is and
+         unhides the half that applies. Until it answers, the dashboard link
+         shows, because the dashboard is the thing that works signed out. -->
+    <a class="btn ghost" id="dash-btn" href="/dashboard">Open the dashboard</a>
+    <a class="btn ghost" id="signin-btn" href="/login" hidden>Sign in</a>
     <button type="button" class="btn ghost icon" id="theme-btn" aria-label="Switch theme">◐</button>
   </div>
 </header>
@@ -55,8 +97,8 @@
       scrolling through it.
     </p>
     <div class="lp-cta">
-      <a class="btn primary lg" href="dashboard.html">Find a job</a>
-      <a class="btn ghost lg" href="employer.html">Post a job — free</a>
+      <a class="btn primary lg" href="/dashboard">Find a job</a>
+      <a class="btn ghost lg" href="/employer">Post a job — free</a>
     </div>
     <dl class="lp-figures" id="figures">
       <div class="lp-figure"><dt>—</dt><dd>postings</dd></div>
@@ -76,7 +118,7 @@
         match, what you are missing, and which requirement would open the most
         doors next. No account needed — it stays in your browser.
       </p>
-      <a class="btn ghost" href="dashboard.html">Open the dashboard</a>
+      <a class="btn ghost" href="/dashboard">Open the dashboard</a>
     </article>
 
     <article class="ui-card lp-card">
@@ -89,7 +131,7 @@
         listing fee. One click to sign in, and if your address is at your
         company's own domain you are approved straight away.
       </p>
-      <a class="btn ghost" href="employer.html">Post a job</a>
+      <a class="btn ghost" href="/employer">Post a job</a>
     </article>
 
     <article class="ui-card lp-card">
@@ -102,34 +144,18 @@
         database for your name, your address or your account, so none is asked
         for and none is kept.
       </p>
-      <a class="btn ghost" href="dashboard.html">Find the company</a>
+      <a class="btn ghost" href="/dashboard">Find the company</a>
     </article>
-  </section>
-
-  <section class="ui-card lp-promise">
-    <h2 class="ui-h2">We are free, for ever</h2>
-    <p class="ui-sub">
-      Not a trial, not a freemium tier, and not a runway waiting to run out.
-      jooob costs almost nothing to run, and that is the only version of "free
-      for ever" anybody should believe.
-    </p>
-    <ul class="lp-list">
-      <li><strong>Free for people looking.</strong> No account, no CV upload, and
-        nothing behind a paywall — your skills and shortlists stay in your own
-        browser.</li>
-      <li><strong>Free for people hiring.</strong> No listing fee, no seat count,
-        and no charge to see who applied.</li>
-    </ul>
   </section>
 </main>
 
 <footer class="ui-foot">
-  <a href="dashboard.html">Dashboard</a> ·
-  <a href="employer.html">For employers</a> ·
-  <a href="feeds.html">Feeds</a>
+  <a href="/dashboard">Dashboard</a> ·
+  <a href="/employer">For employers</a> ·
+  <a href="/feeds">Feeds</a>
 </footer>
 
-<script src="landing.js?v=a63b03a1"></script>
+<script src="/landing.js?v=00b7edc7"></script>
 
 <!-- Pinned to one immutable version and checked against its hash, the same way
      the dashboard loads its chart library. The import map's `integrity` block
@@ -147,6 +173,6 @@
   }
 }
 </script>
-<script type="module" src="galaxy.js?v=3bcf1048"></script>
+<script type="module" src="/galaxy.js?v=c88c5978"></script>
 </body>
 </html>

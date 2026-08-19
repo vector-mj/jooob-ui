@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>jooob — Human Resources</title>
-  <link>https://vector-mj.github.io/jooob</link>
+  <link>https://jooob.ir</link>
   <description>New Human Resources postings, newest first.</description>
   <language>fa-IR</language>
   <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
-  <atom:link href="https://vector-mj.github.io/jooob/feed/human-resources.xml" rel="self" type="application/rss+xml"/>
+  <atom:link href="https://jooob.ir/feed/human-resources.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>مدیر تجربه کارکنان — میاره</title>
     <link>https://jobinja.ir/companies/miare/jobs/t7SG</link>
@@ -131,7 +131,7 @@ Asks for: Management</description>
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>دات‌وان سیستم — تهران · Human Resources
 
-Asks for: Data, Google Workspace, Microsoft Excel, Support, Analysis, Applicant tracking, End-to-End, Engagement, Management, Onboarding, Ownership, Problem solving, Recruitment, Stakeholder management</description>
+Asks for: Data, Design, Google Workspace, Microsoft Excel, Support, Analysis, Applicant tracking, End-to-End, Engagement, Management, Onboarding, Ownership, Problem solving, Recruitment, Stakeholder management</description>
   </item>
   <item>
     <title>کارشناس جذب استعداد (Talent Acquisition Specialist) — ابرناک</title>
@@ -269,6 +269,15 @@ Asks for: Microsoft Excel, Communication, Documentation, KPI management, Managem
 Asks for: Google Workspace, Microsoft Excel, Artificial intelligence, Communication, Contract management, KPI management, Management, Problem solving, Process improvement, Recruitment, Training</description>
   </item>
   <item>
+    <title>Talent Acquisition Specialist — نوبیتکس</title>
+    <link>https://jobinja.ir/companies/nobitex-1/jobs/t7Fk</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/nobitex-1/jobs/t7Fk</guid>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نوبیتکس — تهران · Human Resources
+
+Asks for: Acquisition, Build, Data, Feedback, Software, Technical, Branding, Communication, Documentation, End-to-End, Fintech, Management, Ownership, Problem solving, Process improvement, Recruitment, Training</description>
+  </item>
+  <item>
     <title>کارشناس منابع انسانی (مشهد) — کلور</title>
     <link>https://jobinja.ir/companies/clever-2/jobs/t7el</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/clever-2/jobs/t7el</guid>
@@ -338,7 +347,7 @@ Asks for: Microsoft Excel, Attention to detail, Communication, Continuous learni
     <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
     <description>فلای تودی — تهران · Human Resources
 
-Asks for: Acquisition, Tracking, Analysis, Applicant tracking, Branding, Human resources, Management, Negotiation, Recruitment</description>
+Asks for: Acquisition, Design, Tracking, Analysis, Applicant tracking, Branding, Human resources, Management, Negotiation, Recruitment</description>
   </item>
   <item>
     <title>ادمین اینستاگرام (کرج) — مراکی ست</title>
@@ -395,6 +404,15 @@ Asks for: Microsoft, Microsoft Excel, Microsoft Word, Attention to detail, Contr
 Asks for: Microsoft, Cloud architecture, Microsoft Office, Reporting, Training</description>
   </item>
   <item>
+    <title>کارشناس توسعه منابع انسانی (مشهد) — مولتی کافه</title>
+    <link>https://jobinja.ir/companies/multicafe/jobs/tmiT</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/multicafe/jobs/tmiT</guid>
+    <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مولتی کافه — مشهد · Human Resources
+
+Asks for: Analysis, KPI management, KPIs, Management, Observability, Process improvement, Recruitment, Reporting</description>
+  </item>
+  <item>
     <title>کارشناس ارشد توسعه منابع انسانی — دانش بنیان فناوری های پیشرو مقداد</title>
     <link>https://jobinja.ir/companies/meghdad/jobs/t44f</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/meghdad/jobs/t44f</guid>
@@ -428,7 +446,7 @@ Asks for: Acquisition, Feedback, Make, Support, Tracking, Analysis, Applicant tr
     <pubDate>Mon, 03 Aug 2026 15:07:39 +0000</pubDate>
     <description>تپسی — تهران · Human Resources
 
-Asks for: Acquisition, Build, Coordination, Data, Make, Microsoft Excel, Support, Analysis, Applicant tracking, Business intelligence, Communication, End-to-End, English proficiency, Human resources, Management, Observability, Onboarding, Ownership, Problem solving, Process improvement, Recruitment, Reporting, Stakeholder management</description>
+Asks for: Acquisition, Build, Coordination, Data, Energy, Make, Microsoft Excel, Support, Analysis, Applicant tracking, Business intelligence, Communication, End-to-End, English proficiency, Human resources, Management, Observability, Onboarding, Ownership, Problem solving, Process improvement, Recruitment, Reporting, Stakeholder management</description>
   </item>
   <item>
     <title>کارشناس اداری و منابع انسانی — هلدینگ پاپ‌کورن</title>
@@ -438,24 +456,6 @@ Asks for: Acquisition, Build, Coordination, Data, Make, Microsoft Excel, Support
     <description>هلدینگ پاپ‌کورن — تهران · Human Resources
 
 Asks for: Communication, Management, Microsoft Office, Office administration, Recruitment</description>
-  </item>
-  <item>
-    <title>کارآموز منابع انسانی(خانم) — گروه کایا</title>
-    <link>https://jobinja.ir/companies/kaya-group/jobs/tmTL</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/kaya-group/jobs/tmTL</guid>
-    <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
-    <description>گروه کایا — تهران · Human Resources
-
-Asks for: Acquisition, LinkedIn, Microsoft, Microsoft Excel, Microsoft Word, Attention to detail, Communication, Continuous learning, Management, Microsoft Office, Onboarding, Recruitment, Training</description>
-  </item>
-  <item>
-    <title>کارآموز تحلیل داده ( منابع انسانی-دورکاری) — توسعه‌گران کسب وکار نوآور کاروان</title>
-    <link>https://jobinja.ir/companies/kareone-1/jobs/t4Uh</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/kareone-1/jobs/t4Uh</guid>
-    <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه‌گران کسب وکار نوآور کاروان — تهران · Human Resources
-
-Asks for: Microsoft Excel, Power BI, Python, SQL, Analysis, Attention to detail, Business intelligence, Customer retention, Management, Ownership, Recruitment, Reporting, Training</description>
   </item>
 </channel>
 </rss>
