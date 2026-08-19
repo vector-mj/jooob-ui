@@ -531,8 +531,3 @@ td a, .term-chip, .req-chip { display: inline-block; padding-block: .25rem;
   .topbar-actions { order: 3; flex: 1 1 100%; margin-inline-start: 0;
                     justify-content: space-between; gap: var(--space-2); }
 }
-
-/* Held back until the session check answers. `visibility` rather than
-   `display`, so the layout is already settled when it is revealed and nothing
-   jumps into place in front of whoever is admitted. */
-[data-gate="checking"] .app { visibility: hidden; }

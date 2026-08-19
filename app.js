@@ -1749,13 +1749,8 @@ const pushProfile = debounce(async () => {
   }
 }, 4000);
 
-/** Show the page. Everything that is not a refusal ends up here. */
-function admit() {
-  delete document.documentElement.dataset.gate;
-}
-
 async function startSync() {
-  if (!apiBase()) { admit(); return; }   // no API in the export: it stands alone
+  if (!apiBase()) return;           // no API in the export: the page stands alone
   let who;
   try {
     who = await apiCall('/me');
@@ -1763,20 +1758,15 @@ async function startSync() {
     signedIn = false;
     renderAccount(null);
     // The dashboard is not a public page: it is what signing in is for. A 401
-    // is a definite answer, so it sends the visitor to the door -- and the page
-    // stays hidden while it does, because a redirect that happens after the
-    // paint has already shown what it was meant to withhold. A network failure
-    // is not a definite answer, so that reveals instead: locking everybody out
-    // because the API blinked would be much the worse of the two mistakes.
+    // is a definite answer, so it sends the visitor to the door -- but a
+    // network failure is not, and locking everybody out because the API blinked
+    // for a moment would be much the worse of the two mistakes.
     if (String(err.message) === 'HTTP 401') {
       location.replace(`/login?next=${encodeURIComponent(location.href)}`);
-      return;
     }
-    admit();
     return;
   }
   signedIn = true;
-  admit();
   renderAccount(who);
   try {
     const body = await apiCall('/profile');
@@ -1804,9 +1794,7 @@ function renderAccount(who) {
     out.addEventListener('click', async () => {
       try { await apiCall('/auth/logout', { method: 'POST' }); } catch { /* gone */ }
       signedIn = false;
-      // and off the page: leaving it on screen after signing out shows exactly
-      // what signing out was meant to put away
-      location.replace('/');
+      renderAccount(null);
     });
     host.append(out);
   } else {

@@ -8,11 +8,13 @@
   <lastBuildDate>Wed, 19 Aug 2026 11:13:52 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>IT Assistant   — Mafpars-ماف پارس</title>
+    <title>IT Assistant   — Hypermarkets - هایپرمارکت
+</title>
     <link>https://career.hrcando.ir/co/Hyperstar/job-detail/76af3388-502f-4048-bea3-ef52fdb18028</link>
     <guid isPermaLink="true">https://career.hrcando.ir/co/Hyperstar/job-detail/76af3388-502f-4048-bea3-ef52fdb18028</guid>
     <pubDate>Wed, 19 Aug 2026 11:13:52 +0000</pubDate>
-    <description>Mafpars-ماف پارس — تهران · IT &amp; Infrastructure
+    <description>Hypermarkets - هایپرمارکت
+ — تهران · IT &amp; Infrastructure
 
 Asks for: Data, Hardware, Helpdesk, Server, Analysis, CompTIA Network+, ICDL, Inventory management</description>
   </item>
@@ -24,6 +26,15 @@ Asks for: Data, Hardware, Helpdesk, Server, Analysis, CompTIA Network+, ICDL, In
     <description>ارتباطات مبین نت — تهران · IT &amp; Infrastructure
 
 Asks for: Customer service, Negotiation, Networking, Record keeping, Technical support, Troubleshooting</description>
+  </item>
+  <item>
+    <title>برنامه‌نویس Full Stack — نوآوران بوم گستر امید ( امیدبوم )</title>
+    <link>https://jobinja.ir/companies/omidboom/jobs/t7vp</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/omidboom/jobs/t7vp</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نوآوران بوم گستر امید ( امیدبوم ) — تهران · IT &amp; Infrastructure
+
+Asks for: .NET, Bootstrap, C#, CSS, Docker, ELK, Framework, Git, GitLab, Grafana, HTML, Java, JavaScript, Jira, Kafka, NUnit, OAuth2, RabbitMQ, Redis, Review, SQL, SQL Server, Serilog, Server, Swagger, xUnit, Analysis, Attention to detail, Authentication, CI/CD, Clean architecture, Code review, Communication, Customer service, Data modelling, Documentation, Entity Framework, Full-stack, Management, Microservices, Observability, Problem solving, Process improvement, REST APIs, Record keeping, Release management, Root cause analysis, Security, Teamwork, Technical support, Troubleshooting, UI/UX design</description>
   </item>
   <item>
     <title>DevOps Team Lead — متا سینا</title>
@@ -95,7 +106,7 @@ Asks for: Analysis, CompTIA Network+, Customer service, Documentation, Observabi
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>آسیاتک — تهران · IT &amp; Infrastructure
 
-Asks for: Zabbix, Analysis, Automation, Best Practice, Change management, Documentation, ITSM / ITIL, Management, Networking, Observability, Record keeping, Reporting, Risk management, Supervision</description>
+Asks for: Scheduling, Zabbix, Analysis, Automation, Best Practice, Change management, Documentation, ITSM / ITIL, Management, Networking, Observability, Record keeping, Reporting, Risk management, Supervision</description>
   </item>
   <item>
     <title>DevOps Engineer (آقا) — تحلیل گران شبکه آریانا</title>
@@ -447,15 +458,6 @@ Asks for: HTML, PHP, cPanel, CompTIA Network+, Networking, Problem solving, Recr
     <description>داده پردازان نوین آسام — تبریز · IT &amp; Infrastructure
 
 Asks for: Linux, MikroTik, Python, VMware, Windows, Artificial intelligence, Attention to detail, Certifications, Communication, Customer service, Debugging, English proficiency, Firewalls, Process improvement, Recruitment, Sales, Teamwork, Technical support</description>
-  </item>
-  <item>
-    <title>Cloud Engineer — ویستا سامانه آسا</title>
-    <link>https://jobinja.ir/companies/asa-1/jobs/t7P2</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/asa-1/jobs/t7P2</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ویستا سامانه آسا — تهران · IT &amp; Infrastructure
-
-Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Software, Terraform, Transaction, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
   </item>
 </channel>
 </rss>

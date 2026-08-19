@@ -63,6 +63,3 @@
 @media (prefers-reduced-motion: reduce) {
   .bar { transition: none; }
 }
-
-/* held back until the API says who this is; see the note in the page head */
-[data-gate="checking"] body { visibility: hidden; }
