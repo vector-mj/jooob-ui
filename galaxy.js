@@ -21,7 +21,7 @@ const coarse = matchMedia('(pointer: coarse)').matches;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /** How much this device should be asked to draw. */
-const STARS = coarse ? 4200 : 11000;
+const STARS = coarse ? 5200 : 15000;
 const LABELS = coarse ? 18 : 34;
 
 /** Terms an employer actually asked for. */
@@ -99,7 +99,7 @@ function core(THREE, rgb, light) {
     opacity: light ? 0.28 : 0.5,
     blending: light ? THREE.NormalBlending : THREE.AdditiveBlending,
   }));
-  sprite.scale.set(24, 24, 1);
+  sprite.scale.set(30, 30, 1);
   return sprite;
 }
 
@@ -162,11 +162,11 @@ function stars(THREE, count, inner, outer, light) {
   const far = new THREE.Color(outer);
 
   for (let i = 0; i < count; i += 1) {
-    const radius = Math.pow(Math.random(), 0.62) * 38 + 1.8;
+    const radius = Math.pow(Math.random(), 0.62) * 54 + 1.8;
     const arm = (i % 2) * Math.PI;
     // cubed, so most of the scatter hugs the arm and only a few stars stray
     const stray = () => Math.pow(Math.random(), 3) * (Math.random() < 0.5 ? 1 : -1) * radius * 0.22;
-    const angle = arm + radius * 0.2 + Math.random() * 0.26;
+    const angle = arm + radius * 0.15 + Math.random() * 0.26;
 
     // the scatter is folded back into a radius and an angle, so it turns with
     // the arm instead of standing still while the arm slides out from under it
@@ -179,7 +179,7 @@ function stars(THREE, count, inner, outer, light) {
     scales[i] = 0.55 + Math.pow(Math.random(), 2.5) * 2.2;
     seeds[i] = Math.random();
 
-    const shade = near.clone().lerp(far, Math.min(radii[i] / 40, 1));
+    const shade = near.clone().lerp(far, Math.min(radii[i] / 56, 1));
     colours[i * 3] = shade.r;
     colours[i * 3 + 1] = shade.g;
     colours[i * 3 + 2] = shade.b;
@@ -257,7 +257,7 @@ async function build() {
   for (const term of await terms()) {
     const sprite = label(THREE, term, light ? '#3f4c6b' : '#cfe3ff');
     // only in the outer disc: the middle of the screen belongs to the headline
-    const radius = 20 + Math.random() * 20;
+    const radius = 24 + Math.random() * 30;
     // A word is a thing in the galaxy, so it travels like one: same law as the
     // shader gives a star at that radius, which is what keeps it moving with
     // the arm it sits in rather than sliding across one.
@@ -348,7 +348,7 @@ async function build() {
                         Math.sin(o.angle) * o.radius);
       // dimmer the further out it drifts, so the edge of the field falls away
       // instead of ending
-      word.material.opacity = 0.36 * (1 - Math.min((o.radius - 20) / 26, 0.55));
+      word.material.opacity = 0.36 * (1 - Math.min((o.radius - 24) / 40, 0.55));
     }
 
     renderer.render(scene, camera);
