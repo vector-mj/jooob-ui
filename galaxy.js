@@ -21,8 +21,8 @@ const coarse = matchMedia('(pointer: coarse)').matches;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /** How much this device should be asked to draw. */
-const STARS = coarse ? 2600 : 6500;
-const LABELS = coarse ? 14 : 26;
+const STARS = coarse ? 4200 : 11000;
+const LABELS = coarse ? 18 : 34;
 
 /** Terms an employer actually asked for. */
 async function terms() {
@@ -99,7 +99,7 @@ function core(THREE, rgb, light) {
     opacity: light ? 0.28 : 0.5,
     blending: light ? THREE.NormalBlending : THREE.AdditiveBlending,
   }));
-  sprite.scale.set(19, 19, 1);
+  sprite.scale.set(24, 24, 1);
   return sprite;
 }
 
@@ -162,11 +162,11 @@ function stars(THREE, count, inner, outer, light) {
   const far = new THREE.Color(outer);
 
   for (let i = 0; i < count; i += 1) {
-    const radius = Math.pow(Math.random(), 0.62) * 26 + 1.6;
+    const radius = Math.pow(Math.random(), 0.62) * 38 + 1.8;
     const arm = (i % 2) * Math.PI;
     // cubed, so most of the scatter hugs the arm and only a few stars stray
     const stray = () => Math.pow(Math.random(), 3) * (Math.random() < 0.5 ? 1 : -1) * radius * 0.22;
-    const angle = arm + radius * 0.27 + Math.random() * 0.26;
+    const angle = arm + radius * 0.2 + Math.random() * 0.26;
 
     // the scatter is folded back into a radius and an angle, so it turns with
     // the arm instead of standing still while the arm slides out from under it
@@ -179,7 +179,7 @@ function stars(THREE, count, inner, outer, light) {
     scales[i] = 0.55 + Math.pow(Math.random(), 2.5) * 2.2;
     seeds[i] = Math.random();
 
-    const shade = near.clone().lerp(far, Math.min(radii[i] / 28, 1));
+    const shade = near.clone().lerp(far, Math.min(radii[i] / 40, 1));
     colours[i * 3] = shade.r;
     colours[i * 3 + 1] = shade.g;
     colours[i * 3 + 2] = shade.b;
@@ -201,7 +201,7 @@ function stars(THREE, count, inner, outer, light) {
     fragmentShader: FRAGMENT,
     uniforms: {
       uTime: { value: 0 },
-      uSize: { value: 4.8 },
+      uSize: { value: 4.2 },
       uRatio: { value: Math.min(devicePixelRatio || 1, 1.75) },
       uOpacity: { value: light ? 0.7 : 0.95 },
     },
@@ -240,7 +240,7 @@ async function build() {
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(56, 1, 0.1, 300);
-  camera.position.set(0, 26, 40);
+  camera.position.set(0, 30, 52);
   camera.lookAt(0, 0, 0);
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true,
@@ -257,12 +257,18 @@ async function build() {
   for (const term of await terms()) {
     const sprite = label(THREE, term, light ? '#3f4c6b' : '#cfe3ff');
     // only in the outer disc: the middle of the screen belongs to the headline
-    const radius = 17 + Math.random() * 13;
-    const angle = Math.random() * Math.PI * 2;
-    sprite.position.set(Math.cos(angle) * radius,
-                        (Math.random() - 0.5) * 9,
-                        Math.sin(angle) * radius);
-    sprite.userData.drift = 0.1 + Math.random() * 0.25;
+    const radius = 20 + Math.random() * 20;
+    // A word is a thing in the galaxy, so it travels like one: same law as the
+    // shader gives a star at that radius, which is what keeps it moving with
+    // the arm it sits in rather than sliding across one.
+    sprite.userData.orbit = {
+      radius,
+      angle: Math.random() * Math.PI * 2,
+      speed: 1.5 / (radius + 6) + 0.014,
+      height: (Math.random() - 0.5) * 7,
+      bob: 0.08 + Math.random() * 0.1,
+      phase: Math.random() * Math.PI * 2,
+    };
     galaxy.add(sprite);
     words.push(sprite);
   }
@@ -292,8 +298,12 @@ async function build() {
 
   // reduced motion gets one still frame: the picture, without the movement
   if (reduced) {
-    galaxy.rotation.y = 0.6;
-    for (const word of words) word.material.opacity = 0.34;
+    for (const word of words) {
+      const o = word.userData.orbit;
+      word.position.set(Math.cos(o.angle) * o.radius, o.height,
+                        Math.sin(o.angle) * o.radius);
+      word.material.opacity = 0.36;
+    }
     renderer.render(scene, camera);
     teardown = () => renderer.dispose();
     return;
@@ -314,25 +324,31 @@ async function build() {
     time += step;
     disc.material.uniforms.uTime.value = time;
 
-    // the group turns slowly on top of the shader's shear, which is what
-    // carries the words around: the shear alone would leave them hanging still
-    galaxy.rotation.y += step * 0.02;
+    // No rigid spin any more. It was here to carry the words, and it did that
+    // by turning the whole picture -- so the words crossed the arms instead of
+    // riding them, and the shader's shear was fighting a wheel. The words now
+    // carry themselves, and the only thing left on the group is the tilt.
     galaxy.rotation.x += (tiltY - galaxy.rotation.x * 0.5) * step * 0.6;
     galaxy.position.x += (tiltX * 4 - galaxy.position.x) * step * 1.2;
 
     // the disc breathes: a camera that never moves makes the depth read flat,
     // and three units over half a minute is felt rather than seen
-    camera.position.z = 40 + Math.sin(time * 0.11) * 2.4;
-    camera.position.y = 26 + Math.sin(time * 0.07) * 1.8;
+    camera.position.z = 52 + Math.sin(time * 0.11) * 3;
+    camera.position.y = 30 + Math.sin(time * 0.07) * 2.2;
     camera.lookAt(0, 0, 0);
 
-    // the words rise slowly out of the disc and fold back into it, fading at
-    // both ends so nothing is ever seen popping in or out at the edge
+    // Each word orbits at its own radius, so the field is never the same twice
+    // and nothing ever has to be teleported back to where it started -- the old
+    // rise-and-wrap needed a fade at both ends to hide exactly that.
     for (const word of words) {
-      word.position.y += word.userData.drift * step;
-      if (word.position.y > 6) word.position.y = -6;
-      const edge = Math.min(word.position.y + 6, 6 - word.position.y) / 2.5;
-      word.material.opacity = 0.34 * Math.min(edge, 1);
+      const o = word.userData.orbit;
+      o.angle += o.speed * step;
+      word.position.set(Math.cos(o.angle) * o.radius,
+                        o.height + Math.sin(time * o.bob + o.phase) * 1.6,
+                        Math.sin(o.angle) * o.radius);
+      // dimmer the further out it drifts, so the edge of the field falls away
+      // instead of ending
+      word.material.opacity = 0.36 * (1 - Math.min((o.radius - 20) / 26, 0.55));
     }
 
     renderer.render(scene, camera);
