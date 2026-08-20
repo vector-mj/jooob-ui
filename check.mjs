@@ -656,5 +656,44 @@ ok('a rich posting keeps all its spellings, not a capped sample',
      `${app.state.me.searches.length} kept`);
 }
 
+// --- the two languages say the same things --------------------------------
+// The Persian copy is written and revised by hand, and the failure that costs
+// the most is the quiet one: a key dropped in translation renders as whatever
+// English happened to be in the markup, on one page, in one language, which
+// nobody who reads the other language will ever see.
+{
+  const load = (code) => JSON.parse(fs.readFileSync(`${root}lang/${code}.json`, 'utf8'));
+  const en = load('en');
+  const fa = load('fa');
+
+  const paths = (node, prefix = '') => Object.entries(node).flatMap(([k, v]) => {
+    const key = prefix ? `${prefix}.${k}` : k;
+    return v && typeof v === 'object' ? paths(v, key) : [key];
+  });
+  const at = (o, k) => k.split('.').reduce((a, s) => a[s], o);
+
+  const inEn = paths(en);
+  const inFa = paths(fa);
+  const missing = inEn.filter((k) => !inFa.includes(k));
+  const extra = inFa.filter((k) => !inEn.includes(k));
+
+  ok('every English key has a Persian one', missing.length === 0, missing.join(', '));
+  ok('...and Persian invents none of its own', extra.length === 0, extra.join(', '));
+  ok('no string was left empty',
+     !inEn.some((k) => !String(at(en, k)).trim())
+       && !inFa.some((k) => !String(at(fa, k)).trim()));
+  // the direction is data, not a guess made in the stylesheet
+  ok('Persian is right-to-left and English is not',
+     fa.meta.dir === 'rtl' && en.meta.dir === 'ltr',
+     `${fa.meta.dir} / ${en.meta.dir}`);
+  // a translated sentence that drops its {n} renders the placeholder to nobody
+  ok('both catalogues carry the same placeholders',
+     inEn.filter((k) => inFa.includes(k)).every((k) => {
+       const slots = (s) => (String(s).match(/\{\w+\}/g) || []).sort().join(',');
+       return slots(at(en, k)) === slots(at(fa, k));
+     }));
+  console.log(`     ${inEn.length} keys in each catalogue`);
+}
+
 console.log(failed ? `\n${failed} check(s) failed` : '\nall checks passed');
 process.exit(failed ? 1 : 0);
