@@ -79,6 +79,16 @@
            background: var(--bg); border: 1px dashed var(--line-strong);
            color: var(--text); }
 
+/* The code sits on white whatever the theme is doing. A scanner wants dark on
+   light and nothing else, and a QR inverted for a dark page is one a good half
+   of phone cameras refuse -- so this is the one tile on the site that does not
+   follow the palette. The padding is the quiet zone the standard asks for. */
+.dn-body { display: flex; gap: var(--space-4); align-items: flex-start; }
+.dn-qr { flex: none; width: 116px; height: 116px; padding: 7px;
+         background: #fff; border-radius: var(--radius-sm); }
+.dn-side { flex: 1; min-width: 0; display: flex; flex-direction: column;
+           gap: var(--space-3); }
+
 .dn-copy { align-self: flex-start; }
 .dn-copy[data-done] { color: var(--ok); border-color: var(--ok); }
 
@@ -94,6 +104,12 @@
             display: flex; align-items: center; gap: var(--space-2); }
 .dn-claim::before { content: ""; flex: none; width: 6px; height: 6px;
                     border-radius: var(--radius-full); background: var(--ok); }
+
+@media (max-width: 430px) {
+  /* below this the address has no room left beside the code */
+  .dn-body { flex-direction: column; align-items: center; }
+  .dn-side { align-self: stretch; }
+}
 
 @media (max-width: 600px) {
   .dn-hero { padding-block-start: var(--space-4); }

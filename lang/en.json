@@ -21,6 +21,10 @@
     "copyright": "© 2026 jooob.ir"
   },
 
+  "common": {
+    "loading": "Loading…"
+  },
+
   "landing": {
     "docTitle": "jooob — what employers are actually hiring for",
     "docDescription": "A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.",

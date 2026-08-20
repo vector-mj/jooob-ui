@@ -528,3 +528,24 @@ td a, .term-chip, .req-chip { display: inline-block; padding-block: .25rem;
    `display`, so the layout is already settled when it is revealed and nothing
    jumps into place in front of whoever is admitted. */
 [data-gate="checking"] .app { visibility: hidden; }
+
+/* ...and something to look at while it is. The mark is the loader: it is
+   already the thing that turns, so the wait is on-brand rather than a borrowed
+   spinner, and it needs no asset that could itself be the slow part. */
+.gate-wait { display: none; }
+[data-gate="checking"] .gate-wait {
+  display: flex; position: fixed; inset: 0; z-index: 30;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: var(--space-4); background: var(--bg); color: var(--text);
+}
+.gate-mark { width: 58px; height: 58px; }
+.gate-orb { transform-origin: 32px 32px; transform-box: view-box;
+            animation: gate-rev 2.4s linear infinite; }
+.gate-orb.two { animation-duration: 3.8s; animation-direction: reverse; }
+@keyframes gate-rev { to { transform: rotate(360deg); } }
+.gate-said { margin: 0; font-size: .85rem; color: var(--text-muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  /* still the mark, still says it is working, just not turning */
+  .gate-orb { animation: none; }
+}

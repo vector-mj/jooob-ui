@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/base.css?v=77b77539">
-<link rel="stylesheet" href="/app.css?v=dc76a8d2">
+<link rel="stylesheet" href="/app.css?v=eca6fec1">
 <script src="/i18n.js?v=9bc6a762"></script>
 <link rel="alternate" type="application/rss+xml" title="jooob — newest postings"
       href="/feed.xml">
@@ -30,6 +30,22 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
 </script>
 </head>
 <body>
+
+<!-- Shown while the session check above is still in flight, and only then. The
+     app is set to `visibility: hidden` for that window, which without this is
+     an entirely blank page -- and a blank page is indistinguishable from a
+     broken one, so people reload it, which starts the wait again. -->
+<div class="gate-wait" role="status" aria-live="polite">
+  <svg class="gate-mark" viewBox="0 0 64 64" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="3.5">
+      <circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/>
+      <circle cx="32" cy="32" r="26" opacity=".5"/></g>
+    <circle cx="32" cy="32" r="4.5" fill="currentColor"/>
+    <g class="gate-orb"><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/></g>
+    <g class="gate-orb two"><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/></g>
+  </svg>
+  <p class="gate-said" data-i18n="common.loading">در حال بارگذاری…</p>
+</div>
 
 <!-- ── dashboard ──────────────────────────────────────────────────────── -->
 <div id="app" class="app">
