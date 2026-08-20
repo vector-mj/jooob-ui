@@ -11,6 +11,8 @@
 .lp-lede { margin: 0 auto var(--space-5); max-width: 56ch; color: var(--text-muted);
            font-size: clamp(.98rem, 2.4vw, 1.1rem); line-height: 1.65; }
 .lp-cta { display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; }
+.lp-support { margin: var(--space-4) 0 0; }
+.lp-support .btn { gap: var(--space-2); }
 
 /* --- live figures, so the pitch is checkable ----------------------------- */
 .lp-figures { display: flex; justify-content: center; gap: var(--space-6);
