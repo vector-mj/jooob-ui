@@ -8,7 +8,9 @@
 'use strict';
 
 const THEME_KEY = 'jooob.theme';
-const DATA_URL = '/data/jooob.json';
+// One field is wanted here -- where the API answers -- and landing.json carries
+// it. Reading the export for it cost 1.7 MB on a page that shows a button.
+const DATA_URL = '/data/landing.json';
 
 const $ = (sel) => document.querySelector(sel);
 
@@ -85,7 +87,7 @@ async function boot() {
   });
 
   try {
-    const data = await (await fetch(DATA_URL, { cache: 'no-cache' })).json();
+    const data = await (await fetch(DATA_URL)).json();
     state.api = (data.api && data.api.url) || '';
   } catch {
     state.api = '';

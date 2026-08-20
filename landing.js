@@ -2,8 +2,9 @@
  *
  * Its only job is to put real numbers under the pitch. A landing page that
  * claims coverage without showing any is asking to be taken on faith, and the
- * figures are already sitting in the file the dashboard reads -- so they cost
- * one fetch and no backend at all.
+ * export counts the figures on its way past -- so they cost one small fetch
+ * and no backend at all. It reads landing.json rather than the export itself
+ * because the front page needs three numbers and some words, not the corpus.
  *
  * If that fetch fails the em-dashes simply stay: the page is written to be
  * complete without them.
@@ -37,16 +38,17 @@ function when(stamp) {
 (async () => {
   let data;
   try {
-    data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
+    data = await (await fetch('/data/landing.json')).json();
   } catch {
     return;                       // the placeholders stay; nothing else to do
   }
 
-  const live = (data.jobs || []).filter((job) => job.active).length;
+  // Counted by the export, not here. Three figures used to cost the whole
+  // corpus -- 1.7 MB, and twelve thousand postings walked to find the live
+  // ones -- so the page showed em-dashes until all of it had arrived.
   const figures = [
-    [live.toLocaleString('en-US'), 'postings'],
-    [(data.companies_known || (data.companies || []).length).toLocaleString('en-US'),
-     'companies'],
+    [(data.postings || 0).toLocaleString('en-US'), 'postings'],
+    [(data.companies || 0).toLocaleString('en-US'), 'companies'],
     [when(data.generated_at), 'updated'],
   ];
 

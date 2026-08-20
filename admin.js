@@ -1308,7 +1308,9 @@ async function boot() {
   $('#signout').addEventListener('click', signOut);
 
   try {
-    const data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
+    // the export itself, not landing.json: the queue is titled from the
+    // postings, which is the one place on the site that genuinely wants them all
+    const data = await (await fetch('/data/jooob.json')).json();
     state.api = (data.api && data.api.url) || '';
     // the file is already downloaded for the line above, so titling the job
     // list from it costs one pass over an array and no extra request

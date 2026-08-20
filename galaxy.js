@@ -27,15 +27,16 @@ const LABELS = coarse ? 18 : 34;
 /** Terms an employer actually asked for. */
 async function terms() {
   try {
-    const data = await (await fetch('/data/jooob.json', { cache: 'no-cache' })).json();
-    const known = Object.values(data.vocabulary || {});
-    const unique = [...new Set(known.filter((t) => typeof t === 'string' && t.length < 22))];
+    // landing.json, not the export: the words are all this wants, and the
+    // export is 1.7 MB of postings to find them in
+    const { words } = await (await fetch('/data/landing.json')).json();
+    const short = (words || []).filter((t) => typeof t === 'string' && t.length < 22);
     // shuffled, so two visits do not show the same constellation
-    for (let i = unique.length - 1; i > 0; i -= 1) {
+    for (let i = short.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
-      [unique[i], unique[j]] = [unique[j], unique[i]];
+      [short[i], short[j]] = [short[j], short[i]];
     }
-    return unique.slice(0, LABELS);
+    return short.slice(0, LABELS);
   } catch {
     return [];
   }
