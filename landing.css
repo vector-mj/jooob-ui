@@ -52,8 +52,13 @@
              mask-image: linear-gradient(180deg, #000 0%, #000 42%, transparent 78%);
              -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 42%, transparent 78%); }
 
-/* the page itself sits above the backdrop */
-.lp-main, .ui-top, .ui-foot { position: relative; z-index: 1; }
+/* The page itself sits above the backdrop. The header is not listed: base.css
+   already gives it `sticky` and z-index 20, and naming it here overrode both --
+   which dropped it to the main element's own layer, and main comes later, so
+   the page was painting over the header. The hero's glow below bleeds upward
+   into the header's row, and that is the half of each button that stopped
+   answering a tap on a phone. */
+.lp-main, .ui-foot { position: relative; z-index: 1; }
 
 /* the hero reads against the galaxy rather than on top of a busy patch of it */
 .lp-hero { position: relative; }
@@ -61,7 +66,10 @@
    document to 471px inside a 412px viewport, and the fixed canvas then sized
    itself to the document rather than the window -- one overflow producing two
    symptoms. */
+/* `pointer-events: none` for the same reason the galaxy has it: this is a
+   gradient, and a gradient must never be the reason a button does not click. */
 .lp-hero::before { content: ""; position: absolute; inset: -14% 0; z-index: -1;
+                   pointer-events: none;
                    background: radial-gradient(ellipse at center,
                      color-mix(in srgb, var(--bg) 78%, transparent) 0%,
                      transparent 72%); }
