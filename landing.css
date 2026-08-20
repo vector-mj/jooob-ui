@@ -8,6 +8,15 @@
    the galaxy's core, which is fixed to the centre of the viewport. */
 .lp-main { max-width: 960px; gap: var(--space-6); justify-content: center; }
 
+/* --- the mark, introducing rather than identifying ------------------------ */
+/* Bigger on the front door than in the bars that only have to say which site
+   this is. No new class: landing.css is loaded by this page alone and comes
+   after base.css, so naming the same selectors is all the scoping needed.
+   30px is well clear of brand.md's 20px floor for the mark, and the topbar has
+   the room -- 60px tall, 12px of padding above and below. */
+.brand-orbits { width: 30px; height: 30px; }
+.ui-brand { font-size: 1.22rem; gap: .5rem; }
+
 /* --- the pitch ----------------------------------------------------------- */
 .lp-hero { text-align: center; padding: var(--space-6) 0 var(--space-2); }
 .lp-eyebrow { margin: 0 0 var(--space-3); font-size: .74rem; font-weight: 600;
@@ -29,6 +38,10 @@
 
 
 @media (max-width: 600px) {
+  /* the bar loses its padding at this width and gains a second button, so the
+     mark comes back down rather than pushing them together */
+  .brand-orbits { width: 26px; height: 26px; }
+  .ui-brand { font-size: 1.1rem; }
   .lp-hero { padding-block-start: var(--space-4); }
   .lp-figures { gap: var(--space-4); }
   .lp-figure dt { font-size: 1.3rem; }
