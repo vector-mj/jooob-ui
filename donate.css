@@ -1,0 +1,108 @@
+/* Support the project.
+   The one page that asks for something, so it is written to earn it: what the
+   money is for, then the addresses, then the mistake that loses them. Tokens
+   from base.css throughout -- the only literal colours here arrive per-card as
+   `--net`, and each is the chain's own, because a donor recognises Bitcoin
+   orange faster than any label. */
+
+.dn-main { max-width: 900px; gap: var(--space-6); }
+
+/* --- what it is for ------------------------------------------------------ */
+.dn-hero { text-align: center; padding: var(--space-6) 0 var(--space-2);
+           position: relative; }
+/* the same soft ground the landing hero sits on, and decorative in exactly the
+   same way -- so it takes no pointer events either */
+.dn-hero::before { content: ""; position: absolute; inset: -20% 0 -10%; z-index: -1;
+                   pointer-events: none;
+                   background: radial-gradient(ellipse at center,
+                     var(--accent-soft) 0%, transparent 70%); }
+.dn-eyebrow { margin: 0 0 var(--space-3); font-size: .74rem; font-weight: 600;
+              text-transform: uppercase; letter-spacing: .1em; color: var(--ok); }
+.dn-lede { margin: 0 auto var(--space-6); max-width: 58ch; color: var(--text-muted);
+           font-size: clamp(.98rem, 2.4vw, 1.08rem); line-height: 1.7; }
+
+.dn-costs { display: flex; justify-content: center; gap: var(--space-6);
+            flex-wrap: wrap; margin: 0; }
+.dn-cost { display: flex; flex-direction: column; align-items: center; gap: .1rem; }
+.dn-cost dt { font-size: 1.5rem; font-weight: 700; letter-spacing: -.02em;
+              font-variant-numeric: tabular-nums;
+              /* the two brand bodies, the one place a gradient belongs here */
+              background: linear-gradient(120deg, var(--accent), var(--accent-2));
+              -webkit-background-clip: text; background-clip: text;
+              color: transparent; }
+.dn-cost dd { margin: 0; font-size: .76rem; color: var(--text-faint);
+              text-transform: uppercase; letter-spacing: .06em; }
+
+/* --- the thing that loses donations -------------------------------------- */
+/* Loud on purpose, and above the addresses rather than below them: a warning
+   under the thing it warns about is read after the mistake. */
+.dn-warn { margin: 0; padding: var(--space-4) var(--space-5);
+           border: 1px solid color-mix(in srgb, var(--warn) 42%, var(--line));
+           border-inline-start: 3px solid var(--warn);
+           border-radius: var(--radius);
+           background: color-mix(in srgb, var(--warn) 8%, var(--surface));
+           color: var(--text-muted); font-size: .9rem; line-height: 1.65; }
+.dn-warn strong { color: var(--text); }
+
+/* --- one card per chain --------------------------------------------------- */
+.dn-grid { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
+@media (min-width: 720px) { .dn-grid { grid-template-columns: 1fr 1fr; } }
+
+.dn-card { position: relative; display: flex; flex-direction: column;
+           gap: var(--space-3); padding: var(--space-5);
+           background: var(--surface); border: 1px solid var(--line);
+           border-radius: var(--radius); overflow: hidden;
+           transition: border-color var(--dur-2) var(--ease),
+                       transform var(--dur-2) var(--ease); }
+/* the chain's colour, as a wash rather than a fill: enough to tell the cards
+   apart at a glance without turning the page into a paint chart */
+.dn-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 2px;
+                   background: linear-gradient(90deg, var(--net), transparent 78%); }
+.dn-card:hover { border-color: color-mix(in srgb, var(--net) 45%, var(--line-strong));
+                 transform: translateY(-2px); }
+
+.dn-card-head { display: flex; align-items: center; gap: var(--space-3); }
+.dn-titles { min-width: 0; }
+/* an orbit, not a disc -- the mark is three rings and this is the page's one
+   echo of it, tinted per chain */
+.dn-ring { flex: none; width: 26px; height: 26px; border-radius: var(--radius-full);
+           border: 2.5px solid var(--net); position: relative; }
+.dn-ring::after { content: ""; position: absolute; inset: 50% auto auto 50%;
+                  width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px;
+                  border-radius: var(--radius-full); background: var(--net); }
+
+.dn-net { margin: 0; font-size: 1.02rem; font-weight: 650; letter-spacing: -.01em;
+          display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.dn-takes { margin: .15rem 0 0; font-size: .8rem; color: var(--text-faint); }
+
+.dn-tag { font-size: .64rem; font-weight: 700; text-transform: uppercase;
+          letter-spacing: .08em; padding: .16rem .45rem;
+          border-radius: var(--radius-full); color: var(--ok);
+          background: color-mix(in srgb, var(--ok) 14%, transparent);
+          border: 1px solid color-mix(in srgb, var(--ok) 32%, transparent); }
+
+/* An address is 34-44 characters of noise that has to survive being read on a
+   360px phone, so it wraps anywhere rather than scrolling sideways: a string
+   half of which is off-screen is one a donor mistypes. */
+.dn-addr { margin: 0; font-family: var(--font-mono); font-size: .78rem;
+           line-height: 1.75; overflow-wrap: anywhere; user-select: all;
+           padding: var(--space-3); border-radius: var(--radius-sm);
+           background: var(--bg); border: 1px dashed var(--line-strong);
+           color: var(--text); }
+
+.dn-copy { align-self: flex-start; }
+.dn-copy[data-done] { color: var(--ok); border-color: var(--ok); }
+
+/* --- the rest of the answer ---------------------------------------------- */
+.dn-note { display: flex; flex-direction: column; gap: var(--space-2); }
+.dn-note .ui-h2 { margin: var(--space-4) 0 0; }
+.dn-note .ui-h2:first-child { margin-block-start: 0; }
+.dn-note .ui-sub { margin: 0; line-height: 1.7; }
+.dn-note strong { color: var(--text); }
+
+@media (max-width: 600px) {
+  .dn-hero { padding-block-start: var(--space-4); }
+  .dn-costs { gap: var(--space-4); }
+  .dn-cost dt { font-size: 1.25rem; }
+  .dn-card { padding: var(--space-4); }
+}

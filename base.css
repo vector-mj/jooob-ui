@@ -272,6 +272,12 @@ input::placeholder { color: var(--text-faint); }
 .btn.primary:hover:not(:disabled) { box-shadow: var(--glow); }
 .btn.ghost { background: transparent; border-color: var(--line); }
 .btn.ghost:hover:not(:disabled) { background: var(--surface-2); }
+/* The two brand bodies, running into each other. It is the only filled gradient
+   on the site, which is what makes it read as the one button that asks rather
+   than tells -- and it is nowhere near the mark, which never gets one. */
+.btn.donate { border-color: transparent; color: #08111f;
+              background-image: linear-gradient(120deg, var(--accent), var(--accent-2)); }
+.btn.donate:hover:not(:disabled) { border-color: transparent; box-shadow: var(--glow); }
 .btn.sm { min-height: 40px; padding: .35rem .7rem; font-size: .8rem; }
 .btn.lg { min-height: 52px; padding: .8rem 1.6rem; font-size: .98rem; }
 .btn.icon { min-width: 44px; padding: .4rem; }
