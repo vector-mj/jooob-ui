@@ -278,6 +278,11 @@ input::placeholder { color: var(--text-faint); }
 .btn.donate { border-color: transparent; color: #08111f;
               background-image: linear-gradient(120deg, var(--accent), var(--accent-2)); }
 .btn.donate:hover:not(:disabled) { border-color: transparent; box-shadow: var(--glow); }
+/* The heart is the one mark on this button that is not the brand's. A heart is
+   red or it is just a shape, and the label beside it stays dark for contrast --
+   so this overrides the `fill="currentColor"` the icon ships with rather than
+   inheriting it. Deep enough to hold against the accent gradient underneath. */
+.btn.donate svg { fill: #e8213f; }
 .btn.sm { min-height: 40px; padding: .35rem .7rem; font-size: .8rem; }
 .btn.lg { min-height: 52px; padding: .8rem 1.6rem; font-size: .98rem; }
 .btn.icon { min-width: 44px; padding: .4rem; }
