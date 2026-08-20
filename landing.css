@@ -2,7 +2,11 @@
    The one page that has to work before anybody trusts the rest, so it is mostly
    type and space. Shell and buttons come from base.css. */
 
-.lp-main { max-width: 960px; gap: var(--space-6); }
+/* The hero sits in the middle of the first screen rather than at the top of it.
+   .ui-body is already a full-height column and .ui-main already grows into it,
+   so centring is the only thing missing -- and it is what puts the copy over
+   the galaxy's core, which is fixed to the centre of the viewport. */
+.lp-main { max-width: 960px; gap: var(--space-6); justify-content: center; }
 
 /* --- the pitch ----------------------------------------------------------- */
 .lp-hero { text-align: center; padding: var(--space-6) 0 var(--space-2); }
@@ -23,12 +27,6 @@
 .lp-figure dd { margin: 0; font-size: .76rem; color: var(--text-faint);
                 text-transform: uppercase; letter-spacing: .06em; }
 
-/* --- room for the backdrop ----------------------------------------------- */
-/* Three cards stood here and the page is better without them, but not shorter:
-   ending at the figures pulled the footer up under them and left the galaxy as
-   a strip. 42vh is the mask's solid region below -- blank past that is blank
-   over a backdrop that has already faded, which is just a long scroll. */
-.lp-space { min-height: 42vh; }
 
 @media (max-width: 600px) {
   .lp-hero { padding-block-start: var(--space-4); }
