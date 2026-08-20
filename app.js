@@ -423,12 +423,23 @@ function rank(jobs, field, { limit = TOP_N, min = 0 } = {}) {
 function overview(jobs) {
   const { companies } = state.data;
   const distinct = (field) => new Set(jobs.map((j) => j[field]).filter(Boolean)).size;
+  // companyKey folds case, and a company row carries the same source and slug a
+  // posting does, so one key works for both sides of the comparison
+  const withPostings = new Set(state.data.jobs.map(companyKey));
+  const live = new Set(companies.filter((c) => c.live).map(companyKey));
   return {
     jobs: jobs.length,
     companies_known: companies.length,
-    companies_live: companies.filter((c) => c.live).length,
+    companies_live: live.size,
     // coverage describes the whole store, not the current filter
-    companies_scraped: new Set(state.data.jobs.map(companyKey)).size,
+    companies_scraped: withPostings.size,
+    // A company scraped while it was live and since dropped from the board's
+    // listing keeps the postings already collected, so "has postings" and "is
+    // live now" are different populations -- 41 companies deep, at the last
+    // count. Dividing one by the other read as 101% coverage, so the coverage
+    // figure compares live against live and the retired ones are said out loud.
+    companies_live_with_postings: [...live].filter((key) => withPostings.has(key)).length,
+    companies_retired: [...withPostings].filter((key) => !live.has(key)).length,
     cities: distinct('city'),
     families: distinct('family'),
     newest: jobs.reduce((max, j) => (j.create_time > max ? j.create_time : max), ''),
@@ -926,14 +937,19 @@ function renderGap(jobs) {
 function renderKpis(stats) {
   const host = $('#kpis');
   clear(host);
-  const scrapedPct = stats.companies_live
-    ? Math.round((stats.companies_scraped / stats.companies_live) * 100) : 0;
+  // No percentage here. The fraction already says what share is covered, and
+  // 3,838 of 3,853 rounds to "100%", which would claim a completeness the
+  // numbers do not have -- the same overstatement in the other direction.
+  const retired = stats.companies_retired;
   const cards = [
     { value: num(stats.jobs), label: 'Postings stored' },
     { value: num(stats.companies_live), label: 'Live companies',
       note: `${num(stats.companies_known)} known in total` },
-    { value: `${num(stats.companies_scraped)}/${num(stats.companies_live)}`,
-      label: 'Companies with postings', note: `${scrapedPct}% of live tenants` },
+    { value: `${num(stats.companies_live_with_postings)}/${num(stats.companies_live)}`,
+      label: 'Companies with postings',
+      note: retired
+        ? `live tenants · ${num(retired)} more delisted since we collected theirs`
+        : 'live tenants' },
     { value: num(stats.families), label: 'Job families' },
     { value: num(stats.cities), label: 'Cities' },
     { value: stats.newest ? stats.newest.slice(0, 10) : '—', label: 'Newest posting' },
