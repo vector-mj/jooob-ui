@@ -79,12 +79,27 @@ function paint(root, messages) {
   }
 }
 
+/** Resolves once there is a body to write into.
+ *
+ *  This script runs from <head>, so the first `apply` can finish its fetch
+ *  before the parser has reached <body> -- and then it paints nothing, silently,
+ *  leaving whichever language the markup shipped with. Because that depends on
+ *  how fast the catalogue comes back, two pages in the same visit could
+ *  disagree: one still Persian from the file, the next repainted to English.
+ */
+const parsed = document.readyState === 'loading'
+  ? new Promise((done) => document.addEventListener('DOMContentLoaded', done, { once: true }))
+  : Promise.resolve();
+
 /** Everything the page needs to know it is in this language. */
 async function apply(lang) {
   const messages = await catalogue(lang);
   const dir = (messages.meta && messages.meta.dir) || 'ltr';
+  // the document's own attributes are set as early as they can be, so the
+  // direction is right before anything is laid out
   document.documentElement.lang = lang;
   document.documentElement.dir = dir;
+  await parsed;
   paint(document, messages);
 
   // the switch offers the language you are not in, which is the only one

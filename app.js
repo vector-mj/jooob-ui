@@ -2299,16 +2299,6 @@ function renderAll() {
   $('#sub-heatmap').textContent =
     `tool and concept mentions per job family · top ${num(HEATMAP_N)} of each axis`;
 
-  const stamp = (state.data.generated_at || '').slice(0, 10);
-  $('#foot-note').textContent =
-    `${num(state.data.jobs.length)} postings from ${num(state.data.companies.length)} companies, `
-    + `last collected ${stamp || 'unknown'}. Requirements were extracted from `
-    + `${num(state.data.extracted)} of ${num(state.data.described)} postings that had a `
-    + 'description; every figure is counted from these postings only.'
-    + (state.data.labelled_by
-       ? ` ${num(state.data.labelled_by.model || 0)} were labelled by a language model`
-         + ` and ${num(state.data.labelled_by.regex || 0)} by alias matching.`
-       : '');
 }
 
 /** One file means one failure mode: name the file and what happened, and offer
