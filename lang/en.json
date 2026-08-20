@@ -25,6 +25,87 @@
     "loading": "Loading…"
   },
 
+  "dash": {
+    "view": { "me": "For me", "market": "The market" },
+    "about": "About",
+    "postJob": "Post a job",
+    "filter": {
+      "search": "Search",
+      "searchPlaceholder": "K8s Python RCA — terms, title, company or city…",
+      "clearHistory": "Clear history",
+      "match": "Match",
+      "matchAll": "Match all",
+      "matchAny": "Match any",
+      "company": "Company",
+      "allCompanies": "All companies",
+      "field": "Field",
+      "allFields": "All fields",
+      "postedWithin": "Posted within",
+      "last7": "Last 7 days",
+      "last30": "Last 30 days",
+      "last90": "Last 90 days",
+      "anyTime": "Any time",
+      "show": "Show",
+      "allPostings": "All postings",
+      "savedOnly": "Saved only",
+      "appliedOnly": "Applied only",
+      "hiddenOnly": "Hidden only",
+      "remote": "Remote",
+      "reset": "Reset"
+    },
+    "panel": {
+      "yourSkills": "Your skills",
+      "addSkill": "Add a skill",
+      "skillPlaceholder": "Type a tool or concept — Python, K8s, Agile…",
+      "learnNext": "What to learn next",
+      "tools": "Most demanded tools",
+      "concepts": "Concepts & standards",
+      "byCompany": "Hiring by company",
+      "whereJobs": "Where the jobs are",
+      "toolQuarter": "Tool demand by quarter",
+      "byLevel": "What each level is asked for",
+      "toolsByField": "Tools by field",
+      "fieldDiff": "What makes each field different",
+      "cluster": "How requirements cluster",
+      "clusterNote": "Requirements joined when the same posting asks for both.",
+      "monthlyTrend": "Monthly trend",
+      "postings": "Postings",
+      "viewAsTable": "View as table"
+    },
+    "said": {
+      "matching": "{n} matching",
+      "noData": "No data.",
+      "nothingToShow": "Nothing to show.",
+      "noMatch": "No postings match these filters.",
+      "needSkills": "Needs your skills first.",
+      "gapHint": "Add your skills above, and this ranks what to learn next.",
+      "companies": "{n} companies with postings",
+      "cities": "{n} cities",
+      "citiesGrouped": "{n} cities shown, the rest grouped",
+      "seniority": "% of each level's postings naming the requirement · level stated on {stated} of {total} postings",
+      "heatmap": "tool and concept mentions per job family · top {n} of each axis",
+      "trend": "share of each quarter's postings naming the tool · n per quarter: {quarters}",
+      "trendDropped": " · {n} thinner quarters dropped",
+      "network": "{nodes} requirements · {links} pairings, ranked by how much more often than chance they appear together · needs {shared}+ shared postings and {lift}× lift"
+    },
+    "table": {
+      "match": "Match",
+      "title": "Title",
+      "company": "Company",
+      "field": "Field",
+      "city": "City",
+      "asksFor": "Asks for",
+      "posted": "Posted"
+    },
+    "age": {
+      "today": "today",
+      "yesterday": "yesterday",
+      "days": "{n} days ago",
+      "months": "{n} months ago",
+      "overYear": "over a year ago"
+    }
+  },
+
   "landing": {
     "docTitle": "jooob — what employers are actually hiring for",
     "docDescription": "A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.",

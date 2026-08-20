@@ -69,14 +69,14 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
     </div>
 
     <div class="viewswitch" role="group" aria-label="What this page is for">
-      <button type="button" class="view-btn" data-view-btn="me" aria-pressed="true">For me</button>
-      <button type="button" class="view-btn" data-view-btn="market" aria-pressed="false">The market</button>
+      <button type="button" class="view-btn" data-view-btn="me" aria-pressed="true" data-i18n="dash.view.me">برای من</button>
+      <button type="button" class="view-btn" data-view-btn="market" aria-pressed="false" data-i18n="dash.view.market">بازار کار</button>
     </div>
 
     <div class="topbar-actions">
       <span id="account" class="account"></span>
-      <a class="ghost-btn text" href="/" title="What jooob is">About</a>
-      <a class="ghost-btn text" href="/employer" title="Post your own jobs, free">Post a job</a>
+      <a class="ghost-btn text" href="/" title="What jooob is" data-i18n="dash.about">دربارهٔ ما</a>
+      <a class="ghost-btn text" href="/employer" title="Post your own jobs, free" data-i18n="dash.postJob">ثبت آگهی</a>
       <a class="ghost-btn text" href="/feeds" title="Subscribe by RSS" data-i18n="nav.feeds">آگهی‌ها</a>
       <a class="ghost-btn text" href="/donate" data-i18n="nav.support">حمایت مالی</a>
       <!-- The switch belongs in every bar, so the control is where a reader
@@ -94,36 +94,36 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
   <!-- Filters live under the bar rather than in it. Eleven controls on one
        line is not a layout, and this is the row that wants the width. -->
     <div class="filterbar">
-      <label class="sr-only" for="jobs-search">Search</label>
+      <label class="sr-only" for="jobs-search" data-i18n="dash.filter.search">جست‌وجو</label>
       <input id="jobs-search" class="search" type="search" list="recent-searches"
-             placeholder="K8s Python RCA — terms, title, company or city…" autocomplete="off">
+             data-i18n-attr="placeholder:dash.filter.searchPlaceholder" placeholder="K8s Python RCA — مهارت، عنوان، شرکت یا شهر…" autocomplete="off">
       <datalist id="recent-searches"></datalist>
-      <button type="button" id="clear-searches" class="link-btn" hidden>Clear history</button>
-      <label class="sr-only" for="search-mode">Match</label>
+      <button type="button" id="clear-searches" class="link-btn" hidden data-i18n="dash.filter.clearHistory">پاک‌کردن تاریخچه</button>
+      <label class="sr-only" for="search-mode" data-i18n="dash.filter.match">تطبیق</label>
       <select id="search-mode" class="select">
-        <option value="all">Match all</option>
-        <option value="any">Match any</option>
+        <option value="all" data-i18n="dash.filter.matchAll">همهٔ موارد</option>
+        <option value="any" data-i18n="dash.filter.matchAny">هرکدام</option>
       </select>
-      <label class="sr-only" for="filter-company">Company</label>
-      <select id="filter-company" class="select"><option value="">All companies</option></select>
-      <label class="sr-only" for="filter-family">Field</label>
-      <select id="filter-family" class="select"><option value="">All fields</option></select>
-      <label class="sr-only" for="filter-fresh">Posted within</label>
+      <label class="sr-only" for="filter-company" data-i18n="dash.filter.company">شرکت</label>
+      <select id="filter-company" class="select"><option value="" data-i18n="dash.filter.allCompanies">همهٔ شرکت‌ها</option></select>
+      <label class="sr-only" for="filter-family" data-i18n="dash.filter.field">حوزهٔ کاری</label>
+      <select id="filter-family" class="select"><option value="" data-i18n="dash.filter.allFields">همهٔ حوزه‌ها</option></select>
+      <label class="sr-only" for="filter-fresh" data-i18n="dash.filter.postedWithin">بازهٔ انتشار</label>
       <select id="filter-fresh" class="select">
-        <option value="7">Last 7 days</option>
-        <option value="30" selected>Last 30 days</option>
-        <option value="90">Last 90 days</option>
-        <option value="0">Any time</option>
+        <option value="7" data-i18n="dash.filter.last7">۷ روز اخیر</option>
+        <option value="30" selected data-i18n="dash.filter.last30">۳۰ روز اخیر</option>
+        <option value="90" data-i18n="dash.filter.last90">۹۰ روز اخیر</option>
+        <option value="0" data-i18n="dash.filter.anyTime">هر زمان</option>
       </select>
-      <label class="sr-only" for="filter-only">Show</label>
+      <label class="sr-only" for="filter-only" data-i18n="dash.filter.show">نمایش</label>
       <select id="filter-only" class="select">
-        <option value="">All postings</option>
-        <option value="saved">Saved only</option>
-        <option value="applied">Applied only</option>
-        <option value="hidden">Hidden only</option>
+        <option value="" data-i18n="dash.filter.allPostings">همهٔ آگهی‌ها</option>
+        <option value="saved" data-i18n="dash.filter.savedOnly">فقط ذخیره‌شده‌ها</option>
+        <option value="applied" data-i18n="dash.filter.appliedOnly">فقط درخواست‌داده‌ها</option>
+        <option value="hidden" data-i18n="dash.filter.hiddenOnly">فقط پنهان‌شده‌ها</option>
       </select>
-      <label class="check"><input type="checkbox" id="filter-remote"> Remote</label>
-      <button type="button" id="filter-reset" class="ghost-btn text">Reset</button>
+      <label class="check"><input type="checkbox" id="filter-remote"> <span data-i18n="dash.filter.remote">دورکاری</span></label>
+      <button type="button" id="filter-reset" class="ghost-btn text" data-i18n="dash.filter.reset">بازنشانی</button>
     </div>
 
   <div id="load-error" class="load-error" role="alert" hidden></div>
@@ -134,12 +134,12 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
     <!-- the seeker's own things: their skills, their figures, their next step -->
     <section class="card span-12 me-card" data-view="me" aria-labelledby="h-me">
       <header class="card-head">
-        <h2 id="h-me">Your skills</h2>
+        <h2 id="h-me" data-i18n="dash.panel.yourSkills">مهارت‌های شما</h2>
       </header>
       <div class="skill-entry">
-        <label class="sr-only" for="skill-input">Add a skill</label>
+        <label class="sr-only" for="skill-input" data-i18n="dash.panel.addSkill">افزودن مهارت</label>
         <input id="skill-input" class="search" type="text" list="skill-options"
-               placeholder="Type a tool or concept — Python, K8s, Agile…" autocomplete="off">
+               data-i18n-attr="placeholder:dash.panel.skillPlaceholder" placeholder="یک ابزار یا مفهوم بنویسید — Python، K8s، Agile…" autocomplete="off">
         <datalist id="skill-options"></datalist>
         <span id="skill-note" class="card-sub" role="status"></span>
       </div>
@@ -153,46 +153,46 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
 
       <section class="card span-12" data-view="me" aria-labelledby="h-gap">
         <header class="card-head">
-          <h2 id="h-gap">What to learn next</h2>
+          <h2 id="h-gap" data-i18n="dash.panel.learnNext">بعد چه چیزی یاد بگیرید</h2>
           <p class="card-sub" id="sub-gap"></p>
         </header>
         <div class="chart" id="chart-gap" role="img"
              aria-label="Bar chart of requirements you are missing, ranked by how many postings ask for them"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-gap"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-gap"></div></details>
       </section>
 
       <section class="card span-6" data-view="market" aria-labelledby="h-tech">
         <header class="card-head">
-          <h2 id="h-tech">Most demanded tools</h2>
+          <h2 id="h-tech" data-i18n="dash.panel.tools">پرتقاضاترین ابزارها</h2>
           <p class="card-sub" id="sub-tech"></p>
         </header>
         <div class="chart" id="chart-tech" role="img" aria-label="Bar chart of most demanded tools"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-tech"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-tech"></div></details>
       </section>
 
       <section class="card span-6" data-view="market" aria-labelledby="h-concepts">
         <header class="card-head">
-          <h2 id="h-concepts">Concepts &amp; standards</h2>
+          <h2 id="h-concepts" data-i18n="dash.panel.concepts">مفاهیم و استانداردها</h2>
           <p class="card-sub" id="sub-concepts"></p>
           <div class="cat-chips" id="concept-categories" role="group"
                aria-label="Filter concepts by category"></div>
         </header>
         <div class="chart" id="chart-concepts" role="img" aria-label="Bar chart of most demanded concepts and standards"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-concepts"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-concepts"></div></details>
       </section>
 
       <section class="card span-6" data-view="market" aria-labelledby="h-company">
         <header class="card-head">
-          <h2 id="h-company">Hiring by company</h2>
+          <h2 id="h-company" data-i18n="dash.panel.byCompany">استخدام به تفکیک شرکت</h2>
           <p class="card-sub" id="sub-company"></p>
         </header>
         <div class="chart" id="chart-company" role="img" aria-label="Bar chart of postings per company"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-company"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-company"></div></details>
       </section>
 
       <section class="card span-6" data-view="market" aria-labelledby="h-city">
         <header class="card-head">
-          <h2 id="h-city">Where the jobs are</h2>
+          <h2 id="h-city" data-i18n="dash.panel.whereJobs">شغل‌ها کجا هستند</h2>
           <p class="card-sub" id="sub-city"></p>
         </header>
         <div class="chart" id="chart-city" role="img" aria-label="Bar chart of postings per city"></div>
@@ -200,7 +200,7 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
 
       <section class="card span-12" data-view="market" aria-labelledby="h-trend">
         <header class="card-head">
-          <h2 id="h-trend">Tool demand by quarter</h2>
+          <h2 id="h-trend" data-i18n="dash.panel.toolQuarter">تقاضای ابزار در هر فصل</h2>
           <p class="card-sub" id="sub-trend"></p>
         </header>
         <div class="chart" id="chart-trend" role="img" aria-label="Line chart of tool demand per quarter"></div>
@@ -208,49 +208,49 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
 
       <section class="card span-5" data-view="market" aria-labelledby="h-seniority">
         <header class="card-head">
-          <h2 id="h-seniority">What each level is asked for</h2>
+          <h2 id="h-seniority" data-i18n="dash.panel.byLevel">از هر سطح چه خواسته می‌شود</h2>
           <p class="card-sub" id="sub-seniority"></p>
         </header>
         <div class="chart tall" id="chart-seniority" role="img" aria-label="Heatmap of tool demand per seniority level"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-seniority"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-seniority"></div></details>
       </section>
 
       <section class="card span-7" data-view="market" aria-labelledby="h-heatmap">
         <header class="card-head">
-          <h2 id="h-heatmap">Tools by field</h2>
+          <h2 id="h-heatmap" data-i18n="dash.panel.toolsByField">ابزارها به تفکیک حوزه</h2>
           <p class="card-sub" id="sub-heatmap"></p>
         </header>
         <div class="chart tall" id="chart-heatmap" role="img" aria-label="Heatmap of tool mentions per department"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-heatmap"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-heatmap"></div></details>
       </section>
 
       <section class="card span-12" data-view="market" aria-labelledby="h-distinctive">
         <header class="card-head">
-          <h2 id="h-distinctive">What makes each field different</h2>
+          <h2 id="h-distinctive" data-i18n="dash.panel.fieldDiff">چه چیزی هر حوزه را متمایز می‌کند</h2>
           <p class="card-sub" id="sub-distinctive"></p>
         </header>
         <div class="chart tall" id="chart-distinctive" role="img"
              aria-label="Bar chart of requirements each department asks for more often than average"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-distinctive"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-distinctive"></div></details>
       </section>
 
       <section class="card span-12" data-view="market" aria-labelledby="h-network">
         <header class="card-head">
-          <h2 id="h-network">How requirements cluster</h2>
-          <p class="card-sub" id="sub-network">Requirements joined when the same posting asks for both.</p>
+          <h2 id="h-network" data-i18n="dash.panel.cluster">نیازمندی‌ها چطور خوشه می‌شوند</h2>
+          <p class="card-sub" id="sub-network" data-i18n="dash.panel.clusterNote">نیازمندی‌هایی که یک آگهی هر دو را با هم خواسته، به هم وصل شده‌اند.</p>
         </header>
         <div class="chart tall" id="chart-network" role="img" aria-label="Network graph of tools requested together"></div>
-        <details class="table-fallback"><summary>View as table</summary><div id="table-network"></div></details>
+        <details class="table-fallback"><summary data-i18n="dash.panel.viewAsTable">نمایش جدولی</summary><div id="table-network"></div></details>
       </section>
 
       <section class="card span-12" data-view="market" aria-labelledby="h-timeline">
-        <header class="card-head"><h2 id="h-timeline">Monthly trend</h2></header>
+        <header class="card-head"><h2 id="h-timeline" data-i18n="dash.panel.monthlyTrend">روند ماهانه</h2></header>
         <div class="chart short" id="chart-timeline" role="img" aria-label="Line chart of postings per month"></div>
       </section>
 
       <section class="card span-12 jobs-card" data-view="both" aria-labelledby="h-jobs">
         <header class="card-head">
-          <h2 id="h-jobs">Postings</h2>
+          <h2 id="h-jobs" data-i18n="dash.panel.postings">آگهی‌ها</h2>
           <!-- the search box used to live here, which misrepresented its reach:
                it re-scopes every panel on the page, so it belongs in the bar
                with the other filters, not inside one card -->
@@ -280,6 +280,6 @@ setTimeout(function () { delete document.documentElement.dataset.gate; }, 5000);
 
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"
         integrity="sha384-Mx5lkUEQPM1pOJCwFtUICyX45KNojXbkWdYhkKUKsbv391mavbfoAmONbzkgYPzR" crossorigin="anonymous"></script>
-<script src="/app.js?v=ae0ac5ec"></script>
+<script src="/app.js?v=5e01c0f7"></script>
 </body>
 </html>

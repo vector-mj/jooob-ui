@@ -698,7 +698,7 @@ ok('a rich posting keeps all its spellings, not a capped sample',
   // testing -- the element simply keeps whatever was already in the HTML, which
   // is the other language, on one page, for the readers least able to report it.
   const pages = ['index.html', 'donate/index.html', 'login/index.html',
-                 'employer/index.html'];
+                 'employer/index.html', 'dashboard/index.html'];
   const asked = new Set();
   for (const page of pages) {
     let html;
@@ -711,6 +711,13 @@ ok('a rich posting keeps all its spellings, not a capped sample',
       }
     }
   }
+  // the scripts ask for keys too, by `t('a.b.c', 'English')`
+  for (const script of ['app.js', 'landing.js', 'donate.js']) {
+    let js;
+    try { js = fs.readFileSync(`${root}${script}`, 'utf8'); } catch { continue; }
+    for (const [, key] of js.matchAll(/\bt\(\s*'([a-z][\w.]+)'/gi)) asked.add(key);
+  }
+
   const unknown = [...asked].filter((k) => !inEn.includes(k));
   ok('every key the markup asks for is in the catalogue',
      unknown.length === 0, unknown.join(', '));
