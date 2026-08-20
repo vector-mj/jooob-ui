@@ -2200,7 +2200,7 @@ function renderChips() {
 
 const CHART_IDS = ['#chart-gap', '#chart-tech', '#chart-concepts', '#chart-company', '#chart-city',
                    '#chart-trend', '#chart-seniority', '#chart-heatmap', '#chart-distinctive',
-                   '#chart-ladder', '#chart-network', '#chart-timeline'];
+                   '#chart-network', '#chart-timeline'];
 
 function skeletons() {
   // the graph owns a canvas inside its container, so it must be torn down
@@ -2274,14 +2274,6 @@ function renderAll() {
                 { chart: '#chart-heatmap', table: '#table-heatmap', rowLabel: 'Department' });
   renderTimeline(timeline(jobs));
   renderDistinctive(distinctive(jobs, 'family'));
-  // the same contrast, down the ladder instead of across fields: what a Manager
-  // posting asks for that a Specialist one does not is the closest this data
-  // comes to describing a career step
-  renderDistinctive(distinctive(jobs, 'seniority_level',
-                                { order: state.data.seniority_levels }),
-                    { chart: '#chart-ladder', table: '#table-ladder', sub: '#sub-ladder',
-                      noun: 'level',
-                      empty: 'Not enough postings state a level yet.' });
   renderNetwork(techPairs(jobs));
   loadJobs();
 
