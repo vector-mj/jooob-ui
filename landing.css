@@ -21,18 +21,12 @@
 .lp-figure dd { margin: 0; font-size: .76rem; color: var(--text-faint);
                 text-transform: uppercase; letter-spacing: .06em; }
 
-/* --- three audiences, three cards ---------------------------------------- */
-.lp-cards { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
-.lp-card { display: flex; flex-direction: column; align-items: flex-start; }
-.lp-card .btn { margin-block-start: auto; }
-/* an inline SVG rather than an emoji: an emoji is a font the visitor may not
-   have, and a missing one renders as a tofu box on the first screen they see */
-.lp-icon { width: 26px; height: 26px; color: var(--accent);
-           margin-block-end: var(--space-3); }
-
-@media (min-width: 760px) {
-  .lp-cards { grid-template-columns: repeat(3, 1fr); }
-}
+/* --- room for the backdrop ----------------------------------------------- */
+/* Three cards stood here and the page is better without them, but not shorter:
+   ending at the figures pulled the footer up under them and left the galaxy as
+   a strip. 42vh is the mask's solid region below -- blank past that is blank
+   over a backdrop that has already faded, which is just a long scroll. */
+.lp-space { min-height: 42vh; }
 
 @media (max-width: 600px) {
   .lp-hero { padding-block-start: var(--space-4); }
