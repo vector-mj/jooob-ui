@@ -45,65 +45,48 @@
 
   "donate": {
     "docTitle": "jooob — support the project",
-    "docDescription": "jooob is free and has no ads. If it has been useful to you, a donation covers the domain and the machine time that reads every posting.",
-    "eyebrow": "No ads, no listing fees, no paywall",
-    "heading": "Keep jooob running.",
-    "lede": "Every posting on jooob is read, labelled and counted, and none of it is sold to anybody. What that costs is a domain and the machine time to do the reading — a small bill, but a real one, and one person pays it. If the dashboard has been useful to you, this is where you can help.",
-    "costs": {
-      "amount": "~$15",
-      "amountLabel": "per month to run",
-      "share": "100%",
-      "shareLabel": "goes to that bill",
-      "ads": "0",
-      "adsLabel": "ads, ever"
-    },
-    "warnLead": "Check the network before you send.",
+    "docDescription": "jooob is free, and stays free.",
+    "eyebrow": "No ads, no listing fee, no subscription",
+    "heading": "Keep jooob alive.",
+    "lede": "If jooob has been useful to you, this is where you can help.",
     "warnBody": "Each address below belongs to one chain. A token sent on the wrong chain cannot be recovered by anyone, including us.",
     "takes": {
-      "btc": "BTC · native SegWit",
-      "eth": "ETH · USDT and any ERC-20",
-      "trx": "TRX · USDT (TRC-20)",
-      "sol": "SOL · SPL tokens"
+      "btc": "BTC",
+      "eth": "ETH",
+      "trx": "TRX",
+      "sol": "SOL"
     },
-    "cheapest": "cheapest",
+    "cheapest": "lowest fees",
     "copy": "Copy address",
     "copied": "Copied",
     "copyManual": "Select it and copy",
-    "usdtHeading": "Sending USDT?",
-    "usdtBody": "Use the TRON address and choose TRC-20 in your wallet. On Ethereum the same transfer can cost more in fees than the donation is worth. USDT sent as TRC-20 to the Ethereum address is gone — this is the sentence worth reading twice.",
-    "anonHeading": "There is nothing to sign up for",
-    "anonBody": "No account, no email, no name. We cannot tell who sends anything and there is no field anywhere to record it, the same way company reviews work. Nothing is published about who gave what.",
+    "anonHeading": "No sign-up needed",
     "shareHeading": "Would rather not send money?",
     "shareBody": "Tell someone the site exists. A person who finds a job through it is worth more to this project than the bill is."
   },
 
   "login": {
     "docTitle": "jooob — sign in",
-    "heading": "Sign in",
-    "lede": "There is one way in, and it is one click. Google confirms who you are, so there is no password to choose, no confirmation mail to wait for, and nothing that can be reset by somebody who is not you.",
-    "google": "Continue with Google",
-    "scope": "We ask Google for your email address and nothing else — no profile, no picture, no contacts.",
+    "heading": "Sign in to your account",
+    "google": "Sign in with Google",
     "seekerHeading": "Looking for work?",
-    "seekerBody": "You do not need this. The dashboard works signed out and your skills stay in your browser. Sign in only if you want the same list on your phone and your laptop — and then it does record what you claim and what you search for.",
     "hiringHeading": "Hiring?",
-    "hiringBody": "You do need this, so we know the postings are really yours. If your address is at your company's own domain, you are approved straight away.",
+    "hiringBody": "You need to sign in so we know the postings are really yours.",
     "signedIn": "You are signed in",
     "as": "as",
     "continue": "Continue",
-    "signout": "Sign out",
-    "disabled": "Accounts are not switched on for this deployment yet. Everything else on the site works without one."
+    "signout": "Sign out"
   },
 
   "employer": {
     "docTitle": "jooob — post a job, free",
     "heading": "Post your jobs where people are actually looking.",
-    "lede": "jooob already tracks what employers are hiring for across two job boards. Add your own roles and they appear beside everything we scrape — matched against what each person says they can do.",
-    "freeLead": "Free.",
-    "freeBody": "No listing fee, no seat count, no trial.",
-    "google": "Continue with Google",
-    "scope": "We ask Google for your email address and nothing else. There is no password to choose, no confirmation mail to wait for, and nothing to reset.",
+    "lede": "Add your own roles and they appear beside everything we collect — matched against the skills each person says they have.",
+    "freeLead": "Completely free.",
+    "freeBody": "No listing fee, no limits.",
+    "google": "Sign in with Google",
     "companiesHeading": "Your companies",
-    "companiesBody": "Claim the company you hire for. If your email is at the company's own domain, it is approved straight away — otherwise a person checks it.",
+    "companiesBody": "Claim the company you hire for. Approval takes a little while to review.",
     "company": "Company",
     "claim": "Claim",
     "postHeading": "Post a job",
@@ -122,7 +105,6 @@
     "send": "Send for review",
     "cancel": "Cancel",
     "postingsHeading": "Your postings",
-    "postingsEmpty": "Nothing yet. Claim a company above, then post your first role.",
-    "disabled": "Posting is not switched on for this deployment yet. The dashboard still works — there is simply nowhere to send a new job."
+    "postingsEmpty": "Nothing yet. Add a company first, then publish your first posting."
   }
 }

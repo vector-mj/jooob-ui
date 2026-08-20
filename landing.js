@@ -24,15 +24,25 @@ setTheme(localStorage.getItem(THEME_KEY)
 document.querySelector('#theme-btn').addEventListener('click', () => setTheme(
   document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
 
-/** How long ago, in the words a person would use. */
+/** A number in the digits the reader uses. Persian has its own, and a Persian
+ *  sentence with Latin digits in the middle of it reads as machine output --
+ *  the same reason the Telegram feed spells its one number in Persian. */
+function count(n) {
+  const lang = (window.jooobI18n && window.jooobI18n.lang) || 'fa';
+  return n.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US');
+}
+
+/** How long ago, in the words a person would use, in their language. */
 function when(stamp) {
+  const t = (key, values) =>
+    (window.jooobI18n ? window.jooobI18n.t(key, values) : String((values || {}).n ?? ''));
   const at = Date.parse(stamp);
   if (!at) return '—';
   const hours = Math.round((Date.now() - at) / 3_600_000);
-  if (hours < 1) return 'just now';
-  if (hours < 24) return `${hours}h ago`;
+  if (hours < 1) return t('landing.ago.now');
+  if (hours < 24) return t('landing.ago.hours', { n: count(hours) });
   const days = Math.round(hours / 24);
-  return days === 1 ? 'yesterday' : `${days}d ago`;
+  return days === 1 ? t('landing.ago.yesterday') : t('landing.ago.days', { n: count(days) });
 }
 
 (async () => {
@@ -46,10 +56,14 @@ function when(stamp) {
   // Counted by the export, not here. Three figures used to cost the whole
   // corpus -- 1.7 MB, and twelve thousand postings walked to find the live
   // ones -- so the page showed em-dashes until all of it had arrived.
-  const figures = [
-    [(data.postings || 0).toLocaleString('en-US'), 'postings'],
-    [(data.companies || 0).toLocaleString('en-US'), 'companies'],
-    [when(data.generated_at), 'updated'],
+  //
+  // Only the values: the labels under them carry data-i18n and belong to the
+  // catalogue, so writing them here would overwrite the translation with
+  // English a moment after it landed.
+  const values = () => [
+    count(data.postings || 0),
+    count(data.companies || 0),
+    when(data.generated_at),
   ];
 
   // One control, not two. Somebody already signed in has no use for a sign-in
@@ -83,9 +97,11 @@ function when(stamp) {
   }
 
   const slots = document.querySelectorAll('#figures .lp-figure');
-  figures.forEach(([value, label], i) => {
-    if (!slots[i]) return;
-    slots[i].querySelector('dt').textContent = value;
-    slots[i].querySelector('dd').textContent = label;
+  const show = () => values().forEach((value, i) => {
+    if (slots[i]) slots[i].querySelector('dt').textContent = value;
   });
+  show();
+  // the digits and "3 hours ago" are both language-dependent, so the figures
+  // are written again whenever the switch is used
+  document.addEventListener('i18n', show);
 })();

@@ -55,7 +55,10 @@ async function api(path, options = {}) {
 
 function show() {
   const on = Boolean(state.api);
-  $('#offline').hidden = on;
+  // the "accounts are not switched on" notice was dropped from the page, so
+  // this is the one caller that has to survive its absence
+  const offline = $('#offline');
+  if (offline) offline.hidden = on;
   $('#signed-out').hidden = !on || Boolean(state.me);
   $('#signed-in').hidden = !on || !state.me;
   if (state.me) {

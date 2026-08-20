@@ -57,13 +57,20 @@ for (const button of document.querySelectorAll('.dn-copy')) {
     if (!source) return;
     const done = await copy(source.textContent.trim());
 
+    // Asked for by key rather than remembered from the markup: the language can
+    // change while the button is still saying "copied", and the word it goes
+    // back to has to be the one the page is now in.
+    const say = (key, fallback) =>
+      (window.jooobI18n ? window.jooobI18n.t(key) : fallback);
+
     // The button says what happened rather than a toast saying it elsewhere:
     // the answer belongs next to the thing that was copied.
-    const said = button.textContent;
-    button.textContent = done ? 'Copied' : 'Select it and copy';
+    button.textContent = done
+      ? say('donate.copied', 'Copied')
+      : say('donate.copyManual', 'Select it and copy');
     if (done) button.dataset.done = '';
     setTimeout(() => {
-      button.textContent = said;
+      button.textContent = say('donate.copy', 'Copy address');
       delete button.dataset.done;
     }, 1800);
   });

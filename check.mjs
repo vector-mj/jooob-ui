@@ -693,6 +693,30 @@ ok('a rich posting keeps all its spellings, not a capped sample',
        return slots(at(en, k)) === slots(at(fa, k));
      }));
   console.log(`     ${inEn.length} keys in each catalogue`);
+
+  // ...and every key the markup asks for exists. A typo here is invisible in
+  // testing -- the element simply keeps whatever was already in the HTML, which
+  // is the other language, on one page, for the readers least able to report it.
+  const pages = ['index.html', 'donate/index.html', 'login/index.html',
+                 'employer/index.html'];
+  const asked = new Set();
+  for (const page of pages) {
+    let html;
+    try { html = fs.readFileSync(`${root}${page}`, 'utf8'); } catch { continue; }
+    for (const [, key] of html.matchAll(/data-i18n="([^"]+)"/g)) asked.add(key);
+    for (const [, spec] of html.matchAll(/data-i18n-attr="([^"]+)"/g)) {
+      for (const pair of spec.split(';')) {
+        const key = pair.split(':')[1];
+        if (key) asked.add(key.trim());
+      }
+    }
+  }
+  const unknown = [...asked].filter((k) => !inEn.includes(k));
+  ok('every key the markup asks for is in the catalogue',
+     unknown.length === 0, unknown.join(', '));
+  // and nothing in the catalogue is dead weight nobody renders
+  const unused = inEn.filter((k) => !asked.has(k) && !k.startsWith('meta.'));
+  console.log(`     ${asked.size} keys used by the markup, ${unused.length} not yet wired`);
 }
 
 console.log(failed ? `\n${failed} check(s) failed` : '\nall checks passed');
