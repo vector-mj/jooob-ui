@@ -14,7 +14,7 @@
     <pubDate>Wed, 19 Aug 2026 19:15:39 +0000</pubDate>
     <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Cisco, Hardware, Linux, Remote, Review, Security+, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
+Asks for: Availability, Cisco, Computer, Hardware, Linux, Remote, Review, Security+, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
   </item>
   <item>
     <title>IT Assistant   — Hypermarkets - هایپرمارکت
@@ -34,7 +34,7 @@ Asks for: Data, Hardware, Helpdesk, Server, Analysis, CompTIA Network+, ICDL, In
     <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
     <description>فناپ — تهران · IT &amp; Infrastructure
 
-Asks for: AWS, Airflow, Data, Docker, Event, FastAPI, GitHub, GitLab, Grafana, Kafka, Kubernetes, LangChain, Langfuse, Latency, Linux, LlamaIndex, MLflow, NoSQL, Ollama, Orchestration, Prometheus, Python, Qdrant, Runbook, Server, Shell, Spark, vLLM, Analysis, Artificial intelligence, Automation, CI/CD, Continuous learning, Databases, DevOps, Documentation, English proficiency, Event-driven architecture, Hugging Face, Large language models, Machine learning, Management, Networking, Observability, Ownership, Process improvement, REST APIs, Record keeping, Recruitment, Retrieval augmented generation, Security, Teamwork, Training, Troubleshooting, Vector Database</description>
+Asks for: AWS, Airflow, Data, Docker, Event, FastAPI, GitHub, GitLab, Grafana, Kafka, Kubernetes, LangChain, Langfuse, Latency, Linux, LlamaIndex, MLflow, Milvus, NoSQL, Ollama, Orchestration, Prometheus, Python, Qdrant, Runbook, Server, Shell, Spark, vLLM, Analysis, Artificial intelligence, Automation, CI/CD, Continuous learning, Databases, DevOps, Documentation, English proficiency, Event-driven architecture, Hugging Face, Large language models, Machine learning, Management, Networking, Observability, Ownership, Process improvement, REST APIs, Record keeping, Recruitment, Retrieval augmented generation, Security, Teamwork, Training, Troubleshooting, Vector Database</description>
   </item>
   <item>
     <title>کارشناس NOC (آقا) — پتیاک</title>
@@ -106,7 +106,7 @@ Asks for: Asterisk, VoIP, Communication, Documentation, Management, Networking, 
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
 
-Asks for: Bash, PowerShell, Python, Splunk, Analysis, Firewalls, IDS / IPS, Incident response, Management, Networking, Ownership, Reporting, SIEM / SOAR, Security, Threat Hunting, Training, Zero trust</description>
+Asks for: Bash, Incident, PowerShell, Python, Splunk, Analysis, Firewalls, IDS / IPS, Incident response, Management, Networking, Ownership, Reporting, SIEM / SOAR, Security, Threat Hunting, Training, Zero trust</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی (سوئيچ و پايانه فروش) — پرداخت الکترونیک پاسارگاد</title>
@@ -151,7 +151,7 @@ Asks for: .NET, Bootstrap, C#, CSS, Docker, ELK, Framework, Git, GitLab, Grafana
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>متا سینا — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Ansible, Availability, Cloud, Deploy, Docker, Docker Compose, ELK, Grafana, Infrastructure, Kubernetes, Latency, Linux, Logging, MikroTik, Nginx, Prometheus, RabbitMQ, Recovery, Redis, Server, Terraform, VMware, Analysis, Automation, Backup and recovery, Business continuity, CI/CD, Cloud architecture, Cost optimization, DevOps, Disaster recovery, Distributed systems, Documentation, Fintech, Firewalls, High availability, Incident management, Incident response, Infrastructure as code, Management, Networking, Observability, Problem solving, Process improvement, Quality control, Recruitment, Scalability, Security, Site reliability, Training, Troubleshooting, Virtualization</description>
+Asks for: Alerting, Ansible, Availability, Cloud, Deploy, Docker, Docker Compose, ELK, Grafana, Incident, Infrastructure, Kubernetes, Latency, Linux, Logging, MikroTik, Nginx, Prometheus, RabbitMQ, Recovery, Redis, Server, Terraform, VMware, Analysis, Automation, Backup and recovery, Business continuity, CI/CD, Cloud architecture, Cost optimization, DevOps, Disaster recovery, Distributed systems, Documentation, Fintech, Firewalls, High availability, Incident management, Incident response, Infrastructure as code, Management, Networking, Observability, Problem solving, Process improvement, Quality control, Recruitment, Scalability, Security, Site reliability, Training, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس HelpDesk — کاخ لبخند</title>
@@ -223,7 +223,7 @@ Asks for: Scheduling, Zabbix, Analysis, Automation, Best Practice, Change manage
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>تحلیل گران شبکه آریانا — تهران · IT &amp; Infrastructure
 
-Asks for: Active Directory, Ansible, Bash, Cloud, Confluence, Docker, Git, GitLab, Jenkins, Jira, Linux, MySQL, Nginx, PostgreSQL, Artificial intelligence, Automation, CI/CD, Certifications, Change management, Cloud architecture, Configuration management, DevOps, Documentation, End-to-End, Incident management, Linux administration, Management, Networking, Ownership, Record keeping, Reverse Proxy, Troubleshooting</description>
+Asks for: Active Directory, Ansible, Bash, Cloud, Confluence, Docker, Git, GitLab, Incident, Jenkins, Jira, Linux, MySQL, Nginx, PostgreSQL, Artificial intelligence, Automation, CI/CD, Certifications, Change management, Cloud architecture, Configuration management, DevOps, Documentation, End-to-End, Incident management, Linux administration, Management, Networking, Ownership, Record keeping, Reverse Proxy, Troubleshooting</description>
   </item>
   <item>
     <title>تکنسین شبکه(پسیو شبکه-آقا-اصفهان) — فناوری اطلاعات آرامین</title>
@@ -241,7 +241,7 @@ Asks for: CompTIA Network+, Documentation, Networking, Teamwork</description>
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>آدانیک افزار — تهران · IT &amp; Infrastructure
 
-Asks for: Bash, Docker, Docker Compose, Docker Swarm, ELK, Grafana, Infrastructure, Kubernetes, Linux, MariaDB, Nginx, OpenResty, OpenSSL, Orchestration, PostgreSQL, Python, SQL, Tomcat, Analysis, Automation, Backup and recovery, CI/CD, Communication, DevOps, Documentation, Incident management, Infrastructure as code, Management, Networking, Observability, Performance tuning, Problem solving, Security, Site reliability, Troubleshooting</description>
+Asks for: Bash, Computer, Docker, Docker Compose, Docker Swarm, ELK, Grafana, Infrastructure, Kubernetes, Linux, MariaDB, Nginx, OpenResty, OpenSSL, Orchestration, PostgreSQL, Python, SQL, Tomcat, Analysis, Automation, Backup and recovery, CI/CD, Communication, DevOps, Documentation, Incident management, Infrastructure as code, Management, Networking, Observability, Performance tuning, Problem solving, Security, Site reliability, Troubleshooting</description>
   </item>
   <item>
     <title>(NOC Enginee (Tier1 — بلوبانک</title>
@@ -250,7 +250,7 @@ Asks for: Bash, Docker, Docker Compose, Docker Swarm, ELK, Grafana, Infrastructu
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>بلوبانک — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Availability, Grafana, Linux, Prometheus, SolarWinds, Zabbix, Analysis, Communication, Documentation, Fintech, Incident management, Management, Networking, Observability, Reporting, Root cause analysis</description>
+Asks for: Alerting, Availability, Grafana, Incident, Linux, Prometheus, SolarWinds, Zabbix, Analysis, Communication, Documentation, Fintech, Incident management, Management, Networking, Observability, Reporting, Root cause analysis</description>
   </item>
   <item>
     <title>Senior Infrastructure Security Engineer — بلوبانک</title>
@@ -259,7 +259,7 @@ Asks for: Alerting, Availability, Grafana, Linux, Prometheus, SolarWinds, Zabbix
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>بلوبانک — تهران · IT &amp; Infrastructure
 
-Asks for: Cloud, Data, Deploy, Design, Encryption, Event, Infrastructure, Linux, Technical, EDR / EPP, Firewalls, IDS / IPS, Identity &amp; access management, Management, Networking, Project management, SIEM / SOAR, Security, Storage, Teamwork, Training</description>
+Asks for: Cloud, Computer, Data, Deploy, Design, Encryption, Event, Incident, Infrastructure, Installation, Linux, Technical, EDR / EPP, Firewalls, IDS / IPS, Identity &amp; access management, Management, Networking, Project management, SIEM / SOAR, Security, Storage, Teamwork, Training</description>
   </item>
   <item>
     <title>سرپرست پشتیبانی و خدمات مشتریان — پیشگامان فناوری اطلاعات هامون</title>
@@ -268,7 +268,7 @@ Asks for: Cloud, Data, Deploy, Design, Encryption, Event, Infrastructure, Linux,
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
 
-Asks for: Active Directory, Backlog, Cisco, Customer, FortiGate, Fortinet, Palo Alto, Server, SolarWinds, Ticketing, Zabbix, Analysis, Certifications, Communication, Customer service, Documentation, EDR / EPP, Firewalls, ITSM / ITIL, Incident management, Management, Networking, Observability, Ownership, Process improvement, Reporting, SLA management, Security, Stakeholder management, Supervision, Teamwork, Technical support, Training, Troubleshooting</description>
+Asks for: Active Directory, Backlog, Cisco, Customer, FortiGate, Fortinet, Incident, Palo Alto, Server, SolarWinds, Ticketing, Zabbix, Analysis, Certifications, Communication, Customer service, Documentation, EDR / EPP, Firewalls, ITSM / ITIL, Incident management, Management, Networking, Observability, Ownership, Process improvement, Reporting, SLA management, Security, Stakeholder management, Supervision, Teamwork, Technical support, Training, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس دواپس (مشهد) — پارس پرمیوم</title>
@@ -295,7 +295,7 @@ Asks for: Cisco, FortiGate, Analysis, Identity &amp; access management, Manageme
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>پردازش اطلاعات مالی مبنا — تهران · IT &amp; Infrastructure
 
-Asks for: Hardware, Infrastructure, Linux, Software, Technical, Windows, Communication, Documentation, Firewalls, Linux administration, Management, Observability, Problem solving, Security, Troubleshooting</description>
+Asks for: Computer, Hardware, Infrastructure, Linux, Software, Technical, Windows, Communication, Documentation, Firewalls, Linux administration, Management, Observability, Problem solving, Security, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی نرم افزار (باران 360-شهرقدس) — پوشاک ایرانیان</title>
@@ -340,7 +340,7 @@ Asks for: Event, Log, VMware, Veeam, Zabbix, Analysis, Certifications, ITSM / IT
     <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
     <description>فناوران اطلاعات خبره — تهران · IT &amp; Infrastructure
 
-Asks for: .NET, Alert, Ansible, Bash, Docker, ELK, Event, Git, Grafana, Kubernetes, Linux, Microsoft, PowerShell, Prometheus, Python, SQL, SQL Server, Server, Slack, Terraform, Webhook, Windows, Zabbix, Analysis, Attention to detail, Automation, DevOps, Documentation, Incident management, Linux administration, Management, Networking, Observability, Ownership, Process improvement, REST APIs, Reporting, Root cause analysis, Security, Site reliability, Teamwork, Troubleshooting</description>
+Asks for: .NET, Alert, Ansible, Bale, Bash, Docker, ELK, Event, Git, Grafana, Kubernetes, Linux, Microsoft, PowerShell, Prometheus, Python, SQL, SQL Server, Server, Slack, Terraform, Webhook, Windows, Zabbix, Analysis, Attention to detail, Automation, DevOps, Documentation, Incident management, Linux administration, Management, Networking, Observability, Ownership, Process improvement, REST APIs, Reporting, Root cause analysis, Security, Site reliability, Teamwork, Troubleshooting</description>
   </item>
   <item>
     <title>SysAdmin (آقا) — فناوران اطلاعات خبره</title>
@@ -415,6 +415,15 @@ Asks for: Active Directory, Asterisk, Cisco, Restore, Server, VMware, Veeam, VoI
 Asks for: Acquisition, Availability, Build, Customer, Data, Functional, Go, Insights, Make, Review, Support, Technical, Analysis, Attention to detail, Communication, Documentation, End-to-End, Fintech, Management, Negotiation, Onboarding, Ownership, Problem solving, Process improvement, Reporting, SLA management, Stakeholder management, Technical support, Testing, Troubleshooting</description>
   </item>
   <item>
+    <title>کارشناس پایگاه داده (Oracle-مرکز داده-DBA) — راهکار پرداز نوین</title>
+    <link>https://jobinja.ir/companies/rahkar-pardaz-novin/jobs/tkYo</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/rahkar-pardaz-novin/jobs/tkYo</guid>
+    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+    <description>راهکار پرداز نوین — تهران · IT &amp; Infrastructure
+
+Asks for: MySQL, Oracle, SQL Server, Backup and recovery, Databases, Datacenter operations, Observability, Recruitment</description>
+  </item>
+  <item>
     <title>کارشناس فنی — مرسا</title>
     <link>https://jobinja.ir/companies/morsainternational/jobs/t7oH</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/morsainternational/jobs/t7oH</guid>
@@ -449,15 +458,6 @@ Asks for: Cisco, Docker, Infrastructure, KVM, Linux, Server, VMware, Analysis, B
     <description>آوای سگال نت — تهران · IT &amp; Infrastructure
 
 Asks for: English proficiency, Networking, Sales, Security, Technical support</description>
-  </item>
-  <item>
-    <title>کارشناس SysAdmin — فناوران دوراندیش اشراق نوین</title>
-    <link>https://jobinja.ir/companies/eshragh/jobs/t7OZ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/eshragh/jobs/t7OZ</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوران دوراندیش اشراق نوین — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Docker, Infrastructure, Linux, Server, VMware, Windows, Backup and recovery, CI/CD, Customer service, Documentation, Insurance, Linux administration, Networking, Observability, Reporting</description>
   </item>
 </channel>
 </rss>
