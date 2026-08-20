@@ -79,7 +79,13 @@ function when(stamp) {
     try {
       known = (await fetch(`${api}/me`, { credentials: 'include' })).ok;
     } catch { /* offline, or the API is having a day */ }
-    signin.href = `/login?next=${encodeURIComponent(location.href)}`;
+    // No `next`: this is the one page where sending somebody back where they
+    // came from is wrong. They are on the front page, they have just asked to
+    // sign in, and what they want next is the dashboard -- which is what
+    // login's own `nextTarget()` falls back to, and it sends somebody with a
+    // company claimed to /employer instead. Handing it this page's URL landed
+    // them back here, signed in, with nothing to show for it.
+    signin.href = '/login';
     if (known !== null) {
       dash.hidden = !known;
       signin.hidden = known;
