@@ -12,6 +12,22 @@
 
 const DATA_URL = '/data/jooob.json';
 
+/** One string out of the catalogue i18n.js loaded, by dotted key.
+ *
+ *  Falls back to the English passed in rather than to the key: this file is
+ *  evaluated by check.mjs without i18n.js beside it, and a dashboard rendering
+ *  `dash.said.noData` at somebody would be worse than one still in English.
+ */
+function t(key, english, values) {
+  return (window.jooobI18n ? window.jooobI18n.t(key, values) : null) ?? english;
+}
+
+/** A number in the digits the reader uses, for the counts written into prose. */
+function localeNum(n) {
+  const lang = (window.jooobI18n && window.jooobI18n.lang) || 'fa';
+  return Number(n).toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US');
+}
+
 const CDN = {
   g6:        { src: 'https://cdn.jsdelivr.net/npm/@antv/g6@4.8.24/dist/g6.min.js',
                sri: 'sha384-iYoticlq+TpD6YYL4Lx7pZ8jM+Loq+EKfAbFtWUe0d3639XqCkVreQ57oSygxMD1' },
@@ -775,7 +791,7 @@ const resizeAll = debounce(() => {
 function simpleTable(target, columns, rows) {
   const host = $(target);
   clear(host);
-  if (!rows.length) { host.append(el('p', { class: 'card-sub', text: 'No data.' })); return; }
+  if (!rows.length) { host.append(el('p', { class: 'card-sub', text: t('dash.said.noData', 'No data.') })); return; }
   const table = el('table');
   const head = el('tr');
   for (const col of columns) {
@@ -901,8 +917,9 @@ function renderGap(jobs) {
   const chart = '#chart-gap';
   const sub = $('#sub-gap');
   if (!state.mine.size) {
-    chartMessage(chart, 'Add your skills above, and this ranks what to learn next.');
-    if (sub) sub.textContent = 'Needs your skills first.';
+    chartMessage(chart, t('dash.said.gapHint',
+      'Add your skills above, and this ranks what to learn next.'));
+    if (sub) sub.textContent = t('dash.said.needSkills', 'Needs your skills first.');
     clear($('#table-gap'));
     return;
   }
@@ -1021,7 +1038,9 @@ function renderExtracted(kind, data, { chart, table, sub, label, colorPair, filt
 function renderCompanies(byCompany) {
   const rows = byCompany.slice(0, 14)
     .map((r) => ({ label: companyName(r.key), key: r.key, jobs: r.jobs }));
-  $('#sub-company').textContent = `${num(byCompany.length)} companies with postings`;
+  $('#sub-company').textContent =
+    t('dash.said.companies', `${num(byCompany.length)} companies with postings`,
+      { n: localeNum(byCompany.length) });
   const p = palette();
   barChart('#chart-company', rows, { labelKey: 'label', valueKey: 'jobs',
                                      colorPair: [p.accent, p.accent2], filter: 'slug' });
@@ -1326,13 +1345,16 @@ async function renderNetwork(graph) {
 const JOB_COLUMNS = [
   // match leads, because "which of these should I read" is the only question a
   // seeker brings. It is null until skills are entered, and sorts last then.
-  { key: 'match', label: 'Match', text: false, get: (j) => (match(j) || {}).pct ?? null },
-  { key: 'title', label: 'Title', get: (j) => j.title },
-  { key: 'company', label: 'Company', get: (j) => companyName(companyKey(j)) },
-  { key: 'family', label: 'Field', get: (j) => j.family },
-  { key: 'city', label: 'City', get: (j) => j.city },
-  { key: 'found', label: 'Asks for', text: false, get: (j) => (j.found || []).length },
-  { key: 'create_time', label: 'Posted', get: (j) => j.create_time },
+  // `label` is the English and `i18n` the key for it -- resolved at render
+  // rather than here, because this array is built once at load and the language
+  // can change under it without the page being reloaded
+  { key: 'match', label: 'Match', i18n: 'dash.table.match', text: false, get: (j) => (match(j) || {}).pct ?? null },
+  { key: 'title', label: 'Title', i18n: 'dash.table.title', get: (j) => j.title },
+  { key: 'company', label: 'Company', i18n: 'dash.table.company', get: (j) => companyName(companyKey(j)) },
+  { key: 'family', label: 'Field', i18n: 'dash.table.field', get: (j) => j.family },
+  { key: 'city', label: 'City', i18n: 'dash.table.city', get: (j) => j.city },
+  { key: 'found', label: 'Asks for', i18n: 'dash.table.asksFor', text: false, get: (j) => (j.found || []).length },
+  { key: 'create_time', label: 'Posted', i18n: 'dash.table.posted', get: (j) => j.create_time },
   // not a value, so not sortable: a column that looks sortable and sorts by
   // nothing is worse than one that plainly is not
   { key: 'mark', label: '', sortable: false, get: () => null },
@@ -1413,7 +1435,8 @@ function loadJobs() {
 function renderJobs(items, total) {
   const host = $('#jobs-table');
   clear(host);
-  $('#jobs-count').textContent = `${num(total)} matching`;
+  $('#jobs-count').textContent =
+    t('dash.said.matching', `${num(total)} matching`, { n: localeNum(total) });
   if (!items.length) {
     const tokens = queryTokens();
     const empty = el('div', { class: 'empty' });
@@ -1427,7 +1450,7 @@ function renderJobs(items, total) {
       link.addEventListener('click', () => setMode('any'));
       empty.append(link);
     } else {
-      empty.append(el('span', { text: 'No postings match these filters.' }));
+      empty.append(el('span', { text: t('dash.said.noMatch', 'No postings match these filters.') }));
     }
     host.append(empty);
     $('#jobs-pager').replaceChildren();
@@ -1449,12 +1472,12 @@ function renderJobs(items, total) {
       class: active ? 'sort-btn sort-on' : 'sort-btn',
       attrs: { type: 'button' },
     }, [
-      el('span', { text: column.label }),
+      el('span', { text: t(column.i18n, column.label) }),
       el('span', { class: 'sort-mark', attrs: { 'aria-hidden': 'true' },
                    text: active ? (ascending ? '▲' : '▼') : '' }),
     ]);
     button.setAttribute('aria-label',
-      `Sort by ${column.label}${active && ascending ? ', descending' : ', ascending'}`);
+      `${t(column.i18n, column.label)}${active && ascending ? ' ▼' : ' ▲'}`);
     th.setAttribute('aria-sort', active ? (ascending ? 'ascending' : 'descending') : 'none');
     button.addEventListener('click', () => setSort(column.key));
     th.append(button);
@@ -1479,13 +1502,20 @@ function renderJobs(items, total) {
 function posted(job) {
   const age = ageDays(job);
   if (age === null) return { label: '—', stale: false };
-  if (age <= 0) return { label: 'today', stale: false };
-  if (age === 1) return { label: 'yesterday', stale: false };
-  if (age < 30) return { label: `${age} days ago`, stale: false };
+  if (age <= 0) return { label: t('dash.age.today', 'today'), stale: false };
+  if (age === 1) return { label: t('dash.age.yesterday', 'yesterday'), stale: false };
+  if (age < 30) {
+    return { label: t('dash.age.days', `${age} days ago`, { n: localeNum(age) }), stale: false };
+  }
   const months = Math.round(age / 30);
   // said plainly rather than dressed as a date: the boards keep four-year-old
   // adverts listed, and "2022-05-01" in a table of fresh rows reads as a typo
-  return { label: months < 12 ? `${months} months ago` : `over a year ago`, stale: age > 180 };
+  return {
+    label: months < 12
+      ? t('dash.age.months', `${months} months ago`, { n: localeNum(months) })
+      : t('dash.age.overYear', 'over a year ago'),
+    stale: age > 180,
+  };
 }
 
 /** One cell. Kept beside JOB_COLUMNS so the two cannot drift apart. */
@@ -1621,7 +1651,7 @@ function closeDrawer() {
 function drawerSection(host, heading, rows, { onPick } = {}) {
   host.append(el('h3', { class: 'drawer-h', text: heading }));
   if (!rows.length) {
-    host.append(el('p', { class: 'card-sub', text: 'Nothing to show.' }));
+    host.append(el('p', { class: 'card-sub', text: t('dash.said.nothingToShow', 'Nothing to show.') }));
     return;
   }
   const list = el('ul', { class: 'drawer-list' });
@@ -2297,7 +2327,9 @@ function renderAll() {
     `% of each level's postings naming the requirement · level stated on `
     + `${num(jobs.filter((j) => j.seniority_level).length)} of ${num(jobs.length)} postings`;
   $('#sub-heatmap').textContent =
-    `tool and concept mentions per job family · top ${num(HEATMAP_N)} of each axis`;
+    t('dash.said.heatmap',
+      `tool and concept mentions per job family · top ${num(HEATMAP_N)} of each axis`,
+      { n: localeNum(HEATMAP_N) });
 
 }
 
