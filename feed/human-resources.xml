@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Human Resources postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 19 Aug 2026 18:02:30 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 20 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/human-resources.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>صندوقدار(خانم) — طلیعه</title>
+    <link>https://jobinja.ir/companies/talieh/jobs/t7Ka</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/talieh/jobs/t7Ka</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    <description>طلیعه — تهران · Human Resources
+
+Asks for: Accounting, Attention to detail, Customer service, Management, Ownership, Record keeping, Recruitment, Teamwork</description>
+  </item>
   <item>
     <title>کارآموز جذب و استخدام عملیات — دیجی کالا ۲</title>
     <link>https://career.hrcando.ir/co/Digikala-Operations/job-detail/3c7f55b9-a292-478a-a810-6088f7b119c2</link>
@@ -68,7 +77,7 @@ Asks for: Analysis, Contract management, Insurance, Management, Microsoft Office
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>گروه اسنپ — تهران · Human Resources
 
-Asks for: Availability, Build, Customer, Finance, Functional, Hospitality, Insights, Marketplace, Operations, Service, Support, Analysis, B2B, Business development, Customer service, E-commerce, End-to-End, Management, Marketing, Negotiation, Problem solving, Retail, Scalability, Supply chain</description>
+Asks for: Availability, Build, Customer, Finance, Functional, Hospitality, Insights, Marketplace, Operations, Service, Support, Travel, Analysis, B2B, Business development, Customer service, E-commerce, End-to-End, Management, Marketing, Negotiation, Problem solving, Real Estate, Retail, Scalability, Supply chain</description>
   </item>
   <item>
     <title>HR Intern (Operation) — گروه اسنپ</title>
@@ -177,6 +186,24 @@ Asks for: Analysis, Inventory management, KPI management, Management, Onboarding
     <description>مدل — قم · Human Resources
 
 Asks for: Analysis, Applicant tracking, Attention to detail, Communication, DevOps, Documentation, Management, Negotiation, Networking, Ownership, Process improvement, Quality control, Record keeping, Recruitment, Reporting, Teamwork, Training</description>
+  </item>
+  <item>
+    <title>سرپرست منابع انسانی و اداری (آقا-کرج) — آب آشامیدنی سوپرایز</title>
+    <link>https://jobinja.ir/companies/surprise-water/jobs/t7Oq</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/surprise-water/jobs/t7Oq</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آب آشامیدنی سوپرایز — کرج · Human Resources
+
+Asks for: Analysis, Management, Recruitment, Reporting, Supervision</description>
+  </item>
+  <item>
+    <title>HRBP (Operations) — آل‌باکس</title>
+    <link>https://jobinja.ir/companies/surena-9/jobs/t7GT</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/surena-9/jobs/t7GT</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آل‌باکس — تهران · Human Resources
+
+Asks for: Analysis, Inventory management, KPI management, Management, Onboarding, Problem solving, Process improvement, Sales, Stakeholder management, Supply chain, Training</description>
   </item>
   <item>
     <title>رئیس توسعه منابع انسانی — بلور نوری تازه</title>
@@ -429,33 +456,6 @@ Asks for: Financial</description>
     <description>آکادمی کاشانی — تهران · Human Resources
 
 Asks for: Google Workspace, Microsoft Excel, Artificial intelligence, Communication, Contract management, KPI management, Management, Problem solving, Process improvement, Recruitment, Training</description>
-  </item>
-  <item>
-    <title>کارآموز منابع انسانی (خانم) — رهجو ایجاد رویش آینده‌ساز</title>
-    <link>https://jobinja.ir/companies/rirais/jobs/t7es</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/rirais/jobs/t7es</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رهجو ایجاد رویش آینده‌ساز — تهران · Human Resources
-
-Asks for: Communication, Continuous learning, Documentation, English proficiency, Management, Ownership, Recruitment, Reporting, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>Talent Acquisition Specialist — نوبیتکس</title>
-    <link>https://jobinja.ir/companies/nobitex-1/jobs/t7Fk</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/nobitex-1/jobs/t7Fk</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-    <description>نوبیتکس — تهران · Human Resources
-
-Asks for: Acquisition, Build, Data, Feedback, Software, Technical, Branding, Communication, Documentation, End-to-End, Fintech, Management, Ownership, Problem solving, Process improvement, Recruitment, Training</description>
-  </item>
-  <item>
-    <title>کارشناس منابع انسانی (مشهد) — کلور</title>
-    <link>https://jobinja.ir/companies/clever-2/jobs/t7el</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/clever-2/jobs/t7el</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-    <description>کلور — مشهد · Human Resources
-
-Asks for: Microsoft Excel, Communication, Contract management, Insurance, Management, Record keeping, Recruitment, Sales, Training</description>
   </item>
 </channel>
 </rss>
