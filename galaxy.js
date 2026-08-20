@@ -43,8 +43,14 @@ async function terms() {
 }
 
 /** One word, drawn once into a texture. Cheaper than any text geometry, and it
- *  stays crisp because the tile is sized for the device's pixel ratio. */
-function label(THREE, text, colour) {
+ *  stays crisp because the tile is sized for the device's pixel ratio.
+ *
+ *  Drawn white and tinted by the sprite's colour rather than in the theme's
+ *  colour directly: a canvas holds pixels, so a word drawn in one theme's
+ *  colour has to be redrawn for the other, while a white one multiplies into
+ *  either for nothing. That is what lets a theme flip leave the words alone. */
+function label(THREE, text) {
+  const colour = '#ffffff';
   const scale = Math.min(devicePixelRatio || 1, 2);
   const pad = 8 * scale;
   const font = `600 ${26 * scale}px Vazirmatn, ui-sans-serif, system-ui, sans-serif`;
@@ -82,14 +88,16 @@ function label(THREE, text, colour) {
 /** The soft bulge at the centre. One sprite, drawn once: a real galaxy is
  *  brightest in the middle, and without it the centre read as a hole rather
  *  than as a nucleus. */
-function core(THREE, rgb, light) {
+function core(THREE) {
   const tile = document.createElement('canvas');
   tile.width = tile.height = 128;
   const ctx = tile.getContext('2d');
+  // white for the same reason a label is: the falloff is what this canvas is
+  // for, and the hue is the theme's business, applied as a tint
   const glow = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
-  glow.addColorStop(0, `rgba(${rgb}, 1)`);
-  glow.addColorStop(0.35, `rgba(${rgb}, 0.32)`);
-  glow.addColorStop(1, `rgba(${rgb}, 0)`);
+  glow.addColorStop(0, 'rgba(255, 255, 255, 1)');
+  glow.addColorStop(0.35, 'rgba(255, 255, 255, 0.32)');
+  glow.addColorStop(1, 'rgba(255, 255, 255, 0)');
   ctx.fillStyle = glow;
   ctx.fillRect(0, 0, 128, 128);
 
@@ -97,8 +105,6 @@ function core(THREE, rgb, light) {
   texture.colorSpace = THREE.SRGBColorSpace;
   const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
     map: texture, transparent: true, depthWrite: false,
-    opacity: light ? 0.28 : 0.5,
-    blending: light ? THREE.NormalBlending : THREE.AdditiveBlending,
   }));
   sprite.scale.set(30, 30, 1);
   return sprite;
@@ -113,11 +119,12 @@ const VERTEX = `
   uniform float uTime;
   uniform float uSize;
   uniform float uRatio;
+  uniform vec3 uNear;
+  uniform vec3 uFar;
   attribute float aRadius;
   attribute float aAngle;
   attribute float aScale;
   attribute float aSeed;
-  attribute vec3 aColour;
   varying vec3 vColour;
   varying float vTwinkle;
 
@@ -127,7 +134,9 @@ const VERTEX = `
     vec4 view = modelViewMatrix * vec4(world, 1.0);
 
     vTwinkle = 0.6 + 0.4 * sin(uTime * (0.6 + aSeed * 1.9) + aSeed * 37.0);
-    vColour = aColour;
+    // the shade a star sits at is its radius, so the palette is two uniforms
+    // rather than a buffer: a theme flip is then two numbers, not 15,000
+    vColour = mix(uNear, uFar, min(aRadius / 56.0, 1.0));
     gl_PointSize = uSize * aScale * uRatio * (34.0 / max(-view.z, 1.0));
     gl_Position = projectionMatrix * view;
   }
@@ -150,7 +159,7 @@ const FRAGMENT = `
 
 /** A two-armed spiral. The arm offset is what makes the eye read "galaxy"
  *  rather than "cloud of dots". */
-function stars(THREE, count, inner, outer, light) {
+function stars(THREE, count) {
   // only .y is read from `position`; the shader derives x and z from the polar
   // pair, because that is what lets each radius turn at its own rate
   const heights = new Float32Array(count * 3);
@@ -158,9 +167,6 @@ function stars(THREE, count, inner, outer, light) {
   const angles = new Float32Array(count);
   const scales = new Float32Array(count);
   const seeds = new Float32Array(count);
-  const colours = new Float32Array(count * 3);
-  const near = new THREE.Color(inner);
-  const far = new THREE.Color(outer);
 
   for (let i = 0; i < count; i += 1) {
     const radius = Math.pow(Math.random(), 0.62) * 54 + 1.8;
@@ -179,11 +185,6 @@ function stars(THREE, count, inner, outer, light) {
     // a field of identical dots looks printed; a few bright ones give it depth
     scales[i] = 0.55 + Math.pow(Math.random(), 2.5) * 2.2;
     seeds[i] = Math.random();
-
-    const shade = near.clone().lerp(far, Math.min(radii[i] / 56, 1));
-    colours[i * 3] = shade.r;
-    colours[i * 3 + 1] = shade.g;
-    colours[i * 3 + 2] = shade.b;
   }
 
   const geometry = new THREE.BufferGeometry();
@@ -192,7 +193,6 @@ function stars(THREE, count, inner, outer, light) {
   geometry.setAttribute('aAngle', new THREE.BufferAttribute(angles, 1));
   geometry.setAttribute('aScale', new THREE.BufferAttribute(scales, 1));
   geometry.setAttribute('aSeed', new THREE.BufferAttribute(seeds, 1));
-  geometry.setAttribute('aColour', new THREE.BufferAttribute(colours, 3));
   // the shader places every star, so three cannot infer the extent from a
   // buffer that holds only heights -- without this the disc is culled away
   geometry.boundingSphere = new THREE.Sphere(new THREE.Vector3(), 64);
@@ -204,24 +204,50 @@ function stars(THREE, count, inner, outer, light) {
       uTime: { value: 0 },
       uSize: { value: 4.2 },
       uRatio: { value: Math.min(devicePixelRatio || 1, 1.75) },
-      uOpacity: { value: light ? 0.7 : 0.95 },
+      // set by `repaint`, which owns everything the theme decides
+      uOpacity: { value: 1 },
+      uNear: { value: new THREE.Color() },
+      uFar: { value: new THREE.Color() },
     },
     transparent: true,
     depthWrite: false,
-    // Additive blending only makes sense against a dark sky: on the light theme
-    // it drives every star towards white and the galaxy disappears into the
-    // page. Normal blending keeps it visible on both.
-    blending: light ? THREE.NormalBlending : THREE.AdditiveBlending,
   }));
 }
 
-/** Torn down and rebuilt when the theme flips, because the colours and the
- *  blend mode both depend on it and neither can be tweened in place. */
-let teardown = null;
+/** The theme, applied to a galaxy that is already turning.
+ *
+ *  Everything the theme decides is a colour, an opacity or a blend mode --
+ *  nothing a star's position or a word's orbit depends on. So a flip repaints
+ *  rather than rebuilding: the field keeps its stars, its words and its clock,
+ *  and the picture changes colour instead of stopping and coming back as a
+ *  different picture. Rebuilding also re-ran the fetch and added a second copy
+ *  of every listener, which is its own slow leak.
+ *
+ *  Additive blending only makes sense against a dark sky: on the light theme it
+ *  drives every star towards white and the galaxy disappears into the page.
+ *  Normal blending keeps it visible on both. */
+function repaint(THREE, parts) {
+  const { disc, bulge, words } = parts;
+  const light = document.documentElement.dataset.theme === 'light';
+  const blending = light ? THREE.NormalBlending : THREE.AdditiveBlending;
+
+  // deeper on light, brighter on dark -- the same hues, inverted in weight
+  disc.material.uniforms.uNear.value.set(light ? '#4b3fb8' : '#7cc0ff');
+  disc.material.uniforms.uFar.value.set(light ? '#1d3055' : '#7c5cff');
+  disc.material.uniforms.uOpacity.value = light ? 0.7 : 0.95;
+  disc.material.blending = blending;
+  disc.material.needsUpdate = true;
+
+  bulge.material.color.set(light ? 'rgb(96, 84, 210)' : 'rgb(150, 195, 255)');
+  bulge.material.opacity = light ? 0.28 : 0.5;
+  bulge.material.blending = blending;
+  bulge.material.needsUpdate = true;
+
+  for (const word of words) word.material.color.set(light ? '#3f4c6b' : '#cfe3ff');
+}
 
 async function build() {
   if (!canvas) return;
-  if (teardown) { teardown(); teardown = null; }
 
   // no WebGL is an ordinary state on plenty of machines, not an error to log
   const probe = document.createElement('canvas');
@@ -234,11 +260,6 @@ async function build() {
     return;                    // blocked, offline, or the CDN is having a day
   }
 
-  const light = document.documentElement.dataset.theme === 'light';
-  // deeper on light, brighter on dark -- the same hues, inverted in weight
-  const inner = light ? '#4b3fb8' : '#7cc0ff';
-  const outer = light ? '#1d3055' : '#7c5cff';
-
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(64, 1, 0.1, 300);
   camera.position.set(0, 21, 36);
@@ -249,14 +270,15 @@ async function build() {
   renderer.setClearColor(0x000000, 0);
 
   const galaxy = new THREE.Group();
-  const disc = stars(THREE, STARS, inner, outer, light);
+  const disc = stars(THREE, STARS);
+  const bulge = core(THREE);
   galaxy.add(disc);
-  galaxy.add(core(THREE, light ? '96, 84, 210' : '150, 195, 255', light));
+  galaxy.add(bulge);
   scene.add(galaxy);
 
   const words = [];
   for (const term of await terms()) {
-    const sprite = label(THREE, term, light ? '#3f4c6b' : '#cfe3ff');
+    const sprite = label(THREE, term);
     // only in the outer disc: the middle of the screen belongs to the headline
     const radius = 24 + Math.random() * 30;
     // A word is a thing in the galaxy, so it travels like one: same law as the
@@ -287,6 +309,21 @@ async function build() {
   resize();
   addEventListener('resize', resize, { passive: true });
 
+  // The theme decides the palette and the blend mode and nothing else, so it is
+  // applied to the finished field -- once now, and again whenever the button
+  // flips the attribute. The galaxy never stops to be recoloured.
+  const parts = { disc, bulge, words };
+  const apply = () => {
+    repaint(THREE, parts);
+    // reduced motion draws one frame and never another, so the flip has to ask
+    // for the redraw the animation loop would otherwise have done anyway
+    if (reduced) renderer.render(scene, camera);
+  };
+  apply();
+  new MutationObserver((records) => {
+    if (records.some((r) => r.attributeName === 'data-theme')) apply();
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
   // a little parallax: enough to read as depth, not as movement
   let tiltX = 0;
   let tiltY = 0;
@@ -306,7 +343,6 @@ async function build() {
       word.material.opacity = 0.36;
     }
     renderer.render(scene, camera);
-    teardown = () => renderer.dispose();
     return;
   }
 
@@ -355,17 +391,6 @@ async function build() {
     renderer.render(scene, camera);
   });
 
-  teardown = () => {
-    renderer.setAnimationLoop(null);
-    renderer.dispose();
-  };
 }
 
 build();
-
-// The theme button changes both the palette and the blend mode -- additive
-// blending against a white page washes every star out -- so a flip rebuilds
-// rather than leaving a galaxy tuned for the other background.
-new MutationObserver((records) => {
-  if (records.some((r) => r.attributeName === 'data-theme')) build();
-}).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
