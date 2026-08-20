@@ -21,18 +21,12 @@
 .lp-figure dd { margin: 0; font-size: .76rem; color: var(--text-faint);
                 text-transform: uppercase; letter-spacing: .06em; }
 
-/* --- three audiences, three cards ---------------------------------------- */
-.lp-cards { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
-.lp-card { display: flex; flex-direction: column; align-items: flex-start; }
-.lp-card .btn { margin-block-start: auto; }
-/* an inline SVG rather than an emoji: an emoji is a font the visitor may not
-   have, and a missing one renders as a tofu box on the first screen they see */
-.lp-icon { width: 26px; height: 26px; color: var(--accent);
-           margin-block-end: var(--space-3); }
-
-@media (min-width: 760px) {
-  .lp-cards { grid-template-columns: repeat(3, 1fr); }
-}
+/* --- room for the backdrop ----------------------------------------------- */
+/* Three cards stood here and the page is better without them, but not shorter:
+   ending at the figures pulled the footer up under them and left the galaxy as
+   a strip. 42vh is the mask's solid region below -- blank past that is blank
+   over a backdrop that has already faded, which is just a long scroll. */
+.lp-space { min-height: 42vh; }
 
 @media (max-width: 600px) {
   .lp-hero { padding-block-start: var(--space-4); }
@@ -58,8 +52,13 @@
              mask-image: linear-gradient(180deg, #000 0%, #000 42%, transparent 78%);
              -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 42%, transparent 78%); }
 
-/* the page itself sits above the backdrop */
-.lp-main, .ui-top, .ui-foot { position: relative; z-index: 1; }
+/* The page itself sits above the backdrop. The header is not listed: base.css
+   already gives it `sticky` and z-index 20, and naming it here overrode both --
+   which dropped it to the main element's own layer, and main comes later, so
+   the page was painting over the header. The hero's glow below bleeds upward
+   into the header's row, and that is the half of each button that stopped
+   answering a tap on a phone. */
+.lp-main, .ui-foot { position: relative; z-index: 1; }
 
 /* the hero reads against the galaxy rather than on top of a busy patch of it */
 .lp-hero { position: relative; }
@@ -67,7 +66,10 @@
    document to 471px inside a 412px viewport, and the fixed canvas then sized
    itself to the document rather than the window -- one overflow producing two
    symptoms. */
+/* `pointer-events: none` for the same reason the galaxy has it: this is a
+   gradient, and a gradient must never be the reason a button does not click. */
 .lp-hero::before { content: ""; position: absolute; inset: -14% 0; z-index: -1;
+                   pointer-events: none;
                    background: radial-gradient(ellipse at center,
                      color-mix(in srgb, var(--bg) 78%, transparent) 0%,
                      transparent 72%); }

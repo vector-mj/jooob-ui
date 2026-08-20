@@ -2467,7 +2467,11 @@ async function boot() {
   skeletons();
 
   try {
-    const response = await fetch(DATA_URL, { cache: 'no-cache' });
+    // No `no-cache`: it forced a revalidation round-trip on every load and the
+    // export is 1.7 MB gzipped. The file is stamped by the run that wrote it
+    // and served with a short max-age, so the cache is allowed to answer --
+    // which is the difference between a reload and a re-download.
+    const response = await fetch(DATA_URL);
     // A 5xx is the server saying the fault is its own, and there is a page that
     // says so properly. Anything else -- a 404, malformed JSON, a connection
     // that died -- keeps the visitor here, where the message can name what went
