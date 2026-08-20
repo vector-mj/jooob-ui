@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "code": "en",
+    "name": "English",
+    "dir": "ltr"
+  },
+
+  "nav": {
+    "dashboard": "Open the dashboard",
+    "signin": "Sign in",
+    "about": "About",
+    "employers": "For employers",
+    "feeds": "Feeds",
+    "support": "Support",
+    "forEmployers": "for employers",
+    "theme": "Switch theme",
+    "language": "Switch language"
+  },
+
+  "footer": {
+    "copyright": "© 2026 jooob.ir"
+  },
+
+  "landing": {
+    "docTitle": "jooob — what employers are actually hiring for",
+    "docDescription": "A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.",
+    "eyebrow": "Free, and staying free",
+    "heading": "What employers are actually hiring for.",
+    "lede": "Not what a job board says is popular — what is written in the adverts themselves. Every posting is read, the tools and concepts in it are named, and the whole lot is counted, so you can see the market instead of scrolling through it.",
+    "findJob": "Find a job",
+    "postJob": "Post a job — free",
+    "support": "Support jooob",
+    "figures": {
+      "postings": "postings",
+      "companies": "companies",
+      "updated": "updated"
+    },
+    "ago": {
+      "now": "just now",
+      "hours": "{n}h ago",
+      "yesterday": "yesterday",
+      "days": "{n}d ago"
+    }
+  },
+
+  "donate": {
+    "docTitle": "jooob — support the project",
+    "docDescription": "jooob is free, and stays free.",
+    "eyebrow": "No ads, no listing fee, no subscription",
+    "heading": "Keep jooob alive.",
+    "lede": "If jooob has been useful to you, this is where you can help.",
+    "warnBody": "Each address below belongs to one chain. A token sent on the wrong chain cannot be recovered by anyone, including us.",
+    "takes": {
+      "btc": "BTC",
+      "eth": "ETH",
+      "trx": "TRX",
+      "sol": "SOL"
+    },
+    "cheapest": "lowest fees",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "copyManual": "Select it and copy",
+    "anonHeading": "No sign-up needed",
+    "shareHeading": "Would rather not send money?",
+    "shareBody": "Tell someone the site exists. A person who finds a job through it is worth more to this project than the bill is."
+  },
+
+  "login": {
+    "docTitle": "jooob — sign in",
+    "heading": "Sign in to your account",
+    "google": "Sign in with Google",
+    "seekerHeading": "Looking for work?",
+    "hiringHeading": "Hiring?",
+    "hiringBody": "You need to sign in so we know the postings are really yours.",
+    "signedIn": "You are signed in",
+    "as": "as",
+    "continue": "Continue",
+    "signout": "Sign out"
+  },
+
+  "employer": {
+    "docTitle": "jooob — post a job, free",
+    "heading": "Post your jobs where people are actually looking.",
+    "lede": "Add your own roles and they appear beside everything we collect — matched against the skills each person says they have.",
+    "freeLead": "Completely free.",
+    "freeBody": "No listing fee, no limits.",
+    "google": "Sign in with Google",
+    "companiesHeading": "Your companies",
+    "companiesBody": "Claim the company you hire for. Approval takes a little while to review.",
+    "company": "Company",
+    "claim": "Claim",
+    "postHeading": "Post a job",
+    "newPosting": "New posting",
+    "jobTitle": "Job title",
+    "field": "Field",
+    "city": "City",
+    "seniority": "Seniority",
+    "workType": "Work type",
+    "salaryFrom": "Salary from",
+    "salaryTo": "Salary to",
+    "optional": "optional",
+    "applyAt": "Where to apply",
+    "remote": "This role can be done remotely",
+    "body": "The job",
+    "send": "Send for review",
+    "cancel": "Cancel",
+    "postingsHeading": "Your postings",
+    "postingsEmpty": "Nothing yet. Add a company first, then publish your first posting."
+  }
+}

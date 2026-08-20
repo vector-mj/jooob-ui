@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en" dir="ltr" data-theme="dark">
+<html lang="fa" dir="rtl" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
-<title>jooob — sign in</title>
+<script src="/i18n.js?v=95f18b5a"></script>
+<title data-i18n="login.docTitle">jooob — ورود</title>
 <meta name="description" content="Sign in to jooob with Google. No password to choose, no confirmation email to wait for, and nothing to reset.">
 <meta name="robots" content="noindex,follow">
 
@@ -32,7 +33,9 @@
       <g class="orb o3"><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></g>
     </svg><span>jooob</span></a>
   <div class="ui-who">
-    <button type="button" class="btn ghost icon" id="theme-btn" aria-label="Switch theme">◐</button>
+    <button type="button" class="btn ghost sm" data-lang-switch lang="en">English</button>
+    <button type="button" class="btn ghost icon" id="theme-btn"
+            data-i18n-attr="aria-label:nav.theme" aria-label="تغییر تم">◐</button>
   </div>
 </header>
 
@@ -67,12 +70,7 @@
   <circle cx="102" cy="8" r="5.5" fill="currentColor"/>
   <circle cx="192.3" cy="29.8" r="7.5" fill="#6ea8ff"/>
 </svg>
-      <h1 class="li-h1">Sign in</h1>
-      <p class="ui-sub li-lede">
-        There is one way in, and it is one click. Google confirms who you are, so
-        there is no password to choose, no confirmation mail to wait for, and
-        nothing that can be reset by somebody who is not you.
-      </p>
+      <h1 class="li-h1" data-i18n="login.heading">ورود به حساب</h1>
 
       <button type="button" class="btn primary lg li-google" id="sign-in">
         <svg class="g-mark" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
@@ -81,13 +79,8 @@
           <path fill="#FBBC05" d="M3.9 10.7a5.4 5.4 0 0 1 0-3.4V5H.9a9 9 0 0 0 0 8l3-2.3z"/>
           <path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.4 1.3l2.6-2.6A9 9 0 0 0 .9 5l3 2.3C4.6 5.2 6.6 3.6 9 3.6z"/>
         </svg>
-        Continue with Google
+        <span data-i18n="login.google">ورود با گوگل</span>
       </button>
-
-      <p class="li-scope">
-        We ask Google for your email address and nothing else — no profile, no
-        picture, no contacts.
-      </p>
 
       <div class="li-why">
         <div class="li-why-row">
@@ -95,11 +88,7 @@
                stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
             <circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
           <div>
-            <strong>Looking for work?</strong>
-            <span>You do not need this. The dashboard works signed out and your
-              skills stay in your browser. Sign in only if you want the same list
-              on your phone and your laptop — and then it does record what you
-              claim and what you search for.</span>
+            <strong data-i18n="login.seekerHeading">دنبال کار هستید؟</strong>
           </div>
         </div>
         <div class="li-why-row">
@@ -107,10 +96,8 @@
                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
             <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           <div>
-            <strong>Hiring?</strong>
-            <span>You do need this, so we know the postings are really yours. If
-              your address is at your company's own domain, you are approved
-              straight away.</span>
+            <strong data-i18n="login.hiringHeading">در حال استخدام هستید؟</strong>
+            <span data-i18n="login.hiringBody">باید وارد شوید تا مطمئن شویم آگهی‌ها واقعاً متعلق به شماست.</span>
           </div>
         </div>
       </div>
@@ -118,29 +105,24 @@
 
     <!-- already signed in --------------------------------------------- -->
     <div id="signed-in" hidden>
-      <h1 class="li-h1">You are signed in</h1>
-      <p class="ui-sub li-lede">as <strong id="who-email"></strong></p>
+      <h1 class="li-h1" data-i18n="login.signedIn">وارد شده‌اید</h1>
+      <p class="ui-sub li-lede"><span data-i18n="login.as">با حساب</span> <strong id="who-email" dir="ltr"></strong></p>
       <div class="li-actions">
-        <a class="btn primary" id="continue" href="/dashboard">Continue</a>
-        <button type="button" class="btn ghost" id="sign-out">Sign out</button>
+        <a class="btn primary" id="continue" href="/dashboard" data-i18n="login.continue">ادامه</a>
+        <button type="button" class="btn ghost" id="sign-out" data-i18n="login.signout">خروج</button>
       </div>
     </div>
 
     <p class="ui-said" id="said" role="status"></p>
   </section>
-
-  <p class="li-offline" id="offline" hidden>
-    Accounts are not switched on for this deployment yet. Everything else on the
-    site works without one.
-  </p>
 </main>
 
 <footer class="ui-foot">
-  <a href="/">About</a> ·
-  <a href="/dashboard">Dashboard</a> ·
-  <a href="/employer">For employers</a>
+  <a href="/" data-i18n="nav.about">دربارهٔ ما</a> ·
+  <a href="/dashboard" data-i18n="nav.dashboard">پیشخوان</a> ·
+  <a href="/employer" data-i18n="nav.employers">کارفرمایان</a>
 </footer>
 
-<script src="/login.js?v=80641021"></script>
+<script src="/login.js?v=e3b486ed"></script>
 </body>
 </html>

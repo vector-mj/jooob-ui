@@ -18,20 +18,8 @@
                      var(--accent-soft) 0%, transparent 70%); }
 .dn-eyebrow { margin: 0 0 var(--space-3); font-size: .74rem; font-weight: 600;
               text-transform: uppercase; letter-spacing: .1em; color: var(--ok); }
-.dn-lede { margin: 0 auto var(--space-6); max-width: 58ch; color: var(--text-muted);
+.dn-lede { margin: 0 auto; max-width: 58ch; color: var(--text-muted);
            font-size: clamp(.98rem, 2.4vw, 1.08rem); line-height: 1.7; }
-
-.dn-costs { display: flex; justify-content: center; gap: var(--space-6);
-            flex-wrap: wrap; margin: 0; }
-.dn-cost { display: flex; flex-direction: column; align-items: center; gap: .1rem; }
-.dn-cost dt { font-size: 1.5rem; font-weight: 700; letter-spacing: -.02em;
-              font-variant-numeric: tabular-nums;
-              /* the two brand bodies, the one place a gradient belongs here */
-              background: linear-gradient(120deg, var(--accent), var(--accent-2));
-              -webkit-background-clip: text; background-clip: text;
-              color: transparent; }
-.dn-cost dd { margin: 0; font-size: .76rem; color: var(--text-faint);
-              text-transform: uppercase; letter-spacing: .06em; }
 
 /* --- the thing that loses donations -------------------------------------- */
 /* Loud on purpose, and above the addresses rather than below them: a warning
@@ -41,8 +29,7 @@
            border-inline-start: 3px solid var(--warn);
            border-radius: var(--radius);
            background: color-mix(in srgb, var(--warn) 8%, var(--surface));
-           color: var(--text-muted); font-size: .9rem; line-height: 1.65; }
-.dn-warn strong { color: var(--text); }
+           color: var(--text); font-size: .9rem; line-height: 1.65; }
 
 /* --- one card per chain --------------------------------------------------- */
 .dn-grid { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
@@ -56,8 +43,10 @@
                        transform var(--dur-2) var(--ease); }
 /* the chain's colour, as a wash rather than a fill: enough to tell the cards
    apart at a glance without turning the page into a paint chart */
+/* `to inline-end` rather than 90deg: the wash has to start at the side the
+   card starts on, and in Persian that is the right one */
 .dn-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 2px;
-                   background: linear-gradient(90deg, var(--net), transparent 78%); }
+                   background: linear-gradient(to inline-end, var(--net), transparent 78%); }
 .dn-card:hover { border-color: color-mix(in srgb, var(--net) 45%, var(--line-strong));
                  transform: translateY(-2px); }
 
@@ -98,7 +87,13 @@
 .dn-note .ui-h2 { margin: var(--space-4) 0 0; }
 .dn-note .ui-h2:first-child { margin-block-start: 0; }
 .dn-note .ui-sub { margin: 0; line-height: 1.7; }
-.dn-note strong { color: var(--text); }
+/* A statement standing on its own, where a heading would be promising a
+   paragraph that is not coming. Weighted like a heading, punctuated like a
+   sentence. */
+.dn-claim { margin: 0; font-weight: 650; color: var(--text);
+            display: flex; align-items: center; gap: var(--space-2); }
+.dn-claim::before { content: ""; flex: none; width: 6px; height: 6px;
+                    border-radius: var(--radius-full); background: var(--ok); }
 
 @media (max-width: 600px) {
   .dn-hero { padding-block-start: var(--space-4); }
