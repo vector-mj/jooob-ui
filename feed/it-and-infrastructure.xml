@@ -8,6 +8,15 @@
   <lastBuildDate>Thu, 20 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس DevOps(اصفهان) — گروه دمیس</title>
+    <link>https://jobinja.ir/companies/demis-1/jobs/t7hQ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/demis-1/jobs/t7hQ</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    <description>گروه دمیس — اصفهان · IT &amp; Infrastructure
+
+Asks for: Docker, Java, Kubernetes, Linux, Oracle, SQL, Analysis, CI/CD, DevOps, Documentation, Management, Observability, Ownership, Teamwork, Troubleshooting</description>
+  </item>
+  <item>
     <title>Network Engineer — اسنپ پی</title>
     <link>https://jobinja.ir/companies/snapp-pay/jobs/t7Xk</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/snapp-pay/jobs/t7Xk</guid>
@@ -109,13 +118,49 @@ Asks for: Hardware security module, Infrastructure, Authentication, Identity &am
 Asks for: Customer service, Negotiation, Networking, Record keeping, Technical support, Troubleshooting</description>
   </item>
   <item>
+    <title>کارشناس ITSM — توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا)</title>
+    <link>https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/taRF</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/taRF</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا) — تهران · IT &amp; Infrastructure
+
+Asks for: Confluence, Jira, Service, Visio, Agile / Scrum, Analysis, Automation, BPMN, Communication, Configuration management, DevOps, ITSM / ITIL, Management, Networking, Problem solving, Process improvement, SLA management, Stakeholder management, Teamwork, Technical support</description>
+  </item>
+  <item>
+    <title>کارشناس سیستم مدیریت امنیت اطلاعات (ISMS) — بورس اوراق بهادار تهران</title>
+    <link>https://jobinja.ir/companies/tehran-stoke-exchange/jobs/taYq</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tehran-stoke-exchange/jobs/taYq</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>بورس اوراق بهادار تهران — تهران · IT &amp; Infrastructure
+
+Asks for: Analysis, Auditing, Business continuity, Documentation, English proficiency, ISO standards, Management, Observability, Process improvement, Reporting, Risk management, Security, Supervision</description>
+  </item>
+  <item>
+    <title>کارشناس ارزیابی امنیتی شبکه (Network Pentest) — بورس اوراق بهادار تهران</title>
+    <link>https://jobinja.ir/companies/tehran-stoke-exchange/jobs/taYc</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tehran-stoke-exchange/jobs/taYc</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>بورس اوراق بهادار تهران — تهران · IT &amp; Infrastructure
+
+Asks for: English proficiency, Firewalls, IDS / IPS, Networking, Penetration testing, Reporting, Security</description>
+  </item>
+  <item>
+    <title>کارشناس مرکز عملیات امنیت (SOC-Tier2) — بورس اوراق بهادار تهران</title>
+    <link>https://jobinja.ir/companies/tehran-stoke-exchange/jobs/taYS</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tehran-stoke-exchange/jobs/taYS</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>بورس اوراق بهادار تهران — تهران · IT &amp; Infrastructure
+
+Asks for: Bash, Incident, Linux, PowerShell, Python, Snort, Splunk, Suricata, Ticketing, Windows, Zeek, Analysis, Automation, Documentation, EDR / EPP, Firewalls, Incident management, Incident response, Networking, Observability, Process improvement, Reporting, Root cause analysis, SIEM / SOAR, Security</description>
+  </item>
+  <item>
     <title>کارشناس DevOps — به اندیشان نوآور امرداد</title>
     <link>https://jobinja.ir/companies/sepantab-1/jobs/t7uQ</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/sepantab-1/jobs/t7uQ</guid>
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>به اندیشان نوآور امرداد — تهران · IT &amp; Infrastructure
 
-Asks for: Ansible, Bash, Docker, Git, Jenkins, Kubernetes, Linux, Prometheus, SolarWinds, Zabbix, CI/CD, Creativity, DevOps, Networking, Observability, Problem solving, Security, Teamwork</description>
+Asks for: Ansible, Bash, Control, Docker, Git, Jenkins, Kubernetes, Linux, Prometheus, SolarWinds, Zabbix, CI/CD, Creativity, DevOps, Networking, Observability, Problem solving, Security, Teamwork</description>
   </item>
   <item>
     <title>کارشناس تست نفوذ و امنیت — فراپردازان آروند امید</title>
@@ -178,7 +223,7 @@ Asks for: Asterisk, VoIP, Communication, Documentation, Management, Networking, 
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
 
-Asks for: Bash, Incident, PowerShell, Python, Splunk, Analysis, Firewalls, IDS / IPS, Incident response, Management, Networking, Ownership, Reporting, SIEM / SOAR, Security, Threat Hunting, Training, Zero trust</description>
+Asks for: Bash, Incident, Playbook, PowerShell, Python, Splunk, Analysis, Firewalls, IDS / IPS, Incident response, Management, Networking, Ownership, Reporting, SIEM / SOAR, Security, Threat Hunting, Training, Zero trust</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی (سوئيچ و پايانه فروش) — پرداخت الکترونیک پاسارگاد</title>
@@ -334,6 +379,15 @@ Asks for: Availability, EMC, HPE, Latency, NFS, Recovery, Replication, Unity, VM
 Asks for: Restore, VMware, Backup and recovery, Management, Networking, Observability, Storage, Troubleshooting, Virtualization</description>
   </item>
   <item>
+    <title>Network Engineer — طلاین</title>
+    <link>https://jobinja.ir/companies/tlyn/jobs/t77N</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tlyn/jobs/t77N</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>طلاین — تهران · IT &amp; Infrastructure
+
+Asks for: Availability, Bash, FortiGate, Fortinet, Grafana, Infrastructure, Latency, Linux, MikroTik, Operations, Prometheus, Technical, VoIP, Wireshark, tcpdump, Automation, Documentation, Firewalls, High availability, Networking, Observability, Troubleshooting</description>
+  </item>
+  <item>
     <title>کارشناس IT — طلاسی</title>
     <link>https://jobinja.ir/companies/talasea-1/jobs/t77U</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/talasea-1/jobs/t77U</guid>
@@ -404,60 +458,6 @@ Asks for: Cloud, Computer, Data, Deploy, Design, Encryption, Event, Incident, In
     <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
 
 Asks for: Active Directory, Backlog, Cisco, Customer, Email, FortiGate, Fortinet, Incident, Palo Alto, Server, Service, SolarWinds, Ticketing, Zabbix, Analysis, Certifications, Communication, Customer service, Documentation, EDR / EPP, Firewalls, ITSM / ITIL, Incident management, Management, Networking, Observability, Ownership, Process improvement, Reporting, SLA management, Security, Stakeholder management, Supervision, Teamwork, Technical support, Training, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس دواپس (مشهد) — پارس پرمیوم</title>
-    <link>https://jobinja.ir/companies/parspremium/jobs/to9r</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/parspremium/jobs/to9r</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پارس پرمیوم — مشهد · IT &amp; Infrastructure
-
-Asks for: Cloudflare, DirectAdmin, Plesk, cPanel, Communication, Management, Networking, Performance tuning, Reporting, Security, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس امنیت شبکه — ارتباطات مبین نت</title>
-    <link>https://jobinja.ir/companies/mobinnet-1/jobs/t74q</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mobinnet-1/jobs/t74q</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ارتباطات مبین نت — تهران · IT &amp; Infrastructure
-
-Asks for: Cisco, FortiGate, Analysis, Identity &amp; access management, Management, Networking, Observability, Security</description>
-  </item>
-  <item>
-    <title>System Administrator — پردازش اطلاعات مالی مبنا</title>
-    <link>https://jobinja.ir/companies/mabna-dp/jobs/tGKM</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mabna-dp/jobs/tGKM</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پردازش اطلاعات مالی مبنا — تهران · IT &amp; Infrastructure
-
-Asks for: Computer, Hardware, Infrastructure, Linux, Operations, Software, Technical, Windows, Communication, Documentation, Firewalls, Linux administration, Management, Observability, Problem solving, Security, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی نرم افزار (باران 360-شهرقدس) — پوشاک ایرانیان</title>
-    <link>https://jobinja.ir/companies/iranian-33/jobs/t7aO</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iranian-33/jobs/t7aO</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پوشاک ایرانیان — شهر قدس · IT &amp; Infrastructure
-
-Asks for: Inventory management, Networking, Reporting</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی فنی (Help Desk) — خانه کتاب و ادبیات ایران</title>
-    <link>https://jobinja.ir/companies/iran-book-and-literature-house-1/jobs/t4BC</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iran-book-and-literature-house-1/jobs/t4BC</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>خانه کتاب و ادبیات ایران — تهران · IT &amp; Infrastructure
-
-Asks for: CompTIA Network+, Networking, Teamwork, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>SysAdmin — همراه کسب و کارهای هوشمند</title>
-    <link>https://jobinja.ir/companies/intelligent-business-companion/jobs/t77f</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/intelligent-business-companion/jobs/t77f</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>همراه کسب و کارهای هوشمند — تهران · IT &amp; Infrastructure
-
-Asks for: Availability, Bash, Coordinating, Distribution, Docker, Infrastructure, Linux, NoSQL, Review, Server, Service, Shell, Support, Technical, Analysis, Attention to detail, Automation, Certifications, Communication, CompTIA Network+, Documentation, Linux administration, Networking, Observability, Ownership, Teamwork, Troubleshooting, Virtualization</description>
   </item>
 </channel>
 </rss>
