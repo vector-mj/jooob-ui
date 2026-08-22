@@ -5,8 +5,33 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Thu, 20 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 22 Aug 2026 09:38:19 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>DevOps Engineer — تخفیفان</title>
+    <link>https://career.hrcando.ir/co/takhfifan/job-detail/f2e9277b-c709-46d3-aeb2-3086055979a2</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/takhfifan/job-detail/f2e9277b-c709-46d3-aeb2-3086055979a2</guid>
+    <pubDate>Sat, 22 Aug 2026 09:38:19 +0000</pubDate>
+    <description>تخفیفان — تهران · IT &amp; Infrastructure
+
+Asks for: Data, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, MariaDB, PostgreSQL, Prometheus, Recovery, Replication, Service, Technical, Analysis, Backup and recovery, Configuration management, Container orchestration, Customer retention, Databases, DevOps, Disaster recovery, Documentation, Incident management, Incident response, Maintenance, Management, Networking, Observability, Performance tuning, Regulatory compliance, Security, Site reliability, Storage, Troubleshooting</description>
+  </item>
+  <item>
+    <title>(SysAdmin (Virtualization — دیجی پی</title>
+    <link>https://career.hrcando.ir/co/digipay/job-detail/ef67f619-a151-4d67-b458-a30f72e61346</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/digipay/job-detail/ef67f619-a151-4d67-b458-a30f72e61346</guid>
+    <pubDate>Sat, 22 Aug 2026 09:21:22 +0000</pubDate>
+    <description>دیجی پی — تهران · IT &amp; Infrastructure
+
+Asks for: EMC, HPE, Infrastructure, Linux, Recovery, Restore, VMware, Veeam, Windows, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Communication, Disaster recovery, Documentation, High availability, Linux administration, Management, Networking, Observability, Process improvement, Security, Storage, Teamwork, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>senior DBA — pouya-andish</title>
+    <link>https://jooob.ir</link>
+    <guid isPermaLink="true">https://jooob.ir</guid>
+    <pubDate>Fri, 21 Aug 2026 10:33:45 +0000</pubDate>
+    <description>pouya-andish — تهران · IT &amp; Infrastructure</description>
+  </item>
   <item>
     <title>کارشناس DevOps(اصفهان) — گروه دمیس</title>
     <link>https://jobinja.ir/companies/demis-1/jobs/t7hQ</link>
@@ -32,7 +57,7 @@ Asks for: Cisco, Computer, Design, Encryption, Financial, FortiGate, Functional,
     <pubDate>Wed, 19 Aug 2026 19:15:39 +0000</pubDate>
     <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Cisco, Computer, Hardware, Linux, Remote, Review, Security+, Segmentation, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
+Asks for: Availability, Cisco, Computer, Hardware, Linux, Remote, Review, Scripting, Security+, Segmentation, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
   </item>
   <item>
     <title>IT Assistant   — Hypermarkets - هایپرمارکت
@@ -52,7 +77,7 @@ Asks for: Data, Hardware, Helpdesk, Server, Analysis, CompTIA Network+, ICDL, In
     <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
     <description>توسعه زیرساختهای فناوری اطلاعات سیگما — تهران · IT &amp; Infrastructure
 
-Asks for: Ansible, Linux, OpenStack, Shell, Certifications, Configuration management, Management, Problem solving, Troubleshooting</description>
+Asks for: Ansible, Linux, OpenStack, Scripting, Shell, Certifications, Configuration management, Management, Problem solving, Troubleshooting</description>
   </item>
   <item>
     <title>متخصص OpenStack — توسعه زیرساختهای فناوری اطلاعات سیگما</title>
@@ -151,7 +176,7 @@ Asks for: English proficiency, Firewalls, IDS / IPS, Networking, Penetration tes
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>بورس اوراق بهادار تهران — تهران · IT &amp; Infrastructure
 
-Asks for: Bash, Incident, Linux, PowerShell, Python, Snort, Splunk, Suricata, Ticketing, Windows, Zeek, Analysis, Automation, Documentation, EDR / EPP, Firewalls, Incident management, Incident response, Networking, Observability, Process improvement, Reporting, Root cause analysis, SIEM / SOAR, Security</description>
+Asks for: Bash, Incident, Linux, PowerShell, Python, Scripting, Snort, Splunk, Suricata, Ticketing, Windows, Zeek, Analysis, Automation, Documentation, EDR / EPP, Firewalls, Incident management, Incident response, Networking, Observability, Process improvement, Reporting, Root cause analysis, SIEM / SOAR, Security</description>
   </item>
   <item>
     <title>کارشناس DevOps — به اندیشان نوآور امرداد</title>
@@ -214,7 +239,7 @@ Asks for: C++, Go, Linux, Python, Review, Analysis, Code review, Communication, 
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
 
-Asks for: Asterisk, VoIP, Communication, Documentation, Management, Networking, Observability, Ownership, Problem solving</description>
+Asks for: Asterisk, FreePBX, VoIP, Communication, Documentation, Management, Networking, Observability, Ownership, Problem solving</description>
   </item>
   <item>
     <title>کارشناس مرکز عملیات امنیت (SOC-Tier 3) — پرداخت الکترونیک پاسارگاد</title>
@@ -259,7 +284,7 @@ Asks for: Linux, Attention to detail, Documentation, Networking, Problem solving
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>نوآوران بوم گستر امید ( امیدبوم ) — تهران · IT &amp; Infrastructure
 
-Asks for: .NET, Bootstrap, C#, CSS, Docker, ELK, Framework, Git, GitLab, Grafana, HTML, Java, JavaScript, Jira, Kafka, NUnit, OAuth2, RabbitMQ, Redis, Review, SQL, SQL Server, Serilog, Server, Swagger, xUnit, Analysis, Attention to detail, Authentication, CI/CD, Clean architecture, Code review, Communication, Customer service, Data modelling, Documentation, Entity Framework, Full-stack, Management, Microservices, Observability, Problem solving, Process improvement, REST APIs, Record keeping, Release management, Root cause analysis, Security, Teamwork, Technical support, Troubleshooting, UI/UX design</description>
+Asks for: .NET, Bootstrap, C#, CSS, Dapper, Docker, ELK, Framework, Git, GitLab, Grafana, HTML, Java, JavaScript, Jira, Kafka, NUnit, OAuth2, RabbitMQ, Redis, Review, SQL, SQL Server, Serilog, Server, Swagger, xUnit, Analysis, Attention to detail, Authentication, CI/CD, Clean architecture, Code review, Communication, Customer service, Data modelling, Documentation, Entity Framework, Full-stack, Management, Microservices, Observability, Problem solving, Process improvement, REST APIs, Record keeping, Release management, Root cause analysis, Security, Teamwork, Technical support, Troubleshooting, UI/UX design</description>
   </item>
   <item>
     <title>DevOps Team Lead — متا سینا</title>
@@ -379,6 +404,15 @@ Asks for: Availability, EMC, HPE, Latency, NFS, Recovery, Replication, Unity, VM
 Asks for: Restore, VMware, Backup and recovery, Management, Networking, Observability, Storage, Troubleshooting, Virtualization</description>
   </item>
   <item>
+    <title>Network Engineer — توسعه سامانه‌های نرم‌افزاری نگین (توسن)</title>
+    <link>https://jobinja.ir/companies/tosan/jobs/t74n</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tosan/jobs/t74n</guid>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+    <description>توسعه سامانه‌های نرم‌افزاری نگین (توسن) — تهران · IT &amp; Infrastructure
+
+Asks for: Nexus, Firewalls, Networking, Observability, Security, Troubleshooting</description>
+  </item>
+  <item>
     <title>Network Engineer — طلاین</title>
     <link>https://jobinja.ir/companies/tlyn/jobs/t77N</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/tlyn/jobs/t77N</guid>
@@ -422,42 +456,6 @@ Asks for: Hosting, Microsoft Word, Analysis, Communication, Customer service, Do
     <description>داده ورزی سداد — تهران · IT &amp; Infrastructure
 
 Asks for: AutoCAD, Microsoft, Visio, VoIP, Certifications, Communication, CompTIA Network+, Creativity, Documentation, Management, Microsoft Office, Networking, Ownership, Teamwork</description>
-  </item>
-  <item>
-    <title>کارشناس امنیت شبکه و زیرساخت — رویال پرداز تیام</title>
-    <link>https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/t7vs</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/t7vs</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Apache, Bug, Container, Docker, Linux, MySQL, Nessus, Nginx, OpenVAS, Oracle, PostgreSQL, SQL, SQL Server, Server, Windows, Analysis, Attention to detail, Auditing, Certifications, Databases, Documentation, English proficiency, Group Policy, Networking, Ownership, Penetration testing, Problem solving, Record keeping, Regulatory compliance, Reporting, Risk management, Security, Teamwork, Testing, Vulnerability scanning</description>
-  </item>
-  <item>
-    <title>(NOC Enginee (Tier1 — بلوبانک</title>
-    <link>https://jobinja.ir/companies/pradazeshgaran-e-saman/jobs/tkO7</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pradazeshgaran-e-saman/jobs/tkO7</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>بلوبانک — تهران · IT &amp; Infrastructure
-
-Asks for: Alerting, Availability, Grafana, Incident, Linux, Prometheus, SolarWinds, Zabbix, Analysis, Communication, Documentation, Fintech, Incident management, Management, Networking, Observability, Reporting, Root cause analysis</description>
-  </item>
-  <item>
-    <title>Senior Infrastructure Security Engineer — بلوبانک</title>
-    <link>https://jobinja.ir/companies/pradazeshgaran-e-saman/jobs/tIX8</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pradazeshgaran-e-saman/jobs/tIX8</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>بلوبانک — تهران · IT &amp; Infrastructure
-
-Asks for: Cloud, Computer, Data, Deploy, Design, Encryption, Event, Incident, Infrastructure, Installation, Linux, On-Premise, Operations, Project, Service, Technical, EDR / EPP, Firewalls, IDS / IPS, Identity &amp; access management, Management, Networking, Project management, SIEM / SOAR, Security, Storage, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>سرپرست پشتیبانی و خدمات مشتریان — پیشگامان فناوری اطلاعات هامون</title>
-    <link>https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/t7mC</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/t7mC</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Backlog, Cisco, Customer, Email, FortiGate, Fortinet, Incident, Palo Alto, Server, Service, SolarWinds, Ticketing, Zabbix, Analysis, Certifications, Communication, Customer service, Documentation, EDR / EPP, Firewalls, ITSM / ITIL, Incident management, Management, Networking, Observability, Ownership, Process improvement, Reporting, SLA management, Security, Stakeholder management, Supervision, Teamwork, Technical support, Training, Troubleshooting</description>
   </item>
 </channel>
 </rss>
