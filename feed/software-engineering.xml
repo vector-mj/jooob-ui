@@ -5,8 +5,26 @@
   <link>https://jooob.ir</link>
   <description>New Software Engineering postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 12:21:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Front-End Developer — گروه مالی کارآمد</title>
+    <link>https://career.hrcando.ir/co/Karamad/job-detail/bd355f43-25d9-4641-9e19-5d64bf77b025</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/Karamad/job-detail/bd355f43-25d9-4641-9e19-5d64bf77b025</guid>
+    <pubDate>Sun, 23 Aug 2026 12:21:00 +0000</pubDate>
+    <description>گروه مالی کارآمد — تهران · Software Engineering
+
+Asks for: Accountability, Build, CSS, Data, Design, Financial, Flow, HTML, Make, Mobile, Next.js, React, Software, Support, Technical, Transaction, Usability, Validation, Accessibility, Agile / Scrum, Attention to detail, Communication, Data-driven, Error Handling, Fintech, Frontend Development, Maintenance, Management, Ownership, REST APIs, Responsive design, Software development, UI/UX design, User experience</description>
+  </item>
+  <item>
+    <title>کارشناس پشتیبانی نرم‌افزار — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/tv6q</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/tv6q</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · Software Engineering
+
+Asks for: Control, Jira, MySQL, PostgreSQL, SQL Server, Agile / Scrum, Communication, Customer service, ITSM / ITIL, Process improvement, Reporting, Supervision, Version Control</description>
+  </item>
   <item>
     <title>کارشناس فروش و بازاریابی (خانم-مشهد) — تیداتجارت جاده ابریشم</title>
     <link>https://jobinja.ir/companies/tida-silk-road-trading-1/jobs/t7iQ</link>
@@ -44,13 +62,31 @@ Asks for: Apache, Build, Business, Computer, Data, Design, Functional, Hadoop, H
 Asks for: Build, Business, Campaigns, Cleaning, Customer, Data, Design, Experimentation, Finance, Financial, Forecasting, Functional, Funnel, Insights, Internet, Marketplace, Metabase, Microsoft, Microsoft Excel, Modeling, Operations, Post, Power BI, Presentation, Prioritization, Python, Reconciliation, SQL, Segmentation, Strategy, Support, Tableau, Technical, Validation, View, Visualization, Analysis, Analytics, Attention to detail, Automation, Business intelligence, Communication, Customer retention, Data modelling, Data quality, Data-driven, Databases, E-commerce, Fintech, KPIs, Marketing, Problem solving, Reporting, Retail, Sales, Strategic planning</description>
   </item>
   <item>
-    <title>Engineering Manager — مدل</title>
-    <link>https://career.hrcando.ir/co/SnappPay/job-detail/51a89247-8e89-4801-b532-8bddb258d3d1</link>
-    <guid isPermaLink="true">https://career.hrcando.ir/co/SnappPay/job-detail/51a89247-8e89-4801-b532-8bddb258d3d1</guid>
-    <pubDate>Sat, 22 Aug 2026 14:30:32 +0000</pubDate>
-    <description>مدل — تهران · Software Engineering
+    <title>Senior Back-End Developer (لاهیجان-PHP) — جاجیگا</title>
+    <link>https://jobinja.ir/companies/jajiga/jobs/tvYW</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/jajiga/jobs/tvYW</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>جاجیگا — لاهیجان · Software Engineering
 
-Asks for: Availability, Build, Business, Customer, Data, Design, Financial, Functional, Incident, Internet, Java, Prioritization, React, Roadmap, Software, Support, Technical, Analysis, CI/CD, Change management, Communication, Data-driven, Incident management, Management, Observability, Ownership, Problem solving, Process improvement, Quality control, Security, Software architecture, Strategic thinking, System Design, Testing</description>
+Asks for: Data, Design, Framework, Functional, Go, Laravel, MongoDB, MySQL, NoSQL, PHP, PostgreSQL, Redis, SQL, Technical, Unit, Backend Development, Databases, Debugging, DevOps, Documentation, Microservices, Problem solving, REST APIs, Security, Testing, UI/UX design</description>
+  </item>
+  <item>
+    <title>برنامه‌نویس Python (قم) — مرکز داده امین (عصر پردازش اطلاعات امین)</title>
+    <link>https://jobinja.ir/companies/amin-internet-data-center/jobs/t73v</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/amin-internet-data-center/jobs/t73v</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مرکز داده امین (عصر پردازش اطلاعات امین) — قم · Software Engineering
+
+Asks for: Control, Django, FastAPI, Git, MySQL, Python, SQL, Creativity, Databases, Datacenter operations, Management, Problem solving, REST APIs, Security, Teamwork, Version Control, Web Services</description>
+  </item>
+  <item>
+    <title>Front-End Developer (قم) — مرکز داده امین (عصر پردازش اطلاعات امین)</title>
+    <link>https://jobinja.ir/companies/amin-internet-data-center/jobs/tVyZ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/amin-internet-data-center/jobs/tVyZ</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مرکز داده امین (عصر پردازش اطلاعات امین) — قم · Software Engineering
+
+Asks for: Angular, CSS, Git, HTML, Java, JavaScript, React, Sass, TypeScript, Webpack, npm, Creativity, Datacenter operations, Management, Problem solving, REST APIs, Responsive design, Teamwork</description>
   </item>
   <item>
     <title>وب مستر (Webmaster) — آسان بسته</title>
@@ -269,6 +305,15 @@ Asks for: CSS, Git, HTML, JavaScript, Laravel, Linux, MySQL, PHP, Python, Analys
 Asks for: CSS, Elementor, Figma, HTML, JavaScript, Microsoft Word, PHP, Photoshop, WooCommerce, WordPress, Yoast, jQuery, Best Practice, REST APIs, Responsive design, SEO, Sales, Troubleshooting, UI/UX design</description>
   </item>
   <item>
+    <title>کارشناس وب (ابزارهای دیجیتال-شیراز) — سیتی راز</title>
+    <link>https://jobinja.ir/companies/cityraz/jobs/t78D</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/cityraz/jobs/t78D</guid>
+    <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+    <description>سیتی راز — شیراز · Software Engineering
+
+Asks for: ChatGPT, Google Workspace, Make, Microsoft Excel, Microsoft Word, Telegram, WordPress, Zapier, n8n, Artificial intelligence, Attention to detail, Automation, Management, Negotiation, Ownership, REST APIs, Recruitment</description>
+  </item>
+  <item>
     <title>کارشناس IT — مدرن کلینیک</title>
     <link>https://jobinja.ir/companies/mdc/jobs/t7K2</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/mdc/jobs/t7K2</guid>
@@ -285,6 +330,15 @@ Asks for: SQL, SQL Server, Server, Wi-Fi, Windows, Certifications, Communication
     <description>مدی مدیا — تهران · Software Engineering
 
 Asks for: Availability, Caching, Design, Docker, Go, Kafka, Laravel, Maintainability, PHP, PostgreSQL, RabbitMQ, Redis, Review, Test, Unit, Analysis, Backend Development, Clean code, Code review, Debugging, Design patterns, DevOps, Distributed systems, Domain-driven design, High availability, Integration Test, Management, Microservices, Observability, Process improvement, SOLID principles, Scalability, Security, Unit testing</description>
+  </item>
+  <item>
+    <title>مدیر فنی (CTO-مشهد) — نرم افزاری آموت</title>
+    <link>https://jobinja.ir/companies/amoot/jobs/t7hY</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/amoot/jobs/t7hY</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نرم افزاری آموت — مشهد · Software Engineering
+
+Asks for: Docker, Kubernetes, PHP, Agile / Scrum, Analysis, CI/CD, Databases, DevOps, Documentation, Management, Project management, Security, Supervision</description>
   </item>
   <item>
     <title>برنامه‌نویس Back-End (مشهد) — یاسئومی</title>
@@ -330,6 +384,15 @@ Asks for: Java, MATLAB, Python, Artificial intelligence, Machine learning, Train
     <description>مدل — تهران · Software Engineering
 
 Asks for: Availability, Deploy, Docker, ELK, Embedded, Financial, Functional, Grafana, Incident, Internet, Linux, Relationship, Technical, Communication, DevOps, Incident management, Management, Observability, Problem solving, Process improvement, Security, Site reliability, Troubleshooting</description>
+  </item>
+  <item>
+    <title>Android Developer — هف هشتاد</title>
+    <link>https://jobinja.ir/companies/hafhashtad/jobs/taYn</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/hafhashtad/jobs/taYn</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>هف هشتاد — تهران · Software Engineering
+
+Asks for: Android, Build, Coordination, Data, Git, Java, Kotlin, Sprint, Support, Unit, Debugging, Jetpack Compose, Object-oriented programming, REST APIs, Release management, Testing, UI/UX design, Unit testing</description>
   </item>
   <item>
     <title>Senior JAVA Developer (امریه سربازی-غائبین) — حامی سیستم شریف</title>
@@ -393,69 +456,6 @@ Asks for: Axios, Build, CSS, Claude, Component, Copilot, Cursor, Data, Design, D
     <description>تیپاکس اکسپرس پارس — تهران · Software Engineering
 
 Asks for: Postman, SQL, SQL Server, Server, Swagger, Analysis, Communication, MBA, Management, Networking, Ownership, Problem solving, Process improvement, REST APIs, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس تست نرم‌افزار — توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا)</title>
-    <link>https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/t7DZ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/t7DZ</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا) — تهران · Software Engineering
-
-Asks for: Functional, Test, Analysis, Attention to detail, Continuous learning, Documentation, Ownership, Problem solving, Process improvement, Teamwork, Test Case</description>
-  </item>
-  <item>
-    <title>Back-End Developer (Java) — توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا)</title>
-    <link>https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/t7DU</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/t7DU</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا) — تهران · Software Engineering
-
-Asks for: Algorithms, Cloud, Data, Design, Elasticsearch, Framework, Git, Hibernate, Infrastructure, Java, Latency, Logstash, Mobile, Programming, Project, RabbitMQ, Redis, Software, Spring, Test, Tracking, Attention to detail, Cloud architecture, Communication, Container orchestration, Design patterns, Microservices, REST APIs, Security, Software development, Troubleshooting</description>
-  </item>
-  <item>
-    <title>Front-End Developer (Angular) — توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا)</title>
-    <link>https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/t7DO</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/t7DO</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا) — تهران · Software Engineering
-
-Asks for: Angular, CSS, Caching, Component, Data, Ethics, Feedback, Figma, Framework, HTML, JavaScript, Service, Support, Technical, TypeScript, Attention to detail, Debugging, Problem solving, Quality control, REST APIs, Responsive design, Teamwork, UI/UX design, User experience</description>
-  </item>
-  <item>
-    <title>کارشناس هوش تجاری (BI) — هوش تجاری ویترای نو</title>
-    <link>https://jobinja.ir/companies/tavan-gas/jobs/tVyV</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tavan-gas/jobs/tVyV</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>هوش تجاری ویترای نو — تهران · Software Engineering
-
-Asks for: Data, Power BI, Business intelligence, Data warehousing, Databases, ETL / ELT, Inventory management</description>
-  </item>
-  <item>
-    <title>Software Engineer (DevOps) — تپسی</title>
-    <link>https://jobinja.ir/companies/tap30-1/jobs/t71w</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tap30-1/jobs/t71w</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>تپسی — تهران · Software Engineering
-
-Asks for: Alerting, Algorithms, Availability, Build, Ceph, Cloud, Computer, Container, Data, Deploy, Design, Docker, Elasticsearch, Envoy, Functional, Git, Go, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, Maintainability, MongoDB, Nginx, OpenSearch, PostgreSQL, Productivity, Programming, Python, Recovery, Redis, Rook, Service, Software, Technical, Terraform, Transportation, VMware, VictoriaMetrics, Automation, CI/CD, Cloud architecture, Communication, Container orchestration, DevOps, Distributed systems, Documentation, Incident management, Infrastructure as code, Networking, Observability, Problem solving, REST APIs, Scalability, Security, Software development, Storage, Virtualization</description>
-  </item>
-  <item>
-    <title>Software Engineer (Data Engineering) — تپسی</title>
-    <link>https://jobinja.ir/companies/tap30-1/jobs/t7xl</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tap30-1/jobs/t7xl</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>تپسی — تهران · Software Engineering
-
-Asks for: Airflow, Apache, ArgoCD, Build, ClickHouse, Concurrency, Customer, Data, Deploy, Design, Event, Flink, Go, Grafana, Hadoop, Helm, Iceberg, Infrastructure, Java, Kafka, Kotlin, Kubernetes, Latency, Linux, Mid-Level, Modeling, MySQL, Operations, Orchestration, PostgreSQL, Programming, Prometheus, Replication, SQL, Schema, Software, Spark, StarRocks, Support, Technical, Terraform, Tracking, Validation, Visualization, Warehouse, Writing, Analysis, Automation, Business intelligence, Data modelling, Data pipelines, Data quality, Data warehousing, Debugging, Event-driven architecture, GitOps, Maintenance, Marketing, Networking, Observability, Ownership, Performance tuning, Real-Time, Storage</description>
-  </item>
-  <item>
-    <title>کارشناس ارشد یادگیری ماشین (Machine Learning) — تاپ</title>
-    <link>https://jobinja.ir/companies/taban-ati-pardaz/jobs/t7yY</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/taban-ati-pardaz/jobs/t7yY</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>تاپ — تهران · Software Engineering
-
-Asks for: Banking, Caching, Chroma, Data, Design, Django, Docker, FastAPI, Fine-tuning, Git, Kafka, LangChain, Latency, Linux, LlamaIndex, On-Premise, Prompt, Python, Qdrant, RabbitMQ, Redis, SQL, Software, Trade-off, Analysis, Artificial intelligence, Clean code, Databases, Distributed systems, Fintech, Large language models, Machine learning, Management, Message Broker, Observability, Prompt Engineering, REST APIs, Retrieval augmented generation, Software architecture, Testing</description>
   </item>
 </channel>
 </rss>

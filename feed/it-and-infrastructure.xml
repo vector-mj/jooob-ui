@@ -5,8 +5,26 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 10:32:35 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>SysOps Engineer — دیجی کالا</title>
+    <link>https://career.hrcando.ir/co/Digikala/job-detail/1698d3d8-bda5-4c30-ab6d-45e874d97098</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/Digikala/job-detail/1698d3d8-bda5-4c30-ab6d-45e874d97098</guid>
+    <pubDate>Sun, 23 Aug 2026 10:32:35 +0000</pubDate>
+    <description>دیجی کالا — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, Apache, Availability, Build, Caching, Component, Container, Control, Deploy, Design, Functional, Git, Go, Infrastructure, Kafka, Kubernetes, Linux, Logging, MySQL, Operations, PostgreSQL, Programming, Redis, Replication, Restore, Service, Software, Support, Technical, Analysis, Automation, Backup and recovery, CI/CD, Clean code, Communication, Databases, Debugging, Design patterns, DevOps, Distributed systems, Documentation, E-commerce, High availability, Incident management, Linux administration, Management, Microservices, Networking, Object-oriented programming, Ownership, Problem solving, Root cause analysis, SOLID principles, Security, Site reliability, Software architecture, Storage, Teamwork, Troubleshooting, Version Control</description>
+  </item>
+  <item>
+    <title>کارشناس پیاده سازی امنیت — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/tv6b</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/tv6b</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Cisco, Fortinet, Linux, VoIP, Backup and recovery, Certifications, Firewalls, Management, Networking, Record keeping, Risk management, Security</description>
+  </item>
   <item>
     <title>Senior DevOps Engineer (Database &amp; Infrastructure) — دکتر ساینا</title>
     <link>https://jobinja.ir/companies/drsaina/jobs/tvSZ</link>
@@ -42,6 +60,15 @@ Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes,
     <description>دیجی پی — تهران · IT &amp; Infrastructure
 
 Asks for: Business, EMC, HPE, Infrastructure, Linux, Recovery, Restore, Switch, VMware, Veeam, Windows, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Communication, Disaster recovery, Documentation, High availability, Linux administration, Management, Networking, Observability, Process improvement, Security, Storage, Teamwork, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>کارشناس ارشد DevOps (آقا-قم) — مرکز داده امین (عصر پردازش اطلاعات امین)</title>
+    <link>https://jobinja.ir/companies/amin-internet-data-center/jobs/t7sK</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/amin-internet-data-center/jobs/t7sK</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مرکز داده امین (عصر پردازش اطلاعات امین) — قم · IT &amp; Infrastructure
+
+Asks for: Ansible, Availability, Bash, Ceph, Cloud, Docker, Git, GitLab, Grafana, HAProxy, IaaS, Jenkins, KVM, Kubernetes, Linux, Nginx, OVS, OpenStack, Prometheus, Python, Automation, CI/CD, Capacity planning, Datacenter operations, DevOps, Documentation, High availability, Management, Networking, Observability, Ownership, Problem solving, Process improvement, Recruitment, Teamwork</description>
   </item>
   <item>
     <title>Cloud Engineer — ویستا سامانه آسا</title>
@@ -159,6 +186,15 @@ Asks for: Availability, Business, Cisco, Computer, Hardware, Linux, Remote, Revi
  — تهران · IT &amp; Infrastructure
 
 Asks for: Data, Hardware, Helpdesk, Server, Analysis, CompTIA Network+, ICDL, Inventory management</description>
+  </item>
+  <item>
+    <title>کارشناس آزمایش و تحویل فیبر نوری (آقا) — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/t7DE</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/t7DE</guid>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · IT &amp; Infrastructure
+
+Asks for: Networking, Supervision</description>
   </item>
   <item>
     <title>کارشناس مرکز عملیات امنیت (آقا-قم) — بنیاد الهادی</title>
@@ -420,42 +456,6 @@ Asks for: Asterisk, FreePBX, VoIP, Communication, Documentation, Management, Net
     <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
 
 Asks for: Bash, Incident, Playbook, PowerShell, Python, Splunk, Analysis, Firewalls, IDS / IPS, Incident response, Management, Networking, Ownership, Reporting, SIEM / SOAR, Security, Threat Hunting, Training, Zero trust</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی فنی (سوئيچ و پايانه فروش) — پرداخت الکترونیک پاسارگاد</title>
-    <link>https://jobinja.ir/companies/pasargad-electronic-payment-co/jobs/taPC</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pasargad-electronic-payment-co/jobs/taPC</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
-
-Asks for: Jira, Oracle, SQL, Ticketing, Analysis, Business intelligence, Management, Ownership, Process improvement, Reporting, Sales, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس توسعه اتوماسیون — پرداخت الکترونیک پاسارگاد</title>
-    <link>https://jobinja.ir/companies/pasargad-electronic-payment-co/jobs/t7Mq</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pasargad-electronic-payment-co/jobs/t7Mq</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
-
-Asks for: .NET, Angular, JavaScript, Linux, Oracle, SQL, jQuery, Analysis, Automation, Databases, Documentation, Management, Ownership, REST APIs</description>
-  </item>
-  <item>
-    <title>تکنسین سخت‌افزار (آقا-شیفت صبح) — پارس پک</title>
-    <link>https://jobinja.ir/companies/parvasystem/jobs/tan4</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/parvasystem/jobs/tan4</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پارس پک — تهران · IT &amp; Infrastructure
-
-Asks for: Linux, Attention to detail, Documentation, Networking, Problem solving, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>برنامه‌نویس Full Stack — نوآوران بوم گستر امید ( امیدبوم )</title>
-    <link>https://jobinja.ir/companies/omidboom/jobs/t7vp</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/omidboom/jobs/t7vp</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>نوآوران بوم گستر امید ( امیدبوم ) — تهران · IT &amp; Infrastructure
-
-Asks for: .NET, Bootstrap, C#, CSS, Dapper, Docker, ELK, Framework, Git, GitLab, Grafana, HTML, Java, JavaScript, Jira, Kafka, NUnit, OAuth2, RabbitMQ, Redis, Review, SQL, SQL Server, Serilog, Server, Swagger, xUnit, Analysis, Attention to detail, Authentication, CI/CD, Clean architecture, Code review, Communication, Customer service, Data modelling, Documentation, Entity Framework, Full-stack, Management, Microservices, Observability, Problem solving, Process improvement, REST APIs, Record keeping, Release management, Root cause analysis, Security, Teamwork, Technical support, Troubleshooting, UI/UX design</description>
   </item>
 </channel>
 </rss>
