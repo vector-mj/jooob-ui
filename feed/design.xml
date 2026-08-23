@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Design postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 22 Aug 2026 16:36:12 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/design.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Senior Visual Designer — ازکی</title>
+    <link>https://jobinja.ir/companies/azki/jobs/tvSt</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/azki/jobs/tvSt</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ازکی — تهران · Design
+
+Asks for: Adobe Illustrator, Animation, Design, Artificial intelligence, Color theory, Marketing, UI/UX design</description>
+  </item>
   <item>
     <title>سرپرست تولید شمش طلا و نقره — ملّی گلد</title>
     <link>https://career.hrcando.ir/co/Melligold/job-detail/82d92c30-01a9-4803-9ef9-146a52f5f031</link>
@@ -447,15 +456,6 @@ Asks for: AutoCAD, Revit, Sketchup, Analysis, Customer service, Management, Proj
     <description>خدمات روز تجارت الکترونیک عرش — تهران · Design
 
 Asks for: Adobe Premiere, CapCut, ChatGPT, Flux, Kling, Prompt, Runway, Veo, Video, Artificial intelligence, Branding, E-commerce, Management, Networking, Prompt Engineering, Social media</description>
-  </item>
-  <item>
-    <title>گرافیست (چاپ اکوسالونت) — دیوار آبنباتی</title>
-    <link>https://jobinja.ir/companies/candywall-1/jobs/t7O2</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/candywall-1/jobs/t7O2</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-    <description>دیوار آبنباتی — تهران · Design
-
-Asks for: Photoshop, Artificial intelligence, Cost optimization, Management, Quality control</description>
   </item>
 </channel>
 </rss>

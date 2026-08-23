@@ -5,8 +5,26 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 22 Aug 2026 09:38:19 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Senior DevOps Engineer (Database &amp; Infrastructure) — دکتر ساینا</title>
+    <link>https://jobinja.ir/companies/drsaina/jobs/tvSZ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/drsaina/jobs/tvSZ</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>دکتر ساینا — تهران · IT &amp; Infrastructure
+
+Asks for: AWS, Alerting, Ansible, Asterisk, Availability, Azure, Bash, ChatGPT, Claude, Cloud, Cursor, Design, Docker, Docker Compose, ELK, GCP, GitLab, Google Gemini, Grafana, Infrastructure, Kafka, Kubernetes, Linux, Logging, Loki, MySQL, Nginx, OpenStack, PostgreSQL, Prometheus, Python, RabbitMQ, Recovery, Redis, Replication, Restore, Terraform, VoIP, Analysis, Artificial intelligence, Automation, Backup and recovery, CI/CD, Database administration, Databases, DevOps, Disaster recovery, Documentation, High availability, Infrastructure as code, Linux administration, Management, Observability, Ownership, Performance tuning, Process improvement, Reverse Proxy, Troubleshooting</description>
+  </item>
+  <item>
+    <title>(Site Reliability Engineer (SRE — ابرناک</title>
+    <link>https://jobinja.ir/companies/abrnoc/jobs/tvSj</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/abrnoc/jobs/tvSj</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ابرناک — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, Availability, Docker, Incident, Infrastructure, Kubernetes, Linux, Log, Logging, Recovery, Scripting, Analysis, Artificial intelligence, Automation, Capacity planning, Debugging, Distributed systems, High availability, Incident management, Incident response, Management, Networking, Observability, Process improvement, Recruitment, Root cause analysis, Site reliability</description>
+  </item>
   <item>
     <title>DevOps Engineer — تخفیفان</title>
     <link>https://career.hrcando.ir/co/takhfifan/job-detail/f2e9277b-c709-46d3-aeb2-3086055979a2</link>
@@ -23,7 +41,43 @@ Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes,
     <pubDate>Sat, 22 Aug 2026 09:21:22 +0000</pubDate>
     <description>دیجی پی — تهران · IT &amp; Infrastructure
 
-Asks for: Business, EMC, HPE, Infrastructure, Linux, Recovery, Restore, VMware, Veeam, Windows, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Communication, Disaster recovery, Documentation, High availability, Linux administration, Management, Networking, Observability, Process improvement, Security, Storage, Teamwork, Troubleshooting, Virtualization</description>
+Asks for: Business, EMC, HPE, Infrastructure, Linux, Recovery, Restore, Switch, VMware, Veeam, Windows, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Communication, Disaster recovery, Documentation, High availability, Linux administration, Management, Networking, Observability, Process improvement, Security, Storage, Teamwork, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>Cloud Engineer — ویستا سامانه آسا</title>
+    <link>https://jobinja.ir/companies/asa-1/jobs/tvYI</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asa-1/jobs/tvYI</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ویستا سامانه آسا — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Incident, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Software, Terraform, Transaction, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس IT — ارتباط سازان سهند</title>
+    <link>https://jobinja.ir/companies/ertebat-sazan-sahand-1/jobs/tvtr</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/ertebat-sazan-sahand-1/jobs/tvtr</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ارتباط سازان سهند — تهران · IT &amp; Infrastructure
+
+Asks for: Microsoft, Outlook, Switch, Wi-Fi, Windows, Attention to detail, Automation, Certifications, Communication, CompTIA Network+, Continuous learning, Documentation, Firewalls, Management, Microsoft Office, Networking, Ownership, Problem solving, Record keeping, Reporting, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس مجازی سازی و سرور (اصفهان) — امن پردازش هوشمند فرداد</title>
+    <link>https://jobinja.ir/companies/fardad-15/jobs/t73s</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/fardad-15/jobs/t73s</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>امن پردازش هوشمند فرداد — اصفهان · IT &amp; Infrastructure
+
+Asks for: Active Directory, Email, Linux, Log, Recovery, Server, SolarWinds, VMware, Veeam, Windows, Attention to detail, Backup and recovery, Certifications, Disaster recovery, Documentation, Management, Networking, Observability, Problem solving, Process improvement, Storage, Teamwork, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>کارشناس NOC (آقا) — مهندسی صفر و یک پرداز</title>
+    <link>https://jobinja.ir/companies/sefroyek-pardaz/jobs/tvCQ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/sefroyek-pardaz/jobs/tvCQ</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مهندسی صفر و یک پرداز — تهران · IT &amp; Infrastructure
+
+Asks for: Networking, Observability</description>
   </item>
   <item>
     <title>DevOps Engineer — تخفیفان - نت برگ</title>
@@ -402,60 +456,6 @@ Asks for: Linux, Attention to detail, Documentation, Networking, Problem solving
     <description>نوآوران بوم گستر امید ( امیدبوم ) — تهران · IT &amp; Infrastructure
 
 Asks for: .NET, Bootstrap, C#, CSS, Dapper, Docker, ELK, Framework, Git, GitLab, Grafana, HTML, Java, JavaScript, Jira, Kafka, NUnit, OAuth2, RabbitMQ, Redis, Review, SQL, SQL Server, Serilog, Server, Swagger, xUnit, Analysis, Attention to detail, Authentication, CI/CD, Clean architecture, Code review, Communication, Customer service, Data modelling, Documentation, Entity Framework, Full-stack, Management, Microservices, Observability, Problem solving, Process improvement, REST APIs, Record keeping, Release management, Root cause analysis, Security, Teamwork, Technical support, Troubleshooting, UI/UX design</description>
-  </item>
-  <item>
-    <title>DevOps Team Lead — متا سینا</title>
-    <link>https://jobinja.ir/companies/metacena/jobs/t7mX</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/metacena/jobs/t7mX</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>متا سینا — تهران · IT &amp; Infrastructure
-
-Asks for: Alerting, Ansible, Availability, Business, Cloud, Deploy, Docker, Docker Compose, ELK, Grafana, Incident, Infrastructure, Kubernetes, Latency, Linux, Logging, MikroTik, Nginx, Prometheus, RabbitMQ, Recovery, Redis, Server, Terraform, VMware, Analysis, Automation, Backup and recovery, Business continuity, CI/CD, Cloud architecture, Cost optimization, DevOps, Disaster recovery, Distributed systems, Documentation, Fintech, Firewalls, High availability, Incident management, Incident response, Infrastructure as code, Management, Networking, Observability, Problem solving, Process improvement, Quality control, Recruitment, Scalability, Security, Site reliability, Training, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>کارشناس HelpDesk — کاخ لبخند</title>
-    <link>https://jobinja.ir/companies/kakh-labkhand-2/jobs/trP2</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/kakh-labkhand-2/jobs/trP2</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>کاخ لبخند — تهران · IT &amp; Infrastructure
-
-Asks for: VoIP, Networking, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>Data Scientist — بیمه بازار</title>
-    <link>https://jobinja.ir/companies/BimeBazar/jobs/t7p0</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/BimeBazar/jobs/t7p0</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>بیمه بازار — تهران · IT &amp; Infrastructure
-
-Asks for: Airflow, Data, Deploy, Design, Docker, Orchestration, PostgreSQL, Python, SQL, Analysis, Attention to detail, Communication, Fintech, Insurance, Machine learning, Management, Observability, Problem solving, Process improvement, Testing</description>
-  </item>
-  <item>
-    <title>کارشناس تست نفوذ (آقا) — بهسازان ملت (بانک ملت)</title>
-    <link>https://jobinja.ir/companies/behsazan-mellat-bank-mellat/jobs/tODr</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/behsazan-mellat-bank-mellat/jobs/tODr</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>بهسازان ملت (بانک ملت) — تهران · IT &amp; Infrastructure
-
-Asks for: Burp Suite, Linux, SonarQube, Analysis, Continuous learning, Creativity, Databases, Management, Networking, Penetration testing, Security</description>
-  </item>
-  <item>
-    <title>کارشناس استقرار و امنیت شبکه — بهین راهکار</title>
-    <link>https://jobinja.ir/companies/behinrahkar/jobs/t7uk</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/behinrahkar/jobs/t7uk</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>بهین راهکار — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Linux, Communication, CompTIA Network+, Documentation, Networking, Observability, Process improvement, Security, Teamwork, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>کارشناس نگهداری فیزیکی مرکز داده (آقا) — آسیاتک</title>
-    <link>https://jobinja.ir/companies/asiatech/jobs/t7M1</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/t7M1</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>آسیاتک — تهران · IT &amp; Infrastructure
-
-Asks for: Analysis, CompTIA Network+, Customer service, Datacenter operations, Documentation, Observability, Security, Supervision, Technical support, Troubleshooting</description>
   </item>
 </channel>
 </rss>
