@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Skilled Trades postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 22 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/skilled-trades.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس تجهیز (آقا-بوشهر) — فروشگاه های زنجیره ای افق کوروش</title>
+    <link>https://jobinja.ir/companies/ofogh-koorosh/jobs/tpnI</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/ofogh-koorosh/jobs/tpnI</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>فروشگاه های زنجیره ای افق کوروش — بوشهر · Skilled Trades
+
+Asks for: Documentation, KPI management, Maintenance, Observability, Reporting, Sales, Teamwork</description>
+  </item>
   <item>
     <title>تعمیرکار(لوازم خانگی-آقا) — 1421</title>
     <link>https://jobinja.ir/companies/1424-1/jobs/t73q</link>
@@ -441,15 +450,6 @@ Asks for: Attention to detail, Maintenance, Ownership, Record keeping, Reporting
     <description>مهندسین مشاور آرا تجهیز سیستم — تهران · Skilled Trades
 
 Asks for: Maintenance</description>
-  </item>
-  <item>
-    <title>خمکار و برشکار ورق (آقا) — مهندسین مشاور آرا تجهیز سیستم</title>
-    <link>https://jobinja.ir/companies/atsys-2/jobs/t7H6</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/atsys-2/jobs/t7H6</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مهندسین مشاور آرا تجهیز سیستم — تهران · Skilled Trades
-
-Asks for: Attention to detail, HSE</description>
   </item>
 </channel>
 </rss>

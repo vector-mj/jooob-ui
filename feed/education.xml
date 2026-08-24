@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Education postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Thu, 20 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/education.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدرس هوش مصنوعی — ویموند</title>
+    <link>https://jobinja.ir/companies/vimond/jobs/tv2t</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/vimond/jobs/tv2t</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ویموند — تهران · Education
+
+Asks for: Computer, Data, Design, EdTech, Education, Prompt, Python, Analysis, Artificial intelligence, Communication, Computer Vision, Content creation, Creativity, English proficiency, Large language models, Machine learning, Management, Problem solving, Prompt Engineering, Supervision, Teamwork, Training</description>
+  </item>
   <item>
     <title>مربی کامپیوتر(کرج) — مهندسین برتر</title>
     <link>https://jobinja.ir/companies/mohandesinbartar/jobs/t7xj</link>
@@ -439,15 +448,6 @@ Asks for: Training</description>
     <description>کیدز پلنت — تهران · Education
 
 Asks for: Attention to detail, Communication, Management, Ownership, Record keeping, Recruitment, Sales, Training</description>
-  </item>
-  <item>
-    <title>مدرس زبان انگلیسی (حضوری) — آموزشگاه زبان سیتاک (شعبه مرزداران)</title>
-    <link>https://jobinja.ir/companies/institute-ctalk/jobs/t4xq</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/institute-ctalk/jobs/t4xq</guid>
-    <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-    <description>آموزشگاه زبان سیتاک (شعبه مرزداران) — تهران · Education
-
-Asks for: English proficiency, Training</description>
   </item>
 </channel>
 </rss>

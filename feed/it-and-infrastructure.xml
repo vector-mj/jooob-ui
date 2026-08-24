@@ -14,7 +14,16 @@
     <pubDate>Sun, 23 Aug 2026 10:32:35 +0000</pubDate>
     <description>دیجی کالا — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Apache, Availability, Build, Caching, Component, Container, Control, Deploy, Design, Functional, Git, Go, Infrastructure, Kafka, Kubernetes, Linux, Logging, MySQL, Operations, PostgreSQL, Programming, Redis, Replication, Restore, Service, Software, Support, Technical, Analysis, Automation, Backup and recovery, CI/CD, Clean code, Communication, Databases, Debugging, Design patterns, DevOps, Distributed systems, Documentation, E-commerce, High availability, Incident management, Linux administration, Management, Microservices, Networking, Object-oriented programming, Ownership, Problem solving, Root cause analysis, SOLID principles, Security, Site reliability, Software architecture, Storage, Teamwork, Troubleshooting, Version Control</description>
+Asks for: Alerting, Apache, Availability, Build, Caching, Component, Container, Control, Deploy, Design, Functional, Git, Go, Infrastructure, Kafka, Kubernetes, Linux, Logging, MySQL, Operations, PostgreSQL, Programming, Redis, Replication, Restore, Service, Software, Support, Technical, Transactions, Analysis, Automation, Backup and recovery, CI/CD, Clean code, Communication, Databases, Debugging, Design patterns, DevOps, Distributed systems, Documentation, E-commerce, High availability, Incident management, Linux administration, Management, Microservices, Networking, Object-oriented programming, Ownership, Problem solving, Root cause analysis, SOLID principles, Security, Site reliability, Software architecture, Storage, Teamwork, Troubleshooting, Version Control</description>
+  </item>
+  <item>
+    <title>کارشناس Help Desk (آقا) — برتینا</title>
+    <link>https://jobinja.ir/companies/bertina/jobs/tvz5</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/bertina/jobs/tvz5</guid>
+    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+    <description>برتینا — تهران · IT &amp; Infrastructure
+
+Asks for: VoIP, Windows, Certifications, CompTIA Network+, Microsoft Office, Networking, Teamwork, Technical support, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس پیاده سازی امنیت — آسیاتک</title>
@@ -23,7 +32,7 @@ Asks for: Alerting, Apache, Availability, Build, Caching, Component, Container, 
     <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
     <description>آسیاتک — تهران · IT &amp; Infrastructure
 
-Asks for: Active Directory, Cisco, Fortinet, Linux, VoIP, Backup and recovery, Certifications, Firewalls, Management, Networking, Record keeping, Risk management, Security</description>
+Asks for: Active Directory, Cisco, Fortinet, Linux, VoIP, Web, Backup and recovery, Certifications, Firewalls, Management, Networking, Record keeping, Risk management, Security</description>
   </item>
   <item>
     <title>Senior DevOps Engineer (Database &amp; Infrastructure) — دکتر ساینا</title>
@@ -140,7 +149,7 @@ Asks for: Datacenter operations, Documentation, Networking, Observability, Super
     <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
     <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
 
-Asks for: Email, FortiGate, FortiWeb, Fortinet, Sophos, Analysis, Attention to detail, Communication, Firewalls, Management, Networking, Ownership, Security, Teamwork, Troubleshooting</description>
+Asks for: Email, FortiGate, FortiWeb, Fortinet, Sophos, Web, Analysis, Attention to detail, Communication, Firewalls, Management, Networking, Ownership, Security, Teamwork, Troubleshooting</description>
   </item>
   <item>
     <title>senior DBA — pouya-andish</title>
@@ -338,7 +347,7 @@ Asks for: Customer service, Negotiation, Networking, Record keeping, Technical s
     <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
     <description>زنجیره ابتکارات مانا — تهران · IT &amp; Infrastructure
 
-Asks for: CSS, Console, Content, Crawl, Elementor, Google Analytics, Google Search Console, HTML, Technical, WPBakery, WooCommerce, WordPress, robots.txt, Analysis, Analytics, Attention to detail, Backup and recovery, Communication, Continuous learning, Core Web Vitals, Databases, Disaster recovery, Internal Linking, Linux administration, Management, Observability, Off-Page, On-page SEO, Organic Traffic, Ownership, Performance tuning, Process improvement, Quality control, Reporting, SEO, Sales, Search Intent, Security, Supervision, Teamwork, UI/UX design</description>
+Asks for: CSS, Console, Content, Crawl, Elementor, Google Analytics, Google Search Console, HTML, Technical, WPBakery, Web, WooCommerce, WordPress, robots.txt, Analysis, Analytics, Attention to detail, Backup and recovery, Communication, Continuous learning, Core Web Vitals, Databases, Disaster recovery, Internal Linking, Linux administration, Management, Observability, Off-Page, On-page SEO, Organic Traffic, Ownership, Performance tuning, Process improvement, Quality control, Reporting, SEO, Sales, Search Intent, Security, Supervision, Teamwork, UI/UX design</description>
   </item>
   <item>
     <title>DevOps Engineer — فناوری اطلاعات و ارتباطات آدین</title>
@@ -447,15 +456,6 @@ Asks for: C++, Go, Linux, Python, Review, Analysis, Code review, Communication, 
     <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
 
 Asks for: Asterisk, FreePBX, VoIP, Communication, Documentation, Management, Networking, Observability, Ownership, Problem solving</description>
-  </item>
-  <item>
-    <title>کارشناس مرکز عملیات امنیت (SOC-Tier 3) — پرداخت الکترونیک پاسارگاد</title>
-    <link>https://jobinja.ir/companies/pasargad-electronic-payment-co/jobs/trys</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pasargad-electronic-payment-co/jobs/trys</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پرداخت الکترونیک پاسارگاد — تهران · IT &amp; Infrastructure
-
-Asks for: Bash, Incident, Playbook, PowerShell, Python, Splunk, Analysis, Firewalls, IDS / IPS, Incident response, Management, Networking, Ownership, Reporting, SIEM / SOAR, Security, Threat Hunting, Training, Zero trust</description>
   </item>
 </channel>
 </rss>
