@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Skilled Trades postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 24 Aug 2026 08:01:28 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/skilled-trades.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس تعمیرات و نگهداری — اکتوورکو</title>
+    <link>https://career.hrcando.ir/co/Actoverco/job-detail/b0fb73d9-2cf4-4f34-b706-7f644b977e70</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/Actoverco/job-detail/b0fb73d9-2cf4-4f34-b706-7f644b977e70</guid>
+    <pubDate>Mon, 24 Aug 2026 08:01:28 +0000</pubDate>
+    <description>اکتوورکو — کرج · Skilled Trades
+
+Asks for: Attention to detail, Maintenance, Ownership, Process improvement, Record keeping, Reporting, Supervision, Teamwork, Troubleshooting</description>
+  </item>
   <item>
     <title>کارشناس تجهیز (آقا-بوشهر) — فروشگاه های زنجیره ای افق کوروش</title>
     <link>https://jobinja.ir/companies/ofogh-koorosh/jobs/tpnI</link>
@@ -15,6 +24,24 @@
     <description>فروشگاه های زنجیره ای افق کوروش — بوشهر · Skilled Trades
 
 Asks for: Documentation, KPI management, Maintenance, Observability, Reporting, Sales, Teamwork</description>
+  </item>
+  <item>
+    <title>دستیار پدیکور (خانم) — میرُن</title>
+    <link>https://jobinja.ir/companies/myron-1/jobs/t75h</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/myron-1/jobs/t75h</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>میرُن — تهران · Skilled Trades
+
+Asks for: Training</description>
+  </item>
+  <item>
+    <title>مسئول فنی (آقا) — مه سان پروفیل</title>
+    <link>https://jobinja.ir/companies/mahsan-profil/jobs/t770</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/mahsan-profil/jobs/t770</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مه سان پروفیل — تهران · Skilled Trades
+
+Asks for: Insurance, Teamwork</description>
   </item>
   <item>
     <title>تعمیرکار(لوازم خانگی-آقا) — 1421</title>
@@ -423,33 +450,6 @@ Asks for: AnyDesk, Remote, SQL, Windows, Communication, Customer service, Databa
     <description>مدیس — تهران · Skilled Trades
 
 Asks for: Teamwork</description>
-  </item>
-  <item>
-    <title>پدیکوریست(خانم) — مدیس</title>
-    <link>https://jobinja.ir/companies/medis-2/jobs/t7ge</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/medis-2/jobs/t7ge</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مدیس — تهران · Skilled Trades
-
-Asks for: Teamwork</description>
-  </item>
-  <item>
-    <title>تکنسین نصب و تعمیرات (آقا) — گنجه</title>
-    <link>https://jobinja.ir/companies/ganje-1/jobs/t79l</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/ganje-1/jobs/t79l</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>گنجه — تهران · Skilled Trades
-
-Asks for: Attention to detail, Maintenance, Ownership, Record keeping, Reporting, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>تکنسین تاسیسات (آقا) — مهندسین مشاور آرا تجهیز سیستم</title>
-    <link>https://jobinja.ir/companies/atsys-2/jobs/t7Hc</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/atsys-2/jobs/t7Hc</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مهندسین مشاور آرا تجهیز سیستم — تهران · Skilled Trades
-
-Asks for: Maintenance</description>
   </item>
 </channel>
 </rss>
