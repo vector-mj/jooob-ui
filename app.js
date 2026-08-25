@@ -858,7 +858,7 @@ function renderSkills() {
   clear(host);
   if (!state.me.skills.length) {
     host.append(el('span', { class: 'card-sub',
-      text: 'No skills yet — add a few and every panel below re-scopes to you.' }));
+      text: t('dash.ui.noSkills', 'No skills yet — add a few and every panel below re-scopes to you.') }));
     return;
   }
   for (const name of state.me.skills) {
@@ -870,7 +870,7 @@ function renderSkills() {
     chip.addEventListener('click', () => toggleSkill(name));
     host.append(chip);
   }
-  const clearAll = el('button', { class: 'link-btn', text: 'clear all',
+  const clearAll = el('button', { class: 'link-btn', text: t('dash.ui.clearAll', 'clear all'),
                                   attrs: { type: 'button' } });
   clearAll.addEventListener('click', () => {
     state.me.skills = [];
@@ -896,13 +896,13 @@ function renderMine(jobs) {
   const since = state.me.seen
     ? jobs.filter((job) => (job.create_time || '') > state.me.seen).length : null;
   const cells = [
-    { value: num(jobs.length), label: 'Postings in scope' },
+    { value: num(jobs.length), label: t('dash.ui.postingsInScope', 'Postings in scope') },
     { value: state.mine.size ? num(strong) : '—',
-      label: state.mine.size ? 'Match half or more' : 'Add skills to match' },
-    { value: num(fresh), label: 'Posted this week' },
-    { value: num(state.me.saved.length), label: 'Saved' },
+      label: state.mine.size ? t('dash.ui.matchHalf', 'Match half or more') : t('dash.ui.addSkillsToMatch', 'Add skills to match') },
+    { value: num(fresh), label: t('dash.ui.postedThisWeek', 'Posted this week') },
+    { value: num(state.me.saved.length), label: t('dash.ui.saved', 'Saved') },
   ];
-  if (since !== null) cells.push({ value: num(since), label: 'New since your last visit' });
+  if (since !== null) cells.push({ value: num(since), label: t('dash.ui.newSinceVisit', 'New since your last visit') });
   for (const cell of cells) {
     const box = el('div', { class: 'kpi' });
     box.append(el('div', { class: 'kpi-value', text: cell.value }));
@@ -946,8 +946,8 @@ function renderGap(jobs) {
       + `one of your skills`;
   }
   simpleTable('#table-gap', [
-    { label: 'Missing requirement', get: (r) => r.key },
-    { label: 'Postings it would open', num: true, get: (r) => r.jobs },
+    { label: t('dash.ui.missingRequirement', 'Missing requirement'), get: (r) => r.key },
+    { label: t('dash.ui.postingsItOpens', 'Postings it would open'), num: true, get: (r) => r.jobs },
   ], found.rows);
 }
 
@@ -959,17 +959,17 @@ function renderKpis(stats) {
   // numbers do not have -- the same overstatement in the other direction.
   const retired = stats.companies_retired;
   const cards = [
-    { value: num(stats.jobs), label: 'Postings stored' },
-    { value: num(stats.companies_live), label: 'Live companies',
+    { value: num(stats.jobs), label: t('dash.ui.postingsStored', 'Postings stored') },
+    { value: num(stats.companies_live), label: t('dash.ui.liveCompanies', 'Live companies'),
       note: `${num(stats.companies_known)} known in total` },
     { value: `${num(stats.companies_live_with_postings)}/${num(stats.companies_live)}`,
-      label: 'Companies with postings',
+      label: t('dash.ui.companiesWithPostings', 'Companies with postings'),
       note: retired
         ? `live tenants · ${num(retired)} more delisted since we collected theirs`
         : 'live tenants' },
-    { value: num(stats.families), label: 'Job families' },
-    { value: num(stats.cities), label: 'Cities' },
-    { value: stats.newest ? stats.newest.slice(0, 10) : '—', label: 'Newest posting' },
+    { value: num(stats.families), label: t('dash.ui.jobFamilies', 'Job families') },
+    { value: num(stats.cities), label: t('dash.ui.cities', 'Cities') },
+    { value: stats.newest ? stats.newest.slice(0, 10) : '—', label: t('dash.ui.newestPosting', 'Newest posting') },
   ];
   cards.forEach((card, i) => {
     const node = el('div', { class: 'kpi' }, [
@@ -1030,8 +1030,8 @@ function renderExtracted(kind, data, { chart, table, sub, label, colorPair, filt
            { labelKey: 'term', valueKey: 'jobs', colorPair, filter });
   simpleTable(table, [
     { label, get: (r) => r.term },
-    { label: 'Postings', num: true, get: (r) => r.jobs },
-    { label: 'Share %', num: true, get: (r) => r.pct },
+    { label: t('dash.ui.postings', 'Postings'), num: true, get: (r) => r.jobs },
+    { label: t('dash.ui.sharePct', 'Share %'), num: true, get: (r) => r.pct },
   ], data.terms.slice(0, 40));
 }
 
@@ -1045,8 +1045,8 @@ function renderCompanies(byCompany) {
   barChart('#chart-company', rows, { labelKey: 'label', valueKey: 'jobs',
                                      colorPair: [p.accent, p.accent2], filter: 'slug' });
   simpleTable('#table-company', [
-    { label: 'Company', get: (r) => r.label },
-    { label: 'Postings', num: true, get: (r) => r.jobs },
+    { label: t('dash.ui.company', 'Company'), get: (r) => r.label },
+    { label: t('dash.ui.postings', 'Postings'), num: true, get: (r) => r.jobs },
   ], rows);
 }
 
@@ -1160,7 +1160,7 @@ function renderHeatmap(matrix, { chart, table, rowLabel }) {
   const rowTable = matrix.rows.map((name, i) => ({ name, jobs: matrix.row_totals[i] }));
   simpleTable(table, [
     { label: rowLabel, get: (r) => r.name },
-    { label: 'Postings', num: true, get: (r) => r.jobs },
+    { label: t('dash.ui.postings', 'Postings'), num: true, get: (r) => r.jobs },
   ], rowTable);
 }
 
@@ -1184,9 +1184,9 @@ function renderDistinctive(data, {
   }
   simpleTable(table, [
     { label: noun === 'group' ? 'Group' : 'Level', get: (r) => r.group },
-    { label: 'Requirement', get: (r) => r.term },
-    { label: 'Postings', num: true, get: (r) => r.jobs },
-    { label: 'vs corpus', num: true, get: (r) => `${r.lift}×` },
+    { label: t('dash.ui.requirement', 'Requirement'), get: (r) => r.term },
+    { label: t('dash.ui.postings', 'Postings'), num: true, get: (r) => r.jobs },
+    { label: t('dash.ui.vsCorpus', 'vs corpus'), num: true, get: (r) => `${r.lift}×` },
   ], rows);
 
   $(sub).textContent = data.rows.length
@@ -1263,10 +1263,10 @@ function renderCategories(jobs) {
 
 async function renderNetwork(graph) {
   simpleTable('#table-network', [
-    { label: 'Requirement', get: (r) => r.source },
-    { label: 'Paired with', get: (r) => r.target },
-    { label: 'Shared postings', num: true, get: (r) => r.value },
-    { label: 'vs chance', num: true, get: (r) => `${r.lift}×` },
+    { label: t('dash.ui.requirement', 'Requirement'), get: (r) => r.source },
+    { label: t('dash.ui.pairedWith', 'Paired with'), get: (r) => r.target },
+    { label: t('dash.ui.sharedPostings', 'Shared postings'), num: true, get: (r) => r.value },
+    { label: t('dash.ui.vsChance', 'vs chance'), num: true, get: (r) => `${r.lift}×` },
   ], graph.links.slice(0, 60));
 
   const host = $('#chart-network');
@@ -1348,13 +1348,13 @@ const JOB_COLUMNS = [
   // `label` is the English and `i18n` the key for it -- resolved at render
   // rather than here, because this array is built once at load and the language
   // can change under it without the page being reloaded
-  { key: 'match', label: 'Match', i18n: 'dash.table.match', text: false, get: (j) => (match(j) || {}).pct ?? null },
-  { key: 'title', label: 'Title', i18n: 'dash.table.title', get: (j) => j.title },
-  { key: 'company', label: 'Company', i18n: 'dash.table.company', get: (j) => companyName(companyKey(j)) },
-  { key: 'family', label: 'Field', i18n: 'dash.table.field', get: (j) => j.family },
-  { key: 'city', label: 'City', i18n: 'dash.table.city', get: (j) => j.city },
-  { key: 'found', label: 'Asks for', i18n: 'dash.table.asksFor', text: false, get: (j) => (j.found || []).length },
-  { key: 'create_time', label: 'Posted', i18n: 'dash.table.posted', get: (j) => j.create_time },
+  { key: 'match', label: t('dash.ui.match', 'Match'), i18n: 'dash.table.match', text: false, get: (j) => (match(j) || {}).pct ?? null },
+  { key: 'title', label: t('dash.ui.title', 'Title'), i18n: 'dash.table.title', get: (j) => j.title },
+  { key: 'company', label: t('dash.ui.company', 'Company'), i18n: 'dash.table.company', get: (j) => companyName(companyKey(j)) },
+  { key: 'family', label: t('dash.ui.field', 'Field'), i18n: 'dash.table.field', get: (j) => j.family },
+  { key: 'city', label: t('dash.ui.city', 'City'), i18n: 'dash.table.city', get: (j) => j.city },
+  { key: 'found', label: t('dash.ui.asksFor', 'Asks for'), i18n: 'dash.table.asksFor', text: false, get: (j) => (j.found || []).length },
+  { key: 'create_time', label: t('dash.ui.posted', 'Posted'), i18n: 'dash.table.posted', get: (j) => j.create_time },
   // not a value, so not sortable: a column that looks sortable and sorts by
   // nothing is worse than one that plainly is not
   { key: 'mark', label: '', sortable: false, get: () => null },
@@ -1463,7 +1463,7 @@ function renderJobs(items, total) {
     const ascending = state.jobs.dir === 'asc';
     const th = el('th', { class: column.text === false ? 'num' : '' });
     if (column.sortable === false) {
-      th.append(el('span', { class: 'sr-only', text: 'Actions' }));
+      th.append(el('span', { class: 'sr-only', text: t('dash.ui.actions', 'Actions') }));
       head.append(th);
       continue;
     }
@@ -1533,10 +1533,10 @@ function jobCell(job, column) {
     // A posting the employer wrote is a different kind of claim from one we
     // scraped off a board, so it says so rather than blending in.
     if (job.source === 'jooob') {
-      cell.append(el('span', { class: 'tag direct', text: 'direct',
+      cell.append(el('span', { class: 'tag direct', text: t('dash.ui.direct', 'direct'),
                                attrs: { title: 'Posted by the employer on jooob' } }));
     }
-    const more = el('button', { class: 'row-btn', text: 'details',
+    const more = el('button', { class: 'row-btn', text: t('dash.ui.details', 'details'),
                                 attrs: { type: 'button' } });
     more.setAttribute('aria-label', `Details for ${job.title || 'this posting'}`);
     more.addEventListener('click', () => openJob(job));
@@ -1682,11 +1682,11 @@ function openJob(job) {
                    [bidi(`${name} · ${job.city || 'city not stated'} · ${when.label}`)]));
     if (when.stale) {
       host.append(el('p', { class: 'warn',
-        text: 'This advert is more than six months old. It is still listed on the '
+        text: t('dash.ui.oldAdvert', 'This advert is more than six months old. It is still listed on the ')
               + 'board, but a listing that old often is not being filled.' }));
     }
     if (job.url) {
-      host.append(el('a', { class: 'cta', text: 'Open the advert',
+      host.append(el('a', { class: 'cta', text: t('dash.ui.openAdvert', 'Open the advert'),
         attrs: { href: job.url, target: '_blank', rel: 'noopener noreferrer' } }));
     }
     if (scored) {
@@ -1704,7 +1704,7 @@ function openJob(job) {
     }
     const spellings = job.found || [];
     if (spellings.length) {
-      host.append(el('h3', { class: 'drawer-h', text: 'In its own words' }));
+      host.append(el('h3', { class: 'drawer-h', text: t('dash.ui.inItsOwnWords', 'In its own words') }));
       const chips = el('p', { class: 'term-chips' });
       for (const spelling of spellings) chips.append(el('span', { class: 'term-chip' },
                                                        [bidi(spelling)]));
@@ -1826,7 +1826,7 @@ function renderAccount(who) {
   if (!apiBase()) return;
   if (who) {
     host.append(el('span', { class: 'account-email', text: who.email }));
-    const out = el('button', { class: 'ghost-btn text', text: 'Sign out',
+    const out = el('button', { class: 'ghost-btn text', text: t('dash.ui.signOut', 'Sign out'),
                                attrs: { type: 'button' } });
     out.addEventListener('click', async () => {
       try { await apiCall('/auth/logout', { method: 'POST' }); } catch { /* gone */ }
@@ -1837,7 +1837,7 @@ function renderAccount(who) {
     });
     host.append(out);
   } else {
-    host.append(el('a', { class: 'ghost-btn text', text: 'Sync my list',
+    host.append(el('a', { class: 'ghost-btn text', text: t('dash.ui.syncList', 'Sync my list'),
       attrs: { href: `/login?next=${encodeURIComponent(location.href)}`,
                title: 'Optional: keeps your skills on your other devices' } }));
   }
@@ -1908,10 +1908,10 @@ function stars(rating) {
 
 function drawerReviews(host, key) {
   const rows = reviewsFor(key);
-  host.append(el('h3', { class: 'drawer-h', text: 'What people who worked there said' }));
+  host.append(el('h3', { class: 'drawer-h', text: t('dash.ui.whatPeopleSaid', 'What people who worked there said') }));
   if (!rows.length) {
     host.append(el('p', { class: 'card-sub',
-                          text: 'Nobody has written about this company yet.' }));
+                          text: t('dash.ui.noReviews', 'Nobody has written about this company yet.') }));
   }
   for (const row of rows) {
     const meta = [row.role, row.tenure, (row.created_at || '').slice(0, 10)].filter(Boolean);
@@ -1951,11 +1951,11 @@ function reviewForm(host, key) {
   const body = el('textarea', { class: 'search review-write', attrs: {
     rows: '5', minlength: '40', maxlength: '2000', required: 'required',
     placeholder: 'What was it actually like? Pay, hours, management, how people are treated.' } });
-  const send = el('button', { class: 'cta', text: 'Send for review', attrs: { type: 'submit' } });
+  const send = el('button', { class: 'cta', text: t('dash.ui.sendForReview', 'Send for review'), attrs: { type: 'submit' } });
   const said = el('p', { class: 'card-sub', attrs: { role: 'status' } });
 
   const form = el('form', { class: 'review-form' }, [
-    el('p', { class: 'card-sub', text: 'Posted anonymously. The database has no field '
+    el('p', { class: 'card-sub', text: t('dash.ui.anonNote', 'Posted anonymously. The database has no field ')
       + 'for your name, your email or your address, so none is asked for and none is '
       + 'kept. A person reads it before it appears.' }),
     rating, role, tenure, body, send, said,
@@ -1995,7 +1995,7 @@ function reviewForm(host, key) {
   });
 
   host.append(el('details', { class: 'review-ask' }, [
-    el('summary', { text: 'Worked here? Say what it was like' }), form]));
+    el('summary', { text: t('dash.ui.workedHere', 'Worked here? Say what it was like') }), form]));
 }
 
 
@@ -2028,7 +2028,7 @@ function openCompany(key) {
         if (found) openJob(found);
       } });
     drawerReviews(host, key);
-    const filter = el('button', { class: 'cta ghost-btn', text: 'Filter the dashboard to this company',
+    const filter = el('button', { class: 'cta ghost-btn', text: t('dash.ui.filterToCompany', 'Filter the dashboard to this company'),
                                   attrs: { type: 'button' } });
     filter.addEventListener('click', () => { closeDrawer(); setFilter('slug', key); });
     host.append(filter);
@@ -2065,7 +2065,7 @@ function openTerm(term) {
       .map((link) => ({ label: link.source === term ? link.target : link.source,
                         note: `${link.lift}×` }));
     drawerSection(host, 'Goes together with', pairs, { onPick: (row) => openTerm(row.label) });
-    const filter = el('button', { class: 'cta ghost-btn', text: 'Filter the dashboard to it',
+    const filter = el('button', { class: 'cta ghost-btn', text: t('dash.ui.filterToIt', 'Filter the dashboard to it'),
                                   attrs: { type: 'button' } });
     filter.addEventListener('click', () => {
       closeDrawer();
@@ -2082,14 +2082,14 @@ function renderPager(total) {
   const page = Math.floor(offset / PAGE_SIZE) + 1;
   const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
 
-  const prev = el('button', { text: '← Previous', attrs: { type: 'button' } });
+  const prev = el('button', { text: t('dash.ui.prev', '← Previous'), attrs: { type: 'button' } });
   prev.disabled = offset === 0;
   prev.addEventListener('click', () => {
     state.jobs.offset = Math.max(0, offset - PAGE_SIZE);
     loadJobs();
   });
 
-  const next = el('button', { text: 'Next →', attrs: { type: 'button' } });
+  const next = el('button', { text: t('dash.ui.next', 'Next →'), attrs: { type: 'button' } });
   next.disabled = offset + PAGE_SIZE >= total;
   next.addEventListener('click', () => { state.jobs.offset = offset + PAGE_SIZE; loadJobs(); });
 
@@ -2303,13 +2303,13 @@ function renderAll() {
   renderGap(jobs);
   renderKpis(stats);
   renderExtracted('tools', termCounts(jobs, 'terms'), {
-    chart: '#chart-tech', table: '#table-tech', sub: '#sub-tech', label: 'Tool',
+    chart: '#chart-tech', table: '#table-tech', sub: '#sub-tech', label: t('dash.ui.tool', 'Tool'),
     colorPair: [p.accent2, p.accent], filter: 'tool' });
   renderCategories(jobs);
   renderExtracted('concepts', termCounts(jobs, 'concepts',
                                          { category: state.conceptCategory }), {
     chart: '#chart-concepts', table: '#table-concepts', sub: '#sub-concepts',
-    label: 'Concept', colorPair: [p.ramp[3], p.ramp[5]], filter: 'concept' });
+    label: t('dash.ui.concept', 'Concept'), colorPair: [p.ramp[3], p.ramp[5]], filter: 'concept' });
   renderCompanies(rank(jobs, 'company'));
   renderCity(rank(jobs, 'city', { min: CITY_MIN_N }));
   renderTrend(toolTrend(jobs));
@@ -2339,9 +2339,9 @@ function showLoadError(err) {
   const box = $('#load-error');
   box.hidden = false;
   clear(box);
-  box.append(el('strong', { text: 'Could not load the dataset. ' }));
+  box.append(el('strong', { text: t('dash.ui.loadFailed', 'Could not load the dataset. ') }));
   box.append(document.createTextNode(`${err.message} `));
-  const retry = el('button', { class: 'ghost-btn text', text: 'Retry',
+  const retry = el('button', { class: 'ghost-btn text', text: t('dash.ui.retry', 'Retry'),
                                attrs: { type: 'button' } });
   retry.addEventListener('click', () => location.reload());
   box.append(retry);
