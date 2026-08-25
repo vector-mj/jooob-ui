@@ -8,6 +8,15 @@
   <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>تکنسین فنی (زیرساخت دیتاسنتر-آقا) — مرسا</title>
+    <link>https://jobinja.ir/companies/morsainternational/jobs/tvf9</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/morsainternational/jobs/tvf9</guid>
+    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مرسا — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Hyper-V, Linux, Server, VMware, Windows, Analysis, Attention to detail, Communication, Disaster recovery, Documentation, Firewalls, Management, Networking, Observability, Problem solving, Record keeping, Reporting, Security, Storage, Teamwork, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
     <title>Senior Product Manager (امریه سربازی-غائبین) — حامی سیستم شریف</title>
     <link>https://jobinja.ir/companies/hamisystem/jobs/tvIo</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/hamisystem/jobs/tvIo</guid>
@@ -204,6 +213,15 @@ Asks for: AWS, Alerting, Ansible, Asterisk, Availability, Azure, Bash, ChatGPT, 
     <description>ابرناک — تهران · IT &amp; Infrastructure
 
 Asks for: Alerting, Availability, Docker, Incident, Infrastructure, Kubernetes, Linux, Log, Logging, Recovery, Scripting, Analysis, Artificial intelligence, Automation, Capacity planning, Debugging, Distributed systems, High availability, Incident management, Incident response, Management, Networking, Observability, Process improvement, Recruitment, Root cause analysis, Site reliability</description>
+  </item>
+  <item>
+    <title> Senior DBA Engineer — اسنپ مارکت</title>
+    <link>https://career.hrcando.ir/co/snappmarket/job-detail/d6ab4870-ef96-4573-9ccc-eedfdfb747fe</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/snappmarket/job-detail/d6ab4870-ef96-4573-9ccc-eedfdfb747fe</guid>
+    <pubDate>Sat, 22 Aug 2026 12:18:30 +0000</pubDate>
+    <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
+
+Asks for: Computer, Design, Linux, Make, MongoDB, MySQL, PostgreSQL, Programming, Recovery, Restore, SQL, SQL Server, Server, Analysis, Communication, Disaster recovery, Incident management, Problem solving, Security, Troubleshooting</description>
   </item>
   <item>
     <title>DevOps Engineer — تخفیفان</title>
@@ -438,24 +456,6 @@ Asks for: SQL, SQL Server, Server, Analysis, Attention to detail, Communication,
     <description>تجارت الکترونیک پارسیان — تهران · IT &amp; Infrastructure
 
 Asks for: Hardware security module, Infrastructure, Authentication, Identity &amp; access management, Management, Networking, Security</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی فنی (ECS) — ارتباطات مبین نت</title>
-    <link>https://jobinja.ir/companies/mobinnet-1/jobs/t71u</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mobinnet-1/jobs/t71u</guid>
-    <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ارتباطات مبین نت — تهران · IT &amp; Infrastructure
-
-Asks for: Customer service, Negotiation, Networking, Record keeping, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>مدیر سئو (خانم) — زنجیره ابتکارات مانا</title>
-    <link>https://jobinja.ir/companies/zemgroup/jobs/t7ED</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/zemgroup/jobs/t7ED</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>زنجیره ابتکارات مانا — تهران · IT &amp; Infrastructure
-
-Asks for: CSS, Console, Content, Crawl, Elementor, Google Analytics, Google Search Console, HTML, Technical, WPBakery, Web, WooCommerce, WordPress, robots.txt, Analysis, Analytics, Attention to detail, Backup and recovery, Communication, Continuous learning, Core Web Vitals, Databases, Disaster recovery, Internal Linking, Linux administration, Management, Observability, Off-Page, On-page SEO, Organic Traffic, Ownership, Performance tuning, Process improvement, Quality control, Reporting, SEO, Sales, Search Intent, Security, Supervision, Teamwork, UI/UX design</description>
   </item>
 </channel>
 </rss>
