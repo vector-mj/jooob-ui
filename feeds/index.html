@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" dir="ltr" data-theme="dark">
+<html lang="fa" dir="rtl" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jooob — feeds</title>
+<title data-i18n="feeds.docTitle">jooob — آگهی‌ها</title>
 <meta name="description" content="RSS feeds of new job postings, overall and per field.">
 <link rel="canonical" href="https://jooob.ir/feeds/">
 <meta property="og:type" content="website">
@@ -27,56 +27,55 @@ try {
     || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
 } catch (e) { /* a blocked store just means the default stands */ }
 </script>
+<script src="/i18n.js?v=9bc6a762"></script>
 </head>
 <body>
 <div class="app">
   <header class="topbar">
     <div class="brand"><svg class="brand-orbits" viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="3.5"><circle cx="32" cy="32" r="11"/><circle cx="32" cy="32" r="18.5" opacity=".72"/><circle cx="32" cy="32" r="26" opacity=".5"/></g><circle cx="32" cy="32" r="4.5" fill="currentColor"/><circle cx="22.5" cy="37.5" r="3.6" fill="#6ea8ff"/><circle cx="46.2" cy="20.1" r="3.2" fill="#7c5cff"/><circle cx="27.5" cy="57.6" r="2.8" fill="#6ea8ff"/></svg>
       <span class="brand-name">jooob</span></div>
-    <div class="topbar-actions"><a class="ghost-btn text" href="/">What jooob is</a></div>
+    <div class="topbar-actions"><a class="ghost-btn text" href="/" data-i18n="feeds.whatIs">jooob چیست</a></div>
   </header>
   <main class="main">
     <section class="card span-12">
       <header class="card-head">
-        <h2>Subscribe instead of checking</h2>
-        <p class="card-sub">Point any RSS reader at one of these. They are rebuilt
-          every time the scraper runs, carry the 50 newest
-          postings each, and include only adverts the boards still list.
-          13438 postings were live when this was built on 2026-08-25.</p>
+        <h1 class="ui-h1" data-i18n="feeds.heading">به‌جای سر زدن، مشترک شوید</h1>
+        <p class="card-sub" data-i18n="feeds.lede">هر برنامهٔ خواندن RSS را به یکی از این‌ها وصل کنید. با هر بار اجرای خزنده بازساخته می‌شوند، تازه‌ترین آگهی‌های هر حوزه را دارند و فقط آگهی‌هایی را می‌آورند که هنوز روی سایت‌ها هستند.</p>
+        <p class="card-sub">13,456 <span data-i18n="feeds.builtOn">آگهی فعال هنگام ساخت این صفحه در</span> 2026-08-25</p>
       </header>
-      <h3 class="drawer-h">Everything</h3>
+      <h3 class="drawer-h" data-i18n="feeds.everything">همه</h3>
       <ul class="drawer-list">
-        <li><a href="/feed.xml">All new postings</a>
-          <span class="drawer-note">13438 live</span></li>
+        <li><a href="/feed.xml" data-i18n="feeds.allNew">همهٔ آگهی‌های تازه</a>
+          <span class="drawer-note">13,456 <span data-i18n="feeds.live">فعال</span></span></li>
       </ul>
-      <h3 class="drawer-h">By field</h3>
+      <h3 class="drawer-h" data-i18n="feeds.byField">بر اساس حوزهٔ کاری</h3>
       <ul class="drawer-list">
-    <li><a href="/feed/administration.xml">Administration</a><span class="drawer-note">727 postings</span></li>
-    <li><a href="/feed/business-and-strategy.xml">Business &amp; Strategy</a><span class="drawer-note">187 postings</span></li>
-    <li><a href="/feed/civil-and-architecture.xml">Civil &amp; Architecture</a><span class="drawer-note">213 postings</span></li>
-    <li><a href="/feed/content-and-media.xml">Content &amp; Media</a><span class="drawer-note">1038 postings</span></li>
-    <li><a href="/feed/customer-support.xml">Customer Support</a><span class="drawer-note">669 postings</span></li>
-    <li><a href="/feed/data-and-ai.xml">Data &amp; AI</a><span class="drawer-note">20 postings</span></li>
-    <li><a href="/feed/design.xml">Design</a><span class="drawer-note">363 postings</span></li>
-    <li><a href="/feed/digital-marketing.xml">Digital Marketing</a><span class="drawer-note">763 postings</span></li>
-    <li><a href="/feed/education.xml">Education</a><span class="drawer-note">305 postings</span></li>
-    <li><a href="/feed/executive.xml">Executive</a><span class="drawer-note">14 postings</span></li>
-    <li><a href="/feed/finance-and-accounting.xml">Finance &amp; Accounting</a><span class="drawer-note">1191 postings</span></li>
-    <li><a href="/feed/general-labour.xml">General Labour</a><span class="drawer-note">295 postings</span></li>
-    <li><a href="/feed/healthcare-and-pharma.xml">Healthcare &amp; Pharma</a><span class="drawer-note">219 postings</span></li>
-    <li><a href="/feed/hospitality-and-food.xml">Hospitality &amp; Food</a><span class="drawer-note">212 postings</span></li>
-    <li><a href="/feed/human-resources.xml">Human Resources</a><span class="drawer-note">243 postings</span></li>
-    <li><a href="/feed/it-and-infrastructure.xml">IT &amp; Infrastructure</a><span class="drawer-note">616 postings</span></li>
-    <li><a href="/feed/industrial-engineering.xml">Industrial Engineering</a><span class="drawer-note">245 postings</span></li>
-    <li><a href="/feed/legal.xml">Legal</a><span class="drawer-note">70 postings</span></li>
-    <li><a href="/feed/logistics-and-warehousing.xml">Logistics &amp; Warehousing</a><span class="drawer-note">303 postings</span></li>
-    <li><a href="/feed/other-engineering-and-sciences.xml">Other Engineering &amp; Sciences</a><span class="drawer-note">359 postings</span></li>
-    <li><a href="/feed/procurement.xml">Procurement</a><span class="drawer-note">185 postings</span></li>
-    <li><a href="/feed/product.xml">Product</a><span class="drawer-note">181 postings</span></li>
-    <li><a href="/feed/sales.xml">Sales</a><span class="drawer-note">2849 postings</span></li>
-    <li><a href="/feed/security-and-hse.xml">Security &amp; HSE</a><span class="drawer-note">64 postings</span></li>
-    <li><a href="/feed/skilled-trades.xml">Skilled Trades</a><span class="drawer-note">254 postings</span></li>
-    <li><a href="/feed/software-engineering.xml">Software Engineering</a><span class="drawer-note">1765 postings</span></li>
+    <li><a href="/feed/administration.xml">Administration</a><span class="drawer-note">727 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/business-and-strategy.xml">Business &amp; Strategy</a><span class="drawer-note">187 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/civil-and-architecture.xml">Civil &amp; Architecture</a><span class="drawer-note">213 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/content-and-media.xml">Content &amp; Media</a><span class="drawer-note">1,040 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/customer-support.xml">Customer Support</a><span class="drawer-note">667 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/data-and-ai.xml">Data &amp; AI</a><span class="drawer-note">21 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/design.xml">Design</a><span class="drawer-note">362 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/digital-marketing.xml">Digital Marketing</a><span class="drawer-note">765 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/education.xml">Education</a><span class="drawer-note">305 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/executive.xml">Executive</a><span class="drawer-note">14 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/finance-and-accounting.xml">Finance &amp; Accounting</a><span class="drawer-note">1,193 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/general-labour.xml">General Labour</a><span class="drawer-note">295 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/healthcare-and-pharma.xml">Healthcare &amp; Pharma</a><span class="drawer-note">219 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/hospitality-and-food.xml">Hospitality &amp; Food</a><span class="drawer-note">214 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/human-resources.xml">Human Resources</a><span class="drawer-note">244 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/industrial-engineering.xml">Industrial Engineering</a><span class="drawer-note">243 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/it-and-infrastructure.xml">IT &amp; Infrastructure</a><span class="drawer-note">618 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/legal.xml">Legal</a><span class="drawer-note">69 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/logistics-and-warehousing.xml">Logistics &amp; Warehousing</a><span class="drawer-note">303 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/other-engineering-and-sciences.xml">Other Engineering &amp; Sciences</a><span class="drawer-note">360 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/procurement.xml">Procurement</a><span class="drawer-note">189 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/product.xml">Product</a><span class="drawer-note">179 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/sales.xml">Sales</a><span class="drawer-note">2,851 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/security-and-hse.xml">Security &amp; HSE</a><span class="drawer-note">64 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/skilled-trades.xml">Skilled Trades</a><span class="drawer-note">254 <span data-i18n="feeds.postings">آگهی</span></span></li>
+    <li><a href="/feed/software-engineering.xml">Software Engineering</a><span class="drawer-note">1,771 <span data-i18n="feeds.postings">آگهی</span></span></li>
       </ul>
     </section>
   </main>

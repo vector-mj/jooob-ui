@@ -8,6 +8,24 @@
   <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس زیرساخت فناوری اطلاعات — مرسا</title>
+    <link>https://jobinja.ir/companies/morsainternational/jobs/tvfw</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/morsainternational/jobs/tvfw</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مرسا — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Hyper-V, Linux, Server, VMware, Windows, Communication, Disaster recovery, Documentation, Firewalls, Management, Networking, Observability, Record keeping, Reporting, Security, Storage, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>Full-Stack Developer (Flutter &amp; Backend) — پرووم</title>
+    <link>https://jobinja.ir/companies/prowem/jobs/tvVk</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/prowem/jobs/tvVk</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پرووم — تهران · IT &amp; Infrastructure
+
+Asks for: Cloud, Dart, Design, Docker, Flutter, Git, Go, Linux, Maintainability, NestJS, Next.js, Node.js, PostgreSQL, SQL, SQLite, Software, TypeScript, WebSocket, Authentication, CI/CD, Communication, English proficiency, Full-stack, Management, Ownership, Problem solving, REST APIs, Real-Time, Software architecture, Teamwork, Testing</description>
+  </item>
+  <item>
     <title>BI Developer — اسنپ مارکت</title>
     <link>https://jobinja.ir/companies/snappmarket/jobs/tvgV</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/snappmarket/jobs/tvgV</guid>
@@ -51,6 +69,15 @@ Asks for: Alerting, ArgoCD, Bash, Build, Business, Docker, Grafana, Incident, In
     <description>سروش رسانه — تهران · IT &amp; Infrastructure
 
 Asks for: Alerting, Ansible, Availability, Bash, Container, Docker, ELK, Git, GitLab, Grafana, Harbor, Helm, Infrastructure, JFrog Artifactory, Kubernetes, Linux, Logging, Loki, Nexus, Nginx, Prometheus, Python, Repository, Scripting, Terraform, Analysis, Automation, CI/CD, Container orchestration, DevOps, GitOps, High availability, Incident management, Infrastructure as code, Management, Networking, Observability, Reverse Proxy, Root cause analysis, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس ‌BI — رایان پرداز کاوش</title>
+    <link>https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/tv9g</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/tv9g</guid>
+    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    <description>رایان پرداز کاوش — تهران · IT &amp; Infrastructure
+
+Asks for: Data, Insights, Modeling, Power BI, SQL, SQL Server, Server, Warehouse, Analysis, Analytics, Attention to detail, Business intelligence, Data modelling, Data warehousing, ETL / ELT, Management, Observability, Power Query, Problem solving, Reporting, Stakeholder management, Teamwork</description>
   </item>
   <item>
     <title>Infrastructure Expert — صراف</title>
@@ -429,31 +456,6 @@ Asks for: Datacenter operations, Documentation, Networking, Observability, Super
     <description>فراپردازان آروند امید — تهران · IT &amp; Infrastructure
 
 Asks for: Datacenter operations, Documentation, Networking, Observability, Supervision, Teamwork</description>
-  </item>
-  <item>
-    <title>کارشناس ارشد فایروال — پیشگامان فناوری اطلاعات هامون</title>
-    <link>https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvRf</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvRf</guid>
-    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
-
-Asks for: Email, FortiGate, FortiWeb, Fortinet, Sophos, Web, Analysis, Attention to detail, Communication, Firewalls, Management, Networking, Ownership, Security, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>senior DBA — pouya-andish</title>
-    <link>https://jooob.ir</link>
-    <guid isPermaLink="true">https://jooob.ir</guid>
-    <pubDate>Fri, 21 Aug 2026 10:33:45 +0000</pubDate>
-    <description>pouya-andish — تهران · IT &amp; Infrastructure</description>
-  </item>
-  <item>
-    <title>کارشناس DevOps(اصفهان) — گروه دمیس</title>
-    <link>https://jobinja.ir/companies/demis-1/jobs/t7hQ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/demis-1/jobs/t7hQ</guid>
-    <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-    <description>گروه دمیس — اصفهان · IT &amp; Infrastructure
-
-Asks for: Docker, Java, Kubernetes, Linux, Oracle, SQL, Analysis, CI/CD, DevOps, Documentation, Management, Observability, Ownership, Teamwork, Troubleshooting</description>
   </item>
 </channel>
 </rss>
