@@ -86,7 +86,7 @@ Asks for: Data, Insights, Modeling, Power BI, SQL, SQL Server, Server, Warehouse
     <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
     <description>صراف — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Android, Authorization, Banking, Bug, Burp Suite, Cloud, Container, Control, Cryptocurrency, Data, Docker, Financial, Go, Incident, Infrastructure, JavaScript, Kubernetes, Linux, Logging, Metasploit, Mobile, Modeling, MySQL, Nmap, PHP, Post, Postman, Programming, RabbitMQ, Redis, Report, Review, Security+, Service, Session, Software, Support, Technical, Transaction, VMware, Web, Analysis, Attention to detail, Auditing, Authentication, CI/CD, Certifications, Cloud architecture, DevOps, Documentation, EDR / EPP, Fintech, IDS / IPS, Identity &amp; access management, Incident management, Incident response, Management, Microservices, Networking, Observability, Ownership, Penetration testing, REST APIs, Reporting, SIEM / SOAR, Secrets management, Security, Software development, Testing, Vulnerability scanning</description>
+Asks for: Alerting, Android, Authorization, Banking, Bug, Burp Suite, Cloud, Container, Control, Cryptocurrency, Data, Docker, Financial, Go, Incident, Infrastructure, JavaScript, Kubernetes, Linux, Logging, Metasploit, Mobile, Modeling, MySQL, Nmap, PHP, Post, Postman, Programming, RabbitMQ, Redis, Report, Review, Security+, Service, Services, Session, Software, Support, Technical, Transaction, VMware, Web, Analysis, Attention to detail, Auditing, Authentication, CI/CD, Certifications, Cloud architecture, DevOps, Documentation, EDR / EPP, Fintech, IDS / IPS, Identity &amp; access management, Incident management, Incident response, Management, Microservices, Networking, Observability, Ownership, Penetration testing, REST APIs, Reporting, SIEM / SOAR, Secrets management, Security, Software development, Testing, Vulnerability scanning</description>
   </item>
   <item>
     <title>کارشناس تست اپلیکیشن (تست نفوذ) — رویال پرداز تیام</title>
@@ -194,7 +194,7 @@ Asks for: Ansible, Bash, ELK, Elasticsearch, Grafana, Helm, Kibana, Kubernetes, 
     <pubDate>Sun, 23 Aug 2026 10:32:35 +0000</pubDate>
     <description>دیجی کالا — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Apache, Availability, Build, Caching, Component, Container, Control, Deploy, Design, Functional, Git, Go, Infrastructure, Kafka, Kubernetes, Linux, Logging, MySQL, Operations, PostgreSQL, Programming, Redis, Replication, Restore, Service, Software, Support, Technical, Transactions, Analysis, Automation, Backup and recovery, CI/CD, Clean code, Communication, Databases, Debugging, Design patterns, DevOps, Distributed systems, Documentation, E-commerce, High availability, Incident management, Linux administration, Management, Microservices, Networking, Object-oriented programming, Ownership, Problem solving, Root cause analysis, SOLID principles, Security, Site reliability, Software architecture, Storage, Teamwork, Troubleshooting, Version Control</description>
+Asks for: Alerting, Apache, Availability, Build, Caching, Component, Container, Control, Deploy, Design, Functional, Git, Go, Infrastructure, Kafka, Kubernetes, Linux, Logging, MySQL, Operations, PostgreSQL, Programming, Redis, Replication, Restore, Service, Services, Software, Support, Technical, Transactions, Analysis, Automation, Backup and recovery, CI/CD, Clean code, Communication, Databases, Debugging, Design patterns, DevOps, Distributed systems, Documentation, E-commerce, High availability, Incident management, Linux administration, Management, Microservices, Networking, Object-oriented programming, Ownership, Problem solving, Root cause analysis, SOLID principles, Security, Site reliability, Software architecture, Storage, Teamwork, Troubleshooting, Version Control</description>
   </item>
   <item>
     <title>کارشناس HelpDesk (آقا) — حسابو</title>
@@ -239,7 +239,7 @@ Asks for: Ansible, Availability, Cloud, Hardware, Infrastructure, KVM, Linux, Pr
     <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
     <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Business, Cisco, Computer, Hardware, Infrastructure, Linux, Remote, Review, Scripting, Security+, Segmentation, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
+Asks for: Availability, Business, Cisco, Computer, Hardware, Infrastructure, Linux, Remote, Review, Scripting, Security+, Segmentation, Services, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
   </item>
   <item>
     <title>کارشناس مسئول (SOC) — فراپردازان آروند امید</title>
@@ -311,7 +311,7 @@ Asks for: Bash, Grafana, Latency, Linux, Prometheus, Python, Zabbix, Analysis, A
     <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
     <description>انتقال داده ماهان (ماهان نت) — تهران · IT &amp; Infrastructure
 
-Asks for: Cisco, Docker, Infrastructure, KVM, Linux, Server, VMware, Analysis, Backup and recovery, Certifications, Communication, Disaster recovery, Documentation, Management, Networking, Ownership, Storage, Supervision, Teamwork, Troubleshooting, Virtualization</description>
+Asks for: Cisco, Docker, Infrastructure, KVM, Linux, Server, Services, VMware, Analysis, Backup and recovery, Certifications, Communication, Disaster recovery, Documentation, Management, Networking, Ownership, Storage, Supervision, Teamwork, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی (شیفت شب) — انتقال داده ماهان (ماهان نت)</title>
@@ -374,7 +374,7 @@ Asks for: Computer, Design, Linux, Make, MongoDB, MySQL, PostgreSQL, Programming
     <pubDate>Sat, 22 Aug 2026 09:38:19 +0000</pubDate>
     <description>تخفیفان — تهران · IT &amp; Infrastructure
 
-Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, MariaDB, PostgreSQL, Prometheus, Recovery, Replication, Service, Technical, Analysis, Backup and recovery, Configuration management, Container orchestration, Customer retention, Databases, DevOps, Disaster recovery, Documentation, Incident management, Incident response, Maintenance, Management, Networking, Observability, Performance tuning, Regulatory compliance, Security, Site reliability, Storage, Troubleshooting</description>
+Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, MariaDB, PostgreSQL, Prometheus, Recovery, Replication, Service, Services, Technical, Analysis, Backup and recovery, Configuration management, Container orchestration, Customer retention, Databases, DevOps, Disaster recovery, Documentation, Incident management, Incident response, Maintenance, Management, Networking, Observability, Performance tuning, Regulatory compliance, Security, Site reliability, Storage, Troubleshooting</description>
   </item>
   <item>
     <title>(SysAdmin (Virtualization — دیجی پی</title>
@@ -401,7 +401,7 @@ Asks for: Ansible, Availability, Bash, Ceph, Cloud, Docker, Git, GitLab, Grafana
     <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
     <description>ویستا سامانه آسا — تهران · IT &amp; Infrastructure
 
-Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Incident, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Software, Terraform, Transaction, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
+Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Incident, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Services, Software, Terraform, Transaction, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس IT — ارتباط سازان سهند</title>
@@ -437,7 +437,7 @@ Asks for: Networking, Observability</description>
     <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
     <description>تخفیفان - نت برگ — تهران · IT &amp; Infrastructure
 
-Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, MariaDB, PostgreSQL, Prometheus, Recovery, Replication, Service, Technical, Analysis, Backup and recovery, Configuration management, Container orchestration, Customer retention, Databases, DevOps, Disaster recovery, Documentation, Incident management, Incident response, Maintenance, Management, Networking, Observability, Performance tuning, Regulatory compliance, Security, Site reliability, Storage, Troubleshooting</description>
+Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, MariaDB, PostgreSQL, Prometheus, Recovery, Replication, Service, Services, Technical, Analysis, Backup and recovery, Configuration management, Container orchestration, Customer retention, Databases, DevOps, Disaster recovery, Documentation, Incident management, Incident response, Maintenance, Management, Networking, Observability, Performance tuning, Regulatory compliance, Security, Site reliability, Storage, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس مرکز داده — فراپردازان آروند امید</title>
