@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Product postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/product.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Product Data Analyst — اسنپ مارکت</title>
+    <link>https://jobinja.ir/companies/snappmarket/jobs/tvHG</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/snappmarket/jobs/tvHG</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>اسنپ مارکت — تهران · Product
+
+Asks for: Business, Cleaning, Computer, Customer, Data, Design, Experimentation, Functional, Funnel, Insights, Looker, Market, Metabase, Microsoft, Microsoft Excel, Python, Report, SQL, Statistics, Storytelling, Support, Tableau, Validation, Visualization, Warehousing, A/B testing, Analysis, Communication, Customer journey, Customer retention, Data warehousing, Data-driven, KPIs, Management, Problem solving, Testing</description>
+  </item>
   <item>
     <title>کارشناس محصول — مهندسی فناوری اطلاعات پرتو بیتا</title>
     <link>https://jobinja.ir/companies/parto-bita-group/jobs/tvFp</link>
@@ -59,7 +68,7 @@ Asks for: Agile / Scrum, Analysis, Communication, Databases, Documentation, Mana
     <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
     <description>پول تیکت — مشهد · Product
 
-Asks for: Activation, Backlog, Business, Customer, Data, Design, Discovery, Financial, Market, Marketplace, Operations, Prioritization, Roadmap, SaaS, Software, Stories, Strategy, Support, Tracking, Validation, Acceptance Criteria, Analysis, Analytics, B2B, Communication, Customer retention, Data-driven, E-commerce, ERP, KPIs, Management, Marketing, Problem solving, Product Discovery, Product Manager, Product lifecycle, Sales, Software development, Stakeholder management, UI/UX design, User experience, User research, User story</description>
+Asks for: Activation, Backlog, Brief, Business, Customer, Data, Design, Discovery, Financial, Market, Marketplace, Operations, Prioritization, Roadmap, SaaS, Software, Stories, Strategy, Support, Tracking, Validation, Acceptance Criteria, Analysis, Analytics, B2B, Communication, Customer retention, Data-driven, E-commerce, ERP, KPIs, Management, Marketing, Problem solving, Product Discovery, Product Manager, Product lifecycle, Sales, Software development, Stakeholder management, UI/UX design, User experience, User research, User story</description>
   </item>
   <item>
     <title>Project Manager — توسعه فناوری گروه فارابی</title>
@@ -447,15 +456,6 @@ Asks for: Accountability, Build, Business, Computer, Customer, Data, Design, Dis
     <description>تپسی — تهران · Product
 
 Asks for: Accountability, Build, Business, Computer, Customer, Data, Design, Discovery, Feedback, Functional, Insights, Market, Strategy, Support, Analysis, Communication, Customer service, Data-driven, End-to-End, Engagement, Management, Market research, Marketing, Problem solving, Product development, Product metrics, Sales, Stakeholder management, Strategic thinking</description>
-  </item>
-  <item>
-    <title>مدیر محصول (Product Manager) — پویان</title>
-    <link>https://jobinja.ir/companies/pouyan-3/jobs/t76R</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pouyan-3/jobs/t76R</guid>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پویان — تهران · Product
-
-Asks for: Benchmarking, Data, Go, Roadmap, Stories, Strategy, Technical, Writing, Agile / Scrum, Analysis, Documentation, KPIs, Management, Product Manager, Product Roadmap, Supervision, Technical writing, User story</description>
   </item>
 </channel>
 </rss>

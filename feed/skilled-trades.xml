@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Skilled Trades postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Mon, 24 Aug 2026 08:01:28 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/skilled-trades.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارمند خشکشویی — جین وست</title>
+    <link>https://jobinja.ir/companies/banim/jobs/tvHc</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/banim/jobs/tvHc</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>جین وست — تهران · Skilled Trades
+
+Asks for: Attention to detail, Recruitment</description>
+  </item>
   <item>
     <title>کارشناس تعمیرات و نگهداری — اکتوورکو</title>
     <link>https://career.hrcando.ir/co/Actoverco/job-detail/b0fb73d9-2cf4-4f34-b706-7f644b977e70</link>
@@ -441,15 +450,6 @@ Asks for: Networking, Supervision</description>
     <description>رهام گاز — تهران · Skilled Trades
 
 Asks for: Maintenance</description>
-  </item>
-  <item>
-    <title>مونتاژکار (آقا) — پویا فناوری فاتک</title>
-    <link>https://jobinja.ir/companies/pouafanavari-fatech/jobs/tZop</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pouafanavari-fatech/jobs/tZop</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پویا فناوری فاتک — تهران · Skilled Trades
-
-Asks for: Insurance, Teamwork, Training</description>
   </item>
 </channel>
 </rss>
