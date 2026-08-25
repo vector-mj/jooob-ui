@@ -13,7 +13,8 @@
     "support": "Support",
     "forEmployers": "for employers",
     "theme": "Switch theme",
-    "language": "Switch language"
+    "language": "Switch language",
+    "home": "Home"
   },
   "footer": {
     "copyright": "© 2026 jooob.ir"
@@ -30,7 +31,7 @@
     "postJob": "Post a job",
     "filter": {
       "search": "Search",
-      "searchPlaceholder": "K8s Python RCA — terms, title, company or city…",
+      "searchPlaceholder": "Search postings — try Excel, Tehran, or a company name",
       "clearHistory": "Clear history",
       "match": "Match",
       "matchAll": "Match all",
@@ -55,7 +56,7 @@
     "panel": {
       "yourSkills": "Your skills",
       "addSkill": "Add a skill",
-      "skillPlaceholder": "Type a tool or concept — Python, K8s, Agile…",
+      "skillPlaceholder": "Add a skill — Excel, Python, Agile…",
       "learnNext": "What to learn next",
       "tools": "Most demanded tools",
       "concepts": "Concepts & standards",
@@ -187,5 +188,31 @@
     "cancel": "Cancel",
     "postingsHeading": "Your postings",
     "postingsEmpty": "Nothing yet. Add a company first, then publish your first posting."
+  },
+  "error": {
+    "notFound": {
+      "docTitle": "jooob — no such page",
+      "title": "There is nothing at this address.",
+      "body": "The link may be old, or the page may have moved when the site stopped putting .html in its addresses. Everything is still here, one step back."
+    },
+    "server": {
+      "docTitle": "jooob — something went wrong",
+      "title": "Something on our side went wrong.",
+      "body": "The page loaded but the data behind it did not. Nothing you did caused it and nothing was lost — the site rebuilds itself regularly, so trying again shortly is usually enough."
+    },
+    "backHome": "Back to the front page",
+    "browseFeeds": "Browse the feeds"
+  },
+  "feeds": {
+    "docTitle": "jooob — feeds",
+    "whatIs": "What jooob is",
+    "heading": "Subscribe instead of checking",
+    "lede": "Point any RSS reader at one of these. They are rebuilt every time the scraper runs, carry the newest postings in each field, and include only adverts the boards still list.",
+    "everything": "Everything",
+    "allNew": "All new postings",
+    "byField": "By field",
+    "live": "live",
+    "postings": "postings",
+    "builtOn": "live when this was built on"
   }
 }
