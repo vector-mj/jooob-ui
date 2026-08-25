@@ -4,7 +4,6 @@
     "name": "English",
     "dir": "ltr"
   },
-
   "nav": {
     "dashboard": "Open the dashboard",
     "signin": "Sign in",
@@ -16,17 +15,17 @@
     "theme": "Switch theme",
     "language": "Switch language"
   },
-
   "footer": {
     "copyright": "© 2026 jooob.ir"
   },
-
   "common": {
     "loading": "Loading…"
   },
-
   "dash": {
-    "view": { "me": "For me", "market": "The market" },
+    "view": {
+      "me": "For me",
+      "market": "The market"
+    },
     "about": "About",
     "postJob": "Post a job",
     "filter": {
@@ -103,9 +102,9 @@
       "days": "{n} days ago",
       "months": "{n} months ago",
       "overYear": "over a year ago"
-    }
+    },
+    "title": "The job market dashboard"
   },
-
   "landing": {
     "docTitle": "jooob — what employers are actually hiring for",
     "docDescription": "A free job site built from what employers actually publish. Search by the tools and concepts you know, see what companies are really like, and post your own roles for nothing.",
@@ -127,7 +126,6 @@
       "days": "{n}d ago"
     }
   },
-
   "donate": {
     "docTitle": "jooob — support the project",
     "docDescription": "jooob is free, and stays free.",
@@ -149,7 +147,6 @@
     "shareHeading": "Would rather not send money?",
     "shareBody": "Tell someone the site exists. A person who finds a job through it is worth more to this project than the bill is."
   },
-
   "login": {
     "docTitle": "jooob — sign in",
     "heading": "Sign in to your account",
@@ -162,7 +159,6 @@
     "continue": "Continue",
     "signout": "Sign out"
   },
-
   "employer": {
     "docTitle": "jooob — post a job, free",
     "heading": "Post your jobs where people are actually looking.",
