@@ -94,6 +94,17 @@ try {
         <datalist id="company-options"></datalist>
         <button type="submit" class="btn primary" data-i18n="employer.claim">ثبت مالکیت</button>
       </form>
+      <!-- Shown only when what was typed is not a company we hold. The website
+           is what a person checks the claim against, so it is asked for here
+           rather than guessed later. -->
+      <div id="new-company" hidden>
+        <p class="ui-sub" data-i18n="employer.newCompanyBody">این شرکت در فهرست ما نیست. نام و نشانی وبگاه آن را بنویسید تا ثبت شود؛ یک نفر آن را بررسی می‌کند.</p>
+        <p class="emp-field">
+          <label class="emp-label" for="new-company-site" data-i18n="employer.website">وبگاه شرکت</label>
+          <input class="field" id="new-company-site" maxlength="80" placeholder="acme.ir">
+        </p>
+        <button type="button" class="btn primary" id="new-company-go" data-i18n="employer.registerCompany">ثبت شرکت تازه</button>
+      </div>
       <p class="ui-said" id="claim-said" role="status"></p>
     </section>
 
@@ -140,6 +151,13 @@ try {
             <input class="field" id="f-max" type="number" min="0" inputmode="numeric">
           </p>
           <p class="emp-field span-2">
+            <label class="emp-label" for="f-skills"><span data-i18n="employer.skills">مهارت‌های موردنیاز</span> <span class="emp-opt" data-i18n="employer.optional">اختیاری</span></label>
+            <input class="field" id="f-skills" maxlength="600"
+                   data-i18n-attr="placeholder:employer.skillsPlaceholder"
+                   placeholder="Python، PostgreSQL، Docker — با ویرگول جدا کنید">
+            <span class="emp-hint" data-i18n="employer.skillsHint">اگر ننویسید، از متن آگهی حدس زده می‌شود.</span>
+          </p>
+          <p class="emp-field span-2">
             <label class="emp-label" for="f-url"><span data-i18n="employer.applyAt">آدرس ارسال درخواست</span> <span class="emp-opt" data-i18n="employer.optional">اختیاری</span></label>
             <input class="field" id="f-url" type="url" inputmode="url"
                    placeholder="https://acme.ir/careers/backend">
@@ -179,6 +197,6 @@ try {
   <a href="/feeds" data-i18n="nav.feeds">آگهی‌ها</a>
 </footer>
 
-<script src="/employer.js?v=aeb9a03f"></script>
+<script src="/employer.js?v=92f40c8d"></script>
 </body>
 </html>
