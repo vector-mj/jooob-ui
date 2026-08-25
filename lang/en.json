@@ -254,9 +254,21 @@
       "signOut": "Sign out",
       "beingChecked": "being checked",
       "closed": "closed",
-      "live": "live"
+      "live": "live",
+      "notInList": "We do not have that company yet. Add its website below and we will register it.",
+      "nameCompany": "Name the company first.",
+      "needSite": "Give the company website, like acme.ir",
+      "registered": "Registered. A person checks a company we have not seen before, so this one waits.",
+      "approved": "Approved — your address is at that company own domain. You can post now.",
+      "claimed": "Claimed. A person will check it, usually the same day."
     },
-    "claimPlaceholder": "Start typing your company name…"
+    "claimPlaceholder": "Start typing your company name…",
+    "skills": "Skills the job needs",
+    "skillsPlaceholder": "Python, PostgreSQL, Docker — separate with commas",
+    "skillsHint": "If you leave this empty we infer them from the description.",
+    "newCompanyBody": "We do not have this company. Give its name and website and we will register it; a person checks it.",
+    "website": "Company website",
+    "registerCompany": "Register this company"
   },
   "error": {
     "notFound": {
