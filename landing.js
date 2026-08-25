@@ -44,9 +44,12 @@ function when(stamp) {
 
   const live = (data.jobs || []).filter((job) => job.active).length;
   const figures = [
-    [live.toLocaleString('en-US'), 'postings'],
-    [(data.companies_known || (data.companies || []).length).toLocaleString('en-US'),
-     'companies'],
+    [live.toLocaleString('en-US'), 'live postings'],
+    // The companies we have postings from, which is what the dashboard counts
+    // and what the number beside it means. companies_known also carries the
+    // ones we have only ever seen named -- 1,122 of them at this writing --
+    // and quoting those on the front page claims a reach we cannot show.
+    [((data.companies || []).length).toLocaleString('en-US'), 'companies'],
     [when(data.generated_at), 'updated'],
   ];
 
