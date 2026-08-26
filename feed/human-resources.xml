@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Human Resources postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 25 Aug 2026 11:52:38 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/human-resources.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدیر تجربه کارکنان — مهیمن</title>
+    <link>https://jobinja.ir/companies/mohaymen/jobs/tvOt</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/mohaymen/jobs/tvOt</guid>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مهیمن — تهران · Human Resources
+
+Asks for: Offboarding, Analysis, Communication, Employee experience, Engagement, Management, Onboarding, Process improvement</description>
+  </item>
   <item>
     <title>کارشناس ارشد جذب و استخدام — آدوراطب</title>
     <link>https://career.hrcando.ir/co/Adorateb/job-detail/238d445d-efc9-4c13-aab7-c66dcc68e81a</link>
@@ -14,7 +23,25 @@
     <pubDate>Tue, 25 Aug 2026 11:52:38 +0000</pubDate>
     <description>آدوراطب — تهران · Human Resources
 
-Asks for: Acquisition, Data, Design, Market, Microsoft, Review, Sourcing, Technical, Tracking, Applicant tracking, Data-driven, Human resources, Management, Microsoft Office, Observability, Process improvement, Recruitment</description>
+Asks for: Acquisition, Data, Design, Implementation, Market, Microsoft, Review, Sourcing, Technical, Tracking, Applicant tracking, Data-driven, Human resources, Management, Microsoft Office, Observability, Process improvement, Recruitment</description>
+  </item>
+  <item>
+    <title>کارشناس ارشد جذب و استخدام — ازکی</title>
+    <link>https://jobinja.ir/companies/azki/jobs/tvPD</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/azki/jobs/tvPD</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ازکی — تهران · Human Resources
+
+Asks for: LinkedIn, Tech, Agile / Scrum, Analysis, Applicant tracking, Branding, End-to-End, English proficiency, Management, Networking, Observability, Process improvement, Recruitment, Reporting, Social media</description>
+  </item>
+  <item>
+    <title>کارشناس توسعه و یادگیری منابع انسانی (آقا) — داریا همراه پایتخت</title>
+    <link>https://jobinja.ir/companies/daira-hamrah/jobs/tvU0</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/daira-hamrah/jobs/tvU0</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>داریا همراه پایتخت — تهران · Human Resources
+
+Asks for: Analysis, Communication, KPI management, Management, Observability, Process improvement, Reporting, Training</description>
   </item>
   <item>
     <title>کارشناس جذب و استخدام — دکتر ساینا</title>
@@ -425,33 +452,6 @@ Asks for: Analysis, Attention to detail, Management, Observability, Process impr
     <description>آزمایشگاه آرامش — تهران · Human Resources
 
 Asks for: Microsoft, Microsoft Excel, Microsoft Word, Visio, Analysis, Attention to detail, BPMN, Documentation, Management, Microsoft Office, Observability, Problem solving, Process improvement</description>
-  </item>
-  <item>
-    <title>کارشناس توسعه منابع انسانی — آزمایشگاه آرامش</title>
-    <link>https://jobinja.ir/companies/aramesh-8/jobs/t7uJ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/aramesh-8/jobs/t7uJ</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>آزمایشگاه آرامش — تهران · Human Resources
-
-Asks for: Microsoft Excel, Microsoft Word, Analysis, Attention to detail, Documentation, Management, Process improvement, Recruitment, Reporting, Training</description>
-  </item>
-  <item>
-    <title>HRBP (Operations) — ستاره طلایی سینا</title>
-    <link>https://career.hrcando.ir/co/surenacs/job-detail/b31785d2-e49a-489c-90ac-ea8909715fe9</link>
-    <guid isPermaLink="true">https://career.hrcando.ir/co/surenacs/job-detail/b31785d2-e49a-489c-90ac-ea8909715fe9</guid>
-    <pubDate>Mon, 17 Aug 2026 11:39:50 +0000</pubDate>
-    <description>ستاره طلایی سینا — تهران · Human Resources
-
-Asks for: Business, Analysis, Inventory management, KPI management, Management, Onboarding, Problem solving, Process improvement, Sales, Stakeholder management, Supply chain, Training</description>
-  </item>
-  <item>
-    <title>کارشناس جذب و استخدام (قم) — مدل</title>
-    <link>https://career.hrcando.ir/co/mohaymen/job-detail/4d5a2d59-6889-4fc6-b847-01a6df1032eb</link>
-    <guid isPermaLink="true">https://career.hrcando.ir/co/mohaymen/job-detail/4d5a2d59-6889-4fc6-b847-01a6df1032eb</guid>
-    <pubDate>Mon, 17 Aug 2026 11:07:15 +0000</pubDate>
-    <description>مدل — قم · Human Resources
-
-Asks for: Analysis, Applicant tracking, Attention to detail, Communication, DevOps, Documentation, Management, Negotiation, Networking, Ownership, Process improvement, Quality control, Record keeping, Recruitment, Reporting, Teamwork, Training</description>
   </item>
 </channel>
 </rss>

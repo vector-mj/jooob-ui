@@ -5,8 +5,44 @@
   <link>https://jooob.ir</link>
   <description>New Product postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/product.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدیر محصول (مشهد) — نرم افزاری آموت</title>
+    <link>https://jobinja.ir/companies/amoot/jobs/tvOk</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/amoot/jobs/tvOk</guid>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <description>نرم افزاری آموت — مشهد · Product
+
+Asks for: Agile / Scrum, Analysis, Artificial intelligence, Communication, Customer service, KPI management, KPIs, Management, Marketing, Observability, Process improvement, Project management, Reporting, Sales</description>
+  </item>
+  <item>
+    <title>مدیر محصول (Product Manager) — فراز</title>
+    <link>https://jobinja.ir/companies/faraz-17/jobs/tvkY</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/faraz-17/jobs/tvkY</guid>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <description>فراز — تهران · Product
+
+Asks for: Backlog, Business, Jira, Metabase, Operations, Power BI, SQL, Story, A/B testing, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, B2C, Business Analyst, Business intelligence, Communication, Documentation, Fintech, KPI management, Management, Observability, Ownership, Process improvement, Product Manager, Product Owner, Product metrics, Quality control, Reporting, Stakeholder management, Testing, UI/UX design, User story</description>
+  </item>
+  <item>
+    <title>مدیر پروژه (Project Manager-قم) — رسا سامانه افق</title>
+    <link>https://jobinja.ir/companies/rasa-samane-ofogh/jobs/tvVm</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/rasa-samane-ofogh/jobs/tvVm</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>رسا سامانه افق — قم · Product
+
+Asks for: Azure, Jira, Agile / Scrum, Analysis, Communication, Contract management, Customer service, DevOps, Documentation, Management, Observability, Process improvement, Project management, Stakeholder management, Supervision, Training</description>
+  </item>
+  <item>
+    <title>مدیر پروژه (Project Manager) — رسا سامانه افق</title>
+    <link>https://jobinja.ir/companies/rasa-samane-ofogh/jobs/tvV7</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/rasa-samane-ofogh/jobs/tvV7</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>رسا سامانه افق — تهران · Product
+
+Asks for: Azure, Jira, Agile / Scrum, Analysis, Communication, Contract management, Customer service, DevOps, Documentation, Management, Observability, Process improvement, Project management, Stakeholder management, Supervision, Training</description>
+  </item>
   <item>
     <title>Product Data Analyst — اسنپ مارکت</title>
     <link>https://jobinja.ir/companies/snappmarket/jobs/tvHG</link>
@@ -420,42 +456,6 @@ Asks for: Build, Clarity, Customer, Data, Design, Experimentation, Financial, In
     <description>اسنپ — تهران · Product
 
 Asks for: Build, Business, Customer, Data, Design, Discovery, Feedback, Functional, Infrastructure, Insights, Jira, Make, Post, Roadmap, Services, Software, Support, Tech, Technical, Travel, Web, Agile / Scrum, Analysis, Analytics, Communication, Data-driven, Documentation, End-to-End, Management, Marketing, Observability, Problem solving, Process improvement, Product Discovery, Product Manager, Product development, Product lifecycle, Product metrics, Real-Time, Responsive design, Sales, Stakeholder management, Teamwork</description>
-  </item>
-  <item>
-    <title>مدیر محصول (مشهد) — میثم ترانسپورت</title>
-    <link>https://jobinja.ir/companies/meysam-transport/jobs/t7HH</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/meysam-transport/jobs/t7HH</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>میثم ترانسپورت — مشهد · Product
-
-Asks for: Backlog, Marketplace, Mid-Level, Roadmap, Story, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, B2B, B2C, Communication, Conversion rate optimisation, Management, Marketing, Negotiation, Observability, Problem solving, Process improvement, Product Manager, Product Roadmap, REST APIs, Supply chain, UI/UX design, User story</description>
-  </item>
-  <item>
-    <title>مدیر محصول — پردازش آسان آیان</title>
-    <link>https://jobinja.ir/companies/ayanco/jobs/t7Hu</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/ayanco/jobs/t7Hu</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پردازش آسان آیان — تهران · Product
-
-Asks for: Analysis, B2B, Budgeting, Communication, Documentation, English proficiency, Fintech, Management, Observability, Process improvement, Project management, Stakeholder management, UI/UX design</description>
-  </item>
-  <item>
-    <title>Senior Product Manager — الوپیک</title>
-    <link>https://jobinja.ir/companies/alopeyk-1/jobs/taab</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/alopeyk-1/jobs/taab</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>الوپیک — تهران · Product
-
-Asks for: Customer, Data, Design, Make, Roadmap, Support, Technical, Writing, Agile / Scrum, Communication, Consulting, Data-driven, Job Description, Management, Product Manager, Product Roadmap, Strategic planning, Supply chain, User experience</description>
-  </item>
-  <item>
-    <title>Product Manager Assistant — وایب</title>
-    <link>https://jobinja.ir/companies/pazhouhande-rah/jobs/t4Ee</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pazhouhande-rah/jobs/t4Ee</guid>
-    <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-    <description>وایب — تهران · Product
-
-Asks for: Ahrefs, Asana, Business, CSS, Computer, Confluence, Customer, Data, Design, Education, Feedback, Functional, Go, Google Analytics, HTML, Insights, JavaScript, Jira, Market, Mixpanel, Post, Power BI, Project, Roadmap, SaaS, Semrush, Strategy, Tableau, Technical, Trello, Visualization, Web, Agile / Scrum, Analysis, Analytics, Artificial intelligence, Business intelligence, Communication, Data-driven, Data-driven decision making, Decision making, Digital marketing, End-to-End, Fintech, MBA, Machine learning, Management, Market research, Marketing, Problem solving, Process improvement, Product Manager, Product development, Project management, SEO, Soft Skills, Stakeholder management, Training, UI/UX design, User Journey, User experience, Web development</description>
   </item>
 </channel>
 </rss>
