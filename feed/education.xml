@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Education postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/education.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>سوپروایزر کودک (زبان انگلیسی-خانم) — موسسه زبان هاى خارجه آناهيد</title>
+    <link>https://jobinja.ir/companies/english-and-spanish-school/jobs/tvH8</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/english-and-spanish-school/jobs/tvH8</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>موسسه زبان هاى خارجه آناهيد — تهران · Education
+
+Asks for: English proficiency, Management, Supervision, Training</description>
+  </item>
   <item>
     <title>مدرس تعمیرات موبایل — توبیکس</title>
     <link>https://jobinja.ir/companies/galaxyvisiontop-gmail-com/jobs/tv9y</link>
@@ -439,15 +448,6 @@ Asks for: IoT, Artificial intelligence, Communication, Creativity, Management, O
     <description>ژین — تهران · Education
 
 Asks for: Communication, Training</description>
-  </item>
-  <item>
-    <title>مدرس برنامه نویسی جاوا — پویا اندیش</title>
-    <link>https://jobinja.ir/companies/pouya-andish/jobs/t4DI</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pouya-andish/jobs/t4DI</guid>
-    <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پویا اندیش — تهران · Education
-
-Asks for: Git, GitHub, Gradle, Hibernate, Java, JavaScript, Maven, Multithreading, NoSQL, Review, SQL, Spring, Agile / Scrum, Code review, Management, Microservices, Object-oriented programming, Project management, Training</description>
   </item>
 </channel>
 </rss>

@@ -8,6 +8,33 @@
   <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس NOC (پایش و مانیتورینگ سرویس) — مشاور مدیریت و خدمات ماشینی تامین</title>
+    <link>https://jobinja.ir/companies/mccs/jobs/tvbe</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/mccs/jobs/tvbe</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مشاور مدیریت و خدمات ماشینی تامین — تهران · IT &amp; Infrastructure
+
+Asks for: Docker, ELK, Grafana, Kubernetes, Prometheus, Analysis, Attention to detail, Documentation, Management, Networking, Observability, Problem solving, Reporting, SLA management, Site reliability, Supervision, Teamwork</description>
+  </item>
+  <item>
+    <title>کارشناس HelpDesk (مشهد) — گرین وب</title>
+    <link>https://jobinja.ir/companies/greenweb/jobs/tvVf</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/greenweb/jobs/tvVf</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>گرین وب — مشهد · IT &amp; Infrastructure
+
+Asks for: Helpdesk, Windows, Documentation, Management, Networking, Observability, Problem solving, Record keeping, Technical support, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس هماهنگی فنی (Technical Coordinator) — مدیریت فناوری اطلاعات و ارتباطات وصل</title>
+    <link>https://jobinja.ir/companies/vasl/jobs/tvUS</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/vasl/jobs/tvUS</guid>
+    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مدیریت فناوری اطلاعات و ارتباطات وصل — تهران · IT &amp; Infrastructure
+
+Asks for: Azure, Coordination, GitLab, Grafana, Jira, Kibana, Operations, Postman, SQL, Service, Support, Swagger, Technical, Web, Analysis, Attention to detail, Communication, Customer service, DevOps, Documentation, English proficiency, Management, Networking, Observability, Ownership, Problem solving, REST APIs, Reporting, Stakeholder management, Teamwork, Technical support, Troubleshooting</description>
+  </item>
+  <item>
     <title>کارشناس زیرساخت فناوری اطلاعات — مرسا</title>
     <link>https://jobinja.ir/companies/morsainternational/jobs/tvfw</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/morsainternational/jobs/tvfw</guid>
@@ -71,6 +98,15 @@ Asks for: Alerting, ArgoCD, Bash, Build, Business, Docker, Grafana, Incident, In
 Asks for: Alerting, Ansible, Availability, Bash, Container, Docker, ELK, Git, GitLab, Grafana, Harbor, Helm, Infrastructure, JFrog Artifactory, Kubernetes, Linux, Logging, Loki, Nexus, Nginx, Prometheus, Python, Repository, Scripting, Terraform, Analysis, Automation, CI/CD, Container orchestration, DevOps, GitOps, High availability, Incident management, Infrastructure as code, Management, Networking, Observability, Reverse Proxy, Root cause analysis, Troubleshooting</description>
   </item>
   <item>
+    <title>کارشناس HelpDesk — فناوری و راه حل‏‏ های هوشمند سپهر</title>
+    <link>https://jobinja.ir/companies/hooshmand-sepehr/jobs/tveo</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/hooshmand-sepehr/jobs/tveo</guid>
+    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    <description>فناوری و راه حل‏‏ های هوشمند سپهر — تهران · IT &amp; Infrastructure
+
+Asks for: Bash, Cisco, Confluence, Control, Firmware, FortiGate, Helpdesk, IPsec, Jira, Linux, Log, Logging, Microsoft, MikroTik, PowerShell, QoS, Restore, Runbook, Service, Services, Ubiquiti, VMware, Veeam, Web, Windows, Zabbix, iLO, macOS, Backup and recovery, Certifications, Communication, Documentation, Firewalls, High availability, ITSM / ITIL, Management, Networking, Observability, Process improvement, SIEM / SOAR, Security, Technical support, Troubleshooting</description>
+  </item>
+  <item>
     <title>کارشناس ‌BI — رایان پرداز کاوش</title>
     <link>https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/tv9g</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/tv9g</guid>
@@ -113,7 +149,7 @@ Asks for: Active Directory, Alert, Event, Incident, Linux, Log, Security+, Splun
     <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
     <description>گروه اسنپ — تهران · IT &amp; Infrastructure
 
-Asks for: Accountability, Build, Control, Customer, Data, Email, Fortinet, Functional, Hardware, Infrastructure, Jira, Linux, Microsoft, Microsoft Exchange, Outlook, Service, Support, Technical, Ticketing, Tracking, Wi-Fi, Windows, Authentication, Communication, DevOps, Disaster recovery, Documentation, English proficiency, Management, Networking, Ownership, Security, Teamwork, Technical support, Testing, Troubleshooting</description>
+Asks for: Accountability, Build, Control, Customer, Data, Email, Fortinet, Functional, Hardware, Infrastructure, Jira, Linux, Microsoft, Microsoft Exchange, Outlook, Service, Support, Technical, Ticketing, Tracking, Wi-Fi, Windows, macOS, Authentication, Communication, DevOps, Disaster recovery, Documentation, English proficiency, Management, Networking, Ownership, Security, Teamwork, Technical support, Testing, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس IT (آقا) — عمران صنعت آکام</title>
@@ -420,42 +456,6 @@ Asks for: Microsoft, Outlook, Router, Switch, Wi-Fi, Windows, Attention to detai
     <description>امن پردازش هوشمند فرداد — اصفهان · IT &amp; Infrastructure
 
 Asks for: Active Directory, Email, Linux, Log, Recovery, Server, SolarWinds, VMware, Veeam, Windows, Attention to detail, Backup and recovery, Certifications, Disaster recovery, Documentation, Management, Networking, Observability, Problem solving, Process improvement, Storage, Teamwork, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>کارشناس NOC (آقا) — مهندسی صفر و یک پرداز</title>
-    <link>https://jobinja.ir/companies/sefroyek-pardaz/jobs/tvCQ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/sefroyek-pardaz/jobs/tvCQ</guid>
-    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مهندسی صفر و یک پرداز — تهران · IT &amp; Infrastructure
-
-Asks for: Networking, Observability</description>
-  </item>
-  <item>
-    <title>DevOps Engineer — تخفیفان - نت برگ</title>
-    <link>https://jobinja.ir/companies/takhfifan/jobs/t73V</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/takhfifan/jobs/t73V</guid>
-    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-    <description>تخفیفان - نت برگ — تهران · IT &amp; Infrastructure
-
-Asks for: Business, Data, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, MariaDB, PostgreSQL, Prometheus, Recovery, Replication, Service, Services, Technical, Analysis, Backup and recovery, Configuration management, Container orchestration, Customer retention, Databases, DevOps, Disaster recovery, Documentation, Incident management, Incident response, Maintenance, Management, Networking, Observability, Performance tuning, Regulatory compliance, Security, Site reliability, Storage, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس مرکز داده — فراپردازان آروند امید</title>
-    <link>https://jobinja.ir/companies/sayancard/jobs/tpPD</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/sayancard/jobs/tpPD</guid>
-    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فراپردازان آروند امید — تهران · IT &amp; Infrastructure
-
-Asks for: Datacenter operations, Documentation, Networking, Observability, Supervision, Teamwork</description>
-  </item>
-  <item>
-    <title>کارشناس مرکز داده — فراپردازان آروند امید</title>
-    <link>https://jobinja.ir/companies/sayancard/jobs/Cygz</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/sayancard/jobs/Cygz</guid>
-    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فراپردازان آروند امید — تهران · IT &amp; Infrastructure
-
-Asks for: Datacenter operations, Documentation, Networking, Observability, Supervision, Teamwork</description>
   </item>
 </channel>
 </rss>
