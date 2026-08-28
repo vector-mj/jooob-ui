@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Education postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/education.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس آموزش مدیریت — مجتمع فنی تهران نمایندگی اکباتان</title>
+    <link>https://jobinja.ir/companies/tehran-institute-of-technology-12/jobs/tvaf</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tehran-institute-of-technology-12/jobs/tvaf</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مجتمع فنی تهران نمایندگی اکباتان — تهران · Education
+
+Asks for: Management, Training</description>
+  </item>
   <item>
     <title>مدرس زبان انگلیسی (بزرگسالان-قم-دورکاری) — نوآوران آفاق هوشمند آتیه</title>
     <link>https://jobinja.ir/companies/innovators-of-smart-horizons-of-the-future/jobs/tvgf</link>
@@ -439,15 +448,6 @@ Asks for: English proficiency, Training</description>
     <description>آکادمی رهوان — تهران · Education
 
 Asks for: Communication, Creativity, Management, Negotiation, Networking, Ownership, Problem solving, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>مشاور تحصیلی (منتور) — شبکه هدایت آموزش بین‌الملل</title>
-    <link>https://jobinja.ir/companies/internationaleducationalhub/jobs/t7A6</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/internationaleducationalhub/jobs/t7A6</guid>
-    <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-    <description>شبکه هدایت آموزش بین‌الملل — تهران · Education
-
-Asks for: Communication, Management, Process improvement, Record keeping, Reporting</description>
   </item>
 </channel>
 </rss>

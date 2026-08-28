@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Human Resources postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 26 Aug 2026 08:51:19 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 11:33:24 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/human-resources.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>HRBP — ماتریس</title>
+    <link>https://career.hrcando.ir/co/matrix-1/job-detail/8c778647-65d3-4ffb-a21c-c33059000d8a</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/matrix-1/job-detail/8c778647-65d3-4ffb-a21c-c33059000d8a</guid>
+    <pubDate>Wed, 26 Aug 2026 11:33:24 +0000</pubDate>
+    <description>ماتریس — تهران · Human Resources
+
+Asks for: Business, Communication, Insurance, Management, Process improvement, Recruitment, Reporting, Supervision, Training</description>
+  </item>
   <item>
     <title>مدیر تجربه کارکنان  — مدل</title>
     <link>https://career.hrcando.ir/co/mohaymen/job-detail/fdaca2b0-80d4-48d6-afc2-34d6000c475d</link>
@@ -443,15 +452,6 @@ Asks for: Contract management, Management, Office administration, Process improv
     <description>رایان پرداز کاوش — تهران · Human Resources
 
 Asks for: Microsoft, Communication, Microsoft Office, Observability, Process improvement, Recruitment</description>
-  </item>
-  <item>
-    <title>کارشناس جذب و استخدام — رایان پرداز کاوش</title>
-    <link>https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/t71W</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/t71W</guid>
-    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رایان پرداز کاوش — تهران · Human Resources
-
-Asks for: Microsoft Excel, Microsoft Word, Sourcing, Analysis, Applicant tracking, Communication, Databases, English proficiency, Insurance, Management, Microsoft Office, Negotiation, Recruitment, Reporting, Teamwork</description>
   </item>
 </channel>
 </rss>

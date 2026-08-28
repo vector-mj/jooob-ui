@@ -8,6 +8,15 @@
   <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس مانیتورینگ — پیشگامان فناوری اطلاعات هامون</title>
+    <link>https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvmS</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvmS</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
+
+Asks for: Zabbix, Attention to detail, Documentation, Networking, Observability, Ownership, Record keeping, Reporting, Teamwork</description>
+  </item>
+  <item>
     <title>کارشناس شبکه (Network Administrator) — نوآوران آفاق هوشمند آتیه</title>
     <link>https://jobinja.ir/companies/innovators-of-smart-horizons-of-the-future/jobs/tva2</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/innovators-of-smart-horizons-of-the-future/jobs/tva2</guid>
@@ -105,6 +114,17 @@ Asks for: AWS, Alerting, Ansible, Asterisk, Availability, Azure, Bash, ChatGPT, 
     <description>نرم افزاری آموت — مشهد · IT &amp; Infrastructure
 
 Asks for: Incident, Analysis, Attention to detail, Firewalls, Incident response, Management, Networking, Problem solving, Process improvement, Reporting, Security, Supervision, Training, Troubleshooting</description>
+  </item>
+  <item>
+    <title>Associate - Info. Tech — Myli - مایلی
+</title>
+    <link>https://career.hrcando.ir/co/Hyperstar/job-detail/5a231bf9-5110-4824-9d9a-83f5d0b4919f</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/Hyperstar/job-detail/5a231bf9-5110-4824-9d9a-83f5d0b4919f</guid>
+    <pubDate>Tue, 25 Aug 2026 13:20:09 +0000</pubDate>
+    <description>Myli - مایلی
+ — تهران · IT &amp; Infrastructure
+
+Asks for: Communication, Customer service, Disaster recovery, Inventory management, Linux administration, Management, Networking, Procurement, Reporting, Sales, Security, Supervision, Technical support, Training, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی هاستینگ (آقا-گرگان) — میزبانی مهر هامین</title>
@@ -410,7 +430,7 @@ Asks for: Ansible, Bash, ELK, Elasticsearch, Grafana, Helm, Kibana, Kubernetes, 
     <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
     <description>حسابو — تهران · IT &amp; Infrastructure
 
-Asks for: Active Directory, Cisco, Email, Hardware, Infrastructure, Internet, Microsoft, MikroTik, Offboarding, Recovery, Remote, Router, Support, Switch, Ticketing, VMware, Wi-Fi, Windows, Wireshark, Analysis, Attention to detail, Backup and recovery, Communication, Disaster recovery, Documentation, Firewalls, Incident management, Maintenance, Management, Networking, Observability, Onboarding, Ownership, Record keeping, Root cause analysis, SLA management, Technical support, Troubleshooting, Virtualization</description>
+Asks for: Active Directory, Cisco, Email, Hardware, Infrastructure, Internet, Microsoft, MikroTik, Offboarding, Printer, Recovery, Remote, Router, Support, Switch, Ticketing, VMware, Wi-Fi, Windows, Wireshark, Analysis, Attention to detail, Backup and recovery, Communication, Disaster recovery, Documentation, Firewalls, Incident management, Maintenance, Management, Networking, Observability, Onboarding, Ownership, Record keeping, Root cause analysis, SLA management, Technical support, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس ارزیابی امنیت زیرساخت سرورها — رویال پرداز تیام</title>
@@ -438,24 +458,6 @@ Asks for: Incident, Kibana, Linux, Service, Zabbix, Analysis, Communication, Doc
     <description>ابرناک — تهران · IT &amp; Infrastructure
 
 Asks for: Ansible, Availability, Cloud, Hardware, Infrastructure, KVM, Linux, Proxmox, Scripting, Server, Terraform, Artificial intelligence, Automation, Management, Networking, Performance tuning, Recruitment, Security, Storage, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>SOC Engineer — اسنپ مارکت</title>
-    <link>https://jobinja.ir/companies/snappmarket/jobs/tv2R</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/snappmarket/jobs/tv2R</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
-
-Asks for: Availability, Business, Cisco, Computer, Hardware, Infrastructure, Linux, Remote, Review, Scripting, Security+, Segmentation, Services, Software, Splunk, Support, Technical, VMware, Windows, Analysis, Certifications, Documentation, Firewalls, High availability, IDS / IPS, Maintenance, Management, Networking, Process improvement, SIEM / SOAR, Security, Testing, Troubleshooting, Virtualization, Vulnerability scanning</description>
-  </item>
-  <item>
-    <title>کارشناس مسئول (SOC) — فراپردازان آروند امید</title>
-    <link>https://jobinja.ir/companies/sayancard/jobs/tcKU</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/sayancard/jobs/tcKU</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فراپردازان آروند امید — تهران · IT &amp; Infrastructure
-
-Asks for: Incident, Linux, Microsoft, Splunk, Windows, Analysis, Communication, Documentation, Firewalls, IDS / IPS, Management, Networking, Observability, Ownership, Reporting, SIEM / SOAR, Security, Teamwork, Threat Intelligence</description>
   </item>
 </channel>
 </rss>
