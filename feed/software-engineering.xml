@@ -8,6 +8,33 @@
   <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>ادمین وب سایت (خانم) — پویا اندیش</title>
+    <link>https://jobinja.ir/companies/pouya-andish/jobs/t9oB</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/pouya-andish/jobs/t9oB</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پویا اندیش — تهران · Software Engineering
+
+Asks for: CSS, HTML, Microsoft Word, WordPress, Content creation, English proficiency, Process improvement, SEO</description>
+  </item>
+  <item>
+    <title>ادمین سایت (خانم) — پویا اندیش</title>
+    <link>https://jobinja.ir/companies/pouya-andish/jobs/Afyn</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/pouya-andish/jobs/Afyn</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پویا اندیش — تهران · Software Engineering
+
+Asks for: CSS, HTML, JavaScript, Microsoft Word, WordPress, Analysis, Attention to detail, Communication, Marketing, Problem solving, Recruitment, Reporting, SEO, Troubleshooting</description>
+  </item>
+  <item>
+    <title>مدرس طراحی سایت — پویا اندیش</title>
+    <link>https://jobinja.ir/companies/pouya-andish/jobs/A5Mw</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/pouya-andish/jobs/A5Mw</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پویا اندیش — تهران · Software Engineering
+
+Asks for: Microsoft Word, Attention to detail, Recruitment, SEO, Training</description>
+  </item>
+  <item>
     <title>کارشناس پشتیبانی نرم‌افزار سطح ۲ (Mid-Level) — بارمان پارسه امرتات</title>
     <link>https://jobinja.ir/companies/barman-parse-emertat/jobs/tvae</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/barman-parse-emertat/jobs/tvae</guid>
@@ -427,33 +454,6 @@ Asks for: Bug, Jira, Software, Task, Test, Agile / Scrum, Analysis, Attention to
     <description>اینوکس — تهران · Software Engineering
 
 Asks for: Alerting, Build, Construction, Control, Crypto, Cryptocurrency, Data, Design, Experimentation, Financial, Git, Implementation, Infrastructure, Latency, Logging, Maintainability, Make, Market, NumPy, Pandas, Python, Refactor, SQL, Software, Statistics, Technical, Time-Series, Trading, Analysis, Attention to detail, Data pipelines, Databases, Investment, Management, Observability, Ownership, REST APIs, Real-Time, Risk management, Software development, Testing, Version Control</description>
-  </item>
-  <item>
-    <title>Senior Software Engineer (شیراز) — ابر دراک</title>
-    <link>https://jobinja.ir/companies/derak-cloud/jobs/tveh</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/derak-cloud/jobs/tveh</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ابر دراک — شیراز · Software Engineering
-
-Asks for: Cloud, Docker, Git, Go, Infrastructure, Kafka, Kubernetes, Linux, Logging, MongoDB, MySQL, NestJS, Node.js, PHP, Python, RabbitMQ, Review, Software, n8n, Analysis, CI/CD, Clean code, Code review, Debugging, Incident management, Infrastructure as code, Networking, Observability, Performance tuning, Process improvement, REST APIs, Root cause analysis, Scalability, Security, Storage, Troubleshooting</description>
-  </item>
-  <item>
-    <title>QA Automation &amp; Device Integration Engineer — کاوش تیم</title>
-    <link>https://jobinja.ir/companies/kavosh-team/jobs/tvsM</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/kavosh-team/jobs/tvsM</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>کاوش تیم — تهران · Software Engineering
-
-Asks for: Appium, Build, Cloud, Design, Docker, Embedded, Git, Hardware, IoT, Linux, Mobile, PyTest, Python, Recovery, Release, Software, Support, Technical, Test, Validation, Automation, CI/CD, Documentation, End-to-End, Quality control, REST APIs, Recruitment, Testing, Troubleshooting</description>
-  </item>
-  <item>
-    <title>Senior IoT Security Specialist — کاوش تیم</title>
-    <link>https://jobinja.ir/companies/kavosh-team/jobs/tvsX</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/kavosh-team/jobs/tvsX</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>کاوش تیم — تهران · Software Engineering
-
-Asks for: C++, Cloud, Control, Embedded, Hardware, Infrastructure, IoT, Linux, Mobile, Modeling, Project, Python, Review, Shell, Technical, Communication, Engagement, Management, Networking, Penetration testing, REST APIs, Reporting, Security, Storage, Testing, Vulnerability scanning</description>
   </item>
 </channel>
 </rss>

@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Procurement postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/procurement.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس بازرگانی — ممتاز کالای فرتاک</title>
+    <link>https://jobinja.ir/companies/momtaz-kalay-fartak/jobs/tvaR</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/momtaz-kalay-fartak/jobs/tvaR</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ممتاز کالای فرتاک — تهران · Procurement
+
+Asks for: Communication, English proficiency, Insurance, Inventory management, Negotiation, Procurement, Record keeping, Reporting</description>
+  </item>
   <item>
     <title>Procurement Senior Expert — تپسی</title>
     <link>https://jobinja.ir/companies/tap30-1/jobs/tvZt</link>
@@ -445,15 +454,6 @@ Asks for: Attention to detail, Communication, Contract management, Cost optimiza
     <description>حمل و نقل بین المللی ناوگان بار — تهران · Procurement
 
 Asks for: Microsoft Excel, Outlook, Customer service, English proficiency, Record keeping, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>کارشناس مناقصات — خانه هوش ایران</title>
-    <link>https://jobinja.ir/companies/iran-ai-house/jobs/t79M</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iran-ai-house/jobs/t79M</guid>
-    <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-    <description>خانه هوش ایران — تهران · Procurement
-
-Asks for: Go, Proposal, Technical, Analysis, Contract management, Documentation, Insurance, KPI management, Management, Negotiation, Procurement, Record keeping, Regulatory compliance, Reporting</description>
   </item>
 </channel>
 </rss>
