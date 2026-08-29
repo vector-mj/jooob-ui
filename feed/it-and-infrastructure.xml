@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>راهبر سیستم‌های لینوکس — توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا)</title>
+    <link>https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/tv75</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/tv75</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا) — تهران · IT &amp; Infrastructure
+
+Asks for: Availability, Bash, Docker, LDAP, Linux, PostgreSQL, Prometheus, Recovery, Scripting, Zabbix, Attention to detail, Authentication, Automation, Backup and recovery, Certifications, Cloud architecture, Container orchestration, Disaster recovery, Distributed systems, Firewalls, High availability, Linux administration, Management, Networking, Observability, Ownership, Performance tuning, Problem solving, Security, Storage, Teamwork, Troubleshooting</description>
+  </item>
   <item>
     <title>کارشناس مانیتورینگ — پیشگامان فناوری اطلاعات هامون</title>
     <link>https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvmS</link>
@@ -42,6 +51,15 @@ Asks for: As-Built, Cisco, Data, Nexus, Server, Attention to detail, Communicati
     <description>مدیریت فناوری بورس تهران — تهران · IT &amp; Infrastructure
 
 Asks for: As-Built, FortiGate, Attention to detail, Communication, Firewalls, Management, Networking, Ownership, Recruitment, Teamwork, Troubleshooting</description>
+  </item>
+  <item>
+    <title>System Administrator — گلرنگ سیستم</title>
+    <link>https://jobinja.ir/companies/golrang-industrial-group/jobs/tvrB</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/golrang-industrial-group/jobs/tvrB</guid>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <description>گلرنگ سیستم — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Ansible, Azure, Business, Data, Domain, Exchange, Incident, Linux, Microsoft, Microsoft Exchange, PowerShell, Scripting, Server, Services, Analysis, Automation, Datacenter operations, Documentation, ITSM / ITIL, Incident management, Linux administration, Management, Networking, Observability, Process improvement, Root cause analysis, Security, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی هاستینگ (کرج) — وی آی پی هاست</title>
@@ -187,7 +205,7 @@ Asks for: Windows, Branding, Networking, Supervision, Teamwork, Technical suppor
     <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
     <description>گروه دی.ان.ای یونیون — تهران · IT &amp; Infrastructure
 
-Asks for: Active Directory, Cisco, Linux, Microsoft, Microsoft Exchange, MikroTik, Recovery, Server, Ticketing, VMware, Veeam, Windows, Backup and recovery, Communication, Documentation, English proficiency, Firewalls, Group Policy, Identity &amp; access management, Management, Networking, Observability, Ownership, Problem solving, Process improvement, Record keeping, Risk management, Security, Teamwork, Technical support, Training, Troubleshooting, Virtualization</description>
+Asks for: Active Directory, Cisco, Exchange, Linux, Microsoft, Microsoft Exchange, MikroTik, Recovery, Server, Ticketing, VMware, Veeam, Windows, Backup and recovery, Communication, Documentation, English proficiency, Firewalls, Group Policy, Identity &amp; access management, Management, Networking, Observability, Ownership, Problem solving, Process improvement, Record keeping, Risk management, Security, Teamwork, Technical support, Training, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس شبکه و زیرساخت (اصفهان) — امن پردازش هوشمند فرداد</title>
@@ -358,7 +376,7 @@ Asks for: Active Directory, Alert, Event, Incident, Linux, Log, Security+, Splun
     <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
     <description>گروه اسنپ — تهران · IT &amp; Infrastructure
 
-Asks for: Accountability, Build, Control, Customer, Data, Email, Fortinet, Functional, Hardware, Infrastructure, Jira, Linux, Microsoft, Microsoft Exchange, Outlook, Service, Support, Technical, Ticketing, Tracking, Wi-Fi, Windows, macOS, Authentication, Communication, DevOps, Disaster recovery, Documentation, English proficiency, Management, Networking, Ownership, Security, Teamwork, Technical support, Testing, Troubleshooting</description>
+Asks for: Accountability, Build, Control, Customer, Data, Email, Exchange, Fortinet, Functional, Hardware, Infrastructure, Jira, Linux, Microsoft, Microsoft Exchange, Outlook, Service, Support, Technical, Ticketing, Tracking, Wi-Fi, Windows, macOS, Authentication, Communication, DevOps, Disaster recovery, Documentation, English proficiency, Management, Networking, Ownership, Security, Teamwork, Technical support, Testing, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس IT (آقا) — عمران صنعت آکام</title>
@@ -440,24 +458,6 @@ Asks for: Ansible, Bash, ELK, Elasticsearch, Grafana, Helm, Kibana, Kubernetes, 
     <description>حسابو — تهران · IT &amp; Infrastructure
 
 Asks for: Active Directory, Cisco, Email, Hardware, Infrastructure, Internet, Microsoft, MikroTik, Offboarding, Printer, Recovery, Remote, Router, Support, Switch, Ticketing, VMware, Wi-Fi, Windows, Wireshark, Analysis, Attention to detail, Backup and recovery, Communication, Disaster recovery, Documentation, Firewalls, Incident management, Maintenance, Management, Networking, Observability, Onboarding, Ownership, Record keeping, Root cause analysis, SLA management, Technical support, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>کارشناس ارزیابی امنیت زیرساخت سرورها — رویال پرداز تیام</title>
-    <link>https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvJw</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvJw</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Apache, Bug, Container, Docker, Linux, MySQL, Nessus, Nginx, OpenVAS, Oracle, PostgreSQL, SQL, SQL Server, Server, Web, Windows, Analysis, Attention to detail, Auditing, Certifications, Databases, Documentation, English proficiency, Group Policy, Networking, Ownership, Penetration testing, Problem solving, Record keeping, Regulatory compliance, Reporting, Risk management, Security, Teamwork, Testing, Vulnerability scanning</description>
-  </item>
-  <item>
-    <title>کارشناس سرویس دسک (آقا-مشهد) — سرزمین هوشمند پاد</title>
-    <link>https://jobinja.ir/companies/pod/jobs/tvzp</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pod/jobs/tvzp</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>سرزمین هوشمند پاد — مشهد · IT &amp; Infrastructure
-
-Asks for: Incident, Kibana, Linux, Service, Zabbix, Analysis, Communication, Documentation, Networking, Observability, Ownership, Problem solving, Record keeping, Recruitment, SLA management, Troubleshooting</description>
   </item>
 </channel>
 </rss>
