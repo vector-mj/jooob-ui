@@ -8,6 +8,60 @@
   <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس ارشد DevOps  — تدبیر پرداز</title>
+    <link>https://jobinja.ir/companies/tadbirpardaz/jobs/tvvF</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tadbirpardaz/jobs/tvvF</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>تدبیر پرداز — تهران · IT &amp; Infrastructure
+
+Asks for: Docker, CI/CD, DevOps, Recruitment</description>
+  </item>
+  <item>
+    <title>کارشناس پشتیبانی فنی شبکه (Help Desk) — تدبیر پرداز</title>
+    <link>https://jobinja.ir/companies/tadbirpardaz/jobs/tvve</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tadbirpardaz/jobs/tvve</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>تدبیر پرداز — تهران · IT &amp; Infrastructure
+
+Asks for: Certifications, Networking, Recruitment, Technical support</description>
+  </item>
+  <item>
+    <title>کارشناس HelpDesk — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/tvjz</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/tvjz</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Domain, OpenStack, Windows, Analysis, Documentation, Networking, Record keeping, Technical support, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس زیرساخت های داخلی — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/tvEF</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/tvEF</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Exchange, Microsoft, Microsoft Exchange, PowerShell, Recovery, SCCM, Server, Windows, Analysis, Automation, Backup and recovery, Disaster recovery, Group Policy, ISO standards, Management, Networking, Observability, Security, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>کارشناس عملیات DevOps — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/tvEg</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/tvEg</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · IT &amp; Infrastructure
+
+Asks for: Data, Log, MySQL, Playbook, Python, Recovery, Scripting, VoIP, Automation, Certifications, Databases, DevOps, Disaster recovery, ITSM / ITIL, Management, Observability, Reporting</description>
+  </item>
+  <item>
+    <title>Senior DataOps Engineer — اسنپ فود</title>
+    <link>https://jobinja.ir/companies/snappfood/jobs/tvvz</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/snappfood/jobs/tvvz</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>اسنپ فود — تهران · IT &amp; Infrastructure
+
+Asks for: Airflow, Alerting, Ansible, Apache, Apache NiFi, ArgoCD, Business, ClickHouse, Container, Data, Design, Elasticsearch, Event, Fluentd, GitLab, Grafana, Iceberg, Infrastructure, Kafka, Kibana, Kubernetes, Linux, Log, MySQL, Optimization, Orchestration, PostgreSQL, Programming, Prometheus, SQL Server, Services, Spark, Story, Tracking, Analysis, Automation, CI/CD, Configuration management, Container orchestration, Creativity, Data pipelines, Databases, Infrastructure as code, Linux administration, Management, Observability, Storage, Troubleshooting</description>
+  </item>
+  <item>
     <title>راهبر سیستم‌های لینوکس — توسعه ارتباطات الکترونیک تجارت ایرانیان(تاتا)</title>
     <link>https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/tv75</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/tejarat-iranian-development-digital-company/jobs/tv75</guid>
@@ -131,7 +185,7 @@ Asks for: Linux, VMware, Networking, Observability, Problem solving, Security</d
     <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
     <description>دکتر ساینا — تهران · IT &amp; Infrastructure
 
-Asks for: AWS, Alerting, Ansible, Asterisk, Availability, Azure, Bash, ChatGPT, Claude, Cloud, Cursor, Design, Docker, Docker Compose, ELK, GCP, GitLab, Google Gemini, Grafana, Infrastructure, Kafka, Kubernetes, Linux, Logging, Loki, MySQL, Nginx, OpenStack, PostgreSQL, Prometheus, Python, RabbitMQ, Recovery, Redis, Replication, Restore, Terraform, VoIP, Analysis, Artificial intelligence, Automation, Backup and recovery, CI/CD, Database administration, Databases, DevOps, Disaster recovery, Documentation, High availability, Infrastructure as code, Linux administration, Management, Observability, Ownership, Performance tuning, Process improvement, Reverse Proxy, Troubleshooting</description>
+Asks for: AWS, Alerting, Ansible, Asterisk, Availability, Azure, Bash, ChatGPT, Claude, Cloud, Cursor, Design, Docker, Docker Compose, ELK, GCP, GitLab, Google Gemini, Grafana, Infrastructure, Kafka, Kubernetes, Linux, Logging, Loki, MySQL, Nginx, OpenStack, Optimization, PostgreSQL, Prometheus, Python, RabbitMQ, Recovery, Redis, Replication, Restore, Terraform, VoIP, Analysis, Artificial intelligence, Automation, Backup and recovery, CI/CD, Database administration, Databases, DevOps, Disaster recovery, Documentation, High availability, Infrastructure as code, Linux administration, Management, Observability, Ownership, Performance tuning, Process improvement, Reverse Proxy, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس امنیت شبکه و اطلاعات (مشهد) — نرم افزاری آموت</title>
@@ -277,7 +331,7 @@ Asks for: Cloud, Dart, Design, Docker, Flutter, Git, Go, Linux, Maintainability,
     <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
     <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Build, Business, Computer, Data, Design, Functional, Industrial, Legacy, Microsoft, Mid-Level, Migration, Modeling, Power BI, Python, Refactor, SQL, SQL Server, Schema, Scripting, Server, SharePoint, Warehouse, Web, Analysis, Analytics, Artificial intelligence, Automation, Business intelligence, Data modelling, Data warehousing, Documentation, ETL / ELT, High availability, Industrial engineering, Information technology, Maintenance, Management, Marketing, Performance tuning, REST APIs, UI/UX design</description>
+Asks for: Availability, Build, Business, Computer, Data, Design, Functional, Industrial, Legacy, Microsoft, Mid-Level, Migration, Modeling, Optimization, Power BI, Python, Refactor, SQL, SQL Server, Schema, Scripting, Server, SharePoint, Warehouse, Web, Analysis, Analytics, Artificial intelligence, Automation, Business intelligence, Data modelling, Data warehousing, Documentation, ETL / ELT, High availability, Industrial engineering, Information technology, Maintenance, Management, Marketing, Performance tuning, REST APIs, UI/UX design</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی (Help Desk) — پیشگامان فناوری اطلاعات هامون</title>
@@ -404,60 +458,6 @@ Asks for: Active Directory, Hyper-V, Linux, Server, VMware, Windows, Analysis, A
     <description>حامی سیستم شریف — تهران · IT &amp; Infrastructure
 
 Asks for: Banking, Benchmarking, Build, Business, Customer, Data, Discovery, Experimentation, Financial, Make, Market, Post, Prioritization, Roadmap, Strategy, Technical, Validation, Agile / Scrum, Analysis, Customer retention, End-to-End, Engagement, Fintech, Investment, KPIs, Market research, Ownership, Product Discovery, Product Manager, Product Roadmap, Product development, Product lifecycle</description>
-  </item>
-  <item>
-    <title>(Senior DevOps (AI-Native — ابرناک</title>
-    <link>https://jobinja.ir/companies/abrnoc/jobs/tv2U</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/abrnoc/jobs/tv2U</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ابرناک — تهران · IT &amp; Infrastructure
-
-Asks for: Ansible, Bash, Claude, Codex, Docker, Go, Infrastructure, Kubernetes, Linux, Logging, Python, Scripting, Terraform, Artificial intelligence, Automation, CI/CD, Debugging, DevOps, Infrastructure as code, Management, Networking, Observability, Process improvement, Recruitment, Security, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس فایروال (دیتاسنتر) — راهکار پرداز نوین</title>
-    <link>https://jobinja.ir/companies/rahkar-pardaz-novin/jobs/tvFv</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/rahkar-pardaz-novin/jobs/tvFv</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>راهکار پرداز نوین — تهران · IT &amp; Infrastructure
-
-Asks for: Cisco, FortiGate, Juniper, Security+, Certifications, Documentation, Firewalls, Management, Microsoft Office, Networking, Observability, Security</description>
-  </item>
-  <item>
-    <title>(Senior SOC Analyst (Tier 2 — مهسان</title>
-    <link>https://jobinja.ir/companies/mahsan-1/jobs/tvIg</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mahsan-1/jobs/tvIg</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مهسان — تهران · IT &amp; Infrastructure
-
-Asks for: ELK, Incident, Linux, Splunk, Windows, Analysis, Cyber Kill Chain, EDR / EPP, Firewalls, IDS / IPS, Incident response, Management, Networking, Observability, Process improvement, Record keeping, Reporting, Risk management, SIEM / SOAR, Security, Threat Hunting</description>
-  </item>
-  <item>
-    <title>کارشناس ارشد عملیات شبکه و سرویس‌ها (NOC &amp; Service Operations) — مهسان</title>
-    <link>https://jobinja.ir/companies/mahsan-1/jobs/tkIe</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mahsan-1/jobs/tkIe</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مهسان — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Alerting, Availability, Bash, ELK, Graylog, Incident, Jira, Linux, Operations, Post, Python, Review, Runbook, Service, Shell, VMware, Analysis, Authentication, Automation, Communication, Customer service, DevOps, Documentation, High availability, Identity &amp; access management, Incident management, Management, Networking, Observability, Process improvement, Record keeping, SLA management, SLO / error budget, Technical support, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>متخصص DevOps (شیراز) — سیوان لند</title>
-    <link>https://jobinja.ir/companies/savana-beton-sana/jobs/tvsB</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/savana-beton-sana/jobs/tvsB</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>سیوان لند — شیراز · IT &amp; Infrastructure
-
-Asks for: Ansible, Bash, ELK, Elasticsearch, Grafana, Helm, Kibana, Kubernetes, Logstash, Python, Terraform, Automation, CI/CD, Cloud architecture, Communication, DevOps, Firewalls, Infrastructure as code, Linux administration, Management, Networking, Observability, Problem solving, Reporting, Sales, Security, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس HelpDesk (آقا) — حسابو</title>
-    <link>https://jobinja.ir/companies/hesabo/jobs/tvJt</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/hesabo/jobs/tvJt</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>حسابو — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Cisco, Email, Hardware, Infrastructure, Internet, Microsoft, MikroTik, Offboarding, Printer, Recovery, Remote, Router, Support, Switch, Ticketing, VMware, Wi-Fi, Windows, Wireshark, Analysis, Attention to detail, Backup and recovery, Communication, Disaster recovery, Documentation, Firewalls, Incident management, Maintenance, Management, Networking, Observability, Onboarding, Ownership, Record keeping, Root cause analysis, SLA management, Technical support, Troubleshooting, Virtualization</description>
   </item>
 </channel>
 </rss>
