@@ -8,6 +8,33 @@
   <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>Platform Engineer — ویستا سامانه آسا</title>
+    <link>https://jobinja.ir/companies/asa-1/jobs/tvu9</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asa-1/jobs/tvu9</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ویستا سامانه آسا — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, ArgoCD, Azure, Cloud, Deploy, Docker, Infrastructure, Kubernetes, Langfuse, Linux, Logging, Milvus, Qdrant, Scripting, Services, Support, Transaction, Weaviate, vLLM, Artificial intelligence, Auditing, Automation, CI/CD, Databases, DevOps, Distributed systems, GitOps, Job Description, Large language models, Observability, Site reliability, Troubleshooting</description>
+  </item>
+  <item>
+    <title>Cloud Engineer — ویستا سامانه آسا</title>
+    <link>https://jobinja.ir/companies/asa-1/jobs/tvuH</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asa-1/jobs/tvuH</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ویستا سامانه آسا — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, Ansible, ArgoCD, Cloud, Deploy, Docker, Git, GitLab, Go, Grafana, Incident, Kubernetes, Linux, Logging, Prometheus, Pulumi, Python, Rancher, Services, Software, Terraform, Transaction, VictoriaMetrics, Automation, CI/CD, Configuration management, DevOps, Documentation, GitOps, Incident response, Linux administration, Management, Observability, Problem solving, Scalability, Site reliability, Software development, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس ارشد زیرساخت و مجازی‌سازی (VMware-vSAN) — پردازش آسان آیان</title>
+    <link>https://jobinja.ir/companies/ayanco/jobs/tvNW</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/ayanco/jobs/tvNW</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پردازش آسان آیان — تهران · IT &amp; Infrastructure
+
+Asks for: Ansible, Availability, Cloud, Domain, Infrastructure, Latency, Linux, Log, Operations, Recovery, SAS, Service, Terraform, VMware, Veeam, vSAN, Analysis, Automation, Backup and recovery, Capacity planning, Certifications, Disaster recovery, Documentation, High availability, Incident management, Management, Networking, Observability, Process improvement, Root cause analysis, Storage, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
     <title>کارشناس ارشد DevOps  — تدبیر پرداز</title>
     <link>https://jobinja.ir/companies/tadbirpardaz/jobs/tvvF</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/tadbirpardaz/jobs/tvvF</guid>
@@ -431,33 +458,6 @@ Asks for: Active Directory, Alert, Event, Incident, Linux, Log, Security+, Splun
     <description>گروه اسنپ — تهران · IT &amp; Infrastructure
 
 Asks for: Accountability, Build, Control, Customer, Data, Email, Exchange, Fortinet, Functional, Hardware, Infrastructure, Jira, Linux, Microsoft, Microsoft Exchange, Outlook, Service, Support, Technical, Ticketing, Tracking, Wi-Fi, Windows, macOS, Authentication, Communication, DevOps, Disaster recovery, Documentation, English proficiency, Management, Networking, Ownership, Security, Teamwork, Technical support, Testing, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس IT (آقا) — عمران صنعت آکام</title>
-    <link>https://jobinja.ir/companies/omran-sanat-akam-1/jobs/tveu</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/omran-sanat-akam-1/jobs/tveu</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>عمران صنعت آکام — تهران · IT &amp; Infrastructure
-
-Asks for: CSS, HTML, Microsoft Word, Communication, Creativity, Documentation, Firewalls, Networking, Observability, Problem solving, Process improvement, Teamwork, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>تکنسین فنی (زیرساخت دیتاسنتر-آقا) — مرسا</title>
-    <link>https://jobinja.ir/companies/morsainternational/jobs/tvf9</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/morsainternational/jobs/tvf9</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>مرسا — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Hyper-V, Linux, Server, VMware, Windows, Analysis, Attention to detail, Communication, Disaster recovery, Documentation, Firewalls, Management, Networking, Observability, Problem solving, Record keeping, Reporting, Security, Storage, Teamwork, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>Senior Product Manager (امریه سربازی-غائبین) — حامی سیستم شریف</title>
-    <link>https://jobinja.ir/companies/hamisystem/jobs/tvIo</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/hamisystem/jobs/tvIo</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>حامی سیستم شریف — تهران · IT &amp; Infrastructure
-
-Asks for: Banking, Benchmarking, Build, Business, Customer, Data, Discovery, Experimentation, Financial, Make, Market, Post, Prioritization, Roadmap, Strategy, Technical, Validation, Agile / Scrum, Analysis, Customer retention, End-to-End, Engagement, Fintech, Investment, KPIs, Market research, Ownership, Product Discovery, Product Manager, Product Roadmap, Product development, Product lifecycle</description>
   </item>
 </channel>
 </rss>

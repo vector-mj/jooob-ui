@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Industrial Engineering postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 29 Aug 2026 10:11:59 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/industrial-engineering.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس برنامه ریزی زنجیره تامین — داروسازی دکتر عبیدی</title>
+    <link>https://career.hrcando.ir/co/abidipharma/job-detail/c3cc0312-9d25-4159-8b54-f570f079e956</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/abidipharma/job-detail/c3cc0312-9d25-4159-8b54-f570f079e956</guid>
+    <pubDate>Sat, 29 Aug 2026 10:11:59 +0000</pubDate>
+    <description>داروسازی دکتر عبیدی — تهران · Industrial Engineering
+
+Asks for: Python, Analysis, Inventory management, Management, Observability, Risk management, Sales</description>
+  </item>
   <item>
     <title>کارشناس برنامه‌ریزی (کرج) — فروشگاه های زنجیره ای افق کوروش</title>
     <link>https://jobinja.ir/companies/ofogh-koorosh/jobs/tvEI</link>
@@ -134,11 +143,11 @@ Asks for: Analysis, Communication, Inventory management, Management, Reporting, 
 Asks for: Confluence, Miro, Visio, Agile / Scrum, Analysis, As-Is, Attention to detail, BPMN, Communication, Documentation, Management, Observability, Problem solving, Process improvement, Reporting, Stakeholder management, Teamwork, To-Be</description>
   </item>
   <item>
-    <title>تکنسین کنترل کیفیت - کارخانه الموت — مرکز فروش و توزیع تهران غرب</title>
+    <title>تکنسین کنترل کیفیت - کارخانه الموت — پروژه الموت</title>
     <link>https://career.hrcando.ir/co/Khoshgovar/job-detail/fda3b82f-93c5-4df0-9ebe-10be47919158</link>
     <guid isPermaLink="true">https://career.hrcando.ir/co/Khoshgovar/job-detail/fda3b82f-93c5-4df0-9ebe-10be47919158</guid>
     <pubDate>Sun, 23 Aug 2026 09:10:28 +0000</pubDate>
-    <description>مرکز فروش و توزیع تهران غرب — قزوین · Industrial Engineering
+    <description>پروژه الموت — قزوین · Industrial Engineering
 
 Asks for: Attention to detail, Communication, GMP, HACCP, HSE, ISO standards, Management, Observability, Ownership, Quality control, Record keeping, Regulatory compliance, Reporting, Supervision, Teamwork</description>
   </item>
@@ -447,15 +456,6 @@ Asks for: Training</description>
     <description>اسنپ شاپ — تهران · Industrial Engineering
 
 Asks for: Accountability, Business, Coordination, Data, Distribution, Feedback, Industrial, Insights, Leads, Microsoft, Microsoft Excel, Operations, Power BI, Productivity, Python, Service, Support, Transportation, Analysis, Business intelligence, Communication, Data-driven, End-to-End, Incident management, Industrial engineering, KPI management, Management, OKR, Observability, Ownership, Process improvement, Real-Time, Reporting, Supervision, Supply chain</description>
-  </item>
-  <item>
-    <title>کارشناس ارشد عملیات — صندوقچه</title>
-    <link>https://jobinja.ir/companies/sandoghche-1/jobs/t7Ua</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/sandoghche-1/jobs/t7Ua</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-    <description>صندوقچه — تهران · Industrial Engineering
-
-Asks for: Business, ClickUp, Customer, Data, Finance, Implementation, Insights, Jira, Notion, Operations, Reconciliation, SQL, Support, Transaction, Analysis, Automation, Business intelligence, Customer service, Data-driven, Documentation, Incident management, KPIs, Process improvement, Regulatory compliance, Reporting, Root cause analysis, Testing</description>
   </item>
 </channel>
 </rss>
