@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Software Engineering postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 29 Aug 2026 10:06:46 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدرس MCSA — مجتمع فنی تهران نمایندگی اکباتان</title>
+    <link>https://jobinja.ir/companies/tehran-institute-of-technology-12/jobs/tvuM</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tehran-institute-of-technology-12/jobs/tvuM</guid>
+    <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مجتمع فنی تهران نمایندگی اکباتان — تهران · Software Engineering
+
+Asks for: Active Directory, Control, Domain, Functional, IPsec, IPv4, Internet, Operations, Recovery, Remote, Replication, Review, Server, Service, Services, Windows, Backup and recovery, Code review, Distributed systems, Group Policy, High availability, Identity &amp; access management, Management, Networking, Observability, Security, Storage, Training, Troubleshooting, Virtualization</description>
+  </item>
   <item>
     <title>طراح UI/UX — مدل</title>
     <link>https://career.hrcando.ir/co/iraneit/job-detail/a4342416-8078-41d5-b3a9-dc307d007ae9</link>
@@ -15,6 +24,15 @@
     <description>مدل — تهران · Software Engineering
 
 Asks for: Brief, CSS, Component, Design, Figma, Flow, HTML, Sketch, Accessibility, Analysis, Attention to detail, Communication, Design system, Documentation, High availability, Management, Marketing, Process improvement, Regulatory compliance, Teamwork, UI/UX design, User Flow</description>
+  </item>
+  <item>
+    <title>(Software Engineer(Golang — صباایده</title>
+    <link>https://jobinja.ir/companies/sabaidea-2/jobs/tvvJ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/sabaidea-2/jobs/tvvJ</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>صباایده — تهران · Software Engineering
+
+Asks for: Build, ClickHouse, Concurrency, Data, Design, Docker, Go, Implementation, Kafka, Maintainability, Make, Modeling, MongoDB, OpenSearch, PostgreSQL, RabbitMQ, Redis, SQL, Service, Services, Software, Task, Technical, Artificial intelligence, Data modelling, Data pipelines, Databases, Debugging, Design patterns, Design system, Distributed systems, Documentation, End-to-End, Machine learning, Networking, Observability, Ownership, Problem solving, REST APIs, Software architecture, System Design, Testing</description>
   </item>
   <item>
     <title>Software Support Specialist — ویستا سامانه آسا</title>
@@ -438,24 +456,6 @@ Asks for: CSS, Design, Figma, HTML, Analysis, Artificial intelligence, Conversio
     <description>توسعه سامانه‌های نرم‌افزاری نگین (توسن) — تهران · Software Engineering
 
 Asks for: .NET, Authorization, C#, Caching, Design, Docker, Framework, Keycloak, Kubernetes, NoSQL, Oracle, Redis, SQL, SQL Server, Server, gRPC, Analysis, Authentication, Clean code, Communication, Databases, Design patterns, Domain-driven design, Identity &amp; access management, Management, Microservices, Object-oriented programming, SOLID principles, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>JavaScript) Senior Full-Stack Developer-اصفهان-دورکاری) — زرین نقش زمرد</title>
-    <link>https://jobinja.ir/companies/zomorod-2/jobs/t7Eg</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/zomorod-2/jobs/t7Eg</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    <description>زرین نقش زمرد — اصفهان · Software Engineering
-
-Asks for: BullMQ, Docker, GitLab, JavaScript, Kubernetes, NestJS, PostgreSQL, React, Redis, Remote, Review, WebSocket, Attention to detail, CI/CD, Code review, Communication, Full-stack, Management, Ownership, Performance tuning, Process improvement, Real-Time</description>
-  </item>
-  <item>
-    <title>کارآموز طراحی سایت (کرج) — پالیز محتوا</title>
-    <link>https://jobinja.ir/companies/palizmohtava/jobs/tvo3</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/palizmohtava/jobs/tvo3</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پالیز محتوا — کرج · Software Engineering
-
-Asks for: Elementor, Microsoft Word, Networking, Recruitment, SEO, Teamwork, Training</description>
   </item>
 </channel>
 </rss>

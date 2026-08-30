@@ -5,8 +5,26 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>System Administrator — تامین خدمات سیستم های کاربردی کاسپین</title>
+    <link>https://jobinja.ir/companies/caspian-solution-providers/jobs/tvTt</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/caspian-solution-providers/jobs/tvTt</guid>
+    <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+    <description>تامین خدمات سیستم های کاربردی کاسپین — تهران · IT &amp; Infrastructure
+
+Asks for: Data, Domain, EMC, HPE, Linux, Microsoft, SQL, SQL Server, Server, SolarWinds, VMware, Veeam, Windows, Zabbix, Disaster recovery, Linux administration, Management, Observability, Storage, Supervision</description>
+  </item>
+  <item>
+    <title>کارشناس شبکه — مهیمن</title>
+    <link>https://jobinja.ir/companies/mohaymen/jobs/tvNE</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/mohaymen/jobs/tvNE</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>مهیمن — تهران · IT &amp; Infrastructure
+
+Asks for: Cisco, FortiGate, Linux, VMware, Veeam, Analysis, Automation, Backup and recovery, Certifications, Communication, Disaster recovery, Firewalls, Management, Networking, Observability, Process improvement, Security, Supervision, Virtualization</description>
+  </item>
   <item>
     <title>Platform Engineer — ویستا سامانه آسا</title>
     <link>https://jobinja.ir/companies/asa-1/jobs/tvu9</link>
@@ -176,7 +194,7 @@ Asks for: Bash, Grafana, Latency, Linux, Prometheus, Python, Zabbix, Analysis, A
     <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
     <description>انتقال داده ماهان (ماهان نت) — تهران · IT &amp; Infrastructure
 
-Asks for: Cisco, Docker, Infrastructure, KVM, Linux, Server, Services, VMware, Analysis, Backup and recovery, Certifications, Communication, Disaster recovery, Documentation, Management, Networking, Ownership, Storage, Supervision, Teamwork, Troubleshooting, Virtualization</description>
+Asks for: Cisco, Docker, IPv4, Infrastructure, KVM, Linux, Server, Services, VMware, Analysis, Backup and recovery, Certifications, Communication, Disaster recovery, Documentation, Management, Networking, Ownership, Storage, Supervision, Teamwork, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس پشتیبانی فنی (شیفت شب) — انتقال داده ماهان (ماهان نت)</title>
@@ -322,7 +340,7 @@ Asks for: Docker, ELK, Grafana, Kubernetes, Prometheus, Analysis, Attention to d
     <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
     <description>گرین وب — مشهد · IT &amp; Infrastructure
 
-Asks for: Domain, Helpdesk, Windows, Documentation, Management, Networking, Observability, Problem solving, Record keeping, Technical support, Troubleshooting</description>
+Asks for: Domain, Helpdesk, IPv4, Windows, Documentation, Management, Networking, Observability, Problem solving, Record keeping, Technical support, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس هماهنگی فنی (Technical Coordinator) — مدیریت فناوری اطلاعات و ارتباطات وصل</title>
@@ -440,24 +458,6 @@ Asks for: Alerting, Android, Authorization, Banking, Bug, Burp Suite, Cloud, Con
     <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
 
 Asks for: Control, OpenID Connect, Session, Web, Analysis, Authentication, English proficiency, Identity &amp; access management, Management, Networking, REST APIs, Risk management, Security, Testing</description>
-  </item>
-  <item>
-    <title>کارشناس لایه اول مرکز عملیات امنیت (Tier 1) — رویال پرداز تیام</title>
-    <link>https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvfj</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvfj</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Alert, Event, Incident, Linux, Log, Security+, Splunk, Windows, Analysis, Authentication, Documentation, EDR / EPP, Firewalls, IDS / IPS, Incident management, Management, Networking, Observability, Ownership, Process improvement, Record keeping, Reporting, SIEM / SOAR, Security, Teamwork, Threat Hunting, Threat Intelligence</description>
-  </item>
-  <item>
-    <title>IT Help Desk Specialist — گروه اسنپ</title>
-    <link>https://jobinja.ir/companies/snapp-group-1/jobs/tvsc</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/snapp-group-1/jobs/tvsc</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>گروه اسنپ — تهران · IT &amp; Infrastructure
-
-Asks for: Accountability, Build, Control, Customer, Data, Email, Exchange, Fortinet, Functional, Hardware, Infrastructure, Jira, Linux, Microsoft, Microsoft Exchange, Outlook, Service, Support, Technical, Ticketing, Tracking, Wi-Fi, Windows, macOS, Authentication, Communication, DevOps, Disaster recovery, Documentation, English proficiency, Management, Networking, Ownership, Security, Teamwork, Technical support, Testing, Troubleshooting</description>
   </item>
 </channel>
 </rss>
