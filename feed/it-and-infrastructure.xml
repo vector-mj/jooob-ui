@@ -5,8 +5,53 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 31 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس پشتیبانی و زیرساخت IT (آقا) — فرافن</title>
+    <link>https://jobinja.ir/companies/farafan/jobs/tvnI</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/farafan/jobs/tvnI</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>فرافن — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Linux, Replication, Server, VMware, Veeam, VoIP, Windows, Analysis, Attention to detail, Backup and recovery, Certifications, Communication, CompTIA Network+, Continuous learning, Documentation, Group Policy, Management, Networking, Observability, Ownership, Problem solving, Root cause analysis, Teamwork, Technical support, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>کارشناس ارزیابی امنیت زیرساخت سرورها — رویال پرداز تیام</title>
+    <link>https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvT5</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvT5</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Apache, Bug, Container, Docker, Linux, MySQL, Nessus, Nginx, OpenVAS, Oracle, PostgreSQL, SQL, SQL Server, Server, Web, Windows, Analysis, Attention to detail, Auditing, Certifications, Databases, Documentation, English proficiency, Group Policy, Networking, Ownership, Penetration testing, Problem solving, Record keeping, Regulatory compliance, Reporting, Risk management, Security, Teamwork, Testing, Vulnerability scanning</description>
+  </item>
+  <item>
+    <title>کارشناس تست اپلیکیشن (تست نفوذ) — رویال پرداز تیام</title>
+    <link>https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvTi</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/royal-pardaz-tiam-1/jobs/tvTi</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
+
+Asks for: Control, OpenID Connect, Session, Web, Analysis, Authentication, English proficiency, Identity &amp; access management, Management, Networking, REST APIs, Risk management, Security, Testing</description>
+  </item>
+  <item>
+    <title>کارشناس امنیت شبکه — دیجی شهر</title>
+    <link>https://jobinja.ir/companies/dg-shahr/jobs/tvy6</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/dg-shahr/jobs/tvy6</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>دیجی شهر — تهران · IT &amp; Infrastructure
+
+Asks for: Bash, Burp Suite, Cisco, Control, IPsec, Kubernetes, Linux, Metasploit, Nessus, Nmap, OpenVAS, Postman, Python, SQL, Services, Trivy, Web, Automation, Communication, DevOps, Firewalls, Identity &amp; access management, Linux administration, Management, Networking, Observability, Penetration testing, REST APIs, Reporting, Security, Testing, Vulnerability scanning</description>
+  </item>
+  <item>
+    <title>سرپرست مرکز عملیات شبکه (NOC Supervisor-بومهن) — فناپ</title>
+    <link>https://jobinja.ir/companies/fanap/jobs/tvdA</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/fanap/jobs/tvdA</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>فناپ — بومهن · IT &amp; Infrastructure
+
+Asks for: Cisco, Fortinet, Grafana, Incident, Linux, MikroTik, Prometheus, Zabbix, Analysis, Change management, Communication, Customer service, Documentation, High availability, Incident management, KPI management, Management, Networking, Observability, Process improvement, Reporting, Root cause analysis, SLA management, Stakeholder management, Supervision, Training, Troubleshooting, Virtualization</description>
+  </item>
   <item>
     <title>System Administrator — تامین خدمات سیستم های کاربردی کاسپین</title>
     <link>https://jobinja.ir/companies/caspian-solution-providers/jobs/tvTt</link>
@@ -15,6 +60,42 @@
     <description>تامین خدمات سیستم های کاربردی کاسپین — تهران · IT &amp; Infrastructure
 
 Asks for: Data, Domain, EMC, HPE, Linux, Microsoft, SQL, SQL Server, Server, SolarWinds, VMware, Veeam, Windows, Zabbix, Disaster recovery, Linux administration, Management, Observability, Storage, Supervision</description>
+  </item>
+  <item>
+    <title>SRE Engineer — دیجی پی</title>
+    <link>https://career.hrcando.ir/co/digipay/job-detail/ac7bb496-b180-4a3b-b7e7-b8e592b849d2</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/digipay/job-detail/ac7bb496-b180-4a3b-b7e7-b8e592b849d2</guid>
+    <pubDate>Sat, 29 Aug 2026 15:57:38 +0000</pubDate>
+    <description>دیجی پی — تهران · IT &amp; Infrastructure
+
+Asks for: Availability, Benchmarking, Build, Caching, Computer, Data, Design, Docker, ELK, Go, Idempotency, Incident, Infrastructure, Java, Kubernetes, Linux, Logging, Make, Optimization, Profiling, Programming, Prometheus, Python, RabbitMQ, Redis, Review, Scripting, Software, Technical, Analysis, Automation, CI/CD, Capacity planning, Communication, Container orchestration, Databases, DevOps, Distributed systems, Documentation, High availability, Incident management, Management, Observability, Ownership, Performance tuning, Problem solving, Process improvement, Root cause analysis, Scalability, Site reliability, Testing, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس DevOps — عصر فناوری دانش</title>
+    <link>https://jobinja.ir/companies/kte-1/jobs/tvNq</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/kte-1/jobs/tvNq</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>عصر فناوری دانش — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, Ansible, Apache NiFi, ArgoCD, Availability, ClickHouse, Container, Docker, Flink, Git, Grafana, HAProxy, Harbor, HashiCorp Vault, Helm, Jenkins, Kafka, Kong, Kubernetes, Linux, Logging, Nexus, Nginx, OpenTelemetry, Prometheus, Python, Recovery, Shell, Spark, Vault, Analysis, Attention to detail, Automation, Backup and recovery, CI/CD, Container orchestration, DevOps, Disaster recovery, Documentation, English proficiency, Firewalls, GitOps, High availability, Management, Networking, Observability, Ownership, Problem solving, REST APIs, Reverse Proxy, Security, Storage, Troubleshooting</description>
+  </item>
+  <item>
+    <title>Linux Admin (کرج) — پارس پویش فن آور</title>
+    <link>https://jobinja.ir/companies/parspooyesh/jobs/tvku</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/parspooyesh/jobs/tvku</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پارس پویش فن آور — کرج · IT &amp; Infrastructure
+
+Asks for: Ansible, Apache, Bash, Cisco, Docker, Linux, MikroTik, MongoDB, Nginx, Oracle, PostgreSQL, Python, Redis, Zabbix, Customer service, Databases, DevOps, English proficiency, Linux administration, Networking, Problem solving, Troubleshooting</description>
+  </item>
+  <item>
+    <title>اپراتور مرکز مانیتورینگ (آقا-کرج) — پارس پویش فن آور</title>
+    <link>https://jobinja.ir/companies/parspooyesh/jobs/tvkE</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/parspooyesh/jobs/tvkE</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پارس پویش فن آور — کرج · IT &amp; Infrastructure
+
+Asks for: Docker, ELK, Grafana, Kibana, Kubernetes, Linux, NoSQL, Prometheus, SQL, Windows, Zabbix, Analysis, Attention to detail, Communication, Customer service, DevOps, Documentation, Incident management, Management, Networking, Observability, Ownership, Reporting, Supervision, Teamwork</description>
   </item>
   <item>
     <title>کارشناس تست نفوذ — توسعه سامانه‌های نرم‌افزاری نگین (توسن)</title>
@@ -377,87 +458,6 @@ Asks for: Azure, Coordination, GitLab, Grafana, Jira, Kibana, Operations, Postma
     <description>مرسا — تهران · IT &amp; Infrastructure
 
 Asks for: Active Directory, Hyper-V, Linux, Server, VMware, Windows, Communication, Disaster recovery, Documentation, Firewalls, Management, Networking, Observability, Record keeping, Reporting, Security, Storage, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>Full-Stack Developer (Flutter &amp; Backend) — پرووم</title>
-    <link>https://jobinja.ir/companies/prowem/jobs/tvVk</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/prowem/jobs/tvVk</guid>
-    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پرووم — تهران · IT &amp; Infrastructure
-
-Asks for: Cloud, Dart, Design, Docker, Flutter, Git, Go, Linux, Maintainability, NestJS, Next.js, Node.js, PostgreSQL, SQL, SQLite, Software, TypeScript, WebSocket, Authentication, CI/CD, Communication, English proficiency, Full-stack, Management, Ownership, Problem solving, REST APIs, Real-Time, Software architecture, Teamwork, Testing</description>
-  </item>
-  <item>
-    <title>BI Developer — اسنپ مارکت</title>
-    <link>https://jobinja.ir/companies/snappmarket/jobs/tvgV</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/snappmarket/jobs/tvgV</guid>
-    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    <description>اسنپ مارکت — تهران · IT &amp; Infrastructure
-
-Asks for: Availability, Build, Business, Computer, Data, Design, Functional, Industrial, Legacy, Microsoft, Mid-Level, Migration, Modeling, Optimization, Power BI, Python, Refactor, SQL, SQL Server, Schema, Scripting, Server, SharePoint, Warehouse, Web, Analysis, Analytics, Artificial intelligence, Automation, Business intelligence, Data modelling, Data warehousing, Documentation, ETL / ELT, High availability, Industrial engineering, Information technology, Maintenance, Management, Marketing, Performance tuning, REST APIs, UI/UX design</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی فنی (Help Desk) — پیشگامان فناوری اطلاعات هامون</title>
-    <link>https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvwO</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pishgaman-fanavari-etelaat-haumoun/jobs/tvwO</guid>
-    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پیشگامان فناوری اطلاعات هامون — تهران · IT &amp; Infrastructure
-
-Asks for: Microsoft, Windows, Attention to detail, Automation, Certifications, ICDL, Management, Microsoft Office, Networking, Performance tuning, Problem solving, Reporting, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس ارشد شبکه (آقا) — دانا پرداز</title>
-    <link>https://jobinja.ir/companies/danapardaz/jobs/tvbP</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/danapardaz/jobs/tvbP</guid>
-    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    <description>دانا پرداز — تهران · IT &amp; Infrastructure
-
-Asks for: Active Directory, Asterisk, Cisco, Control, Elastix, MikroTik, Restore, Server, VMware, Veeam, VoIP, Windows, pfSense, Backup and recovery, Communication, Documentation, Firewalls, Management, Networking, Observability, Problem solving, Storage, Troubleshooting</description>
-  </item>
-  <item>
-    <title>DevOps Engineer — گروه اسنپ</title>
-    <link>https://jobinja.ir/companies/snapp-group-1/jobs/tvbM</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/snapp-group-1/jobs/tvbM</guid>
-    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    <description>گروه اسنپ — تهران · IT &amp; Infrastructure
-
-Asks for: Alerting, ArgoCD, Bash, Build, Business, Docker, Grafana, Incident, Infrastructure, Kubernetes, Linux, Logging, Operations, Prometheus, Recovery, Scripting, Service, Splunk, Support, Analysis, Backup and recovery, Business continuity, CI/CD, Continuous learning, Databases, DevOps, Disaster recovery, GitOps, Incident management, Networking, Observability, Ownership, Problem solving, Security, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس DevOps — سروش رسانه</title>
-    <link>https://jobinja.ir/companies/soroush-rasaneh-1/jobs/tvWc</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/soroush-rasaneh-1/jobs/tvWc</guid>
-    <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-    <description>سروش رسانه — تهران · IT &amp; Infrastructure
-
-Asks for: Alerting, Ansible, Availability, Bash, Container, Docker, ELK, Git, GitLab, Grafana, Harbor, Helm, Infrastructure, JFrog Artifactory, Kubernetes, Linux, Logging, Loki, Nexus, Nginx, Prometheus, Python, Repository, Scripting, Terraform, Analysis, Automation, CI/CD, Container orchestration, DevOps, GitOps, High availability, Incident management, Infrastructure as code, Management, Networking, Observability, Reverse Proxy, Root cause analysis, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس امنیت فناوری اطلاعات — فناپ زیرساخت</title>
-    <link>https://jobinja.ir/companies/fanap-4/jobs/tge7</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/fanap-4/jobs/tge7</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناپ زیرساخت — تهران · IT &amp; Infrastructure
-
-Asks for: Burp Suite, Linux, Nessus, Nmap, Python, Server, Windows, Wireshark, Agile / Scrum, Analysis, Attention to detail, Auditing, Communication, Databases, Documentation, Firewalls, Identity &amp; access management, Management, Networking, Observability, Process improvement, Regulatory compliance, Reporting, Risk management, Security, Teamwork</description>
-  </item>
-  <item>
-    <title>کارشناس HelpDesk — فناوری و راه حل‏‏ های هوشمند سپهر</title>
-    <link>https://jobinja.ir/companies/hooshmand-sepehr/jobs/tveo</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/hooshmand-sepehr/jobs/tveo</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فناوری و راه حل‏‏ های هوشمند سپهر — تهران · IT &amp; Infrastructure
-
-Asks for: Bash, Cisco, Confluence, Control, Firmware, FortiGate, Helpdesk, IPsec, Jira, Linux, Log, Logging, Microsoft, MikroTik, PowerShell, QoS, Restore, Runbook, Service, Services, Ubiquiti, VMware, Veeam, Web, Windows, Zabbix, iLO, macOS, Backup and recovery, Certifications, Communication, Documentation, Firewalls, High availability, ITSM / ITIL, Management, Networking, Observability, Process improvement, SIEM / SOAR, Security, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس ‌BI — رایان پرداز کاوش</title>
-    <link>https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/tv9g</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/rayan-pardaz-kavosh/jobs/tv9g</guid>
-    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رایان پرداز کاوش — تهران · IT &amp; Infrastructure
-
-Asks for: Data, Insights, Modeling, Power BI, SQL, SQL Server, Server, Warehouse, Analysis, Analytics, Attention to detail, Business intelligence, Data modelling, Data warehousing, ETL / ELT, Management, Observability, Power Query, Problem solving, Reporting, Stakeholder management, Teamwork</description>
   </item>
 </channel>
 </rss>
