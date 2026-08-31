@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New General Labour postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/general-labour.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>نظافتچی (آقا) — رک موبایل</title>
+    <link>https://jobinja.ir/companies/rook-mobile/jobs/tvMK</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/rook-mobile/jobs/tvMK</guid>
+    <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+    <description>رک موبایل — تهران · General Labour
+
+Asks for: Attention to detail, Ownership, Sales</description>
+  </item>
   <item>
     <title>مهماندار — جین وست</title>
     <link>https://jobinja.ir/companies/banim/jobs/tv74</link>
@@ -427,15 +436,6 @@ Asks for: Management</description>
     <description>سیم و زر زرین — تهران · General Labour
 
 Asks for: Communication, HSE, Ownership, Teamwork</description>
-  </item>
-  <item>
-    <title>کارمند پذیرایی و تشریفات (خانم) — صندوقمد</title>
-    <link>https://jobinja.ir/companies/sandoghmed/jobs/t7kK</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/sandoghmed/jobs/t7kK</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-    <description>صندوقمد — تهران · General Labour
-
-Asks for: Attention to detail, Inventory management, Management, Ownership, Training</description>
   </item>
 </channel>
 </rss>

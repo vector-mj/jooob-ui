@@ -8,6 +8,15 @@
   <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس هوش تجاری (BI) — آسیاتک</title>
+    <link>https://jobinja.ir/companies/asiatech/jobs/tvuj</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/asiatech/jobs/tvuj</guid>
+    <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+    <description>آسیاتک — تهران · Software Engineering
+
+Asks for: C#, Deploy, Git, Microsoft, Power BI, SQL, SQL Server, Server, Tableau, Analysis, Business intelligence, Documentation, Process improvement, Reporting</description>
+  </item>
+  <item>
     <title>مدرس MCSA — مجتمع فنی تهران نمایندگی اکباتان</title>
     <link>https://jobinja.ir/companies/tehran-institute-of-technology-12/jobs/tvuM</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/tehran-institute-of-technology-12/jobs/tvuM</guid>
@@ -24,6 +33,33 @@ Asks for: Active Directory, Control, Domain, Functional, IPsec, IPv4, Internet, 
     <description>مدل — تهران · Software Engineering
 
 Asks for: Brief, CSS, Component, Design, Figma, Flow, HTML, Sketch, Accessibility, Analysis, Attention to detail, Communication, Design system, Documentation, High availability, Management, Marketing, Process improvement, Regulatory compliance, Teamwork, UI/UX design, User Flow</description>
+  </item>
+  <item>
+    <title>Senior Full‑Stack Developer (Django-Vue.js) — گل گیفت</title>
+    <link>https://jobinja.ir/companies/golgift-1/jobs/tvNU</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/golgift-1/jobs/tvNU</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>گل گیفت — تهران · Software Engineering
+
+Asks for: Build, Claude, Copilot, Django, Docker, Docker Compose, Elasticsearch, Git, GitHub, GitLab, JavaScript, Linux, Nginx, Pinia, PostgreSQL, Python, Redis, Swagger, Vite, Vue, Vuex, Web, Webpack, Artificial intelligence, CI/CD, Clean code, Code review, English proficiency, Management, Problem solving, REST APIs, Sales, Teamwork, Training</description>
+  </item>
+  <item>
+    <title>کارشناس تحلیل داده و هوش تجاری — سرمایه زرین نورا</title>
+    <link>https://jobinja.ir/companies/noura-2/jobs/tvNp</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/noura-2/jobs/tvNp</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>سرمایه زرین نورا — تهران · Software Engineering
+
+Asks for: Data, Microsoft Excel, Power BI, Python, SQL, Storytelling, Tableau, Analysis, Attention to detail, Business intelligence, Conversion rate optimisation, Customer retention, Customer service, KPI management, KPIs, Management, Observability, Problem solving, Process improvement, Record keeping, Reporting, Risk management, Sales, UI/UX design</description>
+  </item>
+  <item>
+    <title>برنامه نویس ماینکرفت — اس تیچ</title>
+    <link>https://jobinja.ir/companies/steach/jobs/tv7Y</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/steach/jobs/tv7Y</guid>
+    <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
+    <description>اس تیچ — تهران · Software Engineering
+
+Asks for: Java, Communication, Customer service, English proficiency, Management, Networking</description>
   </item>
   <item>
     <title>(Software Engineer(Golang — صباایده</title>
@@ -420,42 +456,6 @@ Asks for: Documentation, Networking, Reporting</description>
     <description>پویان — تهران · Software Engineering
 
 Asks for: Android, Firebase, Git, Java, Kotlin, Multithreading, SQL, Communication, REST APIs, Teamwork, Troubleshooting</description>
-  </item>
-  <item>
-    <title>Python Core &amp; Library Developer — ازکی</title>
-    <link>https://jobinja.ir/companies/azki/jobs/tvOx</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/azki/jobs/tvOx</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ازکی — تهران · Software Engineering
-
-Asks for: Build, Data, Design, MySQL, Python, Refactor, Software, Test, Transactions, Data-driven, Databases, Maintenance, Object-oriented programming, Software architecture</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی فنی سایت (وردپرس-مشهد) — پارس وب</title>
-    <link>https://jobinja.ir/companies/parsweb/jobs/t7KZ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/parsweb/jobs/t7KZ</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پارس وب — مشهد · Software Engineering
-
-Asks for: CSS, DirectAdmin, Elementor, HTML, JavaScript, Microsoft, Microsoft Excel, Microsoft Word, PageSpeed, Photoshop, WooCommerce, WordPress, cPanel, Attention to detail, Backup and recovery, Communication, Customer service, Documentation, Management, Networking, Process improvement, Record keeping, Reporting, SEO, Security, Social media, Teamwork, Technical support, Training, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس تست نرم‌افزار (QA-مشهد) — نرم افزاری آموت</title>
-    <link>https://jobinja.ir/companies/amoot/jobs/tvOr</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/amoot/jobs/tvOr</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    <description>نرم افزاری آموت — مشهد · Software Engineering
-
-Asks for: Azure, Git, GitLab, Test, Analysis, Automation, DevOps, Documentation, Process improvement, Quality control, Reporting, Test Case</description>
-  </item>
-  <item>
-    <title>Product Designer — پرتال</title>
-    <link>https://jobinja.ir/companies/portal-ir/jobs/tvUz</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/portal-ir/jobs/tvUz</guid>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-    <description>پرتال — تهران · Software Engineering
-
-Asks for: CSS, Design, Figma, HTML, Analysis, Artificial intelligence, Conversion rate optimisation, Management, Ownership, Process improvement, Product Design, Product Manager, Sales, Teamwork, UI/UX design, Vibe Coding</description>
   </item>
 </channel>
 </rss>
