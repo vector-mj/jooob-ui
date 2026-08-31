@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Legal postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 29 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 31 Aug 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/legal.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>سرپرست حقوقی — الوپیک</title>
+    <link>https://jobinja.ir/companies/alopeyk-1/jobs/tvyh</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/alopeyk-1/jobs/tvyh</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>الوپیک — تهران · Legal
+
+Asks for: Communication, Contract management, E-commerce, Management, Negotiation, Observability, Regulatory compliance, Supervision, Supply chain</description>
+  </item>
   <item>
     <title>کارشناس حقوقی — صراف</title>
     <link>https://jobinja.ir/companies/saraf-4/jobs/tvjZ</link>
@@ -445,15 +454,6 @@ Asks for: ChatGPT, Contract, Contracts, Control, Coordination, Legal, Microsoft,
     <description>عدل ایرانیان — تهران · Legal
 
 Asks for: Analysis, Attention to detail, Contract management, Negotiation, Record keeping</description>
-  </item>
-  <item>
-    <title>کارشناس حقوقی — مسیر منتور</title>
-    <link>https://jobinja.ir/companies/masirmentor/jobs/tm65</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/masirmentor/jobs/tm65</guid>
-    <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-    <description>مسیر منتور — تهران · Legal
-
-Asks for: Communication, Contract management, Ownership</description>
   </item>
 </channel>
 </rss>
