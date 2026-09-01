@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Product postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Mon, 31 Aug 2026 17:39:55 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 07:53:29 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/product.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدیر محصول فنی — دنلکس</title>
+    <link>https://career.hrcando.ir/co/danayan/job-detail/a1dad644-592b-477f-be62-ea79de806dd0</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/danayan/job-detail/a1dad644-592b-477f-be62-ea79de806dd0</guid>
+    <pubDate>Tue, 01 Sep 2026 07:53:29 +0000</pubDate>
+    <description>دنلکس — تهران · Product
+
+Asks for: Backlog, Business, Confluence, Jira, Postman, Project, SQL, Story, Swagger, Trello, Webhook, Agile / Scrum, Analysis, Communication, Documentation, Management, Ownership, Process improvement, Project management, REST APIs, Reporting, Risk management, Security, Stakeholder management, Technical debt, UI/UX design, User story</description>
+  </item>
   <item>
     <title>مدیر محصول ارشد ( Product Lead) — ملّی گلد</title>
     <link>https://career.hrcando.ir/co/Melligold/job-detail/16e376d6-f05b-4f38-91c4-972ee4fbbb39</link>
@@ -15,6 +24,15 @@
     <description>ملّی گلد — تهران · Product
 
 Asks for: Accountability, Activation, Banking, Build, Business, Coaching, Computer, Customer, Data, Design, Discovery, Education, Experimentation, Finance, Financial, Functional, Gold, Infrastructure, Insights, Market, Marketplace, Operations, Optimization, Prioritization, Revenue, Roadmap, SaaS, Services, Strategy, Support, Technical, Transaction, Unit, Validation, Wallet, Acceptance Criteria, Analysis, Analytics, Communication, Customer retention, Customer service, Data-driven, End-to-End, Engagement, Fintech, Information technology, Investment, KPIs, Management, Marketing, Ownership, Performance tuning, Problem solving, Process improvement, Product Discovery, Product Roadmap, Product development, Product lifecycle, Product metrics, Regulatory compliance, Scalability, Security, Stakeholder management, Strategic thinking, Training</description>
+  </item>
+  <item>
+    <title>Product Owner — فناوران هوشمند راهی نو</title>
+    <link>https://jobinja.ir/companies/payrad-1/jobs/tvnz</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/payrad-1/jobs/tvnz</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>فناوران هوشمند راهی نو — تهران · Product
+
+Asks for: Backlog, Customer, Design, Domain, Jira, Roadmap, SaaS, Sprint, Story, Acceptance Criteria, Agile / Scrum, Analysis, B2B, Behaviour-driven development, Communication, Continuous learning, Customer service, Domain-driven design, Fintech, Management, Negotiation, Observability, Process improvement, Product Manager, Product Owner, Product Roadmap, Product metrics, Quality control, Record keeping, Recruitment, Stakeholder management, Supply chain, User story</description>
   </item>
   <item>
     <title>دستیار مدیر محصول — تجارت الکترونیک پارسیان</title>
@@ -436,24 +454,6 @@ Asks for: Analysis, Attention to detail, B2B, CRM, Communication, Contract manag
     <description>گلبان دانش سامانه کیش — تهران · Product
 
 Asks for: AutoCAD, Sketchup, Attention to detail, Ownership, Quality control, Record keeping, Supervision, Teamwork</description>
-  </item>
-  <item>
-    <title>مالک محصول (Product Owner) — فراز</title>
-    <link>https://jobinja.ir/companies/faraz-17/jobs/t4KZ</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/faraz-17/jobs/t4KZ</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فراز — تهران · Product
-
-Asks for: Backlog, Business, Jira, Metabase, Operations, Power BI, SQL, Story, A/B testing, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, B2C, Business Analyst, Business intelligence, Communication, Documentation, Fintech, KPI management, Management, Observability, Ownership, Process improvement, Product Manager, Product Owner, Product metrics, Quality control, Reporting, Stakeholder management, Testing, UI/UX design, User story</description>
-  </item>
-  <item>
-    <title>مدیر محصول (Product Manager-اصفهان) — دایرکتم</title>
-    <link>https://jobinja.ir/companies/directam/jobs/t77g</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/directam/jobs/t77g</guid>
-    <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-    <description>دایرکتم — اصفهان · Product
-
-Asks for: SaaS, Agile / Scrum, Analysis, Communication, Documentation, Management, Process improvement, Product Manager, Sales, Stakeholder management, User story</description>
   </item>
 </channel>
 </rss>
