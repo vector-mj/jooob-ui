@@ -5,8 +5,44 @@
   <link>https://jooob.ir</link>
   <description>New Software Engineering postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 01 Sep 2026 10:55:21 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس تست و تضمین کیفیت (QA Engineer) — داده ورزی سداد</title>
+    <link>https://jobinja.ir/companies/sadad-1/jobs/tv3b</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/sadad-1/jobs/tv3b</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>داده ورزی سداد — تهران · Software Engineering
+
+Asks for: Control, Docker, Functional, Grafana, JMeter, JavaScript, Kubernetes, Playwright, Postman, Prometheus, PyTest, Python, Selenium, Test, Agile / Scrum, Automation, CI/CD, Management, Observability, Process improvement, Quality control, Record keeping, Reporting, Security, Teamwork</description>
+  </item>
+  <item>
+    <title>کارشناس فرانت اند (Front-End) — رونیکس</title>
+    <link>https://jobinja.ir/companies/ronix-1/jobs/tjYG</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/ronix-1/jobs/tjYG</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>رونیکس — تهران · Software Engineering
+
+Asks for: Bootstrap, Design, Figma, JavaScript, Jira, React, Artificial intelligence, Attention to detail, Communication, Design system, DevOps, English proficiency, Record keeping, Teamwork, Troubleshooting</description>
+  </item>
+  <item>
+    <title>PHP-Laravel) Senior Back-End Developer-اصفهان) — دایرکتم</title>
+    <link>https://jobinja.ir/companies/directam/jobs/tjCf</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/directam/jobs/tjCf</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>دایرکتم — اصفهان · Software Engineering
+
+Asks for: Design, Docker, Event, GitHub, GitLab, Laravel, Legacy, Linux, MongoDB, MySQL, NestJS, Node.js, PHP, PHPUnit, Redis, Refactor, Unit, Agile / Scrum, Analysis, CI/CD, Debugging, Design patterns, DevOps, Documentation, Event-driven architecture, Problem solving, Process improvement, Real-Time, SOLID principles</description>
+  </item>
+  <item>
+    <title>کارشناس پشتیبانی نرم‌افزار (باران-Rain-شهرقدس) — پوشاک ایرانیان</title>
+    <link>https://jobinja.ir/companies/iranian-33/jobs/tv3D</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/iranian-33/jobs/tv3D</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>پوشاک ایرانیان — شهر قدس · Software Engineering
+
+Asks for: Inventory management, Networking, Reporting, Technical support</description>
+  </item>
   <item>
     <title>Senior Product Designer — اسنپ فود</title>
     <link>https://career.hrcando.ir/co/snappfood/job-detail/2c426158-eb59-48f7-ac69-2b4d8f8c222e</link>
@@ -296,6 +332,24 @@ Asks for: Agent, AutoGen, Build, Business, C#, Cloud, CrewAI, Data, Design, Func
 Asks for: Agent, AutoGen, Build, Business, C#, CrewAI, Data, Design, Function, Go, JavaScript, LangGraph, OpenAI, Programming, Prompt, Python, Queues, Services, Software, Story, TypeScript, Artificial intelligence, Context Engineering, Creativity, Databases, Large language models, Observability, Prompt Engineering, REST APIs, Retrieval augmented generation, Tool Calling</description>
   </item>
   <item>
+    <title>برنامه‌نویس وردپرس — ارمغان راه طلایی</title>
+    <link>https://jobinja.ir/companies/armaghan-rahe-talaee/jobs/tv1n</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/armaghan-rahe-talaee/jobs/tv1n</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>ارمغان راه طلایی — تهران · Software Engineering
+
+Asks for: Animation, CSS, Figma, HTML, JavaScript, Microsoft Word, PHP, Post, Web, WordPress, Core Web Vitals, Documentation, Responsive design, SEO, Teamwork</description>
+  </item>
+  <item>
+    <title>کارشناس دواپس (Docker/Kubernetes-مشهد) — گروه نرم افزاری پارت</title>
+    <link>https://jobinja.ir/companies/part-financial-data-processing/jobs/tvnM</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/part-financial-data-processing/jobs/tvnM</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>گروه نرم افزاری پارت — مشهد · Software Engineering
+
+Asks for: Ansible, Bash, Cloud, Docker, ELK, GitLab, Grafana, HAProxy, Infrastructure, Jenkins, Kubernetes, Linux, Mid-Level, Nginx, NoSQL, Prometheus, RabbitMQ, SQL, Scripting, Terraform, Analysis, Automation, CI/CD, Communication, Continuous learning, DevOps, Documentation, High availability, Infrastructure as code, Microservices, Networking, Observability, Performance tuning, Problem solving, Process improvement, Reporting, Scalability, Security, Teamwork</description>
+  </item>
+  <item>
     <title>مدیر پروژه نرم‌افزار — دی کامپیوتر</title>
     <link>https://jobinja.ir/companies/tiger-1/jobs/tvyA</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/tiger-1/jobs/tvyA</guid>
@@ -402,60 +456,6 @@ Asks for: Function, Optimization, SQL, SQL Server, Server, View, Communication, 
     <description>دانش رفاه پردیس — تهران · Software Engineering
 
 Asks for: Bug, Cypress, Design, Functional, Playwright, Postman, Regression, SQL, Software, Tracking, Web, Agile / Scrum, Analysis, Attention to detail, Automation, Communication, DevOps, Documentation, End-to-End, Fintech, Management, Ownership, Problem solving, Process improvement, Project management, Quality control, REST APIs, Record keeping, Teamwork, Testing, Troubleshooting, UI/UX design</description>
-  </item>
-  <item>
-    <title>AI Agent Engineer (آقا-شیراز) — رقم</title>
-    <link>https://jobinja.ir/companies/ragham/jobs/tvMm</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/ragham/jobs/tvMm</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>رقم — شیراز · Software Engineering
-
-Asks for: Agent, AutoGen, Cloud, CrewAI, Docker, Framework, Function, GitHub, LangChain, LangGraph, Latency, OpenAI, Orchestration, Prompt, Python, TypeScript, Accounting, Artificial intelligence, Cloud architecture, Debugging, Large language models, Management, Observability, Process improvement, REST APIs, Retrieval augmented generation, Tool Calling, Vector Database</description>
-  </item>
-  <item>
-    <title>Data Engineer — ایرانسل لبز</title>
-    <link>https://jobinja.ir/companies/irancell-labs-1/jobs/tvDj</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/irancell-labs-1/jobs/tvDj</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ایرانسل لبز — تهران · Software Engineering
-
-Asks for: Airflow, Apache, Build, Business, ClickHouse, Data, Design, Governance, Implementation, Infrastructure, Kafka, Linux, Maintainability, MinIO, Modeling, Orchestration, Python, Quality, Review, SQL, Scala, Schema, Spark, Superset, Technical, Usability, Accessibility, Analytics, Business intelligence, Communication, Data modelling, Data pipelines, Data quality, Databases, Documentation, End-to-End, Job Description, Observability, Ownership, Real-Time, Storage</description>
-  </item>
-  <item>
-    <title>کارشناس Power BI — دانش بنیان مشاور نرم افزار محک</title>
-    <link>https://jobinja.ir/companies/mahak-software-group/jobs/tv1e</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mahak-software-group/jobs/tv1e</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>دانش بنیان مشاور نرم افزار محک — تهران · Software Engineering
-
-Asks for: Power BI, SQL, SQL Server, Server, Analysis, Business intelligence, Management, Process improvement, Reporting, Training</description>
-  </item>
-  <item>
-    <title>Senior Software Engineer (قم) — سیگنال</title>
-    <link>https://jobinja.ir/companies/signal/jobs/tvyz</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/signal/jobs/tvyz</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>سیگنال — قم · Software Engineering
-
-Asks for: Apache, Design, Event, Kubernetes, PHP, PostgreSQL, Python, Redis, Software, Unit, Analysis, Artificial intelligence, CI/CD, Clean code, Communication, Databases, Debugging, Design patterns, DevOps, Event-driven architecture, Hard Skills, Incident management, Management, Ownership, Problem solving, Process improvement, Root cause analysis, SOLID principles, Soft Skills, Teamwork, Testing, Troubleshooting, Unit testing</description>
-  </item>
-  <item>
-    <title>Senior Scrum Master — کیپا</title>
-    <link>https://jobinja.ir/companies/Keepa/jobs/tvDb</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/Keepa/jobs/tvDb</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>کیپا — تهران · Software Engineering
-
-Asks for: Accountability, Build, Coaching, Control, Insights, Jira, Leads, Prioritization, Retrospective, Review, Software, Sprint, Support, Tech, Tracking, Agile / Scrum, Communication, Ownership, Problem solving, Process improvement</description>
-  </item>
-  <item>
-    <title>Database Developer (Oracle) — توسعه سامانه‌های نرم‌افزاری نگین (توسن)</title>
-    <link>https://jobinja.ir/companies/tosan/jobs/tvdW</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tosan/jobs/tvdW</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه سامانه‌های نرم‌افزاری نگین (توسن) — تهران · Software Engineering
-
-Asks for: Oracle, SQL, Analysis, Continuous learning, Databases, Performance tuning, Problem solving, Reporting, Teamwork</description>
   </item>
 </channel>
 </rss>
