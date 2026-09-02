@@ -8,6 +8,33 @@
   <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>متخصص هوش مصنوعی — برتینا</title>
+    <link>https://jobinja.ir/companies/bertina/jobs/tv3m</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/bertina/jobs/tv3m</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>برتینا — تهران · Software Engineering
+
+Asks for: Azure, Cloud, Embeddings, Fine-tuning, GCP, Git, Llama, OpenAI, Prompt, PyTorch, Python, TensorFlow, Agile / Scrum, Analysis, Artificial intelligence, Data pipelines, Large language models, Machine learning, Management, Networking, Process improvement, Prompt Engineering, Recruitment, Retrieval augmented generation</description>
+  </item>
+  <item>
+    <title>توسعه دهنده فول استک (هوش مصنوعی) — برتینا</title>
+    <link>https://jobinja.ir/companies/bertina/jobs/tv3r</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/bertina/jobs/tv3r</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>برتینا — تهران · Software Engineering
+
+Asks for: ChatGPT, Claude, Cursor, Docker, Git, GitHub, Google Gemini, Laravel, MongoDB, MySQL, Next.js, Node.js, OpenAI, PHP, PostgreSQL, Python, React, SaaS, Vue, Artificial intelligence, CI/CD, Debugging, Full-stack, Management, Process improvement, REST APIs, Teamwork</description>
+  </item>
+  <item>
+    <title>AI Coding Tools) Full Stack Developer) — برتینا</title>
+    <link>https://jobinja.ir/companies/bertina/jobs/tv3k</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/bertina/jobs/tv3k</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>برتینا — تهران · Software Engineering
+
+Asks for: ChatGPT, Claude, Cursor, Git, GitHub, Laravel, MongoDB, MySQL, Next.js, Node.js, PHP, PostgreSQL, Python, React, Vue, Artificial intelligence, Debugging, Full-stack, Management, Process improvement, REST APIs, Teamwork</description>
+  </item>
+  <item>
     <title>کارشناس تست و تضمین کیفیت (QA Engineer) — داده ورزی سداد</title>
     <link>https://jobinja.ir/companies/sadad-1/jobs/tv3b</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/sadad-1/jobs/tv3b</guid>
@@ -51,6 +78,15 @@ Asks for: Inventory management, Networking, Reporting, Technical support</descri
     <description>اسنپ فود — تهران · Software Engineering
 
 Asks for: Business, Component, Data, Design, Discovery, Feedback, Figma, Framing, Functional, Insights, Internet, Layout, Mobile, Quality, Release, Review, Story, Technical, Typography, Usability, Analysis, Creativity, Design system, End-to-End, Insurance, Ownership, Problem solving, Product Design, Product development, Scalability, Testing, UI/UX design, User research</description>
+  </item>
+  <item>
+    <title>Full Stack Developer — سرور پارس</title>
+    <link>https://jobinja.ir/companies/serverpars/jobs/tvNe</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/serverpars/jobs/tvNe</guid>
+    <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+    <description>سرور پارس — تهران · Software Engineering
+
+Asks for: Apache, Authorization, CSS, Docker, Feedback, Git, GitHub, HTML, Infrastructure, JavaScript, Laravel, Legacy, Linux, Maintainability, MariaDB, MySQL, Nginx, PHP, React, SaaS, Task, Technical, Validation, Vue, Agile / Scrum, Analysis, Artificial intelligence, Attention to detail, Authentication, Communication, Databases, Debugging, Documentation, Full-stack, Incident management, Management, Ownership, Problem solving, Process improvement, REST APIs, Scalability, Security, Supervision, Teamwork</description>
   </item>
   <item>
     <title>کارشناس طراحی فیبر نوری — انتقال داده ماهان (ماهان نت)</title>
@@ -158,7 +194,7 @@ Asks for: Agent, Data, Power BI, SQL, SQL Server, Schema, Server, Warehouse, Ana
     <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
     <description>روبیکا(واحد توسعه پشتیبانی) — تهران · Software Engineering
 
-Asks for: Airflow, Algorithms, Business, Computer, Data, Deploy, Design, NumPy, Pandas, Programming, PyTorch, Python, Software, Spark, Technical, TensorFlow, Artificial intelligence, Communication, ETL / ELT, End-to-End, Machine learning, Management, Observability, Problem solving, Training</description>
+Asks for: Airflow, Algorithms, Business, Computer, Data, Deploy, Design, NumPy, Pandas, Programming, PyTorch, Python, Software, Spark, Technical, TensorFlow, Artificial intelligence, Communication, ETL / ELT, End-to-End, Machine learning, Management, Natural language processing, Observability, Problem solving, Training</description>
   </item>
   <item>
     <title>Senior Full-Stack Developer — والکس</title>
@@ -195,15 +231,6 @@ Asks for: .NET, C#, Design, Domain, Event, Release, Review, Sprint, Staging, Agi
     <description>پارمیس — تهران · Software Engineering
 
 Asks for: Restore, SQL, SQL Server, Server, Accounting, Backup and recovery, Communication, Customer service, Management, Networking, Problem solving, Teamwork</description>
-  </item>
-  <item>
-    <title>Data Analyst — اسنپ شاپ</title>
-    <link>https://jobinja.ir/companies/snappshop/jobs/tvx9</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/snappshop/jobs/tvx9</guid>
-    <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-    <description>اسنپ شاپ — تهران · Software Engineering
-
-Asks for: Accountability, Build, Business, Campaigns, Computer, Customer, Data, Design, Finance, Functional, Funnel, Google Workspace, Industrial, Insights, Marketplace, Metabase, Microsoft Excel, Operations, Power BI, Python, Report, SQL, Statistics, Support, Technical, Visualization, Analysis, Analytics, Attention to detail, Business intelligence, E-commerce, Industrial engineering, KPI management, KPIs, Marketing, Observability, Ownership, Reporting, Sales, Supply chain</description>
   </item>
   <item>
     <title>Senior Back-End Developer — افرتتر</title>
@@ -332,6 +359,15 @@ Asks for: Agent, AutoGen, Build, Business, C#, Cloud, CrewAI, Data, Design, Func
 Asks for: Agent, AutoGen, Build, Business, C#, CrewAI, Data, Design, Function, Go, JavaScript, LangGraph, OpenAI, Programming, Prompt, Python, Queues, Services, Software, Story, TypeScript, Artificial intelligence, Context Engineering, Creativity, Databases, Large language models, Observability, Prompt Engineering, REST APIs, Retrieval augmented generation, Tool Calling</description>
   </item>
   <item>
+    <title>(Software Engineer (Back-End — پینکت</title>
+    <link>https://jobinja.ir/companies/pinket/jobs/tvnB</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/pinket/jobs/tvnB</guid>
+    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+    <description>پینکت — تهران · Software Engineering
+
+Asks for: Ansible, Deploy, Design, Docker, Hibernate, Java, PostgreSQL, Software, Spring, Analysis, Code review, DevOps, Insurance, Ownership, Problem solving, Process improvement, REST APIs, Teamwork</description>
+  </item>
+  <item>
     <title>برنامه‌نویس وردپرس — ارمغان راه طلایی</title>
     <link>https://jobinja.ir/companies/armaghan-rahe-talaee/jobs/tv1n</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/armaghan-rahe-talaee/jobs/tv1n</guid>
@@ -420,42 +456,6 @@ Asks for: C++, Embedded, Oscilloscope, Analysis, Continuous learning, Debugging,
     <description>نگارخودرو — بابل · Software Engineering
 
 Asks for: Assembly, C++, Ghidra, Linux, Windows, Analysis, Automation, Continuous learning, Debugging, Documentation, Security</description>
-  </item>
-  <item>
-    <title>برنامه‌نویس Net Core.) Back-End) — توسعه فناوری رفاه پردیس</title>
-    <link>https://jobinja.ir/companies/rptd/jobs/tvDo</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/rptd/jobs/tvDo</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه فناوری رفاه پردیس — تهران · Software Engineering
-
-Asks for: .NET, C#, SQL, SQL Server, Databases, REST APIs</description>
-  </item>
-  <item>
-    <title>برنامه‌نویس فرانت اند (React/Next) — توسعه فناوری رفاه پردیس</title>
-    <link>https://jobinja.ir/companies/rptd/jobs/tvDU</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/rptd/jobs/tvDU</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه فناوری رفاه پردیس — تهران · Software Engineering
-
-Asks for: CSS, Git, Hooks, Next.js, React, Redux, Server, Tailwind CSS, TypeScript, Management, Problem solving, REST APIs, Redux Toolkit, Responsive design, Teamwork, UI/UX design</description>
-  </item>
-  <item>
-    <title>کارشناس پشتیبانی نرم‌افزار (آقا-مشهد) — نارین افزار سهند</title>
-    <link>https://jobinja.ir/companies/narin-afzar-sahand-1/jobs/CHv5</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/narin-afzar-sahand-1/jobs/CHv5</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>نارین افزار سهند — مشهد · Software Engineering
-
-Asks for: Function, Optimization, SQL, SQL Server, Server, View, Communication, Customer service, Databases, Networking, Performance tuning, Problem solving</description>
-  </item>
-  <item>
-    <title>SQA Engineer — دانش رفاه پردیس</title>
-    <link>https://jobinja.ir/companies/danesh-refah-pardis/jobs/tv1Y</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/danesh-refah-pardis/jobs/tv1Y</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>دانش رفاه پردیس — تهران · Software Engineering
-
-Asks for: Bug, Cypress, Design, Functional, Playwright, Postman, Regression, SQL, Software, Tracking, Web, Agile / Scrum, Analysis, Attention to detail, Automation, Communication, DevOps, Documentation, End-to-End, Fintech, Management, Ownership, Problem solving, Process improvement, Project management, Quality control, REST APIs, Record keeping, Teamwork, Testing, Troubleshooting, UI/UX design</description>
   </item>
 </channel>
 </rss>

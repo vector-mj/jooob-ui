@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Product postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Tue, 01 Sep 2026 07:53:29 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/product.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدیر محصول — برتینا</title>
+    <link>https://jobinja.ir/companies/bertina/jobs/tv34</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/bertina/jobs/tv34</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>برتینا — تهران · Product
+
+Asks for: Agile / Scrum, Analysis, Communication, Databases, Documentation, KPI management, Management, Marketing, Recruitment, Reporting, Teamwork, UI/UX design</description>
+  </item>
   <item>
     <title>مدیر محصول فنی — دنلکس</title>
     <link>https://career.hrcando.ir/co/danayan/job-detail/a1dad644-592b-477f-be62-ea79de806dd0</link>
@@ -256,15 +265,6 @@ Asks for: Activation, Backlog, Brief, Business, Customer, Data, Design, Discover
     <description>حساب رایان پارس — تهران · Product
 
 Asks for: Azure, Backlog, Confluence, Figma, Jira, Microsoft, Release, Retrospective, Review, Roadmap, SQL, Sprint, Story, A/B testing, Acceptance Criteria, Agile / Scrum, Analysis, Attention to detail, BPMN, Communication, Continuous learning, Documentation, KPI management, Management, Negotiation, Observability, Ownership, Problem solving, Product Roadmap, Quality control, REST APIs, Reporting, Risk management, Stakeholder management, Teamwork, Testing, UI/UX design, Use Case, User story</description>
-  </item>
-  <item>
-    <title>Project Manager — توسعه فناوری گروه فارابی</title>
-    <link>https://jobinja.ir/companies/soshyant-1/jobs/tvzh</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/soshyant-1/jobs/tvzh</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>توسعه فناوری گروه فارابی — تهران · Product
-
-Asks for: Business, Data, Finance, Financial, Industrial, Insights, Operations, Productivity, Project, Quality, Services, Software, Technical, Agile / Scrum, Analysis, Business development, Creativity, Documentation, Fintech, Industrial engineering, Management, Project management, Reporting, Risk management</description>
   </item>
   <item>
     <title>مالک محصول (Product Owner) — فلای تودی</title>
