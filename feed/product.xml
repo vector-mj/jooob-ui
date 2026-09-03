@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Product postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/product.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مدیر محصول (Product Manager-قم) — ایران ریبیت</title>
+    <link>https://jobinja.ir/companies/iranrebate/jobs/tjtR</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/iranrebate/jobs/tjtR</guid>
+    <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+    <description>ایران ریبیت — قم · Product
+
+Asks for: Backlog, Confluence, Design, Discovery, Jira, Notion, Prioritization, Release, Roadmap, Strategy, Trello, Agile / Scrum, Analysis, Communication, Customer retention, KPI management, Management, Observability, Ownership, Problem solving, Process improvement, Quality control, Reporting, Stakeholder management, UI/UX design</description>
+  </item>
   <item>
     <title>Technical Product Manager (Remote) — پارس پک</title>
     <link>https://jobinja.ir/companies/parvasystem/jobs/tjCO</link>
@@ -445,15 +454,6 @@ Asks for: Acquisition, Activation, Build, Business, Computer, Customer, Data, De
     <description>روبیکا — تهران · Product
 
 Asks for: Backlog, Sprint, Story, Acceptance Criteria, Agile / Scrum, Analysis, Attention to detail, Communication, Documentation, KPI management, Management, Negotiation, Observability, Ownership, Problem solving, Process improvement, Product Owner, Regulatory compliance, Reporting, Risk management, Stakeholder management, User story</description>
-  </item>
-  <item>
-    <title>Product Manager (MarTech) — تپسل</title>
-    <link>https://career.hrcando.ir/co/tapsell/job-detail/e2d32b8e-b191-45d3-ad2d-be3e9d341ac6</link>
-    <guid isPermaLink="true">https://career.hrcando.ir/co/tapsell/job-detail/e2d32b8e-b191-45d3-ad2d-be3e9d341ac6</guid>
-    <pubDate>Mon, 17 Aug 2026 13:36:20 +0000</pubDate>
-    <description>تپسل — تهران · Product
-
-Asks for: Backlog, Build, Content, Customer, Data, Design, Discovery, Distribution, Domain, Functional, Make, Market, Marketplace, Sprint, Strategy, Tapsell, Task, Technical, Agile / Scrum, Analysis, Communication, Digital marketing, Management, Market research, Marketing, Observability, Product Discovery, Product Manager, SEO, Stakeholder management, UI/UX design</description>
   </item>
 </channel>
 </rss>

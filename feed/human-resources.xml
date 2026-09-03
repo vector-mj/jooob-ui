@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Human Resources postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 02 Sep 2026 15:38:39 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/human-resources.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس منابع انسانی — کسری پارس</title>
+    <link>https://jobinja.ir/companies/kasra-pars-1/jobs/tjYj</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/kasra-pars-1/jobs/tjYj</guid>
+    <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+    <description>کسری پارس — تهران · Human Resources
+
+Asks for: Microsoft Excel, Attention to detail, Communication, Documentation, MBA, Management, Microsoft Office, Networking, Observability, Process improvement, Recruitment, Reporting, Sales, Social media, Teamwork, Training</description>
+  </item>
   <item>
     <title>Recruiter | Operation — دیجی کالا</title>
     <link>https://career.hrcando.ir/co/Digikala/job-detail/c010213f-2db7-4f6a-a3eb-c64038c19af8</link>
@@ -447,15 +456,6 @@ Asks for: Coaching, Data, Forecasting, Google Workspace, Microsoft Excel, Operat
     <description>هلدینگ بهتا — تهران · Human Resources
 
 Asks for: Analysis, Cloud architecture, Communication, Management, Microsoft Office, Networking, Observability, Recruitment, Regulatory compliance, Reporting, Risk management, Security, Supervision</description>
-  </item>
-  <item>
-    <title>Talent Acquisition Specialist (امریه سربازی-غائبین) — حامی سیستم شریف</title>
-    <link>https://jobinja.ir/companies/hamisystem/jobs/tvFe</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/hamisystem/jobs/tvFe</guid>
-    <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-    <description>حامی سیستم شریف — تهران · Human Resources
-
-Asks for: Acquisition, Business, Data, Follow-up, Google Workspace, LinkedIn, Quality, Software, Sourcing, Technology, Applicant tracking, Attention to detail, Communication, End-to-End, Engagement, English proficiency, Fintech, Job Description, Management, Microsoft Office, Negotiation, Observability, Onboarding, Ownership, Process improvement, Recruitment, Reporting, Stakeholder management</description>
   </item>
 </channel>
 </rss>

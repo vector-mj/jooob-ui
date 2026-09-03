@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New Legal postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Mon, 31 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/legal.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>مشاور حقوقی — آژانس دیجیتال راوی</title>
+    <link>https://jobinja.ir/companies/ravi-digital-agency/jobs/tjCg</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/ravi-digital-agency/jobs/tjCg</guid>
+    <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+    <description>آژانس دیجیتال راوی — تهران · Legal
+
+Asks for: Analysis, Attention to detail, Contract management, Negotiation, Ownership, Problem solving, Regulatory compliance, Risk management, Supervision</description>
+  </item>
   <item>
     <title>وکیل (کرمان) — سرمایه گذاری توسعه و عمران استان کرمان</title>
     <link>https://jobinja.ir/companies/kerman-development-and-construction-investment-company/jobs/tvEz</link>
@@ -447,13 +456,6 @@ Asks for: Business, Construction, Contract, Contracts, Finance, Legal, Microsoft
     <description>پرانتز — تهران · Legal
 
 Asks for: ChatGPT, Contract, Contracts, Control, Coordination, Legal, Microsoft, Microsoft Excel, Microsoft Teams, Microsoft Word, Outlook, Review, Scheduling, Support, Task, Technical, Tracking, Artificial intelligence, Communication, Confidentiality, Contract management, Documentation, English proficiency, Management, Microsoft Office, Regulatory compliance, Reporting, Version Control</description>
-  </item>
-  <item>
-    <title>وکیل پایه یک دادگستری — عدل ایرانیان</title>
-    <link>https://jobinja.ir/companies/adleiranian/jobs/tmWM</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/adleiranian/jobs/tmWM</guid>
-    <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-    <description>عدل ایرانیان — تهران · Legal</description>
   </item>
 </channel>
 </rss>
