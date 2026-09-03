@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 09:29:02 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس ارشد زیرساخت و شبکه دیتاسنتر — مدل</title>
+    <link>https://career.hrcando.ir/co/mohaymen/job-detail/bbbdc0d5-759a-459c-b751-0b56eff236cb</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/mohaymen/job-detail/bbbdc0d5-759a-459c-b751-0b56eff236cb</guid>
+    <pubDate>Wed, 02 Sep 2026 09:29:02 +0000</pubDate>
+    <description>مدل — تهران · IT &amp; Infrastructure
+
+Asks for: Cisco, Nexus, Analysis, Communication, Firewalls, Management, Networking, Observability, Troubleshooting</description>
+  </item>
   <item>
     <title>کارشناس HelpDesk — توسعه سامانه‌های نرم‌افزاری نگین (توسن)</title>
     <link>https://jobinja.ir/companies/tosan/jobs/tv3V</link>
@@ -447,15 +456,6 @@ Asks for: Active Directory, Apache, Bug, Container, Docker, Linux, MySQL, Nessus
     <description>رویال پرداز تیام — تهران · IT &amp; Infrastructure
 
 Asks for: Control, OpenID Connect, Session, Web, Analysis, Authentication, English proficiency, Identity &amp; access management, Management, Networking, REST APIs, Risk management, Security, Testing</description>
-  </item>
-  <item>
-    <title>کارشناس امنیت شبکه — دیجی شهر</title>
-    <link>https://jobinja.ir/companies/dg-shahr/jobs/tvy6</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/dg-shahr/jobs/tvy6</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>دیجی شهر — تهران · IT &amp; Infrastructure
-
-Asks for: Bash, Burp Suite, Cisco, Control, IPsec, Kubernetes, Linux, Metasploit, Nessus, Nmap, OpenVAS, Postman, Python, SQL, Services, Trivy, Web, Automation, Communication, DevOps, Firewalls, Identity &amp; access management, Linux administration, Management, Networking, Observability, Penetration testing, REST APIs, Reporting, Security, Testing, Vulnerability scanning</description>
   </item>
 </channel>
 </rss>
