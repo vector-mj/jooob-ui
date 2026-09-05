@@ -5,8 +5,35 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Wed, 02 Sep 2026 09:29:02 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس پشتیبانی بانک های اطلاعاتی (شیفت گردشی-آقا) — داده ورزی سداد</title>
+    <link>https://jobinja.ir/companies/sadad-1/jobs/tj6J</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/sadad-1/jobs/tj6J</guid>
+    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <description>داده ورزی سداد — تهران · IT &amp; Infrastructure
+
+Asks for: Linux, NoSQL, Oracle, SQL, SQL Server, Server, Zabbix, Analysis, Databases, Incident management, Management, Observability, Problem solving, Quality control, Reporting, Security, Stakeholder management, Supervision, Teamwork, Technical support</description>
+  </item>
+  <item>
+    <title>Senior Network Engineer — توسعه فناوری گروه فارابی</title>
+    <link>https://jobinja.ir/companies/soshyant-1/jobs/tj6u</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/soshyant-1/jobs/tj6u</guid>
+    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <description>توسعه فناوری گروه فارابی — تهران · IT &amp; Infrastructure
+
+Asks for: Availability, Cisco, Design, FortiGate, Implementation, Nexus, Technical, VMware, Firewalls, Management, Network architecture, Networking, Troubleshooting</description>
+  </item>
+  <item>
+    <title>Network Security Engineer — والکس</title>
+    <link>https://jobinja.ir/companies/wallex/jobs/tjJQ</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/wallex/jobs/tjJQ</guid>
+    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <description>والکس — تهران · IT &amp; Infrastructure
+
+Asks for: Alerting, Availability, Build, Cisco, Control, Cryptocurrency, Design, Exchange, Implementation, Incident, Infrastructure, Inspection, Linux, Logging, Nexus, Operations, Remote, Review, Segmentation, Services, Technical, Test, Trading, Analysis, Automation, Communication, Configuration management, Datacenter operations, DevOps, Documentation, Fintech, Firewalls, High availability, IDS / IPS, Identity &amp; access management, Incident management, Incident response, Maintenance, Management, Network architecture, Networking, Observability, Problem solving, Process improvement, Root cause analysis, Scalability, Security, Troubleshooting</description>
+  </item>
   <item>
     <title>کارشناس ارشد زیرساخت و شبکه دیتاسنتر — مدل</title>
     <link>https://career.hrcando.ir/co/mohaymen/job-detail/bbbdc0d5-759a-459c-b751-0b56eff236cb</link>
@@ -15,6 +42,15 @@
     <description>مدل — تهران · IT &amp; Infrastructure
 
 Asks for: Cisco, Nexus, Analysis, Communication, Firewalls, Management, Networking, Observability, Troubleshooting</description>
+  </item>
+  <item>
+    <title>کارشناس HelpDesk (آقا) — سه کلیک</title>
+    <link>https://jobinja.ir/companies/3click/jobs/tjRh</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/3click/jobs/tjRh</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>سه کلیک — تهران · IT &amp; Infrastructure
+
+Asks for: VoIP, Windows, Certifications, Networking, Teamwork, Technical support, Troubleshooting</description>
   </item>
   <item>
     <title>کارشناس HelpDesk — توسعه سامانه‌های نرم‌افزاری نگین (توسن)</title>
@@ -140,7 +176,7 @@ Asks for: Ansible, Availability, Bash, Build, Cloud, Design, Docker, ELK, Git, G
     <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     <description>ایرانسل لبز — تهران · IT &amp; Infrastructure
 
-Asks for: Ansible, ArgoCD, Availability, Cloud, Container, Deploy, Docker, ELK, Elasticsearch, Fluentd, Flux, Grafana, HAProxy, Helm, Import, Istio, Kibana, Kubernetes, Linkerd, Linux, Logging, Logstash, Nginx, OpenStack, Operations, Orchestration, Prometheus, Rancher, Server, Service, Support, Terraform, Traefik, Trivy, VMware, Analytics, Automation, CI/CD, Certifications, Communication, Container orchestration, DevOps, Documentation, GitOps, Linux administration, Management, Networking, Observability, Ownership, REST APIs, Scalability, Security, Service mesh, Site reliability, Storage, Training, Troubleshooting</description>
+Asks for: Ansible, ArgoCD, Availability, Cloud, Container, Deploy, Develop, Docker, ELK, Elasticsearch, Fluentd, Flux, Grafana, HAProxy, Helm, Import, Istio, Kibana, Kubernetes, Linkerd, Linux, Logging, Logstash, Nginx, OpenStack, Operations, Orchestration, Prometheus, Rancher, Server, Service, Support, Terraform, Traefik, Trivy, VMware, Analytics, Automation, CI/CD, Certifications, Communication, Container orchestration, DevOps, Documentation, GitOps, Linux administration, Management, Networking, Observability, Ownership, REST APIs, Scalability, Security, Service mesh, Site reliability, Storage, Training, Troubleshooting</description>
   </item>
   <item>
     <title>Network Security Engineer — ایرانسل لبز</title>
@@ -149,7 +185,7 @@ Asks for: Ansible, ArgoCD, Availability, Cloud, Container, Deploy, Docker, ELK, 
     <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     <description>ایرانسل لبز — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Cisco, Cloud, Container, Deploy, Design, Distribution, ELK, F5, Git, Grafana, HAProxy, Incident, Infrastructure, Juniper, Kubernetes, Loki, Nginx, OpenStack, Operations, Prometheus, Segmentation, Service, Services, Trunking, Wireshark, iOS, tcpdump, Analysis, Capacity planning, Certifications, Datacenter operations, DevOps, Documentation, Firewalls, High availability, Incident management, Management, Networking, Observability, Root cause analysis, Security, Service mesh, Troubleshooting, Virtualization</description>
+Asks for: Availability, Cisco, Cloud, Container, Deploy, Design, Develop, Distribution, ELK, F5, Git, Grafana, HAProxy, Incident, Infrastructure, Juniper, Kubernetes, Loki, Nginx, OpenStack, Operations, Prometheus, Segmentation, Service, Services, Trunking, Wireshark, iOS, tcpdump, Analysis, Capacity planning, Certifications, Datacenter operations, DevOps, Documentation, Firewalls, High availability, Incident management, Management, Network architecture, Networking, Observability, Root cause analysis, Security, Service mesh, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>Cloud &amp; Virtualization Senior Specialist (OpenStack - FusionSphere) — ایرانسل لبز</title>
@@ -158,7 +194,7 @@ Asks for: Availability, Cisco, Cloud, Container, Deploy, Design, Distribution, E
     <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     <description>ایرانسل لبز — تهران · IT &amp; Infrastructure
 
-Asks for: Ansible, Availability, Business, Ceph, Cloud, Computer, Container, Deploy, Design, ELK, Elasticsearch, Helm, Infrastructure, KVM, Kubernetes, Logging, OpenStack, Operations, Prometheus, Service, Services, Support, Technical, Technology, Terraform, Automation, Capacity planning, Cloud architecture, Configuration management, DevOps, Documentation, GitOps, High availability, Incident management, Information technology, Management, Networking, Observability, Scalability, Security, Storage, Troubleshooting, Virtualization</description>
+Asks for: Ansible, Availability, Business, Ceph, Cloud, Computer, Container, Deploy, Design, Develop, ELK, Elasticsearch, Helm, Infrastructure, KVM, Kubernetes, Logging, OpenStack, Operations, Prometheus, Service, Services, Support, Technical, Technology, Terraform, Automation, Capacity planning, Cloud architecture, Configuration management, DevOps, Documentation, GitOps, High availability, Incident management, Information technology, Management, Networking, Observability, Scalability, Security, Storage, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>کارشناس ارشد زیرساخت و شبکه دیتاسنتر — مهیمن</title>
@@ -194,7 +230,7 @@ Asks for: Service, Analysis, Certifications, Communication, Networking, Observab
     <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     <description>همراه مکانیک — تهران · IT &amp; Infrastructure
 
-Asks for: Build, C#, Data, Design, Java, JavaScript, Mobile, Programming, Python, Quality, Release, SQL, Scripting, Software, Sprint, Stories, Strategy, Technical, Test, TypeScript, Web, Writing, Agile / Scrum, Analysis, Attention to detail, Automation, CI/CD, Databases, Management, Object-oriented programming, Problem solving, Quality control, REST APIs, Reporting, Testing, UI/UX design, User experience, User story</description>
+Asks for: Build, C#, Data, Design, Develop, Java, JavaScript, Mobile, Programming, Python, Quality, Release, SQL, Scripting, Software, Sprint, Stories, Strategy, Technical, Test, TypeScript, Web, Writing, Agile / Scrum, Analysis, Attention to detail, Automation, CI/CD, Databases, Management, Object-oriented programming, Problem solving, Quality control, REST APIs, Reporting, Testing, UI/UX design, User experience, User story</description>
   </item>
   <item>
     <title>Virtualization Specialist — اسنپ فود</title>
@@ -203,7 +239,7 @@ Asks for: Build, C#, Data, Design, Java, JavaScript, Mobile, Programming, Python
     <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     <description>اسنپ فود — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Business, Cloud, Data, Deploy, Design, Forecasting, Hyper-V, Infrastructure, Microsoft, Migration, Operations, Proxmox, Recovery, Replication, Server, Service, Services, Story, Support, Technical, Test, VMware, Veeam, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Creativity, Disaster recovery, Distributed systems, Documentation, High availability, Maintenance, Problem solving, Security, Storage, Troubleshooting, Virtualization</description>
+Asks for: Availability, Business, Cloud, Data, Deploy, Design, Develop, Forecasting, Hyper-V, Infrastructure, Microsoft, Migration, Operations, Proxmox, Recovery, Replication, Server, Service, Services, Story, Support, Technical, Test, VMware, Veeam, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Creativity, Disaster recovery, Distributed systems, Documentation, High availability, Maintenance, Problem solving, Security, Storage, Troubleshooting, Virtualization</description>
   </item>
   <item>
     <title>SOC Team Lead — دیجی‌‌کالا</title>
@@ -212,7 +248,7 @@ Asks for: Availability, Business, Cloud, Data, Deploy, Design, Forecasting, Hype
     <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
     <description>دیجی‌‌کالا — تهران · IT &amp; Infrastructure
 
-Asks for: Cloud, Content, Function, Incident, Infrastructure, Leads, Operations, Post, Python, Quality, Scripting, Splunk, Strategy, Technical, Analysis, Artificial intelligence, Automation, Certifications, Communication, DevOps, EDR / EPP, Identity &amp; access management, Incident management, Incident response, Management, Networking, Ownership, REST APIs, Regulatory compliance, Reporting, SIEM / SOAR, Security, Stakeholder management, Threat Hunting</description>
+Asks for: Cloud, Content, Develop, Function, Incident, Infrastructure, Leads, Operations, Post, Python, Quality, Scripting, Splunk, Strategy, Technical, Analysis, Artificial intelligence, Automation, Certifications, Communication, DevOps, EDR / EPP, Identity &amp; access management, Incident management, Incident response, Management, Networking, Ownership, REST APIs, Regulatory compliance, Reporting, SIEM / SOAR, Security, Stakeholder management, Threat Hunting</description>
   </item>
   <item>
     <title>Technical Support Specialist — دیجی پی</title>
@@ -230,7 +266,16 @@ Asks for: Agent, Linux, Log, MongoDB, Prompt, Review, SQL, Analysis, Artificial 
     <pubDate>Tue, 01 Sep 2026 11:00:06 +0000</pubDate>
     <description>اسنپ فود — تهران · IT &amp; Infrastructure
 
-Asks for: Availability, Business, Cloud, Data, Deploy, Design, Forecasting, Hyper-V, Infrastructure, Microsoft, Migration, Operations, Proxmox, Recovery, Replication, Server, Service, Services, Story, Support, Technical, Test, VMware, Veeam, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Creativity, Disaster recovery, Distributed systems, Documentation, High availability, Maintenance, Problem solving, Security, Storage, Troubleshooting, Virtualization</description>
+Asks for: Availability, Business, Cloud, Data, Deploy, Design, Develop, Forecasting, Hyper-V, Infrastructure, Microsoft, Migration, Operations, Proxmox, Recovery, Replication, Server, Service, Services, Story, Support, Technical, Test, VMware, Veeam, Analysis, Attention to detail, Backup and recovery, Business continuity, Capacity planning, Creativity, Disaster recovery, Distributed systems, Documentation, High availability, Maintenance, Problem solving, Security, Storage, Troubleshooting, Virtualization</description>
+  </item>
+  <item>
+    <title>کارشناس شبکه های کامپیوتری (آقا) — رایان نیک تجهیز</title>
+    <link>https://jobinja.ir/companies/rayan-nik-tajhiz/jobs/1xT</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/rayan-nik-tajhiz/jobs/1xT</guid>
+    <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+    <description>رایان نیک تجهیز — تهران · IT &amp; Infrastructure
+
+Asks for: Active Directory, Cisco, Exchange, Microsoft, Microsoft Exchange, Server, VMware, VoIP, Windows, Backup and recovery, Certifications, Firewalls, Networking, Observability, Security</description>
   </item>
   <item>
     <title>SysAdmin) System Administrator-امریه سربازی-غائبین) — حامی سیستم شریف</title>
@@ -284,7 +329,7 @@ Asks for: VMware, Backup and recovery, Certifications, Communication, Networking
     <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
     <description>اسنپ فود — تهران · IT &amp; Infrastructure
 
-Asks for: Ansible, Business, Cisco, Computer, F5, Firmware, Fortinet, Functional, Kubernetes, Orchestration, Programming, Python, Remote, Software, Story, Technical, Technology, Creativity, Documentation, Information technology, Maintenance, Networking, Problem solving, Security, Troubleshooting</description>
+Asks for: Ansible, Business, Cisco, Computer, Develop, F5, Firmware, Fortinet, Functional, Kubernetes, Orchestration, Programming, Python, Remote, Software, Story, Technical, Technology, Creativity, Documentation, Information technology, Maintenance, Networking, Problem solving, Security, Troubleshooting</description>
   </item>
   <item>
     <title>Senior DevOps Engineer — اسنپ فود</title>
@@ -411,51 +456,6 @@ Asks for: Accountability, Availability, Cloud, Data, Deploy, Design, Docker, Git
     <description>اسنپ شاپ — تهران · IT &amp; Infrastructure
 
 Asks for: Cisco, Customer, Email, Energy, Exchange, Hardware, Microsoft, Microsoft Teams, MikroTik, Outlook, Software, Support, Tech, Technical, Technology, Ticketing, Ubiquiti, VoIP, Warehouse, Windows, macOS, CRM, Communication, Documentation, E-commerce, Management, Problem solving, Teamwork, Technical support, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس پایگاه داده — پرداخت نوین آرین</title>
-    <link>https://jobinja.ir/companies/pardakhtnovin-arian/jobs/tvXG</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/pardakhtnovin-arian/jobs/tvXG</guid>
-    <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-    <description>پرداخت نوین آرین — تهران · IT &amp; Infrastructure
-
-Asks for: Oracle, SQL, SQL Server, Server, Analysis, Business intelligence, Databases, Linux administration, Management, Security, Supervision, Teamwork</description>
-  </item>
-  <item>
-    <title>کارشناس شبکه (مشهد) — گروه نرم افزاری پارت</title>
-    <link>https://jobinja.ir/companies/part-financial-data-processing/jobs/tvnA</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/part-financial-data-processing/jobs/tvnA</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>گروه نرم افزاری پارت — مشهد · IT &amp; Infrastructure
-
-Asks for: Bash, FortiGate, Grafana, Linux, Mid-Level, Python, Trunking, Zabbix, Automation, Certifications, Communication, Documentation, Firewalls, Networking, Observability, Ownership, Reporting, Security, Teamwork, Training, Troubleshooting</description>
-  </item>
-  <item>
-    <title>کارشناس شبکه و امنیت — فن آوران اطلاعات آسام</title>
-    <link>https://jobinja.ir/companies/asam-information-technology-co/jobs/tvya</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/asam-information-technology-co/jobs/tvya</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فن آوران اطلاعات آسام — تهران · IT &amp; Infrastructure
-
-Asks for: Cisco, FortiGate, FortiWeb, Fortinet, SolarWinds, Sophos, Certifications, Firewalls, Networking, Observability, Security</description>
-  </item>
-  <item>
-    <title>کارشناس ارشد شبکه — فن آوران اطلاعات آسام</title>
-    <link>https://jobinja.ir/companies/asam-information-technology-co/jobs/tvy5</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/asam-information-technology-co/jobs/tvy5</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>فن آوران اطلاعات آسام — تهران · IT &amp; Infrastructure
-
-Asks for: Cisco, FortiGate, FortiWeb, Fortinet, IPsec, MikroTik, Nexus, Sophos, Certifications, Firewalls, Networking, Observability, Security, Troubleshooting</description>
-  </item>
-  <item>
-    <title>(DevOps Engineer (SRE — اکو هلدینگ</title>
-    <link>https://jobinja.ir/companies/ecoehsan/jobs/tvD0</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/ecoehsan/jobs/tvD0</guid>
-    <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-    <description>اکو هلدینگ — تهران · IT &amp; Infrastructure
-
-Asks for: Alerting, Ansible, ArgoCD, Availability, Bash, Build, Cloud, Container, Deploy, Design, Docker, ELK, GitLab, Grafana, Helm, Incident, Infrastructure, Jenkins, Kubernetes, Linux, Logging, Modeling, OpenSearch, Operations, Orchestration, Prometheus, Python, Scripting, Sentry, Technical, Terraform, Vault, Analysis, Automation, CI/CD, Certifications, DevOps, IDS / IPS, Incident management, Infrastructure as code, Management, Networking, Observability, Root cause analysis, Scalability, Secrets management, Security, Site reliability, Testing, Vulnerability scanning, Zero trust</description>
   </item>
 </channel>
 </rss>
