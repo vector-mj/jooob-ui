@@ -113,7 +113,7 @@ Asks for: Backlog, Banking, Business, Confluence, Customer, Data, Design, Discov
     <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
     <description>اسنپ فود — تهران · Product
 
-Asks for: Business, Component, Data, Design, Discovery, Feedback, Figma, Framing, Functional, Insights, Internet, Layout, Mobile, Quality, Release, Review, Story, Technical, Typography, Usability, Analysis, Creativity, Design system, End-to-End, Insurance, Ownership, Problem solving, Product Design, Product development, Scalability, Testing, UI/UX design, User research</description>
+Asks for: Business, Component, Data, Design, Discovery, Feedback, Figma, Framing, Functional, High-Traffic, Insights, Internet, Layout, Mobile, Prototyping, Quality, Release, Review, Story, Technical, Typography, Usability, Analysis, Creativity, Design system, End-to-End, Insurance, Ownership, Problem solving, Product Design, Product development, Scalability, Testing, UI/UX design, User research</description>
   </item>
   <item>
     <title>Senior UX Researcher — زرینو</title>
@@ -176,7 +176,7 @@ Asks for: Story, Agile / Scrum, Management, Stakeholder management, User story</
     <pubDate>Sat, 29 Aug 2026 11:00:42 +0000</pubDate>
     <description>صباایده — تهران · Product
 
-Asks for: Build, ClickHouse, Concurrency, Data, Design, Docker, Go, Implementation, Kafka, Maintainability, Make, Modeling, MongoDB, OpenSearch, PostgreSQL, RabbitMQ, Redis, Service, Services, Software, Task, Technical, Technology, Artificial intelligence, Data modelling, Data pipelines, Databases, Debugging, Design patterns, Design system, Distributed systems, Documentation, End-to-End, Machine learning, Networking, Observability, Ownership, Problem solving, REST APIs, Software architecture, System Design, Testing</description>
+Asks for: Build, ClickHouse, Concurrency, Data, Design, Docker, Go, Implementation, Kafka, Maintainability, Make, Modeling, MongoDB, OpenSearch, PostgreSQL, RabbitMQ, Redis, Search, Service, Services, Software, Task, Technical, Technology, Artificial intelligence, Data modelling, Data pipelines, Databases, Debugging, Design patterns, Design system, Distributed systems, Documentation, End-to-End, Machine learning, Networking, Observability, Ownership, Problem solving, REST APIs, Software architecture, System Design, Testing</description>
   </item>
   <item>
     <title>کارشناس ارشد محصول — طلاسی</title>
@@ -327,7 +327,7 @@ Asks for: Agile / Scrum, Analysis, Communication, Databases, Documentation, Mana
     <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
     <description>پول تیکت — مشهد · Product
 
-Asks for: Activation, Backlog, Brief, Business, Customer, Data, Design, Develop, Discovery, Financial, Market, Marketplace, Monetization, Operations, Optimization, Prioritization, Roadmap, SaaS, Software, Stories, Strategy, Support, Tracking, Validation, Acceptance Criteria, Analysis, Analytics, B2B, Communication, Customer retention, Data-driven, E-commerce, ERP, KPIs, Management, Marketing, Problem solving, Product Discovery, Product Manager, Product lifecycle, Sales, Software development, Stakeholder management, UI/UX design, User experience, User research, User story</description>
+Asks for: Activation, Backlog, Brief, Business, Customer, Data, Design, Develop, Discovery, Financial, Market, Marketplace, Monetization, Operations, Optimization, Payment, Prioritization, Roadmap, SaaS, Software, Stories, Strategy, Support, Tracking, Validation, Acceptance Criteria, Analysis, Analytics, B2B, Communication, Customer retention, Data-driven, E-commerce, ERP, KPIs, Management, Marketing, Problem solving, Product Discovery, Product Manager, Product lifecycle, Sales, Software development, Stakeholder management, UI/UX design, User experience, User research, User story</description>
   </item>
   <item>
     <title>مدیر محصول — حساب رایان پارس</title>
@@ -384,15 +384,6 @@ Asks for: Asana, EdTech, Education, Jira, Microsoft Excel, Notion, Project, Trel
 Asks for: Business, Data, Develop, Finance, Financial, Industrial, Insights, Operations, Productivity, Project, Quality, Services, Software, Technical, Analysis, Business development, Creativity, Documentation, Fintech, Industrial engineering, Management, Project management, Reporting, Risk management</description>
   </item>
   <item>
-    <title>مالک محصول (Product Owner-مشهد) — ایران هتل آنلاین</title>
-    <link>https://jobinja.ir/companies/iran-hotel-online/jobs/tvRM</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/iran-hotel-online/jobs/tvRM</guid>
-    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
-    <description>ایران هتل آنلاین — مشهد · Product
-
-Asks for: Flow, Review, Sprint, Story, Agile / Scrum, Analysis, Communication, Customer service, Management, Ownership, Problem solving, Process improvement, Product Owner, Teamwork, UI/UX design, User Flow, User experience, User story</description>
-  </item>
-  <item>
     <title>مدیر محصول — بیمه دات کام</title>
     <link>https://jobinja.ir/companies/aryapardaz-raika/jobs/tvAX</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/aryapardaz-raika/jobs/tvAX</guid>
@@ -426,7 +417,7 @@ Asks for: Azure, Backlog, Microsoft Excel, Power BI, Story, Acceptance Criteria,
     <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
     <description>بازی سازان نوآوران پارسیان — تهران · Product
 
-Asks for: Backlog, Data, Design, Figma, Firebase, Flow, Funnel, Google Analytics, Jira, Notion, Prioritization, Revenue, Roadmap, Story, Test, Trello, Unity, Wireframe, Acceptance Criteria, Analysis, Business intelligence, Customer retention, Data-driven, Design system, Documentation, KPI management, Management, Onboarding, Process improvement, Product Design, Product Manager, Quality control, Reporting, UI/UX design, User Flow, User story</description>
+Asks for: Backlog, Data, Design, Figma, Firebase, Flow, Funnel, Google Analytics, Jira, Notion, Prioritization, Purchase, Revenue, Roadmap, Story, Test, Trello, Unity, Wireframe, Acceptance Criteria, Analysis, Business intelligence, Customer retention, Data-driven, Design system, Documentation, KPI management, Management, Onboarding, Process improvement, Product Design, Product Manager, Quality control, Reporting, UI/UX design, User Flow, User story</description>
   </item>
   <item>
     <title>Senior Product Manager — تپسل</title>
@@ -454,6 +445,15 @@ Asks for: Roadmap, Agile / Scrum, Analysis, MBA, Management, Observability, Proc
     <description>بلوبانک — تهران · Product
 
 Asks for: Activation, Backlog, Business, Design, Discovery, Finance, Financial, Funnel, Go, Market, Operations, Release, Revenue, Roadmap, Story, Strategy, Support, Tech, Acceptance Criteria, Agile / Scrum, Analysis, Analytics, Artificial intelligence, Automation, B2B, Business development, Business intelligence, Communication, Customer retention, Documentation, Engagement, Fintech, KPI management, MBA, Management, Observability, Process improvement, Product Discovery, Product Manager, Product Roadmap, Quality control, Risk management, Sales, Stakeholder management, User story</description>
+  </item>
+  <item>
+    <title>دستیار مدیر محصول — تی نکست</title>
+    <link>https://jobinja.ir/companies/tipeyk/jobs/t7EC</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/tipeyk/jobs/t7EC</guid>
+    <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+    <description>تی نکست — تهران · Product
+
+Asks for: Confluence, Discovery, Figma, Follow-up, Jira, SQL, Agile / Scrum, Analysis, Artificial intelligence, Automation, Communication, Content creation, Databases, Documentation, English proficiency, Management, Marketing, Ownership, Problem solving, Process improvement, Product Discovery, Product metrics, REST APIs, Sales</description>
   </item>
 </channel>
 </rss>

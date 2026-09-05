@@ -30,7 +30,7 @@ Asks for: Availability, Build, Business, Computer, Data, Design, Develop, Functi
     <pubDate>Tue, 25 Aug 2026 11:55:12 +0000</pubDate>
     <description>دیجی کالا — تهران · Data &amp; AI
 
-Asks for: Agent, Airflow, Build, Business, ClickHouse, Data, Design, Discovery, Experimentation, Forecasting, Framing, Latency, Modeling, Operations, Prompt, Python, Segmentation, Services, Shipping, Spark, Support, Warehouse, Analysis, Artificial intelligence, Databases, KPIs, Large language models, Machine learning, Model evaluation, Observability, Ownership, REST APIs, Recruitment, Retrieval augmented generation, Training</description>
+Asks for: Agent, Airflow, Build, Business, ClickHouse, Data, Design, Discovery, Experimentation, Forecasting, Framing, Latency, Modeling, Operations, Prompt, Python, Search, Segmentation, Services, Shipping, Spark, Support, Warehouse, Analysis, Artificial intelligence, Databases, KPIs, Large language models, Machine learning, Model evaluation, Observability, Ownership, REST APIs, Recruitment, Retrieval augmented generation, Training</description>
   </item>
   <item>
     <title>DataOps Engineer — دیجی کالا</title>
@@ -39,7 +39,7 @@ Asks for: Agent, Airflow, Build, Business, ClickHouse, Data, Design, Discovery, 
     <pubDate>Sun, 23 Aug 2026 10:13:57 +0000</pubDate>
     <description>دیجی کالا — تهران · Data &amp; AI
 
-Asks for: Alerting, Apache, Bash, Build, Data, Design, Develop, Docker, Docker Compose, Elasticsearch, Embeddings, Flink, Grafana, Helm, Iceberg, Infrastructure, Java, Kafka, Kubernetes, Linux, OpenSearch, Operations, Optimization, Programming, Prometheus, Python, Qdrant, Quality, Replication, Scala, Schema, Scripting, Service, Spark, Strategy, Terraform, Writing, CI/CD, Cloud architecture, Data pipelines, Data quality, Databases, Debugging, DevOps, Distributed systems, Infrastructure as code, Linux administration, Management, Observability, Performance tuning, Problem solving, Scalability, Storage, Troubleshooting, Vector Database</description>
+Asks for: Alerting, Apache, Bash, Build, Data, Design, Develop, Docker, Docker Compose, Elasticsearch, Embeddings, Flink, Grafana, Helm, Iceberg, Infrastructure, Java, Kafka, Kubernetes, Linux, OpenSearch, Operations, Optimization, Programming, Prometheus, Python, Qdrant, Quality, Replication, Scala, Schema, Scripting, Search, Service, Spark, Strategy, Terraform, Writing, CI/CD, Cloud architecture, Data pipelines, Data quality, Databases, Debugging, DevOps, Distributed systems, Infrastructure as code, Linux administration, Management, Observability, Performance tuning, Problem solving, Scalability, Storage, Troubleshooting, Vector Database</description>
   </item>
   <item>
     <title>Data Analyst (Product Team) — اسنپ مارکت</title>
@@ -66,7 +66,7 @@ Asks for: Algorithms, Build, Business, Cleaning, Computer, Customer, Data, Deplo
     <pubDate>Mon, 17 Aug 2026 16:13:50 +0000</pubDate>
     <description>مدل — تهران · Data &amp; AI
 
-Asks for: Agent, AutoGen, Benchmarking, Build, Business, Chroma, CrewAI, Customer, Data, DeepSeek, Design, Develop, Docker, Driving, Embeddings, FastAPI, Financial, Fine-tuning, Gemma, Git, Internet, LangGraph, Latency, Llama, LoRA, Milvus, Pinecone, Prompt, Pydantic, Python, QLoRA, Qdrant, Quality, Qwen, Retrieval-Augmented Generation, Services, Software, Technical, Weaviate, Artificial intelligence, CI/CD, Databases, Large language models, Microservices, Model evaluation, Prompt Engineering, REST APIs, Retrieval augmented generation, Tool Calling</description>
+Asks for: Agent, AutoGen, Benchmarking, Build, Business, Chroma, CrewAI, Customer, Data, DeepSeek, Design, Develop, Docker, Driving, Embeddings, FastAPI, Financial, Fine-tuning, Gemma, Git, Internet, LangGraph, Latency, Llama, LoRA, Milvus, Payment, Pinecone, Prompt, Pydantic, Python, QLoRA, Qdrant, Quality, Qwen, Retrieval-Augmented Generation, Services, Software, Technical, Weaviate, Artificial intelligence, CI/CD, Databases, Large language models, Microservices, Model evaluation, Prompt Engineering, REST APIs, Retrieval augmented generation, Tool Calling</description>
   </item>
   <item>
     <title>Senior Business Finance Analyst — اسنپ مارکت</title>
