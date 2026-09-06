@@ -8,6 +8,15 @@
   <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/software-engineering.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>کارشناس پیاده سازی نرم افزارهای سازمانی — همکاران سیستم</title>
+    <link>https://jobinja.ir/companies/system-group/jobs/ABcq</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/system-group/jobs/ABcq</guid>
+    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <description>همکاران سیستم — تهران · Software Engineering
+
+Asks for: Microsoft Excel, Outlook, SQL, Accounting, Communication, Customer service, Management, Microsoft Office, Problem solving, Training</description>
+  </item>
+  <item>
     <title>Python Software Engineer — باغ داروی سبز سلامت گستر پنجاه چهل</title>
     <link>https://jobinja.ir/companies/5040-1/jobs/tjJK</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/5040-1/jobs/tjJK</guid>
@@ -368,6 +377,24 @@ Asks for: MongoDB, Prompt, Python, n8n, Artificial intelligence, Automation, Lar
 Asks for: .NET, Build, Business, Caching, Concurrency, Data, Design, Develop, Docker, Driving, Event, Go, Implementation, Kafka, Kubernetes, Legacy, Maintainability, OpenTelemetry, Optimization, RabbitMQ, Review, Service, Services, Software, Technical, Communication, Databases, Design system, Distributed systems, Documentation, Event-driven architecture, Observability, Ownership, Performance tuning, REST APIs, Scalability, Software architecture, System Design, Technical debt, Training</description>
   </item>
   <item>
+    <title>کارآموز طراحی سایت (Wordpress) — آژانس دیجیتال مارکتینگ سوم شخص</title>
+    <link>https://jobinja.ir/companies/sevom-shakhs-digital-marketing-team/jobs/tvos</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/sevom-shakhs-digital-marketing-team/jobs/tvos</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>آژانس دیجیتال مارکتینگ سوم شخص — تهران · Software Engineering
+
+Asks for: CSS, Elementor, Figma, HTML, Microsoft Word, WordPress, Management, Recruitment, SEO, Sales, Security, Teamwork, Training, UI/UX design</description>
+  </item>
+  <item>
+    <title>طراح سایت (Wordpress) — تبلیغاتی سارای</title>
+    <link>https://jobinja.ir/companies/sarayagency/jobs/tjY9</link>
+    <guid isPermaLink="true">https://jobinja.ir/companies/sarayagency/jobs/tjY9</guid>
+    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+    <description>تبلیغاتی سارای — تهران · Software Engineering
+
+Asks for: CSS, Elementor, HTML, Microsoft Word, WooCommerce, WordPress, Management, Process improvement, Responsive design, Sales, UI/UX design</description>
+  </item>
+  <item>
     <title>(Senior Back-End Developer(Node.js — مدی مدیا</title>
     <link>https://jobinja.ir/companies/abadis-health-today/jobs/tjYt</link>
     <guid isPermaLink="true">https://jobinja.ir/companies/abadis-health-today/jobs/tjYt</guid>
@@ -429,33 +456,6 @@ Asks for: Celery, Control, Data, Design, Django, Docker, Elasticsearch, FastAPI,
     <description>رهند هوشمند نوین داده — تهران · Software Engineering
 
 Asks for: Celery, Concurrency, Design, Django, Docker, FastAPI, Git, Grafana, LangChain, LangGraph, Logging, Optimization, PostgreSQL, Programming, Prometheus, Python, Redis, Unit, Analysis, Artificial intelligence, CI/CD, Insurance, Large language models, Management, Networking, Observability, Process improvement, REST APIs, Retrieval augmented generation, System Design, Teamwork, Testing, Unit testing</description>
-  </item>
-  <item>
-    <title>کارشناس داده — ایده پردازان آویهنگ</title>
-    <link>https://jobinja.ir/companies/avihang/jobs/tZrU</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/avihang/jobs/tZrU</guid>
-    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    <description>ایده پردازان آویهنگ — تهران · Software Engineering
-
-Asks for: Docker, Grafana, Linux, Log, Prometheus, SQL, Tracking, Windows, Analysis, Communication, Documentation, English proficiency, Management, Observability, Problem solving, Teamwork, Training</description>
-  </item>
-  <item>
-    <title>Business Support Specialist (Core) — توسعه سامانه‌های نرم‌افزاری نگین (توسن)</title>
-    <link>https://jobinja.ir/companies/tosan/jobs/tv3o</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/tosan/jobs/tv3o</guid>
-    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    <description>توسعه سامانه‌های نرم‌افزاری نگین (توسن) — تهران · Software Engineering
-
-Asks for: Business, Microsoft Excel, Support, Accounting, English proficiency, Observability, Problem solving, Troubleshooting</description>
-  </item>
-  <item>
-    <title>Senior Data Engineer — ازکی</title>
-    <link>https://jobinja.ir/companies/azki/jobs/tjA7</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/azki/jobs/tjA7</guid>
-    <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-    <description>ازکی — تهران · Software Engineering
-
-Asks for: Airflow, Availability, Build, Business, ClickHouse, Control, Data, Design, Develop, Docker, Functional, Git, GitLab, Governance, Infrastructure, Kafka, Linux, Metabase, Modeling, MySQL, Orchestration, Project, Python, Quality, SQL, Scala, Scripting, Service, Shell, Spark, Support, Visualization, Warehousing, Analysis, Analytics, Business intelligence, Communication, Data modelling, Data pipelines, Data quality, Data warehousing, Databases, ETL / ELT, Observability, Problem solving, Process improvement, Scalability, Security, Storage, Teamwork, Training, Version Control</description>
   </item>
 </channel>
 </rss>

@@ -5,8 +5,17 @@
   <link>https://jooob.ir</link>
   <description>New IT &amp; Infrastructure postings, newest first.</description>
   <language>fa-IR</language>
-  <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 05 Sep 2026 14:08:58 +0000</lastBuildDate>
   <atom:link href="https://jooob.ir/feed/it-and-infrastructure.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>کارشناس زیرساخت و شبکه - جردن — مرکز فروش و توزیع رشت</title>
+    <link>https://career.hrcando.ir/co/Khoshgovar/job-detail/ed9f82da-b1a7-4ee0-9277-97c44474218a</link>
+    <guid isPermaLink="true">https://career.hrcando.ir/co/Khoshgovar/job-detail/ed9f82da-b1a7-4ee0-9277-97c44474218a</guid>
+    <pubDate>Sat, 05 Sep 2026 14:08:58 +0000</pubDate>
+    <description>مرکز فروش و توزیع رشت — تهران · IT &amp; Infrastructure
+
+Asks for: Availability, Recovery, Segmentation, Analysis, Attention to detail, Backup and recovery, Change management, Communication, Disaster recovery, Documentation, Management, Networking, Observability, Ownership, Process improvement, Reporting, SLA management, Security, Teamwork, Troubleshooting</description>
+  </item>
   <item>
     <title>کارشناس شبکه — باغ داروی سبز سلامت گستر پنجاه چهل</title>
     <link>https://jobinja.ir/companies/5040-1/jobs/tjJB</link>
@@ -447,15 +456,6 @@ Asks for: Alerting, Ansible, Apache, Availability, Bash, Cloud, DirectAdmin, Doc
     <description>داده پردازی مبین هاست — تهران · IT &amp; Infrastructure
 
 Asks for: Alerting, Ansible, Availability, Cacti, Cisco, FortiGate, Grafana, Hosting, Incident, Infrastructure, KVM, Latency, Linux, MikroTik, Nexus, Proxmox, Python, Router, Scripting, Server, VMware, Wireshark, Zabbix, Analysis, Attention to detail, Automation, Capacity planning, Certifications, Communication, Datacenter operations, Documentation, English proficiency, High availability, Incident management, Linux administration, Management, Networking, Observability, Process improvement, Recruitment, Root cause analysis, SLA management, Security, Teamwork, Troubleshooting, Virtualization</description>
-  </item>
-  <item>
-    <title>کارشناس Network) NOC) — داده پردازی مبین هاست</title>
-    <link>https://jobinja.ir/companies/mobinhost/jobs/tv8u</link>
-    <guid isPermaLink="true">https://jobinja.ir/companies/mobinhost/jobs/tv8u</guid>
-    <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-    <description>داده پردازی مبین هاست — تهران · IT &amp; Infrastructure
-
-Asks for: Cacti, Cisco, Hosting, Incident, Latency, Linux, MikroTik, Nexus, Router, Server, Ticketing, Wireshark, Zabbix, Analysis, Attention to detail, Certifications, Communication, CompTIA Network+, Datacenter operations, Documentation, English proficiency, Firewalls, Incident management, Management, Networking, Observability, Problem solving, Record keeping, SLA management, Security, Teamwork, Technical support, Troubleshooting, Virtualization</description>
   </item>
 </channel>
 </rss>
